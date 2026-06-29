@@ -1,0 +1,34 @@
+%===================TIÊU ĐỀ TẬP=============================
+% Phần 1: dùng cho các quyển từ 0 đến 10 và 0A
+\begin{table}[h]
+\begin{adjustwidth}{-1cm}{}
+    \begin{tabular}{>{\centering\arraybackslash}p{6cm}|>{\raggedright\arraybackslash}p{15cm}}
+        \multirow{5}{6cm}
+        % Cột bên trái: ÉPISODE và số tập
+        {\\[-40pt]\flaregothic\fontsize{20pt}{20pt}\selectfont \centering 
+        \color{eptype}ÉPISODE\color{black}\\
+        \burbank\fontsize{72pt}{72pt}\selectfont
+        \color{epnum}169\color{black}}
+        &
+        % Dòng thứ nhất: tên tập tiếng Nhật
+        {\fotskip\fontsize{18pt}{18pt}\selectfont セミうっせぇ！マジで！}\\[6pt]
+        % Dòng thứ hai: tên tập tiếng Anh
+        & {\cafeteria\fontsize{18pt}{18pt}\selectfont When The Cicadas Fly}\\[4pt]
+        % Dòng thứ ba: tên tập tiếng Việt
+        & {\vnmsans\fontsize{18pt}{18pt}\selectfont Dàn đồng ca mùa hạ}\\[8pt]
+        % Dòng thứ tư: Nhân vật xuất hiện
+        & {\sen{\fontsize{14pt}{14pt}\selectfont Track used: Mental Rave (}
+        {\japfont{\fontsize{14pt}{14pt}\selectfont
+        \begin{CJK}{UTF8}{goth}
+        $\stackrel  {\text{わ}}{\text{沸}}$
+        き
+        $\stackrel{\text{た}}{\text{立}}$
+        $\stackrel{\text{さい}}{\text{祭}}$
+        /パーティー
+        \end{CJK}
+        {\sen{\fontsize{14pt}{14pt}\selectfont)}}}}}\\[8pt]
+        % Dòng cuối cùng: Thời gian diễn ra của tập (thường sẽ là ngày phát hành)
+        & {\continuum\fontsize{16pt}{16pt}\selectfont Ngày phát hành: 07/08/2022}
+        \end{tabular}
+\end{adjustwidth}
+\end{table}

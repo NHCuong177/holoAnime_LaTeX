@@ -1,0 +1,412 @@
+\documentclass[14pt, a4paper]{book}
+%=========================================CÁC GÓI VÀ HÀM CHUẨN BỊ==========================================
+% Cho phép sử dụng màu và vẽ viền
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{contour}
+\usepackage{gradient-text}
+
+\definecolor{vol}{HTML}{806000}
+\definecolor{eptype}{HTML}{d1cc00}      
+\definecolor{epnum}{HTML}{ffc000}       
+\definecolor{epattr}{HTML}{FFD357}
+
+\definecolor{song}{HTML}{7030a0}
+\definecolor{ai}{RGB}{91,155,213}
+\definecolor{manzai}{HTML}{005900}
+\definecolor{bdaya}{HTML}{E31BAF}
+\definecolor{bdayb}{HTML}{FFC000}
+
+\definecolor{holofes}{HTML}{ffc000}
+\definecolor{gold}{HTML}{ffc000}
+
+% Màu nhân vật
+% \definecolor{Suichan}{HTML}{9CD1F8}
+% \definecolor{Robopon}{RGB}{255,98,98}
+% \definecolor{Mikopi}{RGB}{254,212,212}
+\definecolor{Sora}{HTML}{4fc0ff}
+
+% Công thức toán học
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{unicode-math}
+\usepackage{gensymb}
+
+% Hộp văn bản
+\usepackage{tcolorbox}
+\usepackage{soul}
+
+% Liên kết
+\usepackage{hyperref}
+
+% Chèn các file nhỏ
+\usepackage{subfiles}
+
+% Chèn ảnh, video và GIF
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\input{media_embed.tex}	
+\usepackage{animate}
+
+% Lề và cỡ chữ tiêu chuẩn
+\usepackage{extsizes}                       % Cho cỡ chữ 14pt
+\usepackage[margin=1.54cm]{geometry}        % Căn chỉnh lề giấy
+\usepackage{parskip}
+\usepackage{emptypage}
+
+% Không thụt đầu dòng khi xuống dòng mới 
+\parindent 0pt
+
+% Gạch chân xuống dòng
+\usepackage{ulem}
+
+% Thay đổi thiết lập chú thích
+\usepackage{caption}
+\usepackage{subcaption}
+
+\captionsetup{justification= centering, font=small, labelformat=empty}
+
+% Sử dụng để thay đổi font
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage{luatexja-fontspec}
+
+% Viết furigana
+\usepackage{ruby}
+\renewcommand{\rubysize}{0.4}
+\renewcommand{\rubysep}{1pt}
+
+% Phông cho tên-số các tập
+\newfontface\flaregothic[Path=../../Fontface/]{flaregothicbold.ttf}
+\newfontface\cafeteria[Path=../../Fontface/]{Cafeteria Bold.otf}
+\newfontface\fotskip[Path=../../Fontface/]{FOT-Skip Std B.otf}
+\newfontface\vnmsans[Path=../../Fontface/]{VNM Sans Std.otf}
+\newfontface\vnmdisp[Path=../../Fontface/]{VNM Sans Display Bold.otf}
+\newfontface\sen[Path=../../Fontface/]{Sen-Bold.ttf}
+\newfontface\continuum[Path=../../Fontface/]{contb.ttf}
+\newfontface\japfont[Path=../../Fontface/]{msgothic.ttc}
+\newfontface\jiga[Path=../../Fontface/]{Jigmo.ttf}
+\newfontface\jigb[Path=../../Fontface/]{Jigmo3.ttf}
+\newfontface\jigc[Path=../../Fontface/]{Jigmo3.ttf}
+\newfontface\quincy[Path=../../Fontface/]{Quincy Caps Regular.ttf}
+
+% Phông cho tiêu đề cuốn truyện và đầu-chân trang
+\newfontface\frank[Path=../../Fontface/]{Franklin Gothic Heavy Regular.ttf}
+\newfontface\caviar[Path=../../Fontface/]{VNF-Cariar Dreams Regular.ttf}
+\newfontface\hbrk[Path=../../Fontface/]{HouseBrokenRough.ttf}
+\newfontface\ab[Path=../../Fontface/]{angrybirds-regular.ttf}
+\newfontface\abv[Path=../../Fontface/]{0259-LNTH-angrybirds-regular.ttf}
+\newfontface\device[Path=../../Fontface/]{Device Regular.ttf}
+\newfontface\harosbaelz[Path=../../Fontface/]{BAEFONT_NORMAL-REGULAR_V1.TTF}
+\newfontface\brian[Path=../../Fontface/]{Brianne_s_hand.ttf}
+\newfontface\nexa[Path=../../Fontface/]{Nexa-Heavy.ttf}
+\newfontface\digi[Path=../../Fontface/]{DS-DIGI.TTF}
+\newfontface\freshbot[Path=../../Fontface/]{FRESHBOT.TTF}
+
+% Đặt font chính và font tiếng Nhật
+\setmainfont{Times New Roman}
+\setmainjfont{FOT-Skip Std B}
+\setmathfont
+[    Extension = .otf,
+     BoldFont = XITSMath-Bold,
+]
+{XITSMath-Regular}
+
+% Điểu chỉnh đầu trang và chân trang
+\usepackage{fancyhdr}
+\usepackage{spverbatim}
+
+% Dùng cho điều chỉnh kích thước và vị trí bảng
+\usepackage{array}
+\usepackage{changepage}
+
+% Nhóm cột
+\usepackage{multirow}
+\usepackage{float}
+
+% Dùng cho đoạn hội thoại
+\usepackage{setspace} % Chia khoảng cách
+\usepackage{dialogue}
+\usepackage{calc} % Thiết lập khoảng cách giữa tên nhân vật và văn bản
+
+% Tăng chỉ số chiều sâu của sách
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+%==================================================MACRO===================================================
+% A. Đường thẳng, ký hiệu
+\newcommand{\ct}
+{\begin{center}[---]\end{center}} 		  	                          % Cắt cảnh dài
+\newcommand{\chrint}        
+{\begin{center}||---||\end{center}}						        	            % Cắt đến giói thiệu nhân vật, có thể bỏ qua
+\newcommand{\pov}[1]
+{\begin{center}$\langle${#1}$\rangle$\end{center}}			            % Đổi góc nhìn nhân vật.
+\newcommand{\il}{\noindent\makebox[\textwidth]
+{\rule{\paperwidth}{0.4pt}}}					  			                      % Đường thẳng phân chia
+
+% B. Chèn ảnh và gif
+\newcommand{\img}[2][12.5cm]{%
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=#1]{../../../../Image/Book?/#2.png}                    % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
+    \end{figure}
+}
+
+\newcommand{\gif}[4][12.5cm]{%
+    \begin{figure}[H]
+        \centering
+        \animategraphics[autoplay,loop,width=#1]
+        {30}{../../../../Image/Book?/#2/#2.}{#3}{#4}                                  % Chỉ cần chèn tên tệp, lấy từ khung #3 tới #4
+    \end{figure}
+}
+
+\newcommand{\pictdum}{										                          % Ảnh chèn vào thay thế ảnh gif để canh dòng
+        \includegraphics[width=8cm]{placeholder.png}
+}
+    
+\newcommand{\vid}[3][12.5cm]{%
+  \embedvideo{\includegraphics[width=#1]{../../../../Image/Book?/#2.png}}{#3.mp4}
+}
+
+% C. Viết cụm và định dạng
+\newcommand{\omk}{\begin{center}{\abv\Large Truyện phụ}\end{center}}
+\newcommand{\anni}{\color{bdaya}A\color{bdayb}N\color{bdaya}N\color{bdayb}I\color{bdaya}V\color{bdayb}E\color{bdaya}R\color{bdayb}S\color{bdaya}A\color{bdayb}I\color{bdaya}R\color{bdayb}E}
+\newcommand{\trva}{\begin{center}{\abv\Large Bạn có biết?}\end{center}}
+\newcommand{\hll}{\textit{hololive}}
+\newcommand{\stpt}[1]{\begin{center}{\sen\Large {#1}} \end{center}}     % Subsection
+\newcommand{\stcap}[1]{\begin{center}{\caviar {#1}} \end{center}}       % Phụ đề cho subsection
+\newcommand{\xdo}{\\[-24pt]}                                            % Dùng cho phần dialogue
+
+% D. Bảng xếp hàng (cho các tập Top 10)
+\newcommand{\topten}{\ruby{大}{だい}\ruby{惨}{さん}\ruby{事}{じ}}
+\newcommand{\bxh}[4]{
+    \begin{center}
+        {{\cafeteria\Large Number #1:} \\
+        {\textbf{#2}} \\
+        {(Từ {\flaregothic\textbf{ÉPISODE #3}}, quyển số #4.)}}
+    \end{center}
+}
+
+% E. Ngôn ngữ
+\newcommand{\vie}[1]{\color{red} #1\color{black}}        % Tiếng Việt (Etsunan ở Round 1 và 2)
+\newcommand{\eng}[1]{\color{blue} #1\color{black}}       % Tiếng Anh
+\newcommand{\ind}[1]{\color{green} #1\color{black}}      % Tiếng Indonesia
+\newcommand{\chn}[1]{\color{orange} #1\color{black}}     % Tiếng Trung
+
+% Thiết đặt môi trường cho đoạn hội thoại
+% A. Dùng để viết hoa chữ đầu tiên tên nhân vật
+\renewcommand*\DialogueLabel[1]{%
+  {#1}:%
+}
+
+% B. Thiết lập với độ dài tên dài nhất. Mặc định chọn Hanamaru từ Love Live!.
+\newlength{\widestname}
+\setlength{\widestname}{2.5cm}
+
+% C. Tái định nghĩa lại hàm dialogue
+\makeatletter
+\renewenvironment{dialogue} {%
+    \begin{list}{} {%
+        \setlength\itemsep{\z@ \@plus .5ex}%
+        \setlength{\parsep}{\parskip}%
+        \setlength{\rightmargin}{0pt}           % Không căn lề phải
+        \setlength{\labelwidth}{\widestname}    % Thiết đặt khoảng cách với tên dài nhất
+        \setlength{\labelsep}{0.5em}            % Thiết đặt khoảng cách giữa tên nhân vật và đoạn hội thoại
+        \setlength{\leftmargin}{\labelwidth}    % Căn lề trái
+        \addtolength{\leftmargin}{\labelsep}    % 
+        \defcommand\speak [1] {\item[{##1}]}    % Thiết lập lệnh speak trong dialogue
+        \let\makelabel\DialogueLabel
+      }%
+      \PreDialogue\relax
+    }{%
+  \end{list}%
+  }
+\makeatother
+
+% D. Hướng mũi tên
+\newcommand{\arrow}[1][-45]
+      {\begin{tikzpicture}[baseline = -0.5ex]
+          \node[inner sep=0pt,outer sep=0pt,rotate = #1] (a) at (0,0)  {\rightarrow};
+       \end{tikzpicture}}
+
+% E. Chiêu mộ toàn bộ ký tự
+\makeatletter
+\font\SOUL@tt="Times New Roman"
+\setbox\z@\hbox{\SOUL@tt-}
+\SOUL@ttwidth\wd\z@ %reset default width of -
+\makeatother
+
+% F. Tabbing
+\newcommand\tabs[1][1cm]{\hspace*{#1}}
+
+% G. Tạo môi trường đề căn lề trái-phải
+\newcommand{\tl}[1]{\noindent\begin{flushleft} #1 \end{flushleft}}
+\newcommand{\tc}[1]{\noindent\begin{center} #1 \end{center}}
+\newcommand{\tr}[1]{\noindent\begin{flushright} #1 \end{flushright}}
+
+%================ĐẦU TRANG VÀ CHÂN TRANG====================
+\pagestyle{fancy}
+\fancyhead{} 
+% Tên cuốn truyện
+\fancyhead[LO]
+{\device\fontsize{18pt}{18pt}\selectfont
+\color{vol}{Floor 673: Autumn - The Season of Tricks}
+\\[-18pt]}                      
+\fancyhead[RE]
+{\device\fontsize{18pt}{18pt}\selectfont
+\color{vol}{Étage 673 : L'automne du tour malicieux}
+\\[-18pt]}                     
+% Số chương
+\fancyhead[RO]
+{\harosbaelz\fontsize{18pt}{18pt}\selectfont
+\color{vol}{six}
+\ab\fontsize{18pt}{18pt}\selectfont
+\color{vol}{\textbf{(VI)}}
+\\[-18pt]
+}
+\fancyhead[LE]
+{\harosbaelz\fontsize{18pt}{18pt}\selectfont
+\color{vol}{\textbf{six}}
+\ab\fontsize{18pt}{18pt}\selectfont
+\color{vol}{\textbf{(6)}}
+\\[-18pt]}
+% Chân trang
+\fancyfoot{} 
+\fancyfoot[CO, CE]{\thepage}
+\fancyfoot[LO]
+{\ab\fontsize{10pt}{10pt}\selectfont \color{vol} [DIGITAL FORMAT ONLY ⇒ DO NOT PRINT]}
+\fancyfoot[RE]
+{\ab\fontsize{10pt}{10pt}\selectfont \color{vol} [FORMAT NUMÉRIQUE UNIQUEMENT ⇒ NE PAS IMPRIMER]}
+%==========================================PHẦN THÂN==========================================
+\begin{document}
+%===========================================MỤC LỤC===========================================
+\newpage
+\thispagestyle{empty}
+\
+
+\newpage
+\thispagestyle{empty}
+\begin{figure}
+    \centering
+    \includegraphics[width=15cm]{../../Logo/round1.png}
+\end{figure}
+
+\vspace{70pt}
+
+\begin{center}
+    {\huge \color{vol}{{\frank volume \hbrk SIX}}} \vspace{15pt}
+    
+    {\fontsize{50pt}{50pt}\selectfont \color{vol}{\vnmdisp (MÙA THU -\\MÙA CỦA NHỮNG TRÒ LỐ)}}\vspace{15pt}
+    
+    {\Large \color{vol}{\vnmsans (Mùa thu năm 2020)}}
+\end{center}
+
+\thispagestyle{empty}
+\renewcommand{\contentsname}
+{\centering\vnmsans\Large\textcolor{vol}{Mục lục}}
+{
+  \hypersetup{linkcolor=black}
+  \tableofcontents
+}
+%========================================LỜI NÓI ĐẦU==========================================
+\newpage
+\section*{\phantomsection\label{preface}} 
+\addcontentsline{toc}{section}{Giới thiệu} 
+{\centering\vnmsans\Large\textcolor{vol}{Giới thiệu}\par}
+\subfile{intro}
+
+%=======================================DANH SÁCH TẬP========================================
+\newpage
+\section*{\phantomsection\label{ep6.1}} 
+\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 70}} 
+\subfile{Episode/6-1}
+
+\newpage
+\section*{\phantomsection\label{ep6.2}} 
+\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 71}}
+\subfile{Episode/6-2}
+
+\newpage
+\section*{\phantomsection\label{ep6.3}} 
+\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 72}} 
+\subfile{Episode/6-3}
+
+\newpage
+\section*{\phantomsection\label{ep6.4}} 
+\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 73}} 
+\subfile{Episode/6-4}
+
+\newpage
+\section*{\phantomsection\label{ep6.5}} 
+\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 74}} 
+\subfile{Episode/6-5}
+
+\newpage
+\section*{\phantomsection\label{ep6.6}} 
+\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 75/SPÉCIAL {\ab XII}}} 
+\subfile{Episode/S-12}
+
+\newpage
+\section*{\phantomsection\label{ep6.7}} 
+\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 76}} 
+\subfile{Episode/6-6}
+
+\newpage
+\section*{\phantomsection\label{ep6.8}} 
+\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 77}} 
+\subfile{Episode/6-7}
+
+\newpage
+\section*{\phantomsection\label{ep6.9}} 
+\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 78}} 
+\subfile{Episode/6-8}
+
+\newpage
+\section*{\phantomsection\label{ep6.10}} 
+\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 79}} 
+\subfile{Episode/6-9}
+
+\newpage
+\section*{\phantomsection\label{ep6.11}} 
+\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 80}} 
+\subfile{Episode/6-10}
+
+\newpage
+\section*{\phantomsection\label{ep6.12}}
+\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 81}} 
+\subfile{Episode/6-11}
+
+\newpage
+\section*{\phantomsection\label{ep6.13}} 
+\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 82/SPÉCIAL {\ab XIII}}} 
+\subfile{Episode/S-13}
+%===========================================LỜI KẾT===========================================
+\newpage
+\section*{\phantomsection\label{end}} 
+\addcontentsline{toc}{section}{Lời kết} 
+{\centering\vnmsans\Large\textcolor{vol}{Lời kết}\par}
+\color{black}
+Mùa thu đã đến, mang theo những cơn gió se lạnh và những câu chuyện mới đầy bất ngờ. Nhưng dù thời tiết có thay đổi, bầu không khí náo nhiệt của holoForce vẫn không hề giảm sút. Ngay từ đầu mùa, Rushia, Watame và cậu Tổng đã vô tình rơi vào một cuộc phiêu lưu khi cố gắng xem trộm bên trong văn phòng, chỉ để bị nàng Công chúa Mặt trăng bắt tại trận và ép thử món ăn ``nghệ thuật'' của Haato - một trải nghiệm không ai muốn lặp lại.
+
+Trong khi đó, Noel đột nhiên trở nên khổng lồ, khiến Mel phải đau đầu đến mức xin nghỉ sớm. Ở một góc khác, Marine và Suisei quyết chiến trong cuộc thi sức bền với tư thế ``ghế không khí,'' tạo nên một màn so tài khiến mọi người phải nín thở theo dõi. Nhưng có lẽ cuộc cạnh tranh khốc liệt nhất lại là trận chiến giành vị trí đứng đầu chuỗi thức ăn - nơi con người, một cách hiển nhiên, vẫn chiếm thế thượng phong.
+
+Không chỉ có những trận đối đầu, mùa thu này còn đánh dấu sự ra đời của một ban nhạc do Matsuri thành lập, với khởi đầu đầy hứa hẹn\dots\ từ một chiếc kẻng. Không kém phần hỗn loạn là đoạn quảng cáo mì cà ri đầy bất ổn, khiến mọi người tự hỏi món ăn này có gì làm các thành viên trong công ty điên loạn tới thế. Nhưng đó vẫn chưa phải điều kỳ lạ nhất - khi Watame bất ngờ bị biến thành một chú gà con từ phép thuật của Shion, mọi thứ càng trở nên khó đoán hơn bao giờ hết.
+
+Vẫn là nàng Dị giới cùng những người bạn, lần này cô, Aqua và Towa quyết định thử nghiệm sức mạnh của những bím tóc bay, kéo theo Matsuri cũng tham gia với kết quả\dots\ vừa thành công vừa thất bại. Ở một nơi khác, Watame, Subaru và Korone hợp tác để phá cửa phòng thu âm - chỉ để nhận ra đó là một cánh cửa sập, khiến cả hai bối rối không nói nên lời.
+
+Những trò đùa không ngừng xuất hiện, mà điển hình là kế hoạch chơi khăm bánh su kem của Towa lên Pekora và Sora, dẫn đến bốn cái kết khác nhau không ai đoán trước được. Không dừng lại ở đó, một vở kịch rakugo kể về hành trình mở quán ramen giữa sa mạc của nàng Dị giới cùng với Flare và Ayame khiến mọi người nghi ngờ với khả năng kể chuyện của cô. Trong khi đó, nàng Oni với tinh thần tràn đầy Nakirium đã hào hứng hướng dẫn mọi người cách làm ấm vào những ngày thu lạnh giá.
+
+Tuy nhiên, điểm nhấn lớn nhất của mùa thu này chính là sự phục dựng thời kỳ Phấn trắng - theo cách ngớ ngẩn nhất có thể. Những sự kiện vừa hư vừa ảo trong bộ phim tài liệu đó không chỉ làm xoắn não mọi người, mà còn tạo ra những tiếng cười sảng khoái.
+
+Khi tất cả tưởng chừng như đây chỉ là một trò đùa nữa của Fubuki, một sự kiện đặc biệt đã xảy ra: ba trên bốn thành viên của một thế hệ mới bất ngờ xuất hiện, báo hiệu những thay đổi sắp tới. Nhưng bất ngờ không dừng lại ở đó - ngay trước cửa nhà gia đình Hikawa, một bóng dáng bí ẩn đã xuất hiện, mang theo dấu hiệu của một câu chuyện còn lớn hơn phía trước.
+
+Mùa thu đã trôi qua với vô vàn những kỷ niệm khó quên, nhưng mùa đông đang chờ đón phía trước với những điều bất ngờ mới. Liệu những câu chuyện nào sẽ tiếp tục mở ra? Và Hikawa Kuon sẽ bị cuốn vào những tình huống trớ trêu nào nữa? Hãy cùng đón chờ hành trình tiếp theo trong **Quyển số Bảy: Bộ Ba Đông Lạnh Kỳ Diệu**.
+
+\vfill % Đẩy phần dưới về đáy trang
+\begin{center}
+	\textcolor{vol}
+    {\quincy\Huge\textbf{TOME \ruby{6}{\ab SIX}\ TERMINE !} \\[1ex]
+    \vnmdisp\Huge\textbf{(QUYỂN SỐ \ruby{SÁU}{六/ろく}\ HOÀN THÀNH!)}}
+\end{center}
+
+\end{document}

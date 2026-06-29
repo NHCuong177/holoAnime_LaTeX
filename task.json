@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Dọn cache font LaTeX",
+            "type": "shell",
+            "command": "luaotfload-tool --cache=erase -v && luaotfload-tool --update -v",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

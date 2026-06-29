@@ -1,0 +1,6 @@
+-Act 0: A Temporal Job-
+-Act 1: Welcome to the Maid Café!-
+-Act 2: The Reaper and the Devil-
+-Act 3: The Dark Hero Appears!-
+-Act 4: Negotiations Concluded-
+-Epilogue: The Aftermath-

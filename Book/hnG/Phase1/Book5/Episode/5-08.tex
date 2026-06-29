@@ -1,0 +1,516 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+%==========================================TIÊU ĐỀ TẬP========================================
+\begin{table}[h]
+    \begin{adjustwidth}{-1cm}{}
+        \begin{tabular}{>{\centering\arraybackslash}p{6cm}|>{\raggedright\arraybackslash}p{12.5cm}}
+            \multirow{5}{6cm}
+            % Cột bên trái: ÉPISODE và số tập
+            {\\[-40pt]
+                \flaregothic\fontsize{20pt}{20pt}\selectfont \centering
+                \color{eptype}ÉPISODE\color{black}\\
+                \burbank\fontsize{72pt}{72pt}\selectfont
+                \color{epnum}64
+                \\[18pt]
+                \flaregothic\fontsize{14pt}{14pt}\selectfont
+                \color{epattr}BIENVENUE, \uline{\color{Nanora} Luna} !
+                % \flaregothic\fontsize{18pt}{18pt}\selectfont
+                % \color{epattr}ÉPISODE PERDU
+                \color{black}
+                \\}
+             &
+            % Dòng thứ nhất: tên tập tiếng Nhật
+            {\fotskip\fontsize{18pt}{18pt}\selectfont たこ\ruby{焼}{や}きの\ruby{作}{つく}り\ruby{方}{かた}
+            }                                                  \\[6pt]
+            % Dòng thứ hai: tên tập tiếng Anh
+             & {\cafeteria\fontsize{18pt}{18pt}\selectfont Lucky Day}                                                                          \\[4pt]
+            % Dòng thứ ba: tên tập tiếng Việt
+             & {\vnmsans\fontsize{18pt}{18pt}\selectfont Cầu gì được nấy}                                                                      \\[8pt]
+            % Dòng thứ tư: Nhân vật xuất hiện
+             & {\caviar{\fontsize{14pt}{14pt}\selectfont Nhân vật: \emp{kuon1} \emp{ryuuhou1} \emp{subaru} \emp{mio} \emp{kanata} \emp{luna}}}
+            \\[8pt]
+            % Dòng cuối cùng: Thời gian diễn ra của tập (thường sẽ là ngày phát hành)
+             & {\continuum\fontsize{16pt}{16pt}\selectfont Ngày phát hành: 26/07/2020}                                                         \\[18pt]
+        \end{tabular}
+    \end{adjustwidth}
+\end{table}
+%=========================================TRUYỆN CHÍNH========================================
+\color{black}
+
+% Hộp tóm tắt
+\txtbx[2]{{\color{vol} \uline{Tóm tắt:}} Luna - nàng công chúa 0 tuổi với khả năng biến mọi điều ước thành hiện thực - xuất hiện và khiến cả văn phòng xoay mòng mòng: từ bánh quy, kính râm, takoyaki cho đến\dots\ một khẩu bazooka dành tặng sinh nhật Marine. Trong khi mọi người bàn tán về ngoại hình ``giang hồ'' của cô, Kuon thú nhận mình ghét trẻ con vì những trải nghiệm tồi tệ. Luna nhất quyết chứng minh mình không giống lũ trẻ hư đó, và chia sẻ takoyaki với cả nhóm.}
+
+\pov{Hikawa Kuon}
+
+Người thứ tư của \textit{holoForce} sẽ đến văn phòng. Ba người trước đã đủ làm tôi đau đầu: Coco với những cuộc đột kích, Kanata với vầng hào quang biến thành phi tiêu, Watame với câu chuyện cừu thách đấu. Người này\dots\ tôi có linh cảm sẽ còn đặc biệt hơn.
+
+Một nàng công chúa kẹo ngọt đến từ vương quốc Kẹo ngọt, với giọng nói đặc trưng của em bé không thể nhầm lẫn. Nếu Watame là một nhạc công mang khát vọng vươn xa, thì người này lại là một nàng tiểu thư đầy kiêu hãnh, luôn mang theo phong thái quý tộc nhưng cũng không kém phần tinh nghịch. Tôi đã đọc hồ sơ của em ấy, và tôi đã cười khi thấy dòng ``0 tuổi''. Ai lại tin được chứ?
+
+Em ấy có một phong cách rất độc đáo: dù vẻ ngoài nhỏ nhắn như một cô bé đáng yêu, nhưng thực ra lại là một game thủ cừ khôi với kỹ năng đáng gờm, và cũng là một lập trình viên từng trải. Tất nhiên, chưa thể cạnh tranh được với tôi, nhưng như vậy là tốt rồi. Đừng để ngoại hình ngây thơ của em ấy đánh lừa, vì thực chất nàng Công chúa này rất bướng bỉnh, kiên trì và không bao giờ chịu thua nếu chưa đạt được mục tiêu. Tôi đã thấy kiểu người này trước đây – họ luôn là những người nguy hiểm nhất trong một văn phòng.
+
+Dẫu vậy, nét tính cách của em lại khá đặc biệt: khi ở bên những người thân thiết, em ấy rất hoạt bát và đáng yêu, luôn thêm thắt những câu ``nanora'' đặc trưng vào lời nói. Nhưng khi gặp người lạ, em có xu hướng điềm tĩnh và giữ khoảng cách, một bản năng sinh tồn mà tôi hoàn toàn hiểu được trong môi trường này. Bề ngoài trông như một tiểu thư yếu đuối, nhưng thực ra lại là một chiến binh không biết mệt mỏi trong các trò chơi hành động và thử thách khó nhằn.
+
+Ngoài ra, em ấy còn là một chuyên gia\dots\ nũng nịu và đánh lừa người khác. Tôi đã đọc được một vài ghi chú từ các buổi stream của em, và tôi có thể nói rằng em ấy biết cách sử dụng sự dễ thương như một vũ khí. Và tôi không thích bị thao túng.
+
+Và dù là một công chúa, ước mơ của em không chỉ gói gọn trong lâu đài kẹo ngọt. Em ấy muốn một ngày nào đó có thể tổ chức một buổi hòa nhạc lớn, nơi cả thế giới có thể cùng vui đùa và hòa mình vào giai điệu của vương quốc Luna; cái này là em ấy nói thế, chứ trong sơ yếu lí lịch không ghi vậy. Nhưng tôi biết những giấc mơ lớn thường bắt đầu từ những điều nhỏ nhặt.
+
+Một nàng công chúa với giấc mơ tươi sáng.
+
+\dots\ Hoặc có lẽ, một ``bạo chúa'' giấu mình dưới lớp vỏ đáng yêu và hay hờn dỗi. Tôi đã gặp đủ loại người để biết rằng vẻ ngoài ngọt ngào thường là cái bẫy nguy hiểm nhất.
+
+\chrint
+
+Đó là Himemori Luna (\ruby{姫}{ひめ}\ruby{森}{もり}ルーナ, \ruby{Hi-mê}{Cơ}-\ruby{mô-ri}{Sâm}\ Lu-na), thành viên thứ tư của \textit{holoForce}. Một người có giọng nói như của một đứa trẻ sơ sinhsinh, và tôi không nói đùa. Có lẽ các bạn không tin, nhưng em ấy mới có 0 tuổi. KHÔNG TUỔI. Mà lại mang dáng dấp của một nữ sinh cấp ba. Theo hồ sơ, em ấy vừa sinh ra đã trở thành công chúa, và tôi vẫn chưa biết nên tin vào điều đó hay không.
+
+Luna là một người có tính cách ngọt ngào và ngây thơ, nhiều lúc đến mức phát ốm. Em ấy được chiều chuộng một chút và đôi khi muốn được các thành viên \hll\ lớn tuổi (và kể cả tôi) chú ý. Tôi đã thấy nhiều kiểu người thích được chú ý, và Luna nằm trong số đó. Nhưng ít nhất em ấy còn có cách dễ thương để làm điều đóđó, chứ không phải bằng cách phá cửa sổ hay mang bom vào văn phòng.
+
+Tuy nhiên, em bé Luna này còn có một mặt tinh nghịch nữa - giống như nhiều em bé mới sơ sinh khác - thậm chí có phần tàn bạo và cạnh tranh hơn hẳn. Tôi đã đọc một vài bình luận về những trò chơi của em ấy, và tôi có thể nói rằng Luna không ngại ``chơi bẩn'' nếu cần. Em ấy có thể đánh bại bạn trong game rồi nói ``nanora'' một cách ngọt ngào đến mức bạn không thể giận.
+
+\model{25}{l}{6cm}{luna}
+
+Tương tác của em ấy với những người khác thường bao gồm trêu chọc, khi em sử dụng hành động dễ thương của mình để cố gắng chọc tức chúng tôi và đôi khi chỉ đơn giản là tinh nghịch trực tiếp với mọi người. Mặt khác, Luna cũng có thể khá gắn bó thân thiết với người khác, ví dụ như với Matsuri. Tôi đã thấy một số clip nơi Luna bám lấy Matsuri và gọi cô là ``chị'', và Matsuri dường như hoàn toàn bị chinh phục.
+
+Luna có thể được gọi là một ``điềm tinh'' trong công ty, dù chỉ là một em bé ở trong độ tuổi còn chưa ``cai nổi sữa mẹ'' tất nhiên không phải theo nghĩa đen. Dù thỉnh thoảng em ấy có thể hơi mất kiểm soát bằng những tiếng mà trẻ con hay kêu. Điều này dễ nhất khi em ấy thất vọng trong các trò chơi đối kháng và sợ sệt trong các trò kinh dị, lúc đó tiếng ``naaaaaaaaaaa'' sẽ vang lên khắp phòng, và tôi đã phải đeo tai nghe chống ồn để chuẩn bị.
+
+Sự thất vọng của em ấy thể hiện qua cái miệng liến thoắng của mình, khi mà em ấy bắt đầu nói nhanh về đủ thứ chuyện, thường là liên quan đến những gì đang diễn ra, và thậm chí sẽ nhanh chóng quay trở lại với nhịp độ nói chuyện của chúng tôi. Tôi đã thấy một clip em ấy phàn nàn về một trò chơi trong năm phút liên tục, và tôi đã phải tăng tốc độ video lên gấp đôi để theo kịp.
+
+Như đã nói ở trên, Luna 0 tuổi, nên em ấy nói chuyện như một đứa trẻ đang tập nói, đôi khi lại thêm cụm ``nanora'' ở cuối câu, hay ``naaaaaaaaaaa'' mỗi khi cảm thấy cái gì đó không vừa lòng. Tôi đã tập cho mình phản xạ để không phản ứng khi nghe thấy những tiếng đó, nhưng tôi biết nó sẽ không kéo dài được lâu.
+
+Luna có đôi mắt hai màu: một tím ở bên phải và màu xanh lá ở bên trái - một đặc điểm mà tôi chỉ thấy ở Ryuuhou. Em ấy có một mái tóc gợn sóng dài đến giữa lưng, chuyển từ hồng phía trên sang tím khi xuống dưới, có buộc một bên sang phải bằng một dây buộc đơn giản và có cài trâm hình chiếc kẹo. Trông em ấy như một nhân vật bước ra từ một cuốn truyện cổ tích, nhưng tôi đã học được rằng những nhân vật cổ tích thường là những người gây rắc rối nhất.
+
+Bộ trang phục của em ấy gồm một chiếc vương miện, hoa tai hình lưỡi liềm, một bộ váy ngắn màu hồng trễ vai có cổ rời được trang trí bằng một chiếc vòng cổ hình lưỡi liềm, có tay áo ngắn bồng bềnh và một chiếc nơ lớn phía sau. Lớp bên ngoài có một chiếc đầm ngắn màu hồng đậm/tím đi kèm với váy lót, vòng tay vàng, quần buộc màu hồng, tất màu tím có viền xếp nếp với mỗi họa tiết khác nhau và giày cao gót màu xanh có nơ hình kẹo. Có thể nói em ấy đang mang cả một cửa hàng bánh kẹo trên người.
+
+\chrint
+
+Không giấu gì với mọi người, tôi là một người cực kỳ, CỰC KỲ ghét em bé. Tôi không biết nó bắt đầu từ khi nào, có lẽ từ những lần phải trông em họ mỗi hè, hoặc từ những buổi đi chợ với mẹ khi những đứa trẻ khóc ré lên bên tai. Nhưng sự thật là tôi không thể chịu nổi tiếng khóc, tiếng la hét, hay những cơn ăn vạ của bọn trẻ. Bố mẹ tôi đã nhiều lần nói rằng tôi ``không có lòng yêu thương trẻ con'' và ``đến Ryuuhou còn dễ thương hơn'' và tôi đã trả lời rằng ``Ryuuhou không phải là em bé, nó là một con quỷ cải trang''. Còn ``đồng minh'' duy nhất của tôi - Ryuuhou - cũng là một người không thích những em bé chiều hư. Chúng tôi đã từng bàn luận về vấn đề này trong bữa tối gia đình, và bố tôi đã nói rằng ``Hai đứa rồi sẽ có con, xem có còn ghét nữa không''. Và tôi đã nói ``Khi đó con sẽ thuê bảo mẫu hoặc nhờ vợ con trông luôn''.
+
+Với trường hợp của Luna, tôi không thể làm thế được, vì em ấy là nhân viên của tôi. Tôi không thể bảo cô ấy ``đi chỗ khác chơi'' hay ``gọi bố mẹ đến đón''. Nhưng nếu em ấy thực sự đi quá xa, nếu em ấy khóc ré lên vì một trò chơi, nếu em ấy bắt đầu đòi bế, nếu em ấy ăn vạ vì không có kẹo, thì có thể em ấy sẽ trở thành cái tên tiếp theo trong danh sách đen của tôi. Tôi đã có đủ những cơn đau đầu từ Coco, Kanata và Watame. Một cô công chúa 0 tuổi có thể là giọt nước tràn ly.
+
+Nhưng tôi không thể đánh giá một người chỉ qua hồ sơ. Có thể Luna sẽ khác với những gì tôi tưởng tượng. Có thể em ấy sẽ là một nhân viên ngoan ngoãn, dễ bảo. Có thể em ấy sẽ không bao giờ nói ``nanora'' trong văn phòng.
+
+Hoặc có thể em ấy sẽ là cơn ác mộng tiếp theo của tôi.
+
+Tôi đặt tập hồ sơ xuống, nhìn ra cửa sổ, và thở dài. ``\textit{Thôi thì, cứ chuẩn bị tinh thần cho một cơn bão kẹo ngọt cho chắc.}''
+
+\il
+
+Cuối tháng Bảy, tiết trời oi bức như một cái lò nướng khổng lồ, khiến tôi chỉ muốn nằm dài trong phòng điều hòa tại nhà, đọc sách và tận hưởng cái lạnh nhân tạo. Nếu không vì hôm nay tôi lại một vị khách đặc biệt đến văn phòng. Thực ra điều này tôi đã đoán trước, nhưng ngẫm nghĩ lại thì việc đón thành viên mới quả là điều mệt mỏi, nhất là khi thành viên đó có độ tuổi là một con số không tròn trĩnh.
+
+Nàng công chúa tóc hồng nghiện món takoyaki vừa bước vào, em ấy đã mang theo bầu không khí của một đứa trẻ mới sinh. Tôi có thể cảm nhận được năng lượng dễ thương nhưng cũng đầy bí ẩn tỏa ra từ cô bé. Có một cảm giác rằng em ấy sẽ không chỉ là một người bình thường.
+
+Tôi ngồi cùng Mio và Subaru trong phòng, vừa nhấp một ngụm nước lạnh, vừa lắng nghe tiếng bước chân líu ríu của em ấy. Ngay từ khi Luna xuất hiện, cả ba chúng tôi đều cảm nhận được sự khác biệt: một thứ gì đó vừa đáng yêu vừa đáng ngờ, như một món kẹo có màu sắc đẹp nhưng bạn không biết bên trong có gì.
+
+Subaru lén thì thầm với tôi, mắt không rời Luna: ``Kuon-senpai, nhìn cô bé kìa\dots\ Có vẻ như em ấy đang nghĩ về một thứ gì đó. Em tự hỏi em ấy có đang lên kế hoạch gì không.''
+
+Mio khoanh tay, gật gù, giọng cũng nhỏ nhẹ: ``Em nó trông giống kiểu người hay nói mấy thứ linh tinh nhỉ? Nhưng mà nhìn dễ thương thật.''
+
+Tôi dựa lưng vào ghế, bình thản đáp, giọng đầy vẻ ``tôi đã thấy đủ loại'': ``Trẻ con là vậy mà. Nghe nói em ấy có tâm hồn chẳng khác gì một đứa trẻ mới sinh, nên thỉnh thoảng nhìn hơi ngờ nghệch. \hl{Dù sao thì\dots\ mình cũng chẳng thích trẻ con lắm\dots}'' tôi nói thầm ở phía sau, đủ để không làm ba người họ nghe thấy. Nhưng tôi biết rằng, với những gì sắp xảy ra, tôi sẽ phải thay đổi suy nghĩ của mình.
+
+Tôi còn chưa lẩm bẩm hết câu, thì cô nhóc Công chúa xứ Kẹo đã lên tiếng, giọng ngọt như đường: ``Em mún đồ ăn zặt, nanora!''
+
+Ngay khoảnh khắc đó, trước mặt Luna bỗng nhiên xuất hiện một đĩa đầy bánh quy và kẹo ngọt. Không có ai bưng vào, không có ai đặt xuống, mà tự nhiên hiện ra như một phép màu. Cô reo lên đầy thích thú, vỗ tay như một đứa trẻ vừa thấy quà Giáng sinh: ``Hoan hô-nanora!''
+
+\img{5-8a}
+
+Ba chúng tôi nhìn nhau, rồi đồng loạt quay sang Luna. Sói đen là người phản ứng đầu tiên, giọng đầy ngạc nhiên: ``Cái gì vậy!? Nó xuất hiện từ đâu? Vừa nãy em không thấy cái đĩa này ở đây!''
+
+Vịt gãi đầu, nheo mắt nhìn đĩa bánh, như một thám tử đang cố gắng tìm manh mối: ``Hay đó chỉ là tình cờ thôi nhỉ? Có thể ai đó đã để sẵn ở đó và em ấy chỉ tình cờ nhìn thấy.''
+
+``Tình cờ cái nỗi gì!'', Mio bật lại, giọng đầy bực bội, ``Một đĩa bánh đầy ắp vừa mới xuất hiện trước mặt, em có thấy ai bưng vào không?''
+
+Tôi khoanh tay trầm ngâm, nhìn đĩa bánh như thể đang phân tích một hiện tượng khoa học: ``Anh cũng nghĩ là tình cờ đấy. Có lẽ em ấy có khả năng đặc biệt, hoặc là chúng ta đang bị ảo giác tập thể vì trời nóng quá.''
+
+``Cả anh nữa sao hả, Kuon-senpai!?'', Mio gần như hét lên, mắt mở to.
+
+Luna trong khi đó, dường như không quan tâm đến cuộc tranh luận của chúng tôi, mà chỉ lo chăm chăm vào đĩa bánh. Nhưng ngay sau đó, em ấy ngẫm nghĩ một lát rồi tiếp tục, giọng vẫn ngọt ngào như thường lệ: ``Em\dots\ cũng mún ăn takoyaki nã\~{}''
+
+Chưa đầy một giây sau, hai xiên takoyaki nóng hổi xuất hiện ngay trước mặt cô. Khói bốc lên nghi ngút, mùi thơm của nước sốt và bột mì lan tỏa khắp phòng. Luna lại sáng mắt, vỗ tay vui mừng: ``Waa\~{} Takoyaki kìa, nora\~{}''
+
+\img{5-8b}
+
+Ba chúng tôi gần như đứng hình. Thế quái nào mà nó xuất hiện ngay khi em ấy nhắc tên đến đó nhỉ? Tôi đưa tay dụi mắt, rồi nhìn lại, vẫn là hai xiên takoyaki bốc khói.
+
+``\textbf{Cái hú gì vậy!? Ai giải thích cái đó cho tôi với!}'', Mio hét lên, toát mồ hôi hột, tay chỉ về phía Luna. ``Em ấy vừa nói `takoyaki' và nó xuất hiện! Chuyện gì đang xảy ra thế này!?''
+
+Subaru nói với sự bình thản, như thể đây là chuyện thường ngày, tay chống cằm: ``Thì là takoyaki chứ gì. Có lẽ em ấy có năng lực đặc biệt, kiểu như thực hiện điều ước.''
+
+``\textbf{Cái đó thì ai mà chả biết!!}'', cả tôi và Mio đồng thanh; tôi thì nói như là lẽ đương nhiên, còn Mio thì trong sự ngỡ ngàng.
+
+Tôi lẩm bẩm, cảm giác lạnh sống lưng, tay nắm chặt thành ghế: ``Hình như em ấy có một sức mạnh thần tiên nào đó\dots\ Hay là em ấy đang dùng phép thuật? Nhưng anh chưa thấy Shion-chan làm được điều này bao giờ.''
+
+Hai cô gái cạnh tôi đồng loạt quay sang tôi với ánh mắt đầy hoài nghi. Tôi chớp mắt khó hiểu: ``Sao?''
+
+Nàng Vịt chống cằm, nêu ra giả thuyết của mình, như một nhà khoa học đưa ra lý thuyết mới: ``Cũng có thể như Kuon-senpai nói. Có vẻ như hôm nay là ngày mà Luna-chan muốn cái gì thì cái đó sẽ thành hiện thực. Em đã từng đọc về những hiện tượng như vậy trong truyện cổ tích.''
+
+Mio sững sờ, giọng như sắp khóc: ``Ngày gì mà hay vậy\dots!? Sao tôi chưa bao giờ có ngày như thế?''
+
+Tôi đổ mồ hôi hột. Không, tôi đã làm Tổng quản lý bao lâu nay, chẳng lẽ lại bỏ sót sinh nhật của Luna sao? Tôi vội mở điện thoại kiểm tra lịch, lướt qua các ngày trong tháng, rồi khẽ thở phào nhẹ nhõm: ``Chắc chắn hôm nay không phải là sinh nhật của em ấy. Em ấy sinh vào tháng Mười, còn đây mới là tháng Bảy.''
+
+Mio và Subaru lại quay sang tôi với ánh mắt xét nét, như thể tôi là một người vừa nói điều gì đó không đúng. Tôi nhìn họ, nhún vai: ``Sao? Anh vừa kiểm tra rồi mà. Tháng Mười mới đến sinh nhật em ấy. Em ấy còn cả ba tháng để luyện tập khả năng này.''
+
+Cả ba chúng tôi tiếp tục nhìn Luna, trên đầu vẫn còn vương vấn nhiều câu hỏi chưa được giải đáp về hiện tượng kỳ lạ này. Cô bé đang vui vẻ ăn takoyaki, vừa nhai vừa lẩm bẩm ``ngon quá nora''. Không một chút bận tâm về những ánh mắt đang dán vào mình.
+
+Rồi bất ngờ, cánh cửa bật mở. Một bóng dáng nhỏ nhắn, quen thuộc xuất hiện. Một cô gái với mái tóc ngắn bob, đôi mắt hai màu đỏ-xanh lam sáng rực, và nụ cười tinh nghịch trên môi. ``\textbf{Onii-san! Em đến chơi với các chị đây\~{}}''
+
+Ryuuhou lao vào phòng như một cơn gió, nhưng khi thấy Luna đang vui vẻ ăn takoyaki với đĩa bánh trước mặt, cô khựng lại. Mắt cô liếc nhanh qua đĩa bánh, qua hai xiên takoyaki, rồi nhìn tôi với vẻ nghi ngờ: ``Ủa? Anh mới có em gái thứ hai à, Onii-san? Sao trông giống công chúa hơn em vậy? Em tưởng anh không thích trẻ con cơ mà?''
+
+Tôi thở dài, giọng đầy bất lực: ``Đó là Luna, thành viên mới của công ty. Đừng có nói bậy.''
+
+Cô em gái nhìn Luna chằm chằm, rồi nở một nụ cười đầy ẩn ý: ``Chào em nhé, công chúa bé nhỏ. Em có bánh không? Cho chị một miếng với.''
+
+Luna ngước nhìn Ryuuhou, mắt mở to, rồi bẽn lẽn đưa một chiếc bánh quy: ``Dạ\dots\ chị ăn đi nora\dots''
+
+Ryuuhou nhận lấy, vừa nhai vừa gật gù: ``Ừm, ngon đấy. Anh ơi, sao em ấy lại nói `nora' ở cuối câu thế?''
+
+Tôi lắc đầu, vừa mệt mỏi vừa buồn cười: ``Anh không biết. Có lẽ đó là một phần trong tính cách của em ấy. Có nhiều thứ anh vẫn chưa hiểu về cái công ty này.''
+
+Mio nhìn hai cô gái - một công chúa 0 tuổi và một nàng tiểu quỷ tomboy - và thở dài: ``Có lẽ chúng ta nên tìm hiểu kỹ hơn về Luna trước khi đưa ra kết luận. Em có linh cảm rằng em ấy không chỉ đơn thuần là một đứa trẻ có thể biến đồ ăn thành hiện thực.''
+
+Subaru gật đầu, vẻ mặt nghiêm túc: ``Đúng vậy. Nếu cô bé có thể biến takoyaki thành hiện thực, thì có lẽ em ấy còn có thể làm được nhiều điều khác nữa.''
+
+Tôi nhìn Luna, rồi nhìn Ryuuhou - hai cô em gái (một thật, một giả) đang vui vẻ chia nhau bánh quy.
+
+\ct
+
+Trời oi bức, mặt trời chói chang như muốn nung chảy tất cả mọi thứ - từ những tòa nhà bê tông đến cả những tán cây ven đường đang rũ xuống vì nóng. Bầu không khí đặc quánh đến mức tôi có thể cảm nhận được từng hạt nhiệt trên da. Luna vừa hướng mắt về cửa sổ, ngay lập tức khẽ nheo mắt, đưa tay che bớt ánh sáng rực rỡ trước mặt: ``Ư\dots\ náng chói mắc qá đi, nanora\dots''
+
+Ngay lập tức, một đôi kính râm ở đâu xuất hiện, nhẹ nhàng đáp xuống khuôn mặt bé nhỏ của em ấy. Không có tiếng động, không có bàn tay vô hình, nó tự nhiên hiện ra như thể đã ở đó từ lâu.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=8cm]{../../../../Image/Book5/5-8c1.png}
+        \caption{Ngay khi Luna than phiền ánh mắt mặt trời\dots}
+    \end{subfigure}
+    \quad
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \centering
+        \includegraphics[width=8cm]{../../../../Image/Book5/5-8c2.png}
+        \caption{\dots\ thì cặp kính râm đã xuất hiện ngay trước mắt.}
+    \end{subfigure}
+\end{figure}
+
+Ba chúng tôi sững sờ nhìn nhau. Tôi có thể thấy sự hoang mang trong mắt Mio, và Subaru thì đang cố gắng tìm một lời giải thích logic. Nàng Vịt còn vươn tay lên trời, như thể muốn kiểm tra xem có ai đó vừa ném kính xuống từ trần nhà không.
+
+Tôi lên tiếng trước, giọng đầy chắc chắn, như một người đã nhìn thấy đủ điều kỳ lạ trong đời: ``Đến đây thì nó không còn là trùng hợp nữa rồi\dots\ Lần thứ ba là có chủ đích rõ ràng.''
+
+Subaru chỉ vào Luna, mắt mở to ngạc nhiên, giọng đầy vẻ không tin nổi: ``Kính râm mọc lên mặt em nó luôn kìa! Em không thấy ai đưa, không thấy ai ném\dots\ nó tự nhiên ở đó!''
+
+Mio đập vào lưng em ấy một cái, như thể muốn đánh thức một người đang mơ: ``Kính râm thì mọc kiểu gì!? Đây là văn phòng, không phải khu vườn thần tiên!''
+
+Giữa lúc cả ba còn đang rối trí, một giọng nói quen thuộc vang lên bên cạnh chúng tôi, bình thản đến đáng ngờ: ``Chào.''
+
+Đó là Kanata. Thiên sứ của \textit{holoForce} xuất hiện từ lúc nào, đứng bình thản cạnh Công chúa xứ Kẹo, như thể cô đã ở đó từ đầu. Luna quay sang, chỉ đáp gọn lỏn một tiếng, như một lời chào tối giản: ``Na.''
+
+\img{5-8d}
+
+Tôi không biết em ấy đã vào từ lúc nào, nhưng có vẻ như đã quan sát toàn bộ sự việc và không hề tỏ ra ngạc nhiên.
+
+Kanata có vẻ không quan tâm đến sự bất ngờ của mình với chúng tôi, mà cúi xuống hỏi nhỏ đồng Thế hệ, giọng như một kẻ đồng lõa đang bàn bạc kế hoạch: ``Bà đã nghĩ ra cái gì bất ngờ cho Marine-chan chưa? Còn vài ngày nữa là đến sinh nhật bả rồi.''
+
+Subaru nghe hai cô bạn Thế hệ thứ Tư nói chuyện, nghiêng đầu với vẻ tò mò: ``Bất ngờ ư? Sinh nhật Marine-chan á? Có kế hoạch gì à?''
+
+Em ấy có vẻ chưa hiểu chuyện gì đang diễn ra, nhưng tôi và Mio thì lại nắm được ngay. Sói đen gật đầu, đáp thay tôi: ``À, phải rồi. Sắp đến sinh nhật Marine rồi nhỉ. Em suýt quên mất.''
+
+Tôi kiểm tra lại trí nhớ, lướt qua lịch trong đầu, rồi xác nhận: ``Còn ba ngày nữa thì phải. Ngày 30 tháng Bảy là sinh nhật của Houshou Marine. Anh vừa kiểm tra lịch của công ty.''
+
+Mio nhìn tôi với ánh mắt đầy nghi ngờ: ``Anh nhớ sinh nhật của mọi người à? Thật á?''
+
+Tôi nhún vai: ``Làm quản lý thì phải nhớ những thứ như thế. Nhưng mà, để anh đoán - Kana-chan, Luna-chan, hai em đang có kế hoạch gì đúng không?''
+
+\img{5-8e}
+
+Luna thì không có vẻ gì là lo lắng cả, em ấy chỉ giơ một ngón tay cái lên đầy tự tin, nở nụ cười rạng rỡ, hớn hở tuyên bố với giọng đầy vẻ hãnh diện: ``Tôi chuẩn bị xon xui rùi, nanora! Chị í sẽ nhớ mãi ngày sinh nhật này!''
+
+Mio nghe vậy liền thở phào, giọng nhẹ nhõm: ``Thế là ổn rồi.''
+
+\dots\ Nhưng chưa kịp yên tâm, chúng tôi đã lập tức hối hận vì suy nghĩ đó. Luna nở một nụ cười ranh mãnh - nụ cười mà tôi đã thấy ở quá nhiều người trong công ty này để biết rằng nó không báo hiệu điều gì tốt đẹp. Em ấy giơ cao một thứ vừa mới xuất hiện trong tay, một thứ mà tôi chưa từng thấy ai mang vào văn phòng: ``Tui sẽ làm chị í bớt ngừ bằng khẩu ba-dô-ca (bazooka) này, nanora!''
+
+Ba chúng tôi chết sững.
+
+Một khoảng lặng bao trùm căn phòng. Tôi có thể nghe thấy tiếng quạt máy và tiếng ve kêu ngoài cửa sổ.
+
+\img{5-8f}
+
+Im lặng.
+
+Tôi nhìn Luna, rồi nhìn khẩu bazooka, rồi nhìn lại Luna, tự hỏi liệu mình có đang mơ không. Tôi đã thấy nhiều thứ trong công ty này, nhưng một cô bé 0 tuổi cầm bazooka để tặng quà sinh nhật\dots\ đó là một tầm cao mới của sự điên rồ.
+
+``Gì vậy gái!? / Oắt đờ heo!?'' chúng tôi đồng thanh trong sự ngỡ ngàng với món quà dành tặng cho tiền bối của mình. Tôi còn chẳng biết Marine sẽ thích hay không, nhưng tôi chắc chắn rằng cảnh sát sẽ không thích thứ này.
+
+Ryuuhou, người từ nãy vẫn đứng im nhìn, đưa tay lên miệng cười khúc khích: ``Em thích cô bé này quá! Onii-san, em có thể mượn cô ấy về nhà chơi vài ngày không? Chúng em sẽ cùng nhau làm khủng bố, à nhầm, cùng nhau chơi!''
+
+Tôi lườm em: ``Làm ơn đừng. Cô ấy là thành viên của công ty, không phải là đồng phạm đâu. Ngậm miệng lại giùm anh.''
+
+Subaru là người phản ứng mạnh nhất, cô ôm đầu xuống, giọng đầy hoảng loạn, như một người vừa thấy tận thế: ``Giờ mà em ấy nói về tận thế là coi như xong phim luôn! Có ai cầm bazooka để tặng quà sinh nhật không hả!?''
+
+Mio cũng gật đầu lia lịa, hoảng loạn không kém, mắt mở to: ``Tình hình này là gay to rồi! Chúng ta phải làm gì đó trước khi em ấy thực sự sử dụng nó!''
+
+Nhưng ngay sau đó, em ấy lại hít một hơi sâu, cố gắng trấn an cả hai, giọng đầy vẻ lạc quan: ``Nhưng tôi không nghĩ tự dưng em ấy lại nói chuyện đó đâu\dots\ Có lẽ chỉ là đùa thôi.''
+
+Tôi khoanh tay, lẩm bẩm, giọng đầy vẻ ``tôi đã thấy đủ rồi'': ``Trừ khi\dots\ nếu em ấy chơi game. Trong game, bazooka là vũ khí phổ biến với sưc tàn phá cao mà.''
+
+Những cặp mắt đổ dồn vào tôi, lo rằng tôi sẽ lại thốt ra lời gì đó ngớ ngẩn. Ryuuhou nhìn tôi với ánh mắt đầy hứng thú: ``Anh nói đúng đấy! Em thấy cô bé này có vẻ thích game lắm. Em ấy sẽ rất vui khi nhận được bazooka từ một người bạn cùng chơi game.''
+
+Tôi nhún vai, nói một cách bất lực, vừa cười vừa thở dài: ``Không nói về nó thì ta bàn làm gì? Nhưng thôi, chúng ta có bốn ngày để tìm ra một món quà an toàn hơn.''
+
+Luna nghe tôi nói, nghiêng đầu khó hiểu: ``An toàn? Món quà nào chả an toàn, nanora?''
+
+Tôi không trả lời. Tôi chỉ nhìn khẩu bazooka, rồi nhìn em, và thầm nghĩ: ``\textit{Em chưa hiểu đâu, công chúa nhỏ. Có những thứ không an toàn, và em đang cầm một trong số đó.}''
+
+Ryuuhou cười phá lên, vỗ vai tôi: ``Thôi nào, anh ơi, vui đi! Biết đâu Marine-chan lại thích đấy.''
+
+Tôi lắc đầu, vừa mệt mỏi vừa buồn cười: ``Anh không biết nữa. Nhưng nếu em ấy bắn trúng ai đó, anh sẽ không chịu trách nhiệm đâu đấy.''
+
+Kanata chỉ tay về phía Luna với vẻ hào hứng, ánh mắt sáng lên như vừa nghĩ ra một điều thú vị, cái kiểu ánh mắt mà tôi đã thấy quá nhiều lần trong công ty này, và nó không bao giờ báo hiệu điều gì tốt đẹp: ``Luna này.''
+
+Cô nàng tóc hồng quay lại, đầu nghiêng nhẹ, hỏi bằng giọng ngây thơ, như một đứa trẻ đang chờ câu chuyện kể: ``Gì zợ, nanora?''
+
+Thiên sứ cười tinh quái, đặt một câu hỏi chẳng ai trong chúng tôi ngờ tới, một câu hỏi mà nếu tôi không biết cô ấy, tôi sẽ tưởng cô ấy đang đọc kịch bản của một bộ phim khoa học viễn tưởng: ``Bà có muốn thống trị thế giới không?''
+
+Chưa kịp để ai phản ứng, tôi lập tức nhào tới, bịt miệng Kanata lại bằng một động tác nhanh đến mức chính tôi cũng ngạc nhiên. Tôi thì thầm vào tai cô, giọng đầy hoảng hốt: ``Dở hơi à!? Tự dưng lại nói về chết chóc làm gì!? Mà thống trị thế giới chả liên quan gì đến sinh nhật Marine cả!''
+
+Mio cũng trợn mắt, lớn tiếng trách mắng ngay, tay chỉ thẳng vào em ấy: ``Bộ định biến em ấy thành Ma Vương hả!? 0 tuổi đã nghĩ đến chuyện thống trị thế giới thì sau này còn ra gì nữa!?''
+
+Thiên sứ chưa kịp phản bác thì nàng Công chúa xứ Kẹo đã tự mình lên tiếng. Giọng điệu nhẹ nhàng mà dứt khoát, như một câu tuyên bố đầy tự tin: ``Hơm. Tui như thế nì là đợc rồi, nên tui hơm cần, nanora.''
+
+Cả phòng lặng đi. Ba chúng tôi lập tức dừng cuộc tranh cãi vô ích, quay sang nhìn cô bé. Luna chớp đôi mắt hồng lấp lánh, rồi tiếp tục bộc bạch với vẻ chân thành hiếm thấy: ``Tui iu nơi nì và cũm iu mọi ngừi nã!''
+
+Tất cả chúng tôi bất ngờ với lời nói hồn nhiên của em ấy. Kanata nheo mắt, hỏi lại với giọng đầy nghi ngờ, nhưng cũng có chút cảm động: ``Thật sao? Bà không muốn làm bá chủ thế giới à? Tôi tưởng ai cũng muốn mà?''
+
+Tôi cũng nghiêng đầu, xác nhận lại với vẻ tò mò, vì tôi đã thấy nhiều người nói một đằng nghĩ một nẻo: ``Thật à? Em không muốn cầm quyền, không muốn có lâu đài, không muốn nô lệ sao?''
+
+Luna chỉ ``ưm'' một tiếng, gật đầu chắc nịch, như thể đó là điều hiển nhiên nhất trên đời (mặc dù cô nàng là một công chúa). Nhưng bằng cách nào đó, chúng tôi đều hiểu em ấy thực sự có ý đó. Trong mắt em không có sự giả dối.
+
+Subaru và Mio đột nhiên sụt sịt, mắt rơm rớm nước. Hai người ôm mặt khóc vì xúc động, như thể vừa nghe một câu chuyện cổ tích đẹp nhất đời.
+
+\img{5-8g}
+
+``Tuyệt vời quá\dots'', Subaru nức nở, ``Một em bé 0 tuổi còn biết yêu thương mọi người\dots\ Sao mà cảm động thế này!''
+
+Mio cũng nghẹn ngào, tay lau nước mắt: ``Em ấy nói thật lòng đấy\dots\ Em cảm nhận được.''
+
+Thế nhưng, dù đang nghẹn ngào, Mio vẫn giữ nguyên vẻ nghiêm túc, bình luận với giọng đầy sự thật: ``Sẽ cảm động hơn nếu em ấy không ở trong bộ dạng đó. Có ai đi tuyên bố yêu thương mọi người trong khi tay cầm bazooka, vai đeo takoyaki không?''
+
+Tôi liếc nhìn Luna: đầu đội vương miện, đeo kính râm, hai vai còn có hai xiên takoyaki cắm chéo nhau như thể em ấy đang chuẩn bị cho một trận chiến ẩm thực, và tay đang xách một khẩu bazooka. Trông em ấy như một nhân vật trong game bắn súng đang đi mua đồ ăn vặt hơn là một cô công chúa xứ Kẹo.
+
+``Ừ, trông em ấy chẳng khác nào một tên tội phạm mê takoyaki cả.'' Mio khẽ gật đầu, nhưng Subaru thì cười ngặt nghẽo, không thể kiềm chế.
+
+Trong lúc tôi còn đang cân nhắc có nên khuyên Luna bỏ hai xiên takoyaki trên vai xuống không - vì trông nó vừa kỳ lạ vừa không hợp vệ sinh - thì Kanata đã thoát khỏi vòng vây của tôi và Mio, tiến đến gần nàng Công chúa, dịu dàng hỏi: ``Vậy thì bà muốn gì?''
+
+Luna xoa bụng, lên giọng nũng nịu như một đứa trẻ đòi mẹ: ``Tui khát rùi nên giừ đang mún ún nức, nanora.''
+
+Cả ba chúng tôi đồng loạt nhắc lại, như một dàn hợp xướng vô tình: ``Nước à?''
+
+Mio và Subaru liếc nhau, rồi bắt đầu suy diễn theo một hướng không ai ngờ tới. Trong đầu họ, một Luna khác hiện ra: một nàng công chúa giang hồ của tương lai. Trong tưởng tượng của Mio và Subaru, Luna hét lên với giọng đầy khí thế: ``Qua tới bên kia là có nước rồi!'', tay xách một khẩu bazooka nhét đầy bánh takoyaki, trông như một tướng cướp thời hiện đại.
+
+Subaru vỗ tay cái ``đét'', hô lên như vừa tìm ra chân lý, mắt sáng rực: ``Em nó bước ra từ phim Thunderdome chắc luôn! Nhìn cái cách em ấy cầm bazooka kìa!''
+
+Mio nhìn em ấy với ánh mắt ngán ngẩm, lắc đầu như một giáo viên đang sửa bài cho học sinh: ``Mấy ông trong phim đó làm gì có takoyaki gắn trên vai đâu bà nội! Thunderdome mà có takoyaki thì phim đã khác rồi.''
+
+Subaru chống nạnh, tỏ vẻ suy tư: ``Vậy là người Osaka chăng? Người Osaka thích takoyaki và cũng thích khẩu súng lớn.''
+
+Ngay lập tức, một Luna tưởng tượng khác hiện ra, cũng với bộ dạng nửa đáng yêu nửa giang hồ kia, nhưng có giọng điệu hơi khác, kèm theo giọng Kansai: ``Đằng ấy muốn ăn kẹo hơm? Có kẹo mới có nức, nanora.''
+
+Mio bực bội quát lớn, đập tay xuống bàn: ``Đi khắp thế gian này cũng chả có ai đeo hai cái xiên takoyaki trên vai đâu cả, trời ơi! Ai lại đi như thế bao giờ!''
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=8cm]{../../../../Image/Book5/5-8h1.png}
+    \end{subfigure}
+    \quad
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=8cm]{../../../../Image/Book5/5-8h2.png}
+    \end{subfigure}
+    \caption{Những tạo hình ``xã hội đen'' của Luna mà Subaru và Mio nghĩ tới.}
+\end{figure}
+
+Thấy rằng cả hai cô gái đang bàn bạc nhau - chủ yếu là dựa theo ngoại hình của Luna để\dots\ phán bừa - tôi khoanh tay đứng nhìn họ tranh cãi, không khỏi cảm thấy nhức đầu. Mồ hôi tôi bắt đầu lấm tấm trên trán, và tôi tự hỏi tại sao mỗi ngày ở công ty này đều có một chuyện mới để đau đầu.
+
+``Hai đứa đang xàm lơ cái gì đấy? Em nó muốn uống nước mà hai người liên tưởng cái gì linh tinh thế? Có ai đi uống nước mà cần bazooka và takoyaki đâu?''
+
+Lời nói của tôi làm hai người giật mình, quay sang nhìn tôi với vẻ ngơ ngác: ``Nước á?''
+
+Tôi và Luna đồng thanh đáp, vẻ mặt đầy khó hiểu, giọng như một bản hòa ca bất đắc dĩ: ``Nức ún chứ còn xao nã-nora!'' / ``Nước thật chứ còn gì!''
+
+Subaru và Mio nhìn nhau, rồi cười trừ. Họ nhanh chóng chạy ra ngoài lấy một bình nước to mang đến cho Luna, để lại tôi đứng đó, thở dài ngán ngẩm. Mồ hôi trên trán tôi đã khô, nhưng cơn đau đầu vẫn còn.
+
+Tôi đưa tay xoa trán, nhìn theo họ, rồi quay sang Luna, người vẫn đang đứng đó với vương miện, kính râm, takoyaki và bazooka: ``\dots\ Có lẽ cái ngoại hình hầm hố của em đúng là làm cho chúng ta xoay mòng mòng thật. Không chỉ vì những câu nói ngây thơ của em, mà còn vì cái cách mà khiến mọi chuyện trở nên rắc rối\dots\ theo một kiểu rất riêng.''
+
+Ryuuhou, từ nãy đến giờ vẫn ngồi khoanh tay ở góc phòng với nụ cười thích thú, cuối cùng cũng lên tiếng. Cô bước tới, vỗ nhẹ vào vai tôi: ``Anh biết không, em thấy Luna-san này có tiềm năng đấy. Một công chúa vừa ngây thơ vừa có vũ khí, chắc chắn sẽ gây bão trên internet.''
+
+Tôi nhìn em, giọng mệt mỏi: ``Anh không biết là bão hay sóng thần nữa. Nhưng em đừng có học theo.''
+
+Ryuuhou cười khúc khích: ``Em học theo anh ấy thì sao? Tụi em sẽ cùng nhau thống trị thế giới\dots\ bằng kẹo và takoyaki.''
+
+Tôi thở dài, vừa buồn cười vừa bất lực: ``Thôi, để em ấy uống nước đã. Có gì tính sau.''
+%==========================================TRUYỆN PHỤ=========================================
+\omk
+
+Luna đã quay trở lại với bộ dạng bình thường, không còn khoác lên mình vẻ dữ dằn kỳ lạ từ những liên tưởng ngớ ngẩn của Subaru và Mio nữa. Cô bé ngồi trên ghế, vương miện hơi lệch, kính râm đã được gỡ xuống, chỉ còn hai xiên takoyaki trên vai và khẩu bazooka đặt cạnh bàn. Tôi khoanh tay nhìn cô nàng, chợt nảy ra một suy nghĩ.
+
+``Mà, anh tưởng em có thể triệu được một cốc nước với sức mạnh của em chứ? Sao lại phải để hai người kia chạy đi lấy?''
+
+Luna nghiêng đầu, đôi mắt chớp chớp với vẻ ngây thơ: ``Í anh là xao-nanora?''
+
+Tôi chỉ về khẩu bazooka và cái kính râm cùng đĩa đồ ngọt mà em ấy vừa triệu ra: ``Như vừa nãy ấy: muốn ăn vặt có ngay đĩa ăn vặt, than thở nắng quá chói thì có ngay kính râm, kiểu vậy.''
+
+``À, cái đó à? Nhưn mà hai chị ấy đã lấy sẵn nước roài na.'' Luna chỉ tay về phía Mio và Subaru, hai người vẫn đang thở hồng hộc sau khi vác bình nước to lên, mặt đỏ bừng vì nóng.
+
+Tôi liếc nhìn họ, rồi lại quay sang Luna, tiếp tục hỏi: ``Mà anh nhớ đọc trong sơ yếu của em thì em là một con nghiện takoyaki. Có đúng không vậy?''
+
+Luna lập tức gật đầu, khuôn mặt rạng rỡ như thể tôi vừa nói điều gì đó rất đáng tự hào: ``Đúng là nư vậy nà, nanora\~{} Mà em đã có sẵn hai xiên rồi này, anh muốn ăn không?''
+
+Tôi nhìn xuống hai xiên takoyaki lủng lẳng trên vai cô nàng, hơi nhíu mày vì ngạc nhiên. Tôi không nghĩ một đứa trẻ 0 tuổi lại hào phóng như vậy: ``Anh tưởng là em sẽ ki bo không cho giống như mấy đứa con nít ngoài kia chứ? Thường thì bọn trẻ hay giữ đồ ăn cho mình lắm.''
+
+Luna phồng má lên, vẻ mặt đầy phản đối: ``Hơm! Anh thì khác đấy. Cứ ăn đi!''
+
+Em ấy chìa một xiên ra trước mặt tôi, đầy vẻ hào phóng. Nét mặt không có gì gợn sóng, không có sự tính toán. Tôi đón lấy trong sự nghi ngờ.
+
+``Ăn được không đấy? Không có thuốc độc chứ?''
+
+``Tất nin là ăn đực na!''
+
+``Ờm\dots\ anh xin.''
+
+Vừa cắn một miếng, tôi lập tức cảm thấy tê đầu lưỡi. Vị cay nồng bất ngờ ập tới, khiến tôi hơi giật mình, nước mắt suýt trào ra: ``Úi giời\dots\ Xiên này hơi cay đấy\dots''
+
+Luna bật cười khanh khách như một đứa trẻ vừa chơi khăm thành công, hai tay vỗ vỗ: ``Zì em đã cho ớt vào mừ-nora\~{}''
+
+Tôi nhìn chằm chằm cô nàng, rồi bật cười nhạt, vừa cắn tiếp miếng thứ hai vừa nói: ``Quái, nhìn thế mà em cũng ranh ma ra phết. May mà anh ăn được cay.''
+
+Kanata đứng bên cạnh lắc đầu, thở dài như một người đã chứng kiến quá nhiều trò tinh quái của Luna: ``Nhìn cậu ta thế thôi chứ thực ra bày ra nhiều trò quái lắm, với cả cũng hay ăn vạ nữa. Có lần cậu ấy đòi kẹo suốt ba tiếng đồng hồ.''
+
+Tôi hừ một tiếng, cười phì: ``Chuẩn như một em bé thực thụ luôn.''
+
+Nhìn mọi người bật cười với thành viên mới trong gia đình \hll\ này, tôi cũng không khỏi vui thầm.
+
+Nhưng ngay sau đó, giọng tôi trầm hẳn xuống. Những ký ức cũ không mấy sáng sủa bỗng ùa về: ``\dots\ Và đó là lý do vì sao anh ghét trẻ con.''
+
+Ngay khi tôi dứt lời, cả bốn người - Kanata, Mio, Subaru và Luna - đều quay ngoắt sang nhìn tôi, vẻ mặt không thể tin nổi. Cả căn phòng như chững lại.
+
+``Hả?'' Subaru chớp mắt, còn Mio thì nhíu mày, như thể vừa nghe một câu chuyện khó tin. ``Anh vừa nói cái gì cơ?''
+
+Thậm chí đến Kanata cũng chằm chằm vào tôi, vầng hào quang trên đầu khẽ rung lên như đang bày tỏ sự ngạc nhiên: ``Anh ghét em bé thật á? Nhưng\dots\ Luna-chan dễ thương như thế này mà.''
+
+Tôi nhún vai, giọng đầy vẻ ``đây là sự thật'': ``Nói ra thì đúng là rất khó tin. Nhưng đúng, anh đây cực kỳ ghét em bé. Ghét đến tận xương tủy luôn.''
+
+Sói đen lý luận với tôi, giọng đầy vẻ muốn thuyết phục: ``Nhưng mà tại sao chứ? Em bé đáng yêu mà! Nhìn Luna-chan này, ai mà ghét được?''
+
+Vịt và Thiên sứ đều gật gù với ý kiến đó, như thể đây là một chân lý hiển nhiên.
+
+Tôi thở dài một tiếng, ký ức về những lần phải trông chừng lũ em họ đua nhau hiện về: ``Đó là bởi vì mấy đứa chưa gặp mấy đứa ranh con ấy thôi. Còn anh á? Mấy đứa muốn biết đám trẻ ranh ở Etsunan xứ anh đã làm gì với anh thì để anh kể cho nghe.''
+
+Tôi bắt đầu thuật lại những ký ức không mấy đẹp đẽ với lũ trẻ mà tôi từng gặp. Những đứa con của các chú, các bác tôi mỗi lần sang chơi. Chúng leo trèo khắp nhà, lục lọi đồ đạc, thậm chí có đứa còn lỡ tay đổ nguyên ly nước lên bàn phím máy tính của tôi - cái bàn phím mà tôi đã tiết kiệm cả tháng để mua. Thậm chí có đứa còn dám đôi co, chửi mắng tôi, tự cho mình là ta đây mỗi lần tôi nhắc nhở nhẹ nhàng - mặc dù tôi chỉ muốn tát vào mặt chúng một cái.
+
+Và điều kinh khủng nhất? Chúng cứ nghĩ tôi là đồ chơi di động, trèo lên người tôi như một bãi cát leo núi. Nhiều lúc tôi còn không bằng một con chó. Ít nhất con chó còn biết nghe lời.
+
+Dẫu biết trẻ con nào cũng hiếu động, cũng nghịch ngợm, nhưng việc chúng nó phá đám tới công việc tôi, và hơn hết, cứ mỗi lần tôi lên ý kiến gì, dù nặng hay nhẹ, những phụ huynh của chúng lúc nào cũng đều ca bài ca quen thuộc: ``Trẻ con có biết gì đâu!'' hay ``Mày là anh, nhường cho em nó một tí!'' càng làm cho tôi tức sôi máu. Những lần như vậy, tôi thường cảm thấy trầm cảm đến mức muốn thu mình vào một góc và không muốn gặp ai. Tôi đã mất bao nhiêu đêm ngủ vì tức giận và bất lực, tự hỏi tại sao mình lại phải chịu đựng những thứ như thế. Đó mới là lý do chính khiến cho tôi không có ấn tượng gì tốt đẹp với bọn chúng cả.
+
+Ryuuhou, từ nãy đến giờ vẫn ngồi ở góc phòng với nụ cười thích thú, bỗng xen vào, giọng đầy vẻ đồng cảm: ``Em cũng có thể kể thêm vài câu chuyện về anh ấy. Mỗi khi họ hàng đến chơi mà dẫn theo con nhỏ, Onii-san thường trốn trong phòng cả ngày, còn em thì phải ra tiếp khách, và mỗi lần như vậy, em đều phải dọn dẹp đống bừa bộn của bọn trẻ. Anh ấy nhất quyết không để cho bọn chúng lại gần tới đồ đạc của anh, và sẵn sàng quát mắng, dọa đánh nạt bất cứ đứa trẻ nào mon men lại gần. Mặc cho bố mẹ bọn em và các cô chú nhắc nhở hay thậm chí là giảng giải đi nữa, anh ấy cũng bỏ ngoài tai hết.''
+
+Cô em gái tôi cười khúc khích, rồi tiếp tục với giọng đầy vẻ hồi tưởng: ``Có lần, một đứa nhóc định chạy vào phòng Onii-san, anh ấy đã đứng chặn cửa, hai tay dang ngang như một bức tường thành, mặt lạnh tanh và nói: `Mày bước qua đây là tao đập cho mày một trận.' Tất nhiên, bố mẹ nó không vui, nhưng em đã phải đứng ra can thiệp, nói rằng `Anh của chị chỉ đùa thôi, nhưng mà phòng anh ấy có nhiều đồ điện tử lắm, đừng vào.' Mỗi lần như vậy, em đều rất sợ anh sẽ thực sự đánh bọn trẻ, vì lúc đó mọi thứ sẽ càng tệ hơn.''
+
+Tôi nhìn Ryuuhou với ánh mắt có chút ngạc nhiên, vì đây là lần đầu tiên cô kể chuyện này trước mặt người khác. Cô em gái tôi vẫn tiếp tục: ``Và cái bàn phím mà Onii-san kể đó? Em đã phải bỏ tiền túi ra mua cái mới cho anh, vì anh ấy đã cố gắng `sửa' cái cũ bằng cách đập nó xuống đất. Em nghĩ rằng một ngày nào đó, anh ấy sẽ học cách kiềm chế hơn, nhưng thực ra thì em cũng hiểu tại sao anh ấy lại bực mình.''
+
+Mọi người nghe xong ai cũng cảm thấy kinh hoàng. Subaru khẽ rùng mình, mặt tái xanh: ``Trời ơi\dots\ đổ nước lên bàn phím máy tính? Đó là tội ác chống lại loài người.''
+
+Mio ôm trán, lắc đầu: ``Chị không tin nổi có những đứa trẻ nghịch ngợm tới mức hỗn xược đến thế. Ở đâu ra mà dữ vậy?''
+
+Ryuuhou gật gù, vỗ vai tôi: ``Em hiểu anh. Có những đứa trẻ được chiều quá mức, và chúng nghĩ rằng cả thế giới là sân chơi của chúng. Nhưng mà, anh cũng nên nhìn nhận rằng không phải đứa trẻ nào cũng như vậy, Onii-san à.''
+
+Kanata vỗ vai tôi, giọng an ủi: ``Em chắc là Luna-chan sẽ không giống như mấy đứa trẻ nghịch ngợm mà anh gặp đâu. Đảm bảo luôn! Cậu ấy khác biệt hẳn.''
+
+Tôi lén nhìn sang Luna.
+
+Từ lúc tôi bắt đầu thừa nhận việc tôi ghét em bé cho đến bây giờ, em ấy ngồi im thin thít, tay nắm chặt lấy xiên takoyaki còn lại trên vai, đôi mắt long lanh như sắp khóc. Vương miện của em hơi lệch xuống, và em không hề chỉnh lại.
+
+\dots Tôi quên béng mất Luna vẫn còn là một cô nhóc 0 tuổi, độ tuổi của một đứa trẻ sơ sinh. Có vẻ như những lời tôi vừa nói đã khiến cô nàng lo sợ rằng tôi cũng sẽ ghét em ấy.
+
+Tôi chớp mắt, hơi ngập ngừng. Tôi không có ý nói về Luna theo cách đó, nhưng có vẻ như em ấy lại tự suy diễn theo một hướng khác. Đôi mắt em bắt đầu đỏ hoe.
+
+Tôi thở dài, đưa tay xoa đầu cô nàng. Tóc em mềm như bông, và tôi bất giác nhẹ nhàng hơn: ``Hy vọng là vậy\dots''
+
+Nghe vậy, Luna ngước lên nhìn tôi, bĩu môi, mắt vẫn còn lấp lánh nước: ``Hơm có hi vọng gì hết, nanora! Em là Luna, hơm phải mấy đứa chẻ đáng ghét kia đâu! Em hơm đổ nước lên bàn phím, em hơm trèo lên ngừi anh, em hơm ăn vạ đòi đồ chơi, em hơm chửi mắng người lớn! Em là công chúa đàng hoàng!''
+
+Em ấy phụng phịu một lúc, rồi bất ngờ dúi cả xiên takoyaki còn lại vào tay tôi, giọng nghẹn ngào nhưng vẫn đầy kiêu hãnh: ``Cầm lấy đi-nora! Coi như đó là đền bù đó! Đền bù cho nhữn đứa trẻ hư đã làm khổ anh!''
+
+\dots\ Tôi còn chưa làm gì em ấy mà. Em ấy đã tự động đền bù cho tôi vì tội của lũ trẻ khác. Tôi bật cười, nhận lấy xiên đồ ăn, nghĩ thầm: ``\textit{Có khi con bé này cũng không tệ lắm\dots\ Ít nhất nó còn biết chia sẻ.}''
+
+``Mà này,'' tôi bất giác tiếp tục hỏi Luna, ``em đưa anh xiên bánh này rồi thì em ăn gì?''
+
+``Cái đó thì hơm phải no-nora!'' em ấy thích thú nói, giọng đã bớt nghẹn – ``Em muốn mọi ngừi cùng nhau thưởng thức takoyaki nã! Ăn một mình chán lắm, nanora!''
+
+Vừa dứt lời, không chỉ em ấy, mà trên tay của Subaru, Mio và cả Kanata đều có một xiên bánh cho riêng mình. Chúng xuất hiện một cách kỳ diệu, như thể có một bàn tay vô hình vừa đặt chúng vào tay từng người.
+
+Cả hai người đàn chị, dẫu vẫn còn ngạc nhiên với sức mạnh này, cũng đều đồng thanh với giọng đầy cảm động: ``Cảm ơn em nhé, Luna-chan!''
+
+``Hơm có zì\~{}'' em ấy hồn nhiên đáp, nụ cười đã trở lại trên môi.
+
+Rốt cuộc thì, có đồ ăn mà chia sẻ với nhau thì quả là điều tốt nhỉ? Tôi cắn miếng takoyaki thứ hai, vị cay đã dịu đi, chỉ còn lại hương thơm của nước sốt và bột mì.
+
+Ryuuhou nhìn cảnh tượng, rồi quay sang tôi, giọng đầy vẻ suy ngẫm: ``Anh biết không, em nghĩ rằng những đứa trẻ hư mà anh từng gặp chỉ là một phần của bức tranh thôi. Có những đứa trẻ như Luna này, chúng thực sự muốn làm mọi người vui. Và em nghĩ, anh cũng nên cho chúng một cơ hội.''
+
+Tôi nhìn em, rồi nhìn Luna đang vui vẻ chia takoyaki cho mọi người, và khẽ gật đầu: ``Có lẽ em nói đúng. Có lẽ anh nên thay đổi cách nhìn.''
+
+\il
+
+\dots Nhưng trước khi tôi có thể thư giãn hoàn toàn, một cảm giác lạnh sống lưng đột nhiên ập đến, thứ mà tôi đã học cách nhận biết sau nhiều tháng làm việc ở đây.
+
+``Xon bốn ngừi, còn một ngừi nữa-nanora\~{}''
+
+Tôi giật mình nhìn sang Luna. Cô bé đang nhai miếng takoyaki một cách vui vẻ, nhưng câu nói của cô ấy làm tôi khựng lại. Một linh cảm chẳng lành bỗng nổi lên trong tôi.
+
+``\dots\ Ý em là sao?''
+
+Kanata khoanh tay, mỉm cười đầy ẩn ý, giọng như một người đang nói về một cơn bão sắp ập đến: ``Anh biết còn thiếu ai mà, đúng không? Thành viên cuối cùng của holoForce.''
+
+Tôi cứng người.
+
+Phải. Đúng là tôi vẫn còn phải đối mặt với một thành viên đến từ thế hệ thứ Tư nữa.
+
+Người đó không giống Luna. Không có vẻ ngoài đáng yêu hay cách nói chuyện trẻ con. Nhưng xét về mức độ tinh quái và trò đùa quái gở\dots
+
+Tôi khẽ rùng mình. Tôi đã đọc hồ sơ của cô ấy, và tôi biết rằng cô ấy có thể là người nguy hiểm nhất trong số năm người.
+
+Luna nghiêng đầu, giọng nhõng nhẽo: ``Mà em thấy cậu ấy lúc nào cũng dễ thương mà, nanora\~{}''
+
+Kanata bật cười, giọng đầy ẩn ý: ``Thì đấy, trông thì dễ thương, nhưng anh thử làm gì sai xem, `quỷ dữ' trỗi dậy ngay. Em đã thấy cô ấy chửi một kẻ troll trong livestream chỉ với hai câu, và người đó đã không dám quay lại.''
+
+Tôi không cần nghe thêm nữa. Tôi đã hiểu.
+
+Luna có thể là một ``em bé'', nhưng ít ra con bé còn đáng yêu. Còn người kia\dots
+
+Chỉ cần nghĩ đến thôi, tôi đã thấy tương lai của mình u ám rồi.
+
+Tôi thở dài, đưa tay xoa trán, nhìn ra ngoài cửa sổ nơi mặt trời đang bắt đầu lặn: ``\textit{Thôi thì, cứ chuẩn bị tinh thần cho một cơn ác mộng mới.}''
+
+Ryuuhou nhìn tôi, rồi cười khúc khích: ``Anh không cần lo đâu, em sẽ giúp anh.''
+
+``Em giúp bằng cách nào?''
+
+``Bằng cách chạy trốn cùng anh khi chị ấy nổi giận.''
+
+Tôi chỉ còn biết lắc đầu: ``Cảm ơn em, nhưng anh không nghĩ đó là cách tốt nhất.''
+
+Luna chạy lại, kéo tay tôi, giọng đầy háo hức: ``Em sẽ dạy anh cách nói chuyện với chị ấy! Chỉ cần nói `xao nora' là chị ấy sẽ mềm lòng thôi!''
+
+Tôi nhìn em, vừa buồn cười vừa bất lực: ``Anh không nghĩ cách đó sẽ hiệu quả đâu.''
+
+Nhưng ít nhất, tôi có một đội ngũ sẵn sàng đứng về phía mình.
+
+\begin{center}
+    {\Large \abv{Bonus}}
+\end{center}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=12.5cm]{../../../../Image/Book5/5-8i.png}
+\end{figure}
+
+\end{document}
