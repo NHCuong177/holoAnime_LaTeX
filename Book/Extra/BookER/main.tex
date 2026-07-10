@@ -150,7 +150,7 @@
 \newcommand{\img}[2][12.5cm]{%
     \begin{figure}[H]
         \centering
-        \includegraphics[width=#1]{../../../../Image/Book?/#2.png}                    % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
+        \includegraphics[width=#1]{../../../Image/Book?/#2.png}                    % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
     \end{figure}
 }
 
@@ -158,7 +158,7 @@
     \begin{figure}[H]
         \centering
         \animategraphics[autoplay,loop,width=#1]
-        {30}{../../../../Image/Book?/#2/#2.}{#3}{#4}                                  % Chỉ cần chèn tên tệp, lấy từ khung #3 tới #4
+        {30}{../../../Image/Book?/#2/#2.}{#3}{#4}                                  % Chỉ cần chèn tên tệp, lấy từ khung #3 tới #4
     \end{figure}
 }
 
@@ -167,11 +167,11 @@
 }
     
 \newcommand{\vid}[3][12.5cm]{%
-  \embedvideo{\includegraphics[width=#1]{../../../../Image/Book?/#2.png}}{#3.mp4}
+  \embedvideo{\includegraphics[width=#1]{../../../Image/Book?/#2.png}}{#3.mp4}
 }
 
 \newcommand{\emp}[1]{%
-    \includegraphics[width=2cm]{../../../../Character/#1.png}
+    \includegraphics[width=2cm]{../../../Character/#1.png}
 }
 
 % C. Viết cụm và định dạng
@@ -287,11 +287,11 @@
 % Tên cuốn truyện
 \fancyhead[LO]
 {\device\fontsize{18pt}{18pt}\selectfont
-\color{vol}{Floor 1044: The Aogami High's Curse}
+\color{vol}{The Aogami High's Curse}
 \\[-18pt]}                      
 \fancyhead[RE]
 {\device\fontsize{18pt}{18pt}\selectfont
-\color{vol}{Étage 1044 : La malédiction du lycée Aogami}
+\color{vol}{La malédiction du lycée Aogami}
 \\[-18pt]}                     
 % Số chương
 \fancyhead[RO]
@@ -319,32 +319,30 @@
 \begin{document}
 
 %===========================================MỤC LỤC===========================================
+% Trang đầu tiên
 \newpage
 \thispagestyle{empty}
 \
 
-\newpage
-\thispagestyle{empty}
-\begin{figure}
+\vspace*{\fill}
+\noindent
+\begin{minipage}[c][0.25\textheight][b]{\textwidth}
     \centering
     \includegraphics[width=15cm]{../../../Logo/round1.png}
-\end{figure}
-
-\vspace{70pt}
-
-\begin{center}
+    \vspace{30pt} % Khoảng cách từ logo xuống tâm trang
+\end{minipage}\par
+\nointerlineskip
+\noindent
+\begin{minipage}[c][0.25\textheight][t]{\textwidth}
+    \vspace{30pt} % Khoảng cách từ tâm trang xuống phần chữ
+    \centering
     {\huge \color{vols}{{\frank volume \hbrk ERROR}}} \vspace{15pt}
 
     {\fontsize{50pt}{50pt}\selectfont \color{vol}{\vnmdisp (LỜI NGUYỀN Ở\\THỊ TRẤN AOGAMI)}}\vspace{15pt}
 
     % {\Large \color{vol}{\vnmsans (Mùa thu năm 2021)}}
-\end{center}
-
-\vfill
-
-\begin{center}
-    {\large Powered by \LaTeX, with the assistant of ChatGPT}
-\end{center}
+\end{minipage}
+\vspace*{\fill}
 
 \thispagestyle{empty}
 \renewcommand{\contentsname}
@@ -377,7 +375,7 @@
 %         {%
 %             \makebox[\dimtorightedge]{}%
 %             \makebox[0pt][r]
-%             {\raisebox{0pt}[\dimtotop]{\includegraphics[width=\paperwidth]{../../../../Image/Book?/chaptitle/chap0.jpg}}}%
+%             {\raisebox{0pt}[\dimtotop]{\includegraphics[width=\paperwidth]{../../../Image/Book?/chaptitle/chap0.jpg}}}%
 %         }
 % \end{flushleft}
 % \vspace{-100pt}
@@ -395,7 +393,7 @@
 %         {%
 %             \makebox[\dimtorightedge]{}%
 %             \makebox[0pt][r]
-%             {\raisebox{0pt}[\dimtotop]{\includegraphics[width=\paperwidth]{../../../../Image/Book?/chaptitle/chap1.jpg}}}%
+%             {\raisebox{0pt}[\dimtotop]{\includegraphics[width=\paperwidth]{../../../Image/Book?/chaptitle/chap1.jpg}}}%
 %         }
 % \end{flushleft}
 % \vspace{-50pt}
@@ -460,7 +458,7 @@
 %         {%
 %             \makebox[\dimtorightedge]{}%
 %             \makebox[0pt][r]
-%             {\raisebox{0pt}[\dimtotop]{\includegraphics[width=\paperwidth]{../../../../Image/Book?/chaptitle/chap2.jpg}}}%
+%             {\raisebox{0pt}[\dimtotop]{\includegraphics[width=\paperwidth]{../../../Image/Book?/chaptitle/chap2.jpg}}}%
 %         }
 % \end{flushleft}
 % \vspace{-50pt}
@@ -525,7 +523,7 @@
 %         {%
 %             \makebox[\dimtorightedge]{}%
 %             \makebox[0pt][r]
-%             {\raisebox{0pt}[\dimtotop]{\includegraphics[width=\paperwidth]{../../../../Image/Book?/chaptitle/chap3.jpg}}}%
+%             {\raisebox{0pt}[\dimtotop]{\includegraphics[width=\paperwidth]{../../../Image/Book?/chaptitle/chap3.jpg}}}%
 %         }
 % \end{flushleft}
 % \vspace{-50pt}
@@ -590,7 +588,7 @@
     {%
         \makebox[\dimtorightedge]{}%
         \makebox[0pt][r]
-        {\raisebox{0pt}[\dimtotop]{\includegraphics[width=\paperwidth]{../../../../Image/Book?/chaptitle/chap4.jpg}}}%
+        {\raisebox{0pt}[\dimtotop]{\includegraphics[width=\paperwidth]{../../../Image/Book?/chaptitle/chap4.jpg}}}%
     }
 \end{flushleft}
 \vspace{-50pt}

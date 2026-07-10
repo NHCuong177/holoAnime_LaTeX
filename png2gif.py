@@ -94,7 +94,7 @@ def run_app():
                 for item in os.listdir(base_dir):
                     item_path = os.path.join(base_dir, item)
                     if os.path.isdir(item_path) and os.path.exists(os.path.join(item_path, f"{item}.mp4")):
-                        cmd = f'cd /d "{item_path}" && ffmpeg -i {item}.mp4 -vf fps=60 {item}.%01d.png'
+                        cmd = f'cd /d "{item_path}" && ffmpeg -i {item}.mp4 -vf fps=30 {item}.%01d.png'
                         commands.append((item, cmd))
                 
                 if not commands:
