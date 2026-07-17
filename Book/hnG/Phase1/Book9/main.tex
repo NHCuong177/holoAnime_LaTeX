@@ -179,7 +179,8 @@
 \newcommand{\hll}{\textit{hololive}}
 \newcommand{\stpt}[1]{\begin{center}{\sen\Large {#1}} \end{center}}     % Subsection
 \newcommand{\stcap}[1]{\begin{center}{\caviar {#1}} \end{center}}       % Phụ đề cho subsection
-\newcommand{\xdo}{\\[-24pt]}                                            % Dùng cho phần dialogue
+\newcommand{\xdo}{\\[-24pt]}       
+\newcommand{\lang}[1]{\begin{center}{\textit{*Các nhân vật nói bằng tiếng #1.}}\end{center}}                                     % Dùng cho phần dialogue
 
 % D. Bảng xếp hàng (cho các tập Top 10)
 \newcommand{\topten}{\ruby{大}{だい}\ruby{惨}{さん}\ruby{事}{じ}}
@@ -279,14 +280,14 @@
 \\[-18pt]}                     
 % Số chương
 \fancyhead[RO]
-{\harosbaelz\fontsize{18pt}{18pt}\selectfont
+{\sen\fontsize{18pt}{18pt}\selectfont
 \color{vol}{nine}
 \ab\fontsize{18pt}{18pt}\selectfont
 \color{vol}{\textbf{(IX)}}
 \\[-18pt]
 }
 \fancyhead[LE]
-{\harosbaelz\fontsize{18pt}{18pt}\selectfont
+{\sen\fontsize{18pt}{18pt}\selectfont
 \color{vol}{\textbf{neuf}}
 \ab\fontsize{18pt}{18pt}\selectfont
 \color{vol}{\textbf{(9)}}

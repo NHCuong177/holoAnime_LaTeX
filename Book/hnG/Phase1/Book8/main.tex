@@ -6,10 +6,10 @@
 \usepackage{contour}
 \usepackage{gradient-text}
 
-\definecolor{vol}{HTML}{009644}
-\definecolor{eptype}{HTML}{005023}      
-\definecolor{epnum}{HTML}{35bd69}       
-\definecolor{epattr}{HTML}{85ffbc}
+\definecolor{vol}{HTML}{0066ff}
+\definecolor{eptype}{HTML}{002C6C}      
+\definecolor{epnum}{HTML}{004AB8}       
+\definecolor{epattr}{HTML}{8bbaff}
 
 \definecolor{song}{HTML}{7030a0}
 \definecolor{ai}{RGB}{91,155,213}
@@ -48,8 +48,8 @@
 \usepackage{animate}
 
 % Lề và cỡ chữ tiêu chuẩn
-\usepackage{extsizes}                       % Cho cỡ chữ 14pt
-\usepackage[margin=1.54cm]{geometry}        % Căn chỉnh lề giấy
+\usepackage{extsizes}       % Cho cỡ chữ 14pt
+\usepackage[margin=1.54cm]{geometry}
 \usepackage{parskip}
 \usepackage{emptypage}
 
@@ -76,31 +76,32 @@
 \renewcommand{\rubysep}{1pt}
 
 % Phông cho tên-số các tập
-\newfontface\flaregothic[Path=../../Fontface/]{flaregothicbold.ttf}
-\newfontface\cafeteria[Path=../../Fontface/]{Cafeteria Bold.otf}
-\newfontface\fotskip[Path=../../Fontface/]{FOT-Skip Std B.otf}
-\newfontface\vnmsans[Path=../../Fontface/]{VNM Sans Std.otf}
-\newfontface\vnmdisp[Path=../../Fontface/]{VNM Sans Display Bold.otf}
-\newfontface\sen[Path=../../Fontface/]{Sen-Bold.ttf}
-\newfontface\continuum[Path=../../Fontface/]{contb.ttf}
-\newfontface\japfont[Path=../../Fontface/]{msgothic.ttc}
-\newfontface\jiga[Path=../../Fontface/]{Jigmo.ttf}
-\newfontface\jigb[Path=../../Fontface/]{Jigmo3.ttf}
-\newfontface\jigc[Path=../../Fontface/]{Jigmo3.ttf}
-\newfontface\quincy[Path=../../Fontface/]{Quincy Caps Regular.ttf}
+\newfontface\flaregothic[Path=../../../../Fontface/]{flaregothicbold.ttf}
+\newfontface\cafeteria[Path=../../../../Fontface/]{Cafeteria Bold.otf}
+\newfontface\fotskip[Path=../../../../Fontface/]{FOT-Skip Std B.otf}
+\newfontface\vnmsans[Path=../../../../Fontface/]{VNM Sans Std.otf}
+\newfontface\vnmdisp[Path=../../../../Fontface/]{VNM Sans Display Bold.otf}
+\newfontface\sen[Path=../../../../Fontface/]{Sen-Bold.ttf}
+\newfontface\continuum[Path=../../../../Fontface/]{contb.ttf}
+\newfontface\japfont[Path=../../../../Fontface/]{msgothic.ttc}
+\newfontface\jiga[Path=../../../../Fontface/]{Jigmo.ttf}
+\newfontface\jigb[Path=../../../../Fontface/]{Jigmo2.ttf}
+\newfontface\jigc[Path=../../../../Fontface/]{Jigmo3.ttf}
+\newfontface\burbank[Path=../../../../Fontface/]{burbankbigcondensed_bold.otf}
+\newfontface\houseterror[Path=../../../../Fontface/]{HOUSE_OF_TERROR.ttf}
+\newfontface\dawnland[Path=../../../../Fontface/]{Dawnland.Lost.otf}
 
 % Phông cho tiêu đề cuốn truyện và đầu-chân trang
-\newfontface\frank[Path=../../Fontface/]{Franklin Gothic Heavy Regular.ttf}
-\newfontface\caviar[Path=../../Fontface/]{VNF-Cariar Dreams Regular.ttf}
-\newfontface\hbrk[Path=../../Fontface/]{HouseBrokenRough.ttf}
-\newfontface\ab[Path=../../Fontface/]{angrybirds-regular.ttf}
-\newfontface\abv[Path=../../Fontface/]{0259-LNTH-angrybirds-regular.ttf}
-\newfontface\device[Path=../../Fontface/]{Device Regular.ttf}
-\newfontface\harosbaelz[Path=../../Fontface/]{BAEFONT_NORMAL-REGULAR_V1.TTF}
-\newfontface\brian[Path=../../Fontface/]{Brianne_s_hand.ttf}
-\newfontface\nexa[Path=../../Fontface/]{Nexa-Heavy.ttf}
-\newfontface\digi[Path=../../Fontface/]{DS-DIGI.TTF}
-\newfontface\freshbot[Path=../../Fontface/]{FRESHBOT.TTF}
+\newfontface\frank[Path=../../../../Fontface/]{Franklin Gothic Heavy Regular.ttf}
+\newfontface\caviar[Path=../../../../Fontface/]{VNF-Cariar Dreams Regular.ttf}
+\newfontface\hbrk[Path=../../../../Fontface/]{HouseBrokenRough.ttf}
+\newfontface\ab[Path=../../../../Fontface/]{angrybirds-regular.ttf}
+\newfontface\abv[Path=../../../../Fontface/]{0259-LNTH-angrybirds-regular.ttf}
+\newfontface\device[Path=../../../../Fontface/]{Device Regular.ttf}
+\newfontface\harosbaelz[Path=../../../../Fontface/]{BAEFONT_NORMAL-REGULAR_V1.TTF}
+\newfontface\brian[Path=../../../../Fontface/]{Brianne_s_hand.ttf}
+\newfontface\nexa[Path=../../../../Fontface/]{Nexa-Heavy.ttf}
+\newfontface\digi[Path=../../../../Fontface/]{DS-DIGI.TTF}
 
 % Đặt font chính và font tiếng Nhật
 \setmainfont{Times New Roman}
@@ -132,22 +133,29 @@
 \setcounter{tocdepth}{4}
 \setcounter{secnumdepth}{4}
 
-%==================================================MACRO===================================================
+% Macro
 % A. Đường thẳng, ký hiệu
 \newcommand{\ct}
-{\begin{center}[---]\end{center}} 		  	                          % Cắt cảnh dài
+{\begin{center}[---]\end{center}} 		  	                            % Cắt cảnh dài
 \newcommand{\chrint}        
-{\begin{center}||---||\end{center}}						        	            % Cắt đến giói thiệu nhân vật, có thể bỏ qua
+{\begin{center}||---||\end{center}}						        	    % Cắt đến giói thiệu nhân vật, có thể bỏ qua
 \newcommand{\pov}[1]
-{\begin{center}$\langle${#1}$\rangle$\end{center}}			            % Đổi góc nhìn nhân vật (mặc định là ngôi thứ ba)
+{\begin{center}$\langle${#1}$\rangle$\end{center}}			            % Đổi góc nhìn nhân vật.
 \newcommand{\il}{\noindent\makebox[\textwidth]
-{\rule{\paperwidth}{0.4pt}}}					  			                      % Đường thẳng phân chia
+{\rule{\paperwidth}{0.4pt}}}					  			            % Đường thẳng phân chia
 
 % B. Chèn ảnh và gif
 \newcommand{\img}[2][12.5cm]{%
     \begin{figure}[H]
         \centering
-        \includegraphics[width=#1]{../../../../Image/Book?/#2.png}                    % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
+        \includegraphics[width=#1]{../../../../Image/Book8/#2.png}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
+    \end{figure}
+}
+
+\newcommand{\imgc}[2][12.5cm]{%
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=#1]{../../../../Image/Book8/#2.jpg}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
     \end{figure}
 }
 
@@ -155,31 +163,47 @@
     \begin{figure}[H]
         \centering
         \animategraphics[autoplay,loop,width=#1]
-        {30}{../../../../Image/Book?/#2/#2.}{#3}{#4}                                  % Chỉ cần chèn tên tệp, lấy từ khung #3 tới #4
+        {30}{../../../../Image/Book8/#2/#2.}{#3}{#4}                                      % Chỉ cần chèn tên tệp, lấy từ khung #3 tới #4
     \end{figure}
 }
 
-\newcommand{\pictdum}{										                          % Ảnh chèn vào thay thế ảnh gif để canh dòng
+\newcommand{\pictdum}{										            % Ảnh chèn vào thay thế ảnh gif để canh dòng
         \includegraphics[width=8cm]{placeholder.png}
 }
     
 \newcommand{\vid}[3][12.5cm]{%
-  \embedvideo{\includegraphics[width=#1]{../../../../Image/Book?/#2.png}}{#3.mp4}
+  \embedvideo{\includegraphics[width=#1]{../../../../Image/Book8/#2.png}}{#3.mp4}
+}
+
+\newcommand{\emp}[1]{%
+    \includegraphics[width=2cm]{../../../../Character/#1.png}
+}
+
+\newcommand{\model}[4]{%
+    \begin{wrapfigure}[#1]{#2}{#3}
+    \includegraphics[height=15cm]{../../../../Character/#4_model.png} % Lần lượt: [# khung][hướng][kích thước][tên]
+\end{wrapfigure}
+}
+
+\newcommand{\modelc}[4]{%
+    \begin{wrapfigure}[#1]{#2}{#3}
+    \includegraphics[height=15cm]{../../../../Character/#4_model.jpg} % Lần lượt: [# khung][hướng][kích thước][tên]
+\end{wrapfigure}
 }
 
 % C. Viết cụm và định dạng
 \newcommand{\omk}{\begin{center}{\abv\Large Truyện phụ}\end{center}}
-\newcommand{\anni}{\color{bdaya}A\color{bdayb}N\color{bdaya}N\color{bdayb}I\color{bdaya}V\color{bdayb}E\color{bdaya}R\color{bdayb}S\color{bdaya}A\color{bdayb}I\color{bdaya}R\color{bdayb}E}
-\newcommand{\xmas}{\color{green}N\color{gray}O\color{red}Ë\color{green}L}
-\newcommand{\hlw}{\color{purple}H\color{brown}A\color{purple}L\color{brown}L\color{purple}O\color{brown}W\color{purple}E\color{brown}E\color{purple}N}
-\newcommand{\trva}{\begin{center}{\abv\Large Bạn có biết?}\end{center}}
 \newcommand{\hll}{\textit{hololive}}
 \newcommand{\stpt}[1]{\begin{center}{\sen\Large {#1}} \end{center}}     % Subsection
 \newcommand{\stcap}[1]{\begin{center}{\caviar {#1}} \end{center}}       % Phụ đề cho subsection
-\newcommand{\xdo}{\\[-24pt]}                                            % Dùng cho phần dialogue
+\newcommand{\anni}{\color{bdaya}A\color{bdayb}N\color{bdaya}N\color{bdayb}I\color{bdaya}V\color{bdayb}E\color{bdaya}R\color{bdayb}S\color{bdaya}A\color{bdayb}I\color{bdaya}R\color{bdayb}E}
+\newcommand{\xmas}{\color{green}N\color{gray}O\color{red}Ë\color{green}L}
+\newcommand{\hlw}{\color{purple}H\color{brown}A\color{purple}L\color{brown}L\color{purple}O\color{brown}W\color{purple}E\color{brown}E\color{purple}N}
+\newcommand{\xdo}{\\[-24pt]}
+\newcommand{\lang}[1]{\begin{center}{\textit{*Các nhân vật nói bằng tiếng #1.}}\end{center}}
 
 % D. Bảng xếp hàng (cho các tập Top 10)
-\newcommand{\topten}{\ruby{大}{だい}\ruby{惨}{さん}\ruby{事}{じ}}
+\newcommand{\topten}{【\ruby{大}{だい}\ruby{惨}{さん}\ruby{事}{じ}】}
 \newcommand{\bxh}[4]{
     \begin{center}
         {{\cafeteria\Large Number #1:} \\
@@ -188,18 +212,32 @@
     \end{center}
 }
 
+% E. Đặt bối cảnh ở vũ trụ
 \newcommand{\alt}[3]{
     \begin{center}
         {(Từ {\flaregothic\textbf{ÉPISODE #1}}, quyển số #2, tại vũ trụ mang số hiệu #3.)}
     \end{center}
 }
 
-
-% E. Ngôn ngữ
+% F. Ngôn ngữ
 \newcommand{\vie}[1]{\color{red} #1\color{black}}        % Tiếng Việt (Etsunan ở Round 1 và 2)
 \newcommand{\eng}[1]{\color{blue} #1\color{black}}       % Tiếng Anh
-\newcommand{\ind}[1]{\color{green} #1\color{black}}      % Tiếng Indonesia
-\newcommand{\chn}[1]{\color{orange} #1\color{black}}     % Tiếng Trung
+
+% G. Hộp chữ
+\newcommand{\txtbx}[2][0.5]{
+    \begin{tcolorbox}[
+        colframe=vol,  
+        colback=white,   
+        boxrule=#1pt,        % Độ dày viền
+        arc=0mm,         
+        left=5pt,        
+        right=5pt,       
+        top=5pt,       
+        bottom=5pt       
+    ]
+    #2
+    \end{tcolorbox}
+}
 
 % Thiết đặt môi trường cho đoạn hội thoại
 % A. Dùng để viết hoa chữ đầu tiên tên nhân vật
@@ -217,12 +255,12 @@
     \begin{list}{} {%
         \setlength\itemsep{\z@ \@plus .5ex}%
         \setlength{\parsep}{\parskip}%
-        \setlength{\rightmargin}{0pt}           % Không căn lề phải
-        \setlength{\labelwidth}{\widestname}    % Thiết đặt khoảng cách với tên dài nhất
-        \setlength{\labelsep}{0.5em}            % Thiết đặt khoảng cách giữa tên nhân vật và đoạn hội thoại
-        \setlength{\leftmargin}{\labelwidth}    % Căn lề trái
-        \addtolength{\leftmargin}{\labelsep}    % 
-        \defcommand\speak [1] {\item[{##1}]}    % Thiết lập lệnh speak trong dialogue
+        \setlength{\rightmargin}{0pt}% Không căn lề phải
+        \setlength{\labelwidth}{\widestname}% Thiết đặt khoảng cách với tên dài nhất
+        \setlength{\labelsep}{0.5em}% Thiết đặt khoảng cách giữa tên nhân vật và đoạn hội thoại
+        \setlength{\leftmargin}{\labelwidth}% Căn lề trái
+        \addtolength{\leftmargin}{\labelsep}% 
+        \defcommand\speak [1] {\item[{##1}]}% Thiết lập lệnh speak trong dialogue
         \let\makelabel\DialogueLabel
       }%
       \PreDialogue\relax
@@ -244,6 +282,12 @@
 \SOUL@ttwidth\wd\z@ %reset default width of -
 \makeatother
 
+\makeatletter
+\font\SOUL@tt="Nom Na Tong"
+\setbox\z@\hbox{\SOUL@tt-}
+\SOUL@ttwidth\wd\z@ %reset default width of -
+\makeatother
+
 % F. Tabbing
 \newcommand\tabs[1][1cm]{\hspace*{#1}}
 
@@ -253,22 +297,22 @@
 % Tên cuốn truyện
 \fancyhead[LO]
 {\device\fontsize{18pt}{18pt}\selectfont
-\color{vol}{Floor 800: Hundred Weeks of Spring in Turmoil}
+\color{vol}{Hundred Weeks of Spring in Turmoil}
 \\[-18pt]}                      
 \fancyhead[RE]
 {\device\fontsize{18pt}{18pt}\selectfont
-\color{vol}{Étage 800 : Cent semaines de créativité printanière}
+\color{vol}{Cent semaines de créativité printanière}
 \\[-18pt]}                     
 % Số chương
 \fancyhead[RO]
-{\harosbaelz\fontsize{18pt}{18pt}\selectfont
+{\sen\fontsize{18pt}{18pt}\selectfont
 \color{vol}{eight}
 \ab\fontsize{18pt}{18pt}\selectfont
 \color{vol}{\textbf{(VIII)}}
 \\[-18pt]
 }
 \fancyhead[LE]
-{\harosbaelz\fontsize{18pt}{18pt}\selectfont
+{\sen\fontsize{18pt}{18pt}\selectfont
 \color{vol}{\textbf{huit}}
 \ab\fontsize{18pt}{18pt}\selectfont
 \color{vol}{\textbf{(8)}}
@@ -283,32 +327,42 @@
 %==========================================PHẦN THÂN==========================================
 \begin{document}
 %===========================================MỤC LỤC===========================================
+% Trang bìa
 \newpage
 \thispagestyle{empty}
 \
 
+% Trang đầu tiên
 \newpage
 \thispagestyle{empty}
-\begin{figure}
+\
+
+\vspace*{\fill}
+\noindent
+\begin{minipage}[c][0.25\textheight][b]{\textwidth}
     \centering
-    \includegraphics[width=15cm]{../../Logo/round1.png}
-\end{figure}
-
-\vspace{70pt}
-
-\begin{center}
+    \includegraphics[width=15cm]{../../../../Logo/round1.png}
+    \vspace{30pt} % Khoảng cách từ logo xuống tâm trang
+\end{minipage}\par
+\nointerlineskip
+\noindent
+\begin{minipage}[c][0.25\textheight][t]{\textwidth}
+    \vspace{30pt} % Khoảng cách từ tâm trang xuống phần chữ
+    \centering
     {\huge \color{vol}{{\frank volume \hbrk EIGHT}}} \vspace{15pt}
     
     {\fontsize{50pt}{50pt}\selectfont \color{vol}{\vnmdisp (XUÂN SIÊU QUẬY - MỘT TRĂM TUẦN\\SÁNG TẠO)}}\vspace{15pt}
     
     {\Large \color{vol}{\vnmsans (Mùa xuân năm 2021)}}
-\end{center}
+\end{minipage}
+\vspace*{\fill}
+
 \thispagestyle{empty}
 \renewcommand{\contentsname}
 {\centering\vnmsans\Large\textcolor{vol}{Mục lục}}
 {
-  \hypersetup{linkcolor=black}
-  \tableofcontents
+    \hypersetup{linkcolor=black}
+    \tableofcontents
 }
 %========================================LỜI NÓI ĐẦU==========================================
 \newpage
@@ -318,79 +372,94 @@
 \subfile{intro}
 
 %=======================================DANH SÁCH TẬP========================================
-\newpage
-\section*{\phantomsection\label{ep8.1}} 
-\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 96}} 
-\subfile{Episode/8-1}
+% \newpage
+% \section*{\phantomsection\label{ep8.1}} 
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 96 \cafeteria | 8-1}} - Lẩu vịt với Thế hệ thứ Hai}
+% \vspace{-30pt}
+% \subfile{Episode/8-01}
 
-\newpage
-\section*{\phantomsection\label{ep8.2}} 
-\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 97}}
-\subfile{Episode/8-2}
+% \newpage
+% \section*{\phantomsection\label{ep8.2}} 
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 97 \cafeteria | 8-2}} - Chiếc máy chơi điện tử cầm tay}
+% \vspace{-30pt}
+% \subfile{Episode/8-02}
 
-\newpage
-\section*{\phantomsection\label{ep8.3}} 
-\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 98}} 
-\subfile{Episode/8-3}
+% \newpage
+% \section*{\phantomsection\label{ep8.3}} 
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 98 \cafeteria | 8-3}} - Thanh tra Quỷ}
+% \vspace{-30pt}
+% \subfile{Episode/8-03}
 
-\newpage
-\section*{\phantomsection\label{ep8.4}} 
-\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 99}} 
-\subfile{Episode/8-4}
+% \newpage
+% \section*{\phantomsection\label{ep8.4}} 
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 99 \cafeteria | 8-4}} - Trận đấu bài Tiềm Ô Quân}
+% \vspace{-30pt}
+% \subfile{Episode/8-04}
 
-\newpage
-\section*{\phantomsection\label{epS.17}} 
-\addcontentsline{toc}{section}{\flaregothic{SPÉCIAL {\ab XVII}}} 
-\subfile{Episode/S-17}
+% \newpage
+% \section*{\phantomsection\label{epS.18}} 
+% \addcontentsline{toc}{section}{\flaregothic{{SPÉCIAL XVIII \cafeteria | S-18}} - GAMERS phiên bản tả thực}
+% \vspace{-30pt}
+% \subfile{Episode/S-18}
 
-\newpage
-\section*{\phantomsection\label{ep8.5}} 
-\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 100/SPÉCIAL {\ab XVIII}}} 
-\subfile{Episode/S-18}
+% \newpage
+% \section*{\phantomsection\label{ep8.5}} 
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 100/SPÉCIAL XIX \cafeteria | S-19}} - Truyện cổ tích này, gồm mười một người, một trăm tập chẵn, hỏi nay ăn gì? - Bánh ngọt!}
+% \vspace{-30pt}
+% \subfile{Episode/S-19}
 
-\newpage
-\section*{\phantomsection\label{epC.2}} 
-\addcontentsline{toc}{section}{\flaregothic{PERSONNALISÉ {\vnmdisp BỐN}}} 
-\subfile{Episode/C-4}
+% \newpage
+% \section*{\phantomsection\label{epC.2}} 
+% \addcontentsline{toc}{section}{{\flaregothic{PERSONNALISÉ \vnmdisp{BỐN}} \cafeteria | C-3} - Xứ sở thần tiên trong mơ}
+% \vspace{-30pt}
+% \subfile{Episode/C-03}
 
-\newpage
-\section*{\phantomsection\label{ep8.6}} 
-\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 101}} 
-\subfile{Episode/8-5}
+% \newpage
+% \section*{\phantomsection\label{ep8.6}} 
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 101 \cafeteria | 8-5}} - Trận chiến bằng bút sáp màu}
+% \vspace{-30pt}
+% \subfile{Episode/8-05}
 
-\newpage
-\section*{\phantomsection\label{ep8.7}} 
-\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 102}} 
-\subfile{Episode/8-6}
+% \newpage
+% \section*{\phantomsection\label{ep8.7}} 
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 102 \cafeteria | 8-6}} - Máy ảnh thực thể hóa}
+% \vspace{-30pt}
+% \subfile{Episode/8-06}
 
-\newpage
-\section*{\phantomsection\label{ep8.8}} 
-\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 103}}
-\subfile{Episode/8-7}
+% \newpage
+% \section*{\phantomsection\label{ep8.8}} 
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 103 \cafeteria | 8-7}} - Bay lên không gian, xuyên không thời gian}
+% \vspace{-30pt}
+% \subfile{Episode/8-07}
 
-\newpage
-\section*{\phantomsection\label{ep8.9}} 
-\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 104}}
-\subfile{Episode/8-8}
+% \newpage
+% \section*{\phantomsection\label{ep8.9}} 
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 104 \cafeteria | 8-8}} - Nakiri Ayame với cách chữa trầm cảm tháng Năm}
+% \vspace{-30pt}
+% \subfile{Episode/8-08}
 
-\newpage
-\section*{\phantomsection\label{ep8.10}} 
-\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 105}}
-\subfile{Episode/8-9}
+% \newpage
+% \section*{\phantomsection\label{ep8.10}} 
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 105 \cafeteria | 8-9}} - Định luật Murphy và chuỗi rắc rối}
+% \vspace{-30pt}
+% \subfile{Episode/8-09}
 
-\newpage
-\section*{\phantomsection\label{ep8.11}} 
-\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 106}}
-\subfile{Episode/8-10}
+% \newpage
+% \section*{\phantomsection\label{ep8.11}} 
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 106 \cafeteria | 8-10}} - ???}
+% \vspace{-30pt}
+% \subfile{Episode/8-10}
 
-\newpage
-\section*{\phantomsection\label{ep8.12}}
-\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 107/SPÉCIAL {\ab XIX}}}
-\subfile{Episode/S-19}
+% \newpage
+% \section*{\phantomsection\label{ep8.12}}
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 107/SPÉCIAL XX \cafeteria | S-20}} - Nước đến chân mới nhảy}
+% \vspace{-30pt}
+% \subfile{Episode/S-20}
 
 \newpage
 \section*{\phantomsection\label{ep8.13}} 
-\addcontentsline{toc}{section}{\flaregothic{ÉPISODE 108}}
+\addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 108 \cafeteria | 8-11}} - Thám tử "lừng danh" Shion}
+\vspace{-30pt}
 \subfile{Episode/8-11}
 %===========================================LỜI KẾT===========================================
 \newpage
@@ -399,11 +468,11 @@
 {\centering\vnmsans\Large\textcolor{vol}{Lời kết}\par}
 \subfile{end}
 
-\vfill % Đẩy phần dưới về đáy trang
-\begin{center}
-	\textcolor{vol}
-    {\quincy\Huge\textbf{TOME \ruby{8}{\ab HUIT}\ TERMINE !} \\[1ex]
-    \vnmdisp\Huge\textbf{(QUYỂN SỐ \ruby{TÁM}{八/はち}\ HOÀN THÀNH!)}}
-\end{center}
+% \vfill % Đẩy phần dưới về đáy trang
+% \begin{center}
+% 	\textcolor{vol}
+%     {\quincy\Huge\textbf{TOME \ruby{8}{\ab HUIT}\ TERMINE !} \\[1ex]
+%     \vnmdisp\Huge\textbf{(QUYỂN SỐ \ruby{TÁM}{八/はち}\ HOÀN THÀNH!)}}
+% \end{center}
 
 \end{document}
