@@ -78,32 +78,33 @@
 \renewcommand{\rubysep}{1pt}
 
 % Phông cho tên-số các tập
-\newfontface\flaregothic[Path=../../../../Fontface/]{flaregothicbold.ttf}
-\newfontface\cafeteria[Path=../../../../Fontface/]{Cafeteria Bold.otf}
-\newfontface\fotskip[Path=../../../../Fontface/]{FOT-Skip Std B.otf}
-\newfontface\vnmsans[Path=../../../../Fontface/]{VNM Sans Std.otf}
-\newfontface\vnmdisp[Path=../../../../Fontface/]{VNM Sans Display Bold.otf}
-\newfontface\sen[Path=../../../../Fontface/]{Sen-Bold.ttf}
-\newfontface\continuum[Path=../../../../Fontface/]{contb.ttf}
-\newfontface\japfont[Path=../../../../Fontface/]{msgothic.ttc}
-\newfontface\jiga[Path=../../../../Fontface/]{Jigmo.ttf}
-\newfontface\jigb[Path=../../../../Fontface/]{Jigmo2.ttf}
-\newfontface\jigc[Path=../../../../Fontface/]{Jigmo3.ttf}
-\newfontface\burbank[Path=../../../../Fontface/]{burbankbigcondensed_bold.otf}
-\newfontface\houseterror[Path=../../../../Fontface/]{HOUSE_OF_TERROR.ttf}
-\newfontface\dawnland[Path=../../../../Fontface/]{Dawnland.Lost.otf}
+\newfontface\flaregothic[Path=../../../Fontface/]{flaregothicbold.ttf}
+\newfontface\cafeteria[Path=../../../Fontface/]{Cafeteria Bold.otf}
+\newfontface\fotskip[Path=../../../Fontface/]{FOT-Skip Std B.otf}
+\newfontface\vnmsans[Path=../../../Fontface/]{VNM Sans Std.otf}
+\newfontface\vnmdisp[Path=../../../Fontface/]{VNM Sans Display Bold.otf}
+\newfontface\sen[Path=../../../Fontface/]{Sen-Bold.ttf}
+\newfontface\continuum[Path=../../../Fontface/]{contb.ttf}
+\newfontface\japfont[Path=../../../Fontface/]{msgothic.ttc}
+\newfontface\jiga[Path=../../../Fontface/]{Jigmo.ttf}
+\newfontface\jigb[Path=../../../Fontface/]{Jigmo2.ttf}
+\newfontface\jigc[Path=../../../Fontface/]{Jigmo3.ttf}
+\newfontface\burbank[Path=../../../Fontface/]{burbankbigcondensed_bold.otf}
+\newfontface\houseterror[Path=../../../Fontface/]{HOUSE_OF_TERROR.ttf}
+\newfontface\dawnland[Path=../../../Fontface/]{Dawnland.Lost.otf}
+\newfontface\freshbot[Path=../../../Fontface/]{FRESHBOT.TTF}
 
 % Phông cho tiêu đề cuốn truyện và đầu-chân trang
-\newfontface\frank[Path=../../../../Fontface/]{Franklin Gothic Heavy Regular.ttf}
-\newfontface\caviar[Path=../../../../Fontface/]{VNF-Cariar Dreams Regular.ttf}
-\newfontface\hbrk[Path=../../../../Fontface/]{HouseBrokenRough.ttf}
-\newfontface\ab[Path=../../../../Fontface/]{angrybirds-regular.ttf}
-\newfontface\abv[Path=../../../../Fontface/]{0259-LNTH-angrybirds-regular.ttf}
-\newfontface\device[Path=../../../../Fontface/]{Device Regular.ttf}
-\newfontface\harosbaelz[Path=../../../../Fontface/]{BAEFONT_NORMAL-REGULAR_V1.TTF}
-\newfontface\brian[Path=../../../../Fontface/]{Brianne_s_hand.ttf}
-\newfontface\nexa[Path=../../../../Fontface/]{Nexa-Heavy.ttf}
-\newfontface\digi[Path=../../../../Fontface/]{DS-DIGI.TTF}
+\newfontface\frank[Path=../../../Fontface/]{Franklin Gothic Heavy Regular.ttf}
+\newfontface\caviar[Path=../../../Fontface/]{VNF-Cariar Dreams Regular.ttf}
+\newfontface\hbrk[Path=../../../Fontface/]{HouseBrokenRough.ttf}
+\newfontface\ab[Path=../../../Fontface/]{angrybirds-regular.ttf}
+\newfontface\abv[Path=../../../Fontface/]{0259-LNTH-angrybirds-regular.ttf}
+\newfontface\device[Path=../../../Fontface/]{Device Regular.ttf}
+\newfontface\harosbaelz[Path=../../../Fontface/]{BAEFONT_NORMAL-REGULAR_V1.TTF}
+\newfontface\brian[Path=../../../Fontface/]{Brianne_s_hand.ttf}
+\newfontface\nexa[Path=../../../Fontface/]{Nexa-Heavy.ttf}
+\newfontface\digi[Path=../../../Fontface/]{DS-DIGI.TTF}
 
 % Đặt font chính và font tiếng Nhật
 \setmainfont{Times New Roman}
@@ -150,14 +151,14 @@
 \newcommand{\img}[2][12.5cm]{%
     \begin{figure}[H]
         \centering
-        \includegraphics[width=#1]{../../../../Image/Book7/#2.png}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
+        \includegraphics[width=#1]{../../../Image/Book7/#2.png}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
     \end{figure}
 }
 
 \newcommand{\imgc}[2][12.5cm]{%
     \begin{figure}[H]
         \centering
-        \includegraphics[width=#1]{../../../../Image/Book7/#2.jpg}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
+        \includegraphics[width=#1]{../../../Image/Book7/#2.jpg}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
     \end{figure}
 }
 
@@ -165,7 +166,7 @@
     \begin{figure}[H]
         \centering
         \animategraphics[autoplay,loop,width=#1]
-        {30}{../../../../Image/Book7/#2/#2.}{#3}{#4}                                      % Chỉ cần chèn tên tệp, lấy từ khung #3 tới #4
+        {30}{../../../Image/Book7/#2/#2.}{#3}{#4}                                      % Chỉ cần chèn tên tệp, lấy từ khung #3 tới #4
     \end{figure}
 }
 
@@ -174,22 +175,22 @@
 }
     
 \newcommand{\vid}[3][12.5cm]{%
-  \embedvideo{\includegraphics[width=#1]{../../../../Image/Book7/#2.png}}{#3.mp4}
+  \embedvideo{\includegraphics[width=#1]{../../../Image/Book7/#2.png}}{#3.mp4}
 }
 
 \newcommand{\emp}[1]{%
-    \includegraphics[width=2cm]{../../../../Character/#1.png}
+    \includegraphics[width=2cm]{../../../Character/#1.png}
 }
 
 \newcommand{\model}[4]{%
     \begin{wrapfigure}[#1]{#2}{#3}
-    \includegraphics[height=15cm]{../../../../Character/#4_model.png} % Lần lượt: [# khung][hướng][kích thước][tên]
+    \includegraphics[height=15cm]{../../../Character/#4_model.png} % Lần lượt: [# khung][hướng][kích thước][tên]
 \end{wrapfigure}
 }
 
 \newcommand{\modelc}[4]{%
     \begin{wrapfigure}[#1]{#2}{#3}
-    \includegraphics[height=15cm]{../../../../Character/#4_model.jpg} % Lần lượt: [# khung][hướng][kích thước][tên]
+    \includegraphics[height=15cm]{../../../Character/#4_model.jpg} % Lần lượt: [# khung][hướng][kích thước][tên]
 \end{wrapfigure}
 }
 
@@ -336,7 +337,7 @@
 \noindent
 \begin{minipage}[c][0.25\textheight][b]{\textwidth}
     \centering
-    \includegraphics[width=15cm]{../../../../Logo/round1.png}
+    \includegraphics[width=15cm]{../../../Logo/round1.png}
     \vspace{30pt} % Khoảng cách từ logo xuống tâm trang
 \end{minipage}\par
 \nointerlineskip
@@ -369,23 +370,27 @@
 %=======================================DANH SÁCH TẬP========================================
 \newpage
 \section*{\phantomsection\label{epd.1}} 
-\addcontentsline{toc}{section}{\flaregothic{HISTOIRE 1}} 
-\subfile{Episode/D-1}
+\addcontentsline{toc}{section}{\flaregothic{HISTOIRE 1}}
+\vspace{-30pt}
+\subfile{Episode/D-01}
 
-% \newpage
-% \section*{\phantomsection\label{epd.2}} 
-% \addcontentsline{toc}{section}{\flaregothic{HISTOIRE 2}}
-% \subfile{Episode/D-2}
+\newpage
+\section*{\phantomsection\label{epd.2}} 
+\addcontentsline{toc}{section}{\flaregothic{HISTOIRE 2}}
+\vspace{-30pt}
+\subfile{Episode/D-02}
 
-% \newpage
-% \section*{\phantomsection\label{epd.3}} 
-% \addcontentsline{toc}{section}{\flaregothic{HISTOIRE 3}} 
-% \subfile{Episode/D-3}
+\newpage
+\section*{\phantomsection\label{epd.3}} 
+\addcontentsline{toc}{section}{\flaregothic{HISTOIRE 3}}
+\vspace{-30pt}
+\subfile{Episode/D-03}
 
 \newpage
 \section*{\phantomsection\label{epd.4}} 
-\addcontentsline{toc}{section}{\flaregothic{HISTOIRE 4}} 
-\subfile{Episode/D-4}
+\addcontentsline{toc}{section}{\flaregothic{HISTOIRE 4}}
+\vspace{-30pt}
+\subfile{Episode/D-04}
 %===========================================LỜI KẾT===========================================
 % \newpage
 % \section*{\phantomsection\label{end}} 
