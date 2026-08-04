@@ -10,6 +10,8 @@ def check_file(file_path):
         print(f"  [!] Lỗi khi đọc file: {e}")
         return False
 
+    # Stack chứa các phần tử ('D', dòng, cột) cho ngoặc kép `` đang mở,
+    # hoặc ('S', dòng, cột) cho ngoặc đơn lồng bên trong (dấu ` lẻ) đang mở
     stack = []
     issues = []
 
@@ -17,40 +19,57 @@ def check_file(file_path):
         # 1. BỎ QUA COMMENT: Dùng Regex xóa mọi thứ từ dấu % (không bị escape bằng \) đến cuối dòng
         clean_line = re.sub(r'(?<!\\)%.*', '', line)
 
-        # 2. XỬ LÝ BẰNG STACK: Quét qua file tìm `` và '' theo đúng thứ tự
-        for match in re.finditer(r"``|''", clean_line):
+        # 2. XỬ LÝ BẰNG STACK: Quét qua file, gom từng cụm dấu ` hoặc ' liên tiếp
+        #    - `` (hoặc nhiều hơn) => mở ngoặc kép
+        #    - `  (1 dấu)         => mở ngoặc đơn LỒNG bên trong (vd: `Câu lạc bộ...')
+        #    - '' (hoặc nhiều hơn) => đóng ngoặc kép
+        #    - '  (1 dấu)         => đóng ngoặc đơn lồng, HOẶC dấu nháy đơn/sở hữu cách tiếng Anh (Louis', don't)
+        for match in re.finditer(r"`+|'+", clean_line):
             token = match.group()
             col = match.start()
-            
-            if token == "``":
-                # Đưa dấu mở vào Stack (lưu lại dòng và cột để báo cáo nếu quên đóng)
-                stack.append((line_num, col))
-            elif token == "''":
-                if stack:
-                    # Nếu có dấu mở trong Stack, lấy ra (Bắt cặp thành công)
-                    stack.pop() 
+
+            if token[0] == '`':
+                if len(token) >= 2:
+                    # Mở ngoặc kép ``
+                    stack.append(('D', line_num, col))
+                    # Nếu dư ra hơn 2 dấu ` (vd ```), coi phần dư là các dấu mở ngoặc đơn lồng kế tiếp
+                    for _ in range(len(token) - 2):
+                        stack.append(('S', line_num, col))
                 else:
-                    # Nếu Stack rỗng mà lại có dấu đóng -> Bị dư dấu đóng
-                    issues.append((line_num, f"Dư dấu đóng ngoặc (\\'\\') tại cột {col} (Không có dấu mở tương ứng)"))
+                    # Mở ngoặc đơn lồng bên trong ngoặc kép
+                    stack.append(('S', line_num, col))
+            else:
+                if len(token) >= 2:
+                    # Đóng ngoặc kép ''
+                    # Trước tiên, đóng (báo thiếu) các ngoặc đơn lồng chưa được đóng còn kẹt trên đỉnh Stack
+                    while stack and stack[-1][0] == 'S':
+                        open_s = stack.pop()
+                        issues.append((open_s[1], f"Thiếu dấu đóng (') cho ngoặc đơn lồng (`) mở tại cột {open_s[2]}"))
+                    if stack and stack[-1][0] == 'D':
+                        stack.pop()
+                    else:
+                        issues.append((line_num, f"Dư dấu đóng ngoặc kép ('') tại cột {col} (Không có dấu mở tương ứng)"))
+                else:
+                    # Chỉ có 1 dấu ' duy nhất
+                    prev_char = clean_line[col - 1] if col > 0 else ''
 
-        # 3. HEURISTIC: Kiểm tra dấu nháy đơn lẻ (Dựa trên clean_line để tránh comment)
-        single_quotes = [m.start() for m in re.finditer(r"'", clean_line)]
-        for idx in single_quotes:
-            # Bỏ qua nếu là một phần của '' hoặc ``
-            if (idx > 0 and clean_line[idx-1] == "'") or (idx < len(clean_line)-1 and clean_line[idx+1] == "'"):
-                continue
-            
-            is_apostrophe = False
-            if idx > 0 and clean_line[idx-1].isalpha():
-                if idx < len(clean_line)-1 and clean_line[idx+1].isalpha():
-                    is_apostrophe = True
-                    
-            if not is_apostrophe:
-                issues.append((line_num, f"Cảnh báo: Dấu nháy đơn (') lẻ loi tại cột {idx} (Có thể lỗi chính tả)"))
+                    if stack and stack[-1][0] == 'S':
+                        # Ưu tiên coi đây là đóng ngoặc đơn LỒNG hợp lệ, vd:
+                        # ``...`Câu lạc bộ Lục lạc'...''
+                        stack.pop()
+                    elif prev_char.isalpha():
+                        # Sở hữu cách / rút gọn tiếng Anh: Louis', Rei's, don't, isn't...
+                        # -> Không phải lỗi, bỏ qua
+                        pass
+                    else:
+                        issues.append((line_num, f"Cảnh báo: Dấu nháy đơn (') lẻ loi tại cột {col} (Có thể lỗi chính tả)"))
 
-    # 4. KIỂM TRA STACK CUỐI FILE: Những gì còn kẹt lại trong Stack chính là dấu `` chưa được đóng!
-    for open_quote in stack:
-        issues.append((open_quote[0], f"Thiếu dấu đóng ngoặc (\\'\\') cho dấu mở (``) tại cột {open_quote[1]}"))
+    # 3. KIỂM TRA STACK CUỐI FILE: Những gì còn kẹt lại chính là các dấu mở chưa được đóng!
+    for kind, ln, col in stack:
+        if kind == 'D':
+            issues.append((ln, f"Thiếu dấu đóng ngoặc kép ('') cho dấu mở (``) tại cột {col}"))
+        else:
+            issues.append((ln, f"Thiếu dấu đóng (') cho ngoặc đơn lồng (`) mở tại cột {col}"))
 
     # Sắp xếp lại danh sách lỗi theo thứ tự dòng từ trên xuống dưới
     issues.sort(key=lambda x: x[0])

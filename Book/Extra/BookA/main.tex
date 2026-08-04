@@ -283,11 +283,11 @@
 % Tên cuốn truyện
 \fancyhead[LO]
 {\device\fontsize{18pt}{18pt}\selectfont
-\color{vol}{Floor 952: Intricate Birthday Rave}
+\color{vol}{Intricate Birthday Rave}
 \\[-18pt]}                      
 \fancyhead[RE]
 {\device\fontsize{18pt}{18pt}\selectfont
-\color{vol}{Étage 952 : Fête d'anniversaire complexe}
+\color{vol}{Fête d'anniversaire complexe}
 \\[-18pt]}                     
 % Số chương
 \fancyhead[RO]
@@ -313,40 +313,42 @@
 %==========================================PHẦN THÂN==========================================
 \begin{document}
 %===========================================MỤC LỤC===========================================
+% Trang bìa
 \newpage
 \thispagestyle{empty}
 \
 
+% Trang đầu tiên
 \newpage
 \thispagestyle{empty}
-\begin{figure}
+\
+
+\vspace*{\fill}
+\noindent
+\begin{minipage}[c][0.25\textheight][b]{\textwidth}
     \centering
-    \includegraphics[width=15cm]{../../Logo/round1.png}
-\end{figure}
-
-\vspace{70pt}
-
-\begin{center}
+    \includegraphics[width=15cm]{../../../Logo/round1.png}
+    \vspace{30pt} % Khoảng cách từ logo xuống tâm trang
+\end{minipage}\par
+\nointerlineskip
+\noindent
+\begin{minipage}[c][0.25\textheight][t]{\textwidth}
+    \vspace{30pt} % Khoảng cách từ tâm trang xuống phần chữ
+    \centering
     {\huge \color{vol}{{\frank volume \hbrk BIRTHDAY}}} \vspace{15pt}
     
     {\fontsize{50pt}{50pt}\selectfont \color{vol}{\vnmdisp SINH NHẬT CỦA KUON}}\vspace{15pt}
     
     {\Large \color{vol}{\vnmsans (Sinh nhật Hikawa Kuon - năm 2021)}}
-\end{center}
-
-\vfill
-
-\begin{center}
-    {\large Powered by \LaTeX, with the assistant of ChatGPT}
-\end{center}
-
+\end{minipage}
+\vspace*{\fill}
 
 \thispagestyle{empty}
 \renewcommand{\contentsname}
 {\centering\vnmsans\Large\textcolor{vol}{Mục lục}}
 {
-  \hypersetup{linkcolor=black}
-  \tableofcontents
+    \hypersetup{linkcolor=black}
+    \tableofcontents
 }
 %========================================LỜI NÓI ĐẦU==========================================
 \newpage

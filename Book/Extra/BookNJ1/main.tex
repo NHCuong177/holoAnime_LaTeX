@@ -154,7 +154,7 @@
 \newcommand{\img}[2][12.5cm]{%
     \begin{figure}[H]
         \centering
-        \includegraphics[width=#1]{../../../../Image/Book?/#2.png}                    % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
+        \includegraphics[width=#1]{../../../../Image/BookNJ1/#2.png}                    % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
     \end{figure}
 }
 
@@ -162,7 +162,7 @@
     \begin{figure}[H]
         \centering
         \animategraphics[autoplay,loop,width=#1]
-        {30}{../../../../Image/Book?/#2/#2.}{#3}{#4}                                  % Chỉ cần chèn tên tệp, lấy từ khung #3 tới #4
+        {30}{../../../../Image/BookNJ1/#2/#2.}{#3}{#4}                                  % Chỉ cần chèn tên tệp, lấy từ khung #3 tới #4
     \end{figure}
 }
 
@@ -171,7 +171,7 @@
 }
     
 \newcommand{\vid}[3][12.5cm]{%
-  \embedvideo{\includegraphics[width=#1]{../../../../Image/Book?/#2.png}}{#3.mp4}
+  \embedvideo{\includegraphics[width=#1]{../../../../Image/BookNJ1/#2.png}}{#3.mp4}
 }
 
 % C. Viết cụm và định dạng
@@ -281,25 +281,25 @@
 % Tên cuốn truyện
 \fancyhead[LO]
 {\rainbowcolor\device\fontsize{18pt}{18pt}\selectfont
-{Floor 1024: Twelve Days in Rainbow Land}
+{Twelve Days in Rainbow Land}
 \\[-18pt]\unrainbowcolor}                      
 \fancyhead[RE]
 {\rainbowcolor\device\fontsize{18pt}{18pt}\selectfont
-{Étage 1024 : Douze jours au pays de l'arc-en-ciel}
+{Douze jours au pays de l'arc-en-ciel}
 \\[-18pt]\unrainbowcolor}                     
 % Số chương
 \fancyhead[RO]
 {\rainbowcolor\sen\fontsize{18pt}{18pt}\selectfont
 {rainbow one}
 \ab\fontsize{18pt}{18pt}\selectfont
-{\textbf{(NIC-I)}}
+{\textbf{(NJSJ-I)}}
 \\[-18pt]\unrainbowcolor
 }
 \fancyhead[LE]
 {\rainbowcolor\sen\fontsize{18pt}{18pt}\selectfont
 {\textbf{arc-en-ciel une}}
 \ab\fontsize{18pt}{18pt}\selectfont
-{\textbf{(NIC-I)}}
+{\textbf{(NJSJ1)}}
 \\[-18pt]\unrainbowcolor}
 % Chân trang
 \fancyfoot{} 
@@ -313,39 +313,44 @@
 \begin{document}
 
 %===========================================MỤC LỤC===========================================
+% Trang bìa
 \newpage
 \thispagestyle{empty}
 \
 
+% Trang đầu tiên
 \newpage
 \thispagestyle{empty}
-\begin{figure}
-    \centering
-    \includegraphics[width=15cm]{../../Logo/round1.png}
-\end{figure}
+\
 
-\vspace{70pt}
-\rainbowcolor
-\begin{center}
+\vspace*{\fill}
+\noindent
+\begin{minipage}[c][0.25\textheight][b]{\textwidth}
+    \centering
+    \includegraphics[width=15cm]{../../../Logo/round1.png}
+    \vspace{30pt} % Khoảng cách từ logo xuống tâm trang
+\end{minipage}\par
+\nointerlineskip
+\noindent
+\begin{minipage}[c][0.25\textheight][t]{\textwidth}
+    \vspace{30pt} % Khoảng cách từ tâm trang xuống phần chữ
+    \centering
+    \rainbowcolor
     {\huge \color{vol}{{\frank volume \hbrk ARC-EN-CIEL UNE}}} \vspace{15pt}
     
     {\fontsize{50pt}{50pt}\selectfont \color{vol}{\vnmdisp (MƯỜI HAI NGÀY\\Ở THẾ GIỚI CẦU VỒNG)}}\vspace{15pt}
-    
-    % {\Large \color{vol}{\vnmsans (Mùa thu năm 2021)}}
-\end{center}
-\unrainbowcolor
-\vfill
 
-\begin{center}
-    {\large Powered by \LaTeX, with the assistant of ChatGPT}
-\end{center}
+    % {\Large \color{vol}{\vnmsans (Mùa đông năm 2020 - 2021)}}
+    \unrainbowcolor
+\end{minipage}
+\vspace*{\fill}
 
 \thispagestyle{empty}
 \renewcommand{\contentsname}
-{\rainbowcolor\centering\vnmsans\Large{Mục lục}\\\unrainbowcolor}
+{\centering\vnmsans\Large\textcolor{vol}{Mục lục}}
 {
-  \hypersetup{linkcolor=black}
-  \tableofcontents
+    \hypersetup{linkcolor=black}
+    \tableofcontents
 }
 %========================================LỜI NÓI ĐẦU==========================================
 \newpage
@@ -357,72 +362,86 @@
 %=======================================DANH SÁCH TẬP========================================
 % \newpage
 % \section*{\phantomsection\label{epNJ.0}} 
-% \addcontentsline{toc}{section}{\flaregothic{LA PRÉLUDE}} 
+% \addcontentsline{toc}{section}{{\flaregothic{LA PRÉLUDE \cafeteria | NJ-CP}} - Thế giới của vùng đất Cầu Vồng}
+% \vspace{-30pt}
 % \subfile{Episode/NJ-CP}
 
 % \newpage
 % \section*{\phantomsection\label{epNJ.1}} 
-% \addcontentsline{toc}{section}{\flaregothic{JOUR \hbrk 1}} 
-% \subfile{Episode/NJ-1}
+% \addcontentsline{toc}{section}{{\flaregothic{JOUR \hbrk 1}} - Kế hoạch Nijisanji hóa toàn cầu}
+% \vspace{-30pt}
+% \subfile{Episode/NJ-01}
 
 % \newpage
 % \section*{\phantomsection\label{epNJ.2}} 
-% \addcontentsline{toc}{section}{\flaregothic{JOUR \hbrk 2}}
-% \subfile{Episode/NJ-2}
+% \addcontentsline{toc}{section}{{\flaregothic{JOUR \hbrk 2}} - Cuộc đi dạo phiên bản cạn túi}
+% \vspace{-30pt}
+% \subfile{Episode/NJ-02}
 
 % \newpage
 % \section*{\phantomsection\label{epNJ.3}} 
-% \addcontentsline{toc}{section}{\flaregothic{JOUR \hbrk 3}} 
-% \subfile{Episode/NJ-3}
+% \addcontentsline{toc}{section}{{\flaregothic{JOUR \hbrk 3}} - Chuyện về cái cây kim}
+% \vspace{-30pt}
+% \subfile{Episode/NJ-03}
 
 % \newpage
 % \section*{\phantomsection\label{epNJ.4}} 
-% \addcontentsline{toc}{section}{\flaregothic{JOUR \hbrk 4}} 
-% \subfile{Episode/NJ-4}
+% \addcontentsline{toc}{section}{{\flaregothic{JOUR \hbrk 4}} - Ôn lại kỷ niệm}
+% \vspace{-30pt}
+% \subfile{Episode/NJ-04}
 
 % \newpage
 % \section*{\phantomsection\label{epNJ.5}} 
-% \addcontentsline{toc}{section}{\flaregothic{JOUR \hbrk 5}}  
-% \subfile{Episode/NJ-5}
+% \addcontentsline{toc}{section}{{\flaregothic{JOUR \hbrk 5}} - Bài thơ lục bát về những trò đùa trong thư viện}
+% \vspace{-30pt}
+% \subfile{Episode/NJ-05}
 
 % \newpage
 % \section*{\phantomsection\label{epNJ.6}} 
-% \addcontentsline{toc}{section}{\flaregothic{JOUR \hbrk 6}} 
-% \subfile{Episode/NJ-6}
+% \addcontentsline{toc}{section}{{\flaregothic{JOUR \hbrk 6}} - Câu chuyện thường nhật về nàng mèo hoang nghịch ngợm và những nữ sinh trung học}
+% \vspace{-30pt}
+% \subfile{Episode/NJ-06}
 
 \newpage
 \section*{\phantomsection\label{epNJ.7}} 
-\addcontentsline{toc}{section}{\flaregothic{JOUR \hbrk 7}} 
-\subfile{Episode/NJ-7}
+\addcontentsline{toc}{section}{{\flaregothic{JOUR \hbrk 7}} - Sinh tồn nơi đảo hoang trong 720 \ruby{giờ}{phút}}
+\vspace{-30pt}
+\subfile{Episode/NJ-07}
 
 \newpage
 \section*{\phantomsection\label{epNJ.8}} 
-\addcontentsline{toc}{section}{\flaregothic{JOUR \hbrk 8}}
-\subfile{Episode/NJ-8}
+\addcontentsline{toc}{section}{{\flaregothic{JOUR \hbrk 8}} - Bài đánh giá năng lực}
+\vspace{-30pt}
+\subfile{Episode/NJ-08}
 
 \newpage
 \section*{\phantomsection\label{epNJ.9}} 
-\addcontentsline{toc}{section}{\flaregothic{JOUR \hbrk 9}} 
-\subfile{Episode/NJ-9}
+\addcontentsline{toc}{section}{{\flaregothic{JOUR \hbrk 9}} - ốn điều mờ ám trong công ty Nijisanji}
+\vspace{-30pt}
+\subfile{Episode/NJ-09}
 
 \newpage
 \section*{\phantomsection\label{epNJ.10}} 
-\addcontentsline{toc}{section}{\flaregothic{JOUR \hbrk 10}}
+\addcontentsline{toc}{section}{{\flaregothic{JOUR \hbrk 10}} - Sara dễ thương\~{}}
+\vspace{-30pt}
 \subfile{Episode/NJ-10}
 
 \newpage
 \section*{\phantomsection\label{epNJ.11}} 
-\addcontentsline{toc}{section}{\flaregothic{JOUR \hbrk 11}}
+\addcontentsline{toc}{section}{{\flaregothic{JOUR \hbrk 11}} - Thử thách tạo dáng}
+\vspace{-30pt}
 \subfile{Episode/NJ-11}
 
 \newpage
 \section*{\phantomsection\label{epNJ.12}} 
-\addcontentsline{toc}{section}{\flaregothic{JOUR \hbrk 12}}
+\addcontentsline{toc}{section}{{\flaregothic{JOUR \hbrk 12}} - Trở về quá khứ, thay đổi tương lai}
+\vspace{-30pt}
 \subfile{Episode/NJ-12}
 
 % \newpage
 % \section*{\phantomsection\label{epNJ.0}} 
-% \addcontentsline{toc}{section}{\flaregothic{L'ÉPILOGUE}} 
+% \addcontentsline{toc}{section}{{\flaregothic{L'ÉPILOGUE}} - Sự diệt vong của thế giới Cầu Vồng}
+% \vspace{-30pt}
 % \subfile{Episode/NJ-CE}
 %===========================================LỜI KẾT===========================================
 \newpage
