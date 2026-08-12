@@ -60,10 +60,10 @@ def run_app():
             
             # [TẠO - THỦ CÔNG]
             if sub_choice == '1':
-                input_pathA = input("Nhập đường dẫn đến thư mục sách: ").strip()
+                input_pathA = input("Nhập mã quyển của thư mục thư mục sách: ").strip()
                 if input_pathA.lower() == 'exit': continue
 
-                input_pathB = input("Nhập đường dẫn đến tệp/thư mục con: ").strip()
+                input_pathB = input("Nhập mã quyển của thư mục tệp/thư mục con: ").strip()
                 if input_pathB.lower() == 'exit': continue
                 
                 book = os.path.splitext(os.path.basename(input_pathA))[0]
@@ -80,7 +80,7 @@ def run_app():
 
             # [TẠO - TỰ ĐỘNG]
             elif sub_choice == '2':
-                input_pathA = input("Nhập đường dẫn đến thư mục sách cần quét: ").strip()
+                input_pathA = input("Nhập mã quyển của thư mục sách cần quét: ").strip()
                 if input_pathA.lower() == 'exit': continue
                 
                 book = os.path.splitext(os.path.basename(input_pathA))[0]
@@ -115,10 +115,10 @@ def run_app():
             
             # [XÓA - THỦ CÔNG]
             if sub_choice == '1':
-                input_pathA = input("Nhập đường dẫn đến thư mục sách: ").strip()
+                input_pathA = input("Nhập mã quyển của thư mục thư mục sách: ").strip()
                 if input_pathA.lower() == 'exit': continue
 
-                input_pathB = input("Nhập đường dẫn đến tệp/thư mục con: ").strip()
+                input_pathB = input("Nhập mã quyển của thư mục tệp/thư mục con: ").strip()
                 if input_pathB.lower() == 'exit': continue
                 
                 book = os.path.splitext(os.path.basename(input_pathA))[0]
@@ -137,7 +137,7 @@ def run_app():
 
             # [XÓA - TỰ ĐỘNG]
             elif sub_choice == '2':
-                input_pathA = input("Nhập đường dẫn đến thư mục sách cần quét dọn: ").strip()
+                input_pathA = input("Nhập mã quyển của thư mục thư mục sách cần quét dọn: ").strip()
                 if input_pathA.lower() == 'exit': continue
                 
                 book = os.path.splitext(os.path.basename(input_pathA))[0]

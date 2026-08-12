@@ -4,8 +4,9 @@ Cover
 Image
 Character
 Logo
-Requirement
+Material
 Implementation
+Reserved
 */*/Image
 */*/ds
 
@@ -80,5 +81,6 @@ Book\hnG\Phase1\Book3\mv.mp4
 */*/*/*/*.toc
 
 */Extra/BookER/*.txt
-Extra/BookER/1-C_club.txt
-Extra/BookER/character_intro*.txt
+*/Extra/BookER/1-C_club.txt
+*/Extra/BookER/character_intro*.txt
+*//Extra/Reserved
