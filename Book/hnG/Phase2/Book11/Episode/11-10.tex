@@ -1,0 +1,406 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+%==========================================TIÊU ĐỀ TẬP========================================
+\begin{table}[h]
+    \begin{adjustwidth}{-1cm}{}
+        \begin{tabular}{>{\centering\arraybackslash}p{6cm}|>{\raggedright\arraybackslash}p{12cm}}
+            \multirow{5}{6cm}
+            % Cột bên trái: ÉPISODE và số tập
+            {\\[-40pt]
+            \centering
+                {\fontsize{20pt}{20pt}\selectfont{\outlinetext[1]{eptype}{white}{\flaregothic ÉPISODE}}\\[12pt]
+                {\fontsize{72pt}{72pt}\selectfont{\outlinetext[1]{epnum}{white}{\burbank 144}}}\\[6pt]       % use for normal/special episodes
+                % {\fontsize{36pt}{36pt}\selectfont{\outlinetext[1]{epnum}{white}{\vnmdisp SÁU}}}\\[6pt]     % use for custom episodes
+                {\fontsize{20pt}{20pt}\selectfont{\outlinetext[1]{epnum}{white}{\cafeteria (11-10)}}}\color{black}}
+                \\[18pt]
+                % {\fontsize{14pt}{14pt}\selectfont{\outlinetext[1]{epattr}{white}{\flaregothic [I]}}}\\
+                % {\fontsize{18pt}{18pt}\selectfont{\outlinetext[1]{epattr}{white}{\flaregothic [II]}}}\\
+                \color{black}
+            }
+             &
+            % Dòng thứ nhất: tên tập tiếng Nhật
+            {\fotskip\fontsize{18pt}{18pt}\selectfont \ruby{狂}{きょう}\ruby{人}{じん}に\ruby{頼}{たの}んだ\ruby{結}{けっ}\ruby{果}{か}}                                                                                                                                                                         \\[6pt]
+            % Dòng thứ hai: tên tập tiếng Anh
+             & {\cafeteria\fontsize{18pt}{18pt}\selectfont Who You Gonna Call?}                                                                                                                                                                               \\[4pt]
+            % Dòng thứ ba: tên tập tiếng Việt
+             & {\vnmsans\fontsize{18pt}{18pt}\selectfont Câu lạc bộ mùa hạ (sớm!)}                                                                                                                                                                         \\[8pt]
+            % Dòng thứ tư: Nhân vật xuất hiện
+             & {\caviar{\fontsize{14pt}{14pt}\selectfont Nhân vật: \emp{kuon2} \emp{naomi2} \emp{aki} \emp{haato} \emp{marine} \emp{rushia} \emp{watame} \emp{luna}}} \\[8pt]
+            % Dòng cuối cùng: Thời gian diễn ra của tập (thường sẽ là ngày phát hành)
+             & {\continuum\fontsize{16pt}{16pt}\selectfont Ngày phát hành: 13/02/2022}                                     \\[18pt]
+        \end{tabular}\\[8pt]
+    \end{adjustwidth}
+\end{table}
+%=========================================TRUYỆN CHÍNH========================================
+\color{black}
+
+\txtbx[2]{
+    {\color{vol} \uline{Tóm tắt:}} Ngày nắng nóng bất thường giữa tháng Hai, Rushia gọi Haato cầu cứu. Cả văn phòng bị hút xuống vũ trường ngầm bí mật: Rushia bị biến thành ``Người Sắt'' và bị Aki, Marine, Watame, Luna săn đuổi để lấy XP. Sau màn nổ ánh sáng chói lòa, mọi người bị cháy đen. Haato bị yêu cầu phá vũ trường, và YAGOO cuối cùng cũng đồng ý mua điều hòa. Kuon lặng lẽ nghĩ về Rushia - tài năng sắp bị rời đi.
+}
+
+Gần một tuần đã trôi qua kể từ khi Kuon chính thức quay trở lại ghế làm việc. Tất cả mọi thứ có vẻ sẽ diễn ra bình thường, nếu như tối qua cậu không quên sạc pin cho chiếc đồng hồ thông minh, nơi mà trợ lý ảo Game của cậu luôn trú ngụ. Kết quả là hôm nay, cậu đành phải để người bạn kỹ thuật số của mình ``nằm yên chờ chết'' ở nhà, không thể mang theo bên người.
+
+Chuyện chưa dừng lại ở đó, cô em gái nhỏ Naomi còn nằng nặc đòi đi theo anh trai đến nơi làm việc. Dù biết rằng mang em đến văn phòng sẽ không hề đơn giản và cũng không có gì để chơi, nhưng trước ánh mắt long lanh đáng thương của Naomi, Kuon chỉ có thể bất đắc dĩ đồng ý. Thế là cậu vừa bồng vừa dắt theo cô em út đến văn phòng \hll, vừa làm việc vừa tiện chăm sóc em.
+
+Ở thế giới thực, vùng Kawachi vẫn còn giữ cái se lạnh đặc trưng của những ngày cuối đông. Mọi thứ đều diễn ra đúng như lịch trình tự nhiên của nó, không có gì khác lạ. Đó là cái thời tiết bình thường đến mức không thể bình thường hơn.
+
+Nhưng tất cả những điều đó lại chẳng hề tồn tại ở Thành phố Điện tử, khu vực nằm ngay tại trung tâm Akiba ảo. Ngay khi mùa xuân mới chỉ chạm ngõ và mùa hè còn cách tận bốn tháng, nơi đây lại đột ngột bước vào một ngày oi bức đến bất thường. Nhiệt độ bỗng dưng vọt lên cao, khiến ai cũng cảm thấy khó hiểu.
+
+Cái nóng hầm hập bao trùm lấy toàn bộ tòa nhà, càng về giữa trưa lại càng trở nên ngột ngạt và khó chịu. Tệ hơn nữa, phòng làm việc của \hll\ lại chẳng có lấy một tấm rèm nào để che chắn. Tia nắng gay gắt thẳng thừng chiếu vào mọi ngóc ngách, không chừa lại một góc mát mẻ nào.
+
+Kim đồng hồ đã chỉ đúng mười hai giờ trưa. Ánh nắng vàng rực rỡ phủ lên toàn bộ văn phòng, nhưng không ai trong số những người có mặt cảm thấy dễ chịu. Đã đến lúc bữa trưa phải bắt đầu, nhưng cái nóng lại làm dập tắt đi mọi cảm giác thèm ăn.
+
+Cậu Tổng phụ trách quản lý vẫn miệt mài ngồi trước bàn làm việc, đôi tay không ngừng gõ phím để hoàn thành đống sổ sách chất cao như núi. Giống như bao ngày khác, cậu luôn là người chăm chỉ nhất trong văn phòng. Thế nhưng hôm nay, thi thoảng cậu lại phải dừng lại để ngẩng đầu thở dài, ngắm nhìn bầu trời ngoài cửa sổ.
+
+``Sao hôm nay trời nắng dữ thần thế nhỉ\dots''
+
+Cậu lại cúi đầu gõ thêm vài dòng, nhưng cái nóng lại khiến cậu không thể tập trung. Cậu dừng tay, tặc lưỡi một lần nữa trước tình hình thời tiết khó hiểu. Rồi cậu lại ngẩng lên, nói với chính mình cũng như với những người xung quanh một câu hỏi mà chẳng ai có thể trả lời.
+
+``El Niño năm nay đến sớm à\dots?''
+
+Naomi ngồi cạnh cậu Tổng, cầm bút màu đang cặm cụi tô cho những hình vẽ trong sách tranh. Cô bé cũng không chịu được cái nóng, nên vừa tô màu vừa cầm cuốn sổ tay lớn quạt phẩy phạch cho cả mình lẫn anh trai. Những giọt mồ hôi lấm tấm rơi trên trán cô bé, thấm ướt cả mảng tóc mai.
+
+``Onii-chan, Naomi thấy như đang ở trong lò nướng bánh vậy đó\dots''
+
+Tất nhiên, với khả năng chịu nhiệt được rèn luyện qua bao lần phải đứng dưới bếp pha cà phê cho cả văn phòng trong những ngày hè oi bức, mức nhiệt này chẳng là gì với Kuon. Cậu chỉ cầm mấy tờ giấy báo cáo quạt nhẹ qua lại, thản nhiên gõ tiếp phím máy tính.
+
+Naomi thậm chí cũng chẳng mảy may bận tâm đến thời tiết. Cô bé vừa tô màu tranh, vừa cầm chiếc quạt giấy Kuon mua hồi tuần trước quạt đều đều, thỉnh thoảng lại cười khúc khích khi vẽ thêm bông hoa vào góc tranh. Hồi còn là một hồn ma lang thang trên đường phố mùa hè, cô bé đã chịu đựng cái nóng còn tồi tệ hơn thế này nhiều.
+
+Nhưng đối với Rushia - người đang cố trùm kín chiếc áo mỏng lên đầu để ngủ ngon trên chiếc ghế bành gần cửa sổ - cái nhiệt độ này chính là cơn ác mộng tồi tệ nhất từ trước đến nay. Cô liên tục xoay người tìm vị trí mát mẻ, mà tia nắng gay gắt cứ như có mắt, chiếu thẳng vào mặt cô dù cô quay hướng nào.
+
+\img{11-10a}
+
+Khuôn mặt nhỏ nhắn của Cô đồng nhăn nhó đầy khổ sở, đôi mắt vốn trong sáng giờ thì sưng húp vì không thể chợp mắt nổi. Mồ hôi lấm tấm tràn ra trên trán, làm ướt cả mảng tóc mái.
+
+Sức nóng hầm hập bóp nghẹt khiến Rushia không thể chịu thêm được một giây nào nữa. Cô chồm dậy với thái độ cáu kỉnh đến mức tóc tai cũng dựng đứng, lao ầm ầm ra trước cửa sổ. Cô chống tay lên bậu cửa, gương mặt đỏ bừng vì nóng và tức giận, rồi gào lên bạt mạng: ``\textbf{Cái mồ mả tia nắng mặt trời này!! Nóng quá rồi đấy! Làm ơn dịu bớt đi có được không vậy hả?!}''
+
+Kuon ngoái đầu từ chiếc bàn làm việc của mình, nhìn cảnh Cô đồng đang đứng chửi rủa cả một thiên thể cách trái đất 150 triệu km, cậu ngơ ngác đáp lại: ``Công nhận hôm nay trời nóng thật. Cơ mà\dots''
+
+Kỳ lạ thay, đúng như đáp trả lời phàn nàn của cô, một khuôn mặt mặt trời tròn tròn, nụ cười tươi rói đột nhiên xuất hiện lơ lửng ngoài không trung. Thậm chí nó còn vẫy tay chào các cô cậu, rồi cất giọng đáp lại Rushia bằng tông giọng vừa cảm thông vừa trêu ngươi: ``Không được đâu, xin lỗi nha\~{}''
+
+\img{11-10b}
+
+Kuon đổ mồ hôi hột, vội vàng gãi đầu bối rối, cố gắng kéo cô đồng đang nổi điên lại. Cậu nói nhỏ như muốn an ủi: ``\dots Có hét thế nào thì trời cũng chẳng mát hơn được đâu Ru-chan ơi.''
+
+Naomi thì tròn xoe mắt to như hạt nhãn, chỉ tay ra ngoài cửa sổ với giọng nói phấn khích không thể che giấu: ``Rushia-oneechan, Ông Mặt Trời vừa mới nói chuyện với chị kìa!''
+
+Rushia chẳng thèm để tâm đến lời em bé, cô nghiến răng ken kẹt, giơ nắm đấm nhỏ nhắn của mình lên trời như muốn thách thức cả vũ trụ: ``\textbf{Ông đây sẽ chết sống với ngươi!!}''
+
+Kuon hoang mang tột độ, vội vàng giữ lấy vai cô đồng để cô không đâm đầu ra ngoài cửa sổ làm gì dại dột. Cậu lặp lại câu hỏi của mình, lo lắng: ``Em có nghe anh nói không đấy\dots?''
+
+Rushia quay phắt lại, mái tóc bồng bềnh tung tăng theo động tác, gương mặt đầy phẫn nộ. Cô gào lên, giọng nói còn lớn hơn cả tiếng gió ngoài cửa: ``\textbf{Có chứ! Thế mà anh không thấy khó chịu chút nào sao?!}''
+
+Kuon xòe hai tay ra trước ngực, ra vẻ vô can. Cậu bình thản giải thích, giọng nói vẫn vững vàng dù đối mặt với cơn thịnh nộ của cô đồng: ``Anh chịu nóng giỏi mà. Nhưng thời tiết kiểu này đúng là cực đoan thật.''
+
+Rushia đập tay mạnh cái rầm lên bậu cửa sổ, làm mấy chậu cây nhỏ trên đó cũng rung lắc. Cô mắt tròn mắt dẹt, hét lên như vừa tìm được đồng minh: ``Đúng chứ?! Đã thế thì\dots''
+
+Cô tức tốc lục trong túi áo ra chiếc điện thoại màu hồng, lướt nhanh qua danh bạ để tìm ra một cái tên duy nhất. Đó là nhân vật duy nhất trên đời này có thể giải quyết những chuyện phi lý, bất khả thi như thế này. Đầu dây bên kia vừa bắt máy, Rushia liền hét vào loa thật to, không để đối phương kịp nói lời nào: ``\textbf{A-lô?! Haato đấy à? Em muốn tìm cách nào đó để cái gã mặt trời kia không bao giờ có thể mọc lên được nữa!}''
+
+Ngay lập tức, Naomi từ phía sau vội vàng buông bút màu, chạy lại kéo nhẹ vạt áo của nàng Pháp sư cô đồng. Cô bé ngước lên, giọng nói đầy lo lắng về hậu quả: ``Nhưng nếu không có mặt trời, cây cối sẽ chết, Naomi cũng không thể ra công viên chơi nữa đâu đó.''
+
+Rushia chỉ xua tay như đuổi ruồi, hoàn toàn không mảy may để tâm đến lời cảnh báo của em bé. Cô toàn tâm toàn ý tập trung vào cuộc gọi, thề phải hạ gục được cái ``gã mặt trời'' kia.
+
+Ở đầu dây bên kia, cách văn phòng không xa, nàng Song tính Haato đang thong thả nằm trên ghế bãi biển dưới chiếc ô che mát rượi. Một tay cô cầm cốc trà sữa trân châu lớn, hút sột sột thỏa thích, rồi đáp lại với giọng nói đầy hào hứng: ``Ô-kê\~{} Hẹn gặp ở câu lạc bộ nhé?''
+
+\img{11-10c}
+
+Nói rồi Haato chêm thêm một câu nhanh nhảu trước khi bấm nút cúp máy, giọng nói truyền đến rõ mồn một: ``À, bảo cả Kuon-senpai cùng đi nữa nha!''
+
+Kuon đứng cạnh đó, nghe rõ từng chữ, cậu chỉ vào chính mình với ánh mắt ngơ ngác không hiểu chuyện gì. Cậu thốt lên đầy bối rối: ``Ủa liên quan? Cái gì vậy?''
+
+Rushia cũng ngẩn người ra, cầm điện thoại còn đang áp vào tai, cô định nói gì đó để phản đối: ``Ơ, nhưng mà--''
+
+Chưa kịp để Cô đồng nói dứt câu, một cái hố đen xoáy tròn bất ngờ mở ra ngay dưới chân cô. Nó hút mạnh mọi thứ xung quanh, nuốt chửng Rushia lọt thỏm xuống sâu bên dưới trước khi kịp la lên. Ngay lập tức, tiếng nhạc sàn techno xập xình vang lên xối xả từ dưới lòng hố, rung chuyển cả sàn nhà văn phòng.
+
+``Cái quái gì thế này\dots?'' cậu Tổng phụ trách Kuon trợn tròn mắt, nhìn cái hố đen đang dội ra tiếng nhạc lạ lùng. Cậu nghiêng đầu sang Naomi, thốt lên đầy khó hiểu: ``Công ty ta có quán bar hay câu lạc bộ tầng dưới từ khi nào vậy?''
+
+Naomi thì không hề sợ hãi, ngược lại cô bé thích thú nắm chặt lấy vạt áo anh trai, đôi mắt long lanh sáng rực như thấy được kẹo. Cô kéo Kuon lại gần cái hố, giọng nói phấn khích: ``Onii-chan ơi! Ở dưới đó có nhạc hội kìa! Naomi cũng muốn xuống đó xem!''
+
+Tò mò trước sự việc kỳ quái không thể hiểu nổi, cũng không thể để em bé một mình, Kuon dắt chặt tay em gái nhỏ. Cậu hít một hơi thật sâu, rồi cùng nhảy tót xuống cái hố đen kỳ lạ đó, để tìm hiểu đầu đuôi câu chuyện.
+
+\ct
+
+Hai anh em Kuon và Naomi rơi tự do xuyên qua tầng đất, thẳng xuống một không gian chập chờn ánh đèn laser đủ màu. Những nhịp bass trầm dội mạnh từ loa khổng lồ, làm rung chuyển cả sàn nhà dưới chân hai người. Cả vũ trường ngầm này trông chẳng khác nào một câu lạc bộ đêm bí mật giữa lòng thành phố.
+
+\img{11-10d}
+
+Bên dưới sàn nhảy, Aki, Watame và Marine đang lắc lư uốn éo nhiệt tình theo điệu techno xập xình. Mồ hôi lấm tấm trán, nhưng vẻ mặt ai cũng rạng rỡ như đang tận hưởng khoảnh khắc tốt nhất trong ngày. Không ai trong số họ còn nhớ đến cơn nóng bức đang hành hạ mọi người ở tầng văn phòng.
+
+Vừa chạm đất êm ái, Kuon đã lập tức nhăn mặt rúm người lại. Cậu vốn dị ứng với những nơi ồn ào đông đúc thế này, ngay lập tức gợi lên ký ức ám ảnh về mấy chầu ``tăng hai'' karaoke hồi cấp hai, khi cậu bị bố lôi đi cùng mấy ông bạn già. Tiếng nhạc ồn ào dội vào màng nhĩ, khiến cậu muốn nổ đầu. Chỉ cần ở đây mười phút thôi cũng đủ khiến cậu phát điên lên mất.
+
+Naomi đứng bên cạnh cũng chẳng khá hơn, em bé vội bịt chặt hai tai nhỏ, túm chặt lấy vạt áo anh trai rồi ngơ ngác nhìn ngắm khung cảnh xa lạ xung quanh. Đôi mắt to tròn của em bé lộ rõ sự hoảng sợ trước sự ồn ào này.
+
+Giữa đám đông đang nhún nhảy, một giọng nói quen thuộc bỗng vang lên từ trên cao, vang vọng cả qua tiếng nhạc: ``Có thấy Rushia-chan với Kuon-senpai đâu không\~{}?''
+
+% \img{11-10e}
+
+Kuon lập tức ngước đầu lên tìm nguồn tiếng nói, và suýt nữa thì sặc nước bọt vào chính họng. Haato đang đu người chổng ngược trên cây cột kim loại giữa sàn nhảy, thậm chí cô ấy còn đang mặc một chiếc váy ngắn xòe bay mỗi khi cô xoay người. Cảnh tượng này làm cậu rơi vào trạng thái bối rối hoàn toàn.
+
+Cậu Tổng phụ trách vội vã giơ tay che chắn lấy đôi mắt của em gái Naomi, trong lòng thầm niệm chú bình tĩnh để giữ gìn lý trí: ``\textit{Mình là người có văn hóa, không được nhìn lung tung\dots}''
+
+``\textbf{Có! Anh ở đây! Mà anh cũng đang định hỏi--}'' Kuon hét lớn để giọng mình vượt qua tiếng nhạc, tay vẫn chưa hạ xuống từ mắt em gái. Cậu chưa kịp nói hết câu hỏi, một tiếng hú lớn đã cắt ngang lời cậu.
+
+Chưa kịp để cậu hoàn thành câu nói, Marine đã khom người chắp tay quanh miệng hú lên thật to, tiếng vang xa cả trong đám đông: ``Nào, Ru ơi, Ru à\dots\ Ru-Ru-Ru-Ru\~{}'' Thuyền trưởng vừa hú vừa nhún nhảy theo nhịp nhạc, vẻ mặt phấn khích không thể che giấu.
+
+Kuon lập tức nổi vạch đen trên trán, cậu thở dài bất lực: ``Có phải gọi chó đâu mà Ru Ru thế kia\dots'' Cậu chẳng thể hiểu nổi nổi logic của những người bạn đồng nghiệp này, mọi thứ cứ ngày một kỳ quặc hơn.
+
+Thế nhưng ngay lập tức, một mái tóc xanh lá cây bỗng lấp ló ra từ sau một chậu lá bọc tường, nơi tưởng chừng chẳng ai có thể trốn được. Rushia nghiêng đầu đáp lại Thuyền trưởng bằng một tiếng đầy vô thức, như bản năng đã ăn sâu vào máu: ``Ru?'' Cô đồng trông còn hoảng sợ hơn cả khi vừa rơi xuống đây.
+
+\img{11-10f}
+
+Cô em út nhà Hikawa mắt sáng rực khi phát hiện ra Rushia, em bé chỉ tay về phía nàng Pháp sư và reo lên vui vẻ: ``Rushia-oneechan trốn trong đó kìa!''
+
+Haato từ trên cột vẫn đang đu chổng ngược, nghe thấy tiếng gọi cũng lập tức hùa theo, giọng cô vang lên hào hứng: ``Ru!'' Cả hai người cùng hô một tiếng, tạo thành một sự phối hợp quái đản không thể tưởng tượng nổi.
+
+Sự phối hợp kỳ quặc này khiến Kuon hoàn toàn rối não, đứng im một chỗ chẳng thể nói nên lời. Cậu chỉ biết đứng nhìn bọn họ hành xử như những đứa trẻ mới lớn, trong khi bản thân cố gắng giữ chặt tay em gái để không bị lạc mất giữa đám đông.
+
+Marine tiến lại nhanh chóng, giơ tay túm lấy tóc đồng nghiệp lôi xềnh xệch ra khỏi chỗ ẩn nấp, y hệt cái cách Kuon hay lôi con cún Mi ở nhà ra khỏi gầm giường mỗi khi tới giờ tắm. Thuyền trưởng chẳng mảy may để tâm đến vẻ mặt đau khổ của Rushia.
+
+Thuyền trưởng ôm chầm lấy người bạn cùng Thế hệ, reo lên vui sướng như vừa tìm được kho báu: ``Tìm thấy Ru-Ru-Ru-Rushia rồi nhé!'' Cô ấy vỗ vào lưng Rushia liên tục, khiến cô đồng hoảng loạn chẳng thể nói nên lời.
+
+Cậu Tổng nhìn kỹ thì thấy Cô đồng đang run rẩy bần bật cả người. Rushia vốn giống cậu, vừa hướng nội vừa sợ đám đông, nhưng đến mức này thì rõ ràng là đang hoảng loạn tột cùng, đôi mắt tròn xoe chẳng thể tập trung vào đâu. Cậu tự hỏi trong lòng: ``\textit{Hình như Senchou gọi Rushia như gọi cún vì em ấy đang sợ đám đông sao? Nhưng nếu thế thì cứ gọi bình thường là được mà\dots}'' 
+
+\img{11-10g}
+
+Trước khi Kuon kịp lên tiếng can ngăn, sự kỳ quặc của vũ trường này lại tiếp tục nâng lên một tầm cao mới. Nàng Song tính từ trên cột nhảy vèo xuống đất nhẹ nhàng như một con mèo, rồi rút ra một cái thanh mờ ám có dán nhãn ``Dùng cho mục đích công việc''.
+
+Cô nàng hét to thật to, giọng vang vọng cả khu vực: ``\textbf{Đã nhập gia thì phải tùy tục!!}'' Mọi người xung quanh đều ngoái nhìn về phía họ, nhưng Haachama chẳng mảy may để tâm đến ánh mắt của ai.
+
+Nói rồi, cô ném mạnh cái thanh đó về phía Rushia. *PHẬP!* Chiếc thanh cắm thẳng vào miệng Rushia, làm cổ Cô đồng ngửa ngoắt ra sau, cả người đứng chênh vênh suýt ngã. Tất cả những ai chứng kiến cảnh tượng này đều giật mình.
+
+% \img{11-10h}
+
+Marine lẫn Kuon cùng giật thót mình, không ngờ nàng Song tính lại hành động điên rồ đến thế. Kuon hốt hoảng chạy lại gần, hét lên lo lắng: ``C-Có sao không đấy?!''
+
+Nhưng bất ngờ thay, Rushia từ từ cúi mặt xuống, bình thường trở lại sau cú sốc ban đầu. Không biết từ đâu, một chiếc kính râm ngầu lòi đã chễm chệ trên mắt cô, như thể nó xuất hiện từ hư vô. Cả khung cảnh bỗng dưng trở nên kỳ ảo hơn bao giờ hết.
+
+Nàng Pháp sư bắt đầu nhún nhảy theo nhịp nhạc cực bốc, miệng vẫn ngậm cái thanh mờ ám tạo ra tiếng ``mogu mogu'' chép chép, hai tay múa máy tạo dáng như một DJ chuyên nghiệp đang điều khiển bữa tiệc. Cả người cô tỏa ra năng lượng tích cực không thể ngăn cản.
+
+Đỉnh điểm là Haachama bất ngờ lôi ra một cây kèn clarinet từ sau lưng, đứng bên cạnh Rushia thổi tò te te ăn rơ kỳ lạ với điệu nhạc DJ của Xô đồng. Hai người phối hợp hoàn hảo, tạo thành một màn trình diễn độc đáo giữa sàn nhảy.
+
+\img{11-10i}
+
+Naomi ngơ ngác nhìn cảnh tượng trước mắt, rồi vỗ tay reo lên thích thú: ``Rushia-oneechan ngầu quá Onii-chan ơi!'' Em bé không còn sợ hãi nữa, thay vào đó là sự ngưỡng mộ dành cho cô nàng Pháp sư ngầu kia.
+
+Kuon hoang mang tột độ đứng nhìn mọi thứ. Trong mắt cậu, nơi này chẳng còn là vũ trường nữa mà là một cái trại tâm thần thu nhỏ, tất cả mọi người ở đây đều đã mất đi lý trí. Cậu chẳng thể tin được những người bạn đồng nghiệp của mình lại hành xử như vậy.
+
+Cậu dắt Naomi tiến lại gần Aki và Watame - hai người vẫn đang ``phiêu'' theo điệu nhạc - để hỏi cho ra lẽ chuyện gì đang xảy ra. Kuon hét lớn để vượt qua tiếng nhạc: ``Chuyện quỷ quái gì đang xảy ra ở đây thế này?''
+
+Watame vừa nhún nhảy theo nhạc vừa ngơ ngác đáp lại, vẻ mặt vô tội như chẳng hiểu tại sao cậu Tổng lại hỏi vậy: ``Em đâu có biết gì đâu! Em chỉ nhờ Haato-senpai tìm một chỗ nào đó mát mẻ để tránh nóng thôi mà!''
+
+Marine cũng xoa đầu phân bua, gật đầu đồng tình với Watame: ``Em cũng nhờ chị ấy tìm chỗ mát!'' Thuyền trưởng nói như thể việc đến vũ trường là điều đương nhiên nhất thế giới.
+
+Kuon nheo mắt lại, cố gắng hiểu nổi logic của họ, cậu hỏi lại với giọng không thể tin được: ``\dots Và thế là em ấy lôi tọt mấy đứa xuống cái động này? Một vũ trường ngầm nghe có phải là cách tránh nóng bình thường đâu!''
+
+Watame và Marine đồng thanh gật đầu, chẳng thấy có gì sai với hành động của Haato: ``Đúng á!'' Cả hai người cùng nói, vẫn chưa dừng việc nhún nhảy theo nhịp nhạc đang phát.
+
+Tới đây, cậu Tổng cạn lời, đứng im một chỗ chẳng thể nói nên lời. Cậu thở dài bất lực: ``Sao lại thế được\dots?''
+
+Watame thở dài, như thể đổ lỗi hết cho Haachama: ``Tại Haato-senpai cứ luôn miệng bảo `nhập gia tùy tục' chứ bộ.'' Cô nàng nhắc lại câu nói cửa miệng của Haato, như đó là một chân lý bất biến.
+
+Marine méo mặt, vẻ mặt bất lực khi kể lại chuyện: ``Bọn em có muốn thế đâu! Cẩn thận đó Kuon-senpai--'' Cô nàng định cảnh báo điều gì đó cho Kuon, nhưng chưa kịp nói hết thì một tiếng còi lớn đã cắt ngang lời cô.
+
+*BÍP BÍP!*
+
+Tiếng còi xe hơi vang lên xé tan tiếng nhạc sàn, khiến mọi người trong vũ trường cùng ngoái đầu nhìn về phía lối vào. Một chiếc ô tô thể thao màu hồng gầm rú lao thẳng vào giữa sàn nhảy, bánh xe trượt mạnh trên sàn gỗ.
+
+``Chị đán da không đực ăn thứ đó đâu-nora!!''
+
+\img{11-10j}
+
+Giọng nói ngọng nghịu đặc trưng của Công chúa Luna vang lên từ ghế lái khi cô bé nhấn kịch ga, chiếc xe tiếp tục lao về phía trước với tốc độ kinh hoàng. Luna trông chẳng hề sợ hãi, ngược lại còn rất phấn khích với hành động điên rồ của mình.
+
+Kuon còn chưa kịp hỏi làm cách nào mà cô công chúa này lái được cả chiếc xe ô tô xuống cái vũ trường ngầm này thì chiếc xe đã lao vụt tới. Cậu chỉ đứng im một chỗ tròn mắt nhìn cảnh tượng không thể tin được trước mắt.
+
+*VÙUUUUNG!*
+
+Thay vì tông vào Rushia đang đứng phiêu nhạc giữa sàn, chiếc xe lướt qua cô trong gang tấc, chỉ cách có vài centimét. Và thay vào đó, nó tông thẳng vào Haachama đang đứng sau lưng Rushia.
+
+*BỐP!*
+
+Nàng Song tính bị hất văng thẳng lên trời như một quả bóng, chỉ kịp để lại một tiếng kêu thất thanh vang vọng khắp nơi: ``\textbf{Haachamachama\dots!}'' trước khi biến mất hút trên trần nhà cao của vũ trường. Không ai biết cô ấy bay đi đâu.
+
+Rushia tháo chiếc kính râm ra, chẹp miệng nuốt chửng cái thứ trong miệng rồi ngơ ngác quay sang nhìn Luna. Cô đồng hỏi với vẻ mặt không thể hiểu nổi: ``Chị tưởng bà đồng thì có thể ăn được cả màng bọc nhôm chứ?''
+
+Kuon đứng chết trân tại chỗ, đầu đầy những vạch đen tưởng tượng, cậu hét lên không thể tin được: ``\dots Cái quái gì vậy? Em đang nói nhảm cái gì thế Ru-chan?''
+
+Cậu tạ ơn trời đất vì bản thân không bị ép ăn cái ``màng bọc nhôm'' đó. Nhìn quanh một lượt từ Rushia, Marine cho tới Luna, Kuon chỉ biết thở dài bất lực rồi dắt chặt tay Naomi. Cậu quyết định phải đưa em gái ra khỏi nơi điên rồ này càng sớm càng tốt.
+
+Hóa ra trong cái vũ trường quái đản này, cậu chính là người duy nhất còn giữ được chút tỉnh táo tối thiểu. Mọi người còn lại đều đã bị những trò đùa điên rồ của nàng Song tính hút hồn, mất đi khả năng phán đoán đúng sai.
+
+\ct
+
+Ở phía trên không trung, Haato đang bị lực ly tâm xoay mòng mòng trong tư thế ngồi khoanh chân kỳ quặc. Trước khi bay vút lên không gian và biến mất hẳn, cô vẫn kịp để lại một câu đáp trả Rushia: ``Em biết đấy\dots\ Nó không phải là màng bọc đâu, đó là màng nhôm đó\~{}''
+
+\img{11-10k}
+
+*VỤT!*
+
+Ngay tại sàn nhảy của vũ trường ngầm, như thể có một sức mạnh vô hình nào đó lắng nghe được câu nói cuối cùng của nàng Song tính, toàn bộ thân thể Rushia đột nhiên được quấn lấy bởi một lớp phủ kim loại xám nhũ lấp lánh của nhôm. Cô nàng cứng người ngây người, nhìn xuống bộ quần áo quen thuộc giờ đã biến đổi hoàn toàn, trước khi ngước lên bắt gặp ánh mắt kinh ngạc từ bốn người bạn: Aki, Luna, Watame và vị thuyền trưởng Marine.
+
+Bé Naomi vẫn đang ngồi cưỡi chễm chệ trên vai anh trai, cặp mắt tròn xoe mở lớn như hai hạt nhãn khi cô bé chỉ tay vào hình ảnh khó tin trước mặt. Giọng nói ngây thơ tràn đầy phấn khích vang lên: ``A! Onii-chan nhìn mau kìa! Rushia-oneechan biến thành Người Sắt lấp lánh y hệt trong bộ phim hoạt hình mà hồi trước Naomi và bố đã xem trên TV luôn!''
+
+Vốn tưởng rằng bộ dạng kim loại lạ lùng này sẽ đủ để làm người khác sợ hãi, Rushia lập tức học theo các nhân vật phản diện trong phim. Cô nàng thè lưỡi, trợn ngược hai mắt lên và gào lên với giọng cường điệu: ``Hahaha! Ta là quái vật kim loại đây!!''
+
+\img{11-10l}
+
+Nhưng không ngờ rằng, động tác dọa người của Cô đồng lại hoàn toàn phản tác dụng. Lớp mạ nhôm lấp lánh chẳng những không làm ai bật ngửa mà chạy, ngược lại còn chạm đúng vào nút kích hoạt bản năng săn quái trong game của cả bốn cô nàng ở đó. Đôi mắt của Aki, Luna, Marine và Watame đồng loạt bừng sáng, ánh lên sự thèm khát chẳng khác nào gặp được báu vật.
+
+Không cần đắn đo thêm một giây nào, cả bốn người đồng thanh rống lên rồi xông thẳng về phía nàng Pháp sư kia: ``Cày XP thôi nào đêêê!'' ``Quái Kim Loại xuất hiện rồi kìa!'' ``1350 XP! 1350 XP!''
+
+Rushia hoảng hồn đến mức tóc tai cũng dựng đứng, vội vàng chìa tay túm chặt lấy vạt áo sau lưng của Kuon, kéo cậu xềnh xệch cùng mình chạy bán mạng. Kuon vốn đang cõng Naomi trên cổ, suýt chút nữa thì vấp ngã ngửa ra sàn nhà khi bị kéo đột ngột, cậu chỉ kịp kêu lên: ``Cái quái gì đang diễn ra thế này--?!''
+
+Naomi ngồi cao trên đầu anh trai chẳng hề hay biết sự nguy cấp, ngược lại cô bé còn ôm chặt lấy trán Kuon để giữ thăng bằng, cười khúc khích thích thú như đang chơi đuổi bắt thật sự. ``Các chị đang đuổi theo mình rồi kìa Onii-chan! Chạy nhanh lên nào, đừng để bị bắt!'' em bé reo lên.
+
+Rushia vừa cắm đầu chạy vào một hành lang hẹp, vừa quay đầu gào lên cầu cứu với giọng run rẩy: ``\textbf{Bọn họ định xiên lấy em để đổi điểm thật đấy Kuon-senpai! Cứu em với!}''
+
+Kuon vừa chạy vừa phải giữ chặt hai cổ chân nhỏ của Naomi để em bé không bị tuột xuống, cậu cũng gào lại với giọng bất lực: ``\textbf{Đừng có mà lôi cả anh và Naomi vào mấy trò điên rồ này chứ!}''
+
+Phía sau lưng, đoàn quân săn XP vẫn hừng hực khí thế, tiếng hô vang vọng khắp các bức tường đá: ``1350 XP! 1350 XP!''
+
+Cậu Tổng vừa chạy vừa ngoái đầu lại chửi thề một câu, mồ hôi trộm nhễ nhại: ``\textbf{Chúng ta đang không ở trong game Dragon Quest đâu, mịa nó!}''
+
+Chạy được một đoạn đường ngắn, cả hai người chạy tột độ bất ngờ va phải một bức tường đá lớn chắn ngang hết lối đi. Đã hết đường để chạy, họ rơi vào một con đường cụt hoàn toàn.
+
+``Chết thật rồi!'' Rushia quay người lại, mặt cắt không còn một giọt máu khi nhìn thấy bốn bóng người đang dần tiến lại gần.
+
+Bốn cô nàng kia từ từ khép chặt vòng vây, trong mắt mỗi người đều ánh lên sự phấn khích điên cuồng, như thể sắp ăn tươi nuốt sống được con quái 1350 XP độc nhất vô nhị đang đứng trước mặt.
+
+\img{11-10m}
+
+Naomi ló cái đầu nhỏ ra từ sau lưng anh trai, ngây thơ hỏi với giọng không hiểu chuyện: ``Mấy chị ơi, XP là món ăn gì hay sao? Nó có ngọt như kẹo mút mà anh mua cho Naomi hồi tuần trước không ạ?''
+
+Kuon lập tức dang rộng hai tay ra, đứng chắn phía trước để che chắn cho cả em gái và Rushia. Cậu cố gắng dùng lý trí cuối cùng để gọi tỉnh những người đồng nghiệp đang điên lên: ``Mấy đứa bị cái gì mà nhập thế hả?! Tỉnh táo lại ngay!''
+
+Nhưng thay vì lời đáp giải thích, tất cả những gì cậu nhận được lại là tiếng hô lặp lại đều đặn như những cỗ máy được lập trình sẵn: ``XP! XP! XP!''
+
+Ngay vào lúc tình hình đang ngàn cân treo sợi tóc, một giọng nói vang vọng đầy oai phong đột ngột vang lên từ trên cao, ngay trên trần nhà ngầm: ``Tôi lại quay trở lại rồi đây nè\~{}!'' Bóng hình mặt trời tròn trặn, kẻ mà Rushia đã ghét cay ghét đắng từ đầu buổi chiều nay, lại xuất hiện đúng vào thời khắc quyết định nhất.
+
+Nàng Pháp sư khựng lại một nhịp, đầu óc đang hoảng loạn đột nhiên tỉnh táo lại. Cô nhìn vòng vây đang ngày một thu hẹp lại quanh mình, rồi quay sang nhìn Kuon và bé Naomi vẫn đang ngây người đứng đấy. Giọng nói của cô vang lên đầy kiên định, không chút do dự: ``Kuon-senpai, cõng Naomi chạy đi mau!''
+
+Kuon giật mình, không tin vào những gì mình vừa nghe: ``Ể? Sao vậy được, nhưng mà\dots''
+
+Rushia dùng hết sức đẩy mạnh người cậu về phía lối đi duy nhất còn lại, hét lên: ``Cứ chạy đi! Bọn họ chỉ muốn bắt em thôi, không phải hai anh em đâu!''
+
+Kuon vẫn đứng yên, lo lắng không muốn bỏ mặc cô nàng đơn độc: ``Nhưng em đang bị bọn họ vây kín hết rồi mà?!''
+
+Naomi cũng giơ tay vẫy nhỏ, trong mắt hiện lên sự lo lắng: ``Rushia-oneechan không đi cùng bọn em về văn phòng sao?''
+
+Rushia mỉm cười nhẹ nhàng, ánh mắt cô ánh lên tia sáng của một quyết tâm không thể thay đổi, như thể đã chuẩn bị hy sinh bản thân: ``Không còn cách nào khác\dots\ Em chỉ có thể làm thế này thôi! Kuon-senpai, cõng Naomi chạy càng xa càng tốt! \textbf{Đi! Nhanh lên!}''
+
+Trước giọng nói khẩn thiết gần như cầu xin của nàng Pháp sư, Kuon chẳng còn lựa chọn nào khác. Cậu xóc lại Naomi trên vai cho chắc chắn, rồi cắm đầu chạy thẳng về phía cửa hố đen dẫn lên văn phòng.
+
+Ngay khi Kuon đã chạy được một khoảng cách đủ xa, Rushia lập tức gồng mình lên để chuẩn bị cho đòn cuối cùng. Toàn bộ ánh sáng và nhiệt độ từ mặt trời chiếu thẳng vào cơ thể mạ nhôm của cô, biến Cô đồng thành một chiếc gương phản chiếu khổng lồ giữa sàn nhảy.
+
+*XÈÈÈO!*
+
+Rushia gào lên với giọng chói tai, dồn toàn bộ sức lực vào đòn tấn công cuối cùng: ``Nhận lấy! \textbf{Ánh sáng của mạ nhôm!!}''
+
+\img{11-10n}
+
+*LÓE!*
+
+Một luồng sáng trắng xóa cuồng phong bùng nổ ngay lập tức, mạnh mẽ chẳng khác nào một quả bom mù được thả ra giữa sàn nhà.
+
+Marine bị chói mắt đến mức không thể mở ra, cô nàng gào lên đau đớn: ``\textbf{Mắt tôi!! Nó sáng quá!!}''
+
+Luna cũng liên tục dụi mắt bằng cả hai tay, giọng nói ngọng nghịu vẫn không đổi: ``Sáng quá-nora\dots!! Trời ơi nó sáng chết mất!''
+
+Watame và Aki cũng hoảng hốt ngã ngửa ra sau, không hiểu chuyện gì vừa xảy ra: ``Cái quái gì thế này?! Có ai thấy được đường đi không?!''
+
+Luồng sáng chói lóa ấy lan rộng ra với tốc độ kinh hoàng, nuốt chửng mọi thứ trong tầm mắt. Kuon vừa chạy vừa ngoái đầu nhìn lại, thấy quầng sáng đang đuổi sát phía sau, suýt chút nữa thì nuốt lấy cả hai anh em. Rất may mắn, cậu đã kịp thời vọt qua cửa hố đen và lao trở lại sàn nhà của văn phòng \hll\ chỉ một giây trước khi cánh cửa đó khép lại hoàn toàn.
+
+*RẦM!*
+
+Kuon ngã xoài ra sàn nhà gỗ, thở hồng hộc như vừa chạy thoát khỏi một địa ngục trần gian. Naomi từ trên lưng anh trai tuột xuống, vỗ tay bôm bốp thích thú chẳng hề thấy sợ hãi: ``A hố hố! Vui quá Onii-chan ơi! Giống hệt như khi mình đi chơi tàu lượn siêu tốc ở công viên giải trí hồi tháng trước vậy!''
+
+Kuon đưa tay lên lau đi dòng mồ hôi hột đang chảy dài trên trán, nhìn quanh căn văn phòng Hololive quen thuộc, yên tĩnh và vẫn còn nóng bức như cũ. Cậu lẩm bẩm trong sự bất lực tột độ, chẳng thể tin những gì vừa xảy ra: ``Hôm nay trời nắng nóng quá hay sao mà ai cũng bị điên hết cả lên rồi? Cái cái gì vừa xảy ra thế này\dots?''
+
+Sự việc kỳ quặc đến mức có lẽ chính người sáng tạo ra câu chuyện này cũng chẳng thể giải thích nổi. Nhưng ít nhất, sự hy sinh đầy cao cả (và vô lý) của Rushia dưới vũ trường ngầm chắc chắn sẽ giúp mọi người tỉnh trí lại\dots
+
+\dots Có đúng thế không nhỉ?
+
+%==========================================TRUYỆN PHỤ=========================================
+\omk
+
+``Ru\dots\ shi\dots\ a?!''
+
+Bốn cô nàng Aki, Marine, Watame và Luna đứng cứng ngắc trước mặt Rushia, đồng thanh thốt lên trong cơn giận không thể kiềm chế sau vụ nổ chói lòa của Cô đồng. Toàn thân ai cũng phủ đầy muội than đen thùi, chỉ còn lại đôi mắt với nhiều màu rõ ràng đang tròn xoe vì bực bội.
+
+\img{11-10o}
+
+Mồ hôi trên trán Kuon cứ thế tuôn ra, nhưng cậu không thể nào nén nổi cơn cười sặc sụa trước cảnh tượng trước mắt: ``\dots Trời đất ơi. Đây chính là Bộ Tứ Cháy Nắng huyền thoại rồi à?''
+
+Bé Naomi đứng bên cạnh cũng lấy hai tay che miệng, cười rúc rích không dừng lại. Em bé chỉ tay vào bốn người bạn đang ngơ ngác đó, giọng nói trong trẻo vang lên: ``Onii-chan! Các chị ấy biến thành củ khoai nướng cháy rồi kìa! Nhìn buồn cười quá đi!''
+
+Aki lập tức giậm mạnh chân xuống sàn, giọng nói đầy cơn tức giận: ``Đừng có mà cười nhạo bọn em chứ!''
+
+Luna thì sụt sịt như sắp khóc, bàn tay nhỏ nghịch ngợm vắt váy của mình: ``Bộ đồ công chúa mới mua của em-nanora\dots''
+
+Marine nghiến răng, dùng tay quệt mạnh vệt muội than bám trên má, giọng nói đầy oan ức: ``Tất cả là tại Rushia mà bọn em mới trở nên thê lương thế này!''
+
+Kuon khoanh tay đứng nhìn, giọng nói mang vẻ phán xét vô cùng: ``Ai bảo mấy đứa dại dột rượt theo người ta làm gì? Là bị ảo game quá mức rồi hay sao?''
+
+Watame lập tức chống nạnh, giọng nói phân bua đầy vô tội: ``Bọn em chẳng làm gì sai cả đâu!''
+
+Cậu Tổng thản nhiên nhún vai, đáp lại một cách thản nhiên: ``Ờ, cũng không hẳn là sai đâu. Chỉ là hơi sai một chút thôi. Mau tới xin lỗi em ấy đi.''
+
+Nàng Thuyền trưởng không chịu thua, gào lên để bảo vệ lập trường của mình: ``\textbf{Rushia mới là người phải xin lỗi bọn em đó chứ!}''
+
+Kuon nhíu mày lại, ánh mắt nhìn thẳng vào cả bốn cô nàng trước mặt, giọng nói trở nên nghiêm nghị: ``Anh còn chưa tính chuyện mấy đứa dám âm thầm xây vũ trường chui dưới tầng hầm cơ mà. Cái đấy là thế nào hả?''
+
+Aki nhanh nhảu giơ tay lên, như một học sinh đang giơ tay phát biểu, giọng nói nhanh như chớp: ``Cái đó là Haato-chan xây dựng cả đấy!''
+
+Cậu Tổng thực sự rơi vào trạng thái hoang mang, cậu hỏi lại với giọng không thể tin nổi: ``Từ khi nào mà cô ấy có thể làm được chuyện đó vậy?''
+
+Watame xòe hai tay ra như thể không biết gì, giọng nói vô tư đáp lại: ``Bọn em làm sao mà biết được! Em chỉ nghe nói nó là nơi tránh nóng cho mùa hè thôi mà!''
+
+Cậu Tổng lắc đầu ngao ngán, thở dài trước cái logic khó hiểu của đám trẻ: ``Mấy đứa cũng biết là có cả đống cách khác để tránh nóng mà, đúng không?''
+
+Luna chu môi ra, vẻ mặt ghê tởm hiện rõ trên khuôn mặt: ``Nếu đó là đá bào của Ayame-senpai thì em cũng dám chắc là hơm ăn đâu-nora.''
+
+Trong khi năm người đang cãi nhau chí chóe không dứt, Rushia - lúc này đã trở lại hình dáng bình thường, lớp mạ nhôm biến mất hoàn toàn - cố gắng tạo hình tượng dễ thương để trốn thoát. Cô nháy mắt, lè lưỡi rồi rón rén lùi dần về phía cửa, giọng nói ngọt ngào vang lên: ``Teehee\~{}!''
+
+\img{11-10p}
+
+Nhưng cô chẳng thể nào lừa được cậu Tổng quản. Kuon hắng giọng, với tay nhanh như chớp túm lấy gáy áo của Rushia, kéo cô lại giữa vòng vây. ``Đừng có nghĩ đến chuyện bỏ trốn, Ru-chan. Anh có vài chuyện muốn hỏi em đấy.''
+
+Tóm lại, toàn bộ sự việc bắt nguồn từ ý tưởng điên rồ của Haato: cô nàng muốn xây một vũ trường kết hợp quán karaoke bí mật dưới tầng hầm, vừa để tránh nắng nóng, vừa là mô hình kinh doanh kiếm tiền riêng, điều mà cô nàng ``Lợn'' đó luôn làm giỏi nhất từ trước đến nay.
+
+Bốn cô nàng Aki, Marine, Watame và Luna chỉ đơn giản là những nạn nhân bị dụ dỗ, còn Rushia thì xui xẻo vô tình lọt vào đúng cái hố đen kia. Nếu không có vụ nổ ánh sáng từ lớp mạ nhôm của Cô đồng, có lẽ Kuon và Naomi cũng sẽ bị cuốn vào đám hỗn loạn đó.
+
+Dĩ nhiên, vì là công trình xây dựng trái phép, A-chan lập tức tuýt còi và yêu cầu Haato phải phá dỡ toàn bộ vũ trường đó. Nhưng chuyện này lại đặt ra một vấn đề thực tế khác mà không ai ngờ tới\dots
+
+Rushia thở dài một hơi thật dài, giọng nói đầy mệt mỏi vang lên: ``Nếu trời cứ nắng nóng thế này mãi thì thật sự khó chịu lắm!''
+
+Aki lập tức gật gù liên tục, hùa theo tiếng than thở của bạn mình: ``Đúng đó, văn phòng của chúng ta chẳng có lấy một cái rèm cửa để che nắng\dots''
+
+Watame cũng rũ mắt xuống, vẻ mặt buồn bã tiếp lời: ``Thậm chí cả một cái quạt hay máy điều hòa cũng chẳng có luôn!''
+
+Luna giọng nói rơm rớm như sắp khóc, nỗi lo hiện rõ trên khuôn mặt: ``Em không nghĩ là chúng ta có thể trụ qua được mùa hè sắp tới đâu-nora.''
+
+Kuon đứng yên trầm ngâm một lúc, rồi cũng gật đầu đồng tình với mọi người: ``\dots Công nhận. Anh cũng đang thắc mắc sao công ty không lắp đặt những thứ đó nhỉ\dots\ Chắc là để tiết kiệm chi phí chăng?''
+
+Marine không chịu được nữa, hét lên để bày tỏ sự bất bình: ``Tiết kiệm cái gì chứ?!''
+
+Cậu Tổng liếc nhìn Thuyền trưởng cùng ba cô nàng còn lại, rồi phun ra một câu xanh rờn khiến tất cả im lặng: ``Tại mấy đứa suốt ngày phá hoại đồ đạc công ty quá chứ sao! Tiền nào ra mà mua thiết bị mới? Chưa kể còn phải đóng tiền điện hàng tháng nữa!''
+
+Đến đây, cả bốn cô nàng đều ngắc ngứ không còn gì để cãi lại, vì những gì Kuon nói\dots\ hoàn toàn là sự thật.
+
+Tuy vậy, cậu cũng hiểu rằng thời tiết mùa hè sắp tới đúng là nóng đến mức ``chết cha chết mẹ, chẳng ai chịu nổi''. Sau cùng, Kuon quyết định dùng tiền tiết kiệm cá nhân để mua thêm quạt và máy điều hòa cho văn phòng. May mắn thay, sau khi báo cáo lên, YAGOO đã đồng ý ngay lập tức, thậm chí còn trích quỹ công ty để hỗ trợ thêm. Thế là mùa hè năm nay, mọi người sẽ chẳng còn phải lo lắng về nắng nóng nữa.
+
+Kuon đứng tựa lưng vào tường, lặng lẽ thở dài một tiếng thật khẽ. Đôi mắt cậu thẫn thờ hướng về phía Rushia, người lúc này đang cuống cuồng ríu rít cúi đầu xin lỗi bốn cô nàng ``Bộ Tứ Cháy Nắng'' đang vây quanh.
+
+``Tiếc rằng sẽ có một người không thể tận hưởng được lợi ích này nhỉ\dots''
+
+Kuon cay đắng nghĩ thầm. Cậu quay người nhìn ra cửa sổ, ánh mắt đầm chiêu: ``Giờ thì chuẩn bị xây thêm căn phòng mới cho ký túc xá của chúng ta nào\dots''
+
+Naomi đứng bên cạnh, thấy anh trai đột nhiên im lặng nhìn chị Rushia với nét mặt trầm ngâm liền túm lấy vạt áo Kuon, ngước lên hỏi bằng giọng ngây thơ trong trẻo: ``Onii-chan\dots\ Chị Rushia-oneechan chuẩn bị đi chuyển nhà đi đâu xa hả anh? Sao trông mặt Onii-chan buồn thế?''
+
+Kuon khựng lại một nhịp, rồi chậm rãi cúi xuống xoa đầu em gái nhỏ: ``Không có gì đâu Naomi. Chị ấy\dots\ chỉ sắp đi đến một nơi rất xa thôi. Hai anh em mình chuẩn bị về nhà dọn dẹp phòng để đón khách nhé.''
+
+Naomi hoàn toàn không hiểu được ý nghĩa sâu xa đằng sau câu nói của anh trai, chỉ tròn xoe mắt gật đầu hào hứng: ``Vâng ạ! Thế em sẽ dọn đồ chơi thật sạch để đón chị ấy tới chơi!''
+
+\dots Vì lẽ đơn giản, đó cũng chính là lần cuối cùng mà Uruha Rushia bước chân lên sàn gỗ của văn phòng \hll\ này.
+
+\end{document}

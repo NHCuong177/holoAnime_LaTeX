@@ -1,0 +1,477 @@
+\documentclass[14pt, a4paper]{book}
+%=========================================CÁC GÓI VÀ HÀM CHUẨN BỊ==========================================
+% Cho phép sử dụng màu và vẽ viền
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{contour}
+\usepackage{gradient-text}
+\usepackage{pdfrender}
+
+\definecolor{vol}{HTML}{808081}
+\definecolor{eptype}{HTML}{434343}      
+\definecolor{epnum}{HTML}{111111}       
+\definecolor{epattr}{HTML}{D9D9D9}
+
+\definecolor{song}{HTML}{7030a0}
+\definecolor{horror}{HTML}{c00000}
+\definecolor{holofes}{HTML}{ffc000}
+\definecolor{holop}{HTML}{9E0000}
+
+% Màu nhân vật
+% \definecolor{Suichan}{HTML}{9CD1F8}
+\definecolor{Robel}{HTML}{EB6E00}
+\definecolor{Oga}{HTML}{93EC2D}
+\definecolor{Aruran}{HTML}{5EBB8C}
+\definecolor{Izuru}{HTML}{677EE5}
+\definecolor{Mafia}{HTML}{8E6BAE}
+\definecolor{Astel}{HTML}{1A79FF}
+\definecolor{Roid}{HTML}{FFB7DF}
+\definecolor{Knight}{HTML}{FFF799}
+\definecolor{Miyabi}{HTML}{FE2F3F}
+
+% Công thức toán học
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{unicode-math}
+\usepackage{gensymb}
+
+% Hộp văn bản
+\usepackage{tcolorbox}
+\usepackage{soul}
+
+% Liên kết
+\usepackage{hyperref}
+
+% Chèn các file nhỏ
+\usepackage{subfiles}
+
+% Chèn ảnh, video và GIF
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\input{media_embed.tex}	
+\usepackage{animate}
+
+% Lề và cỡ chữ tiêu chuẩn
+\usepackage{extsizes}       % Cho cỡ chữ 14pt
+\usepackage[margin=1.54cm]{geometry}
+\usepackage{parskip}
+\usepackage{emptypage}
+
+% Không thụt đầu dòng khi xuống dòng mới 
+\parindent 0pt
+
+% Gạch chân xuống dòng
+\usepackage{ulem}
+
+% Thay đổi thiết lập chú thích
+\usepackage{caption}
+\usepackage{subcaption}
+
+\captionsetup{justification= centering, font=small, labelformat=empty}
+
+% Sử dụng để thay đổi font
+\usepackage{fontspec}
+\usepackage{luatexja}
+\usepackage{luatexja-fontspec}
+
+% Viết furigana
+\usepackage{ruby}
+\renewcommand{\rubysize}{0.4}
+\renewcommand{\rubysep}{1pt}
+
+% Phông cho tên-số các tập
+\newfontface\flaregothic[Path=../../../Fontface/]{flaregothicbold.ttf}
+\newfontface\humanist[Path=../../../Fontface/]{Humanist521BT.ttf}
+\newfontface\cafeteria[Path=../../../Fontface/]{Cafeteria Bold.otf}
+\newfontface\fotskip[Path=../../../Fontface/]{FOT-Skip Std B.otf}
+\newfontface\vnmsans[Path=../../../Fontface/]{VNM Sans Std.otf}
+\newfontface\vnmdisp[Path=../../../Fontface/]{VNM Sans Display Bold.otf}
+\newfontface\sen[Path=../../../Fontface/]{Sen-Bold.ttf}
+\newfontface\continuum[Path=../../../Fontface/]{contb.ttf}
+\newfontface\japfont[Path=../../../Fontface/]{msgothic.ttc}
+\newfontface\jiga[Path=../../../Fontface/]{Jigmo.ttf}
+\newfontface\jigb[Path=../../../Fontface/]{Jigmo2.ttf}
+\newfontface\jigc[Path=../../../Fontface/]{Jigmo3.ttf}
+\newfontface\burbank[Path=../../../Fontface/]{burbankbigcondensed_bold.otf}
+\newfontface\houseterror[Path=../../../Fontface/]{HOUSE_OF_TERROR.ttf}
+\newfontface\dawnland[Path=../../../Fontface/]{Dawnland.Lost.otf}
+
+% Phông cho tiêu đề cuốn truyện và đầu-chân trang
+\newfontface\frank[Path=../../../Fontface/]{Franklin Gothic Heavy Regular.ttf}
+\newfontface\caviar[Path=../../../Fontface/]{VNF-Cariar Dreams Regular.ttf}
+\newfontface\hbrk[Path=../../../Fontface/]{HouseBrokenRough.ttf}
+\newfontface\ab[Path=../../../Fontface/]{angrybirds-regular.ttf}
+\newfontface\abv[Path=../../../Fontface/]{0259-LNTH-angrybirds-regular.ttf}
+\newfontface\device[Path=../../../Fontface/]{Device Regular.ttf}
+\newfontface\harosbaelz[Path=../../../Fontface/]{BAEFONT_NORMAL-REGULAR_V1.TTF}
+\newfontface\brian[Path=../../../Fontface/]{Brianne_s_hand.ttf}
+\newfontface\nexa[Path=../../../Fontface/]{Nexa-Heavy.ttf}
+\newfontface\digi[Path=../../../Fontface/]{DS-DIGI.TTF}
+
+% Đặt font chính và font tiếng Nhật
+\setmainfont{Times New Roman}
+\setmainjfont{FOT-Skip Std B}
+\setmathfont
+[    Extension = .otf,
+     BoldFont = XITSMath-Bold,
+]
+{XITSMath-Regular}
+
+% Điểu chỉnh đầu trang và chân trang
+\usepackage{fancyhdr}
+\usepackage{spverbatim}
+
+% Dùng cho điều chỉnh kích thước và vị trí bảng
+\usepackage{array}
+\usepackage{changepage}
+
+% Nhóm cột
+\usepackage{multirow}
+\usepackage{float}
+
+% Dùng cho đoạn hội thoại
+\usepackage{setspace} % Chia khoảng cách
+\usepackage{dialogue}
+\usepackage{calc} % Thiết lập khoảng cách giữa tên nhân vật và văn bản
+
+% Tăng chỉ số chiều sâu của sách
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+% Macro
+% A. Đường thẳng, ký hiệu
+\newcommand{\ct}
+{\begin{center}[---]\end{center}} 		  	                            % Cắt cảnh dài
+\newcommand{\chrint}        
+{\begin{center}||---||\end{center}}						        	    % Cắt đến giói thiệu nhân vật, có thể bỏ qua
+\newcommand{\pov}[1]
+{\begin{center}$\langle${#1}$\rangle$\end{center}}			            % Đổi góc nhìn nhân vật.
+\newcommand{\il}{\noindent\makebox[\textwidth]
+{\rule{\paperwidth}{0.4pt}}}					  			            % Đường thẳng phân chia
+
+% B. Chèn ảnh và gif
+\newcommand{\img}[2][12.5cm]{%
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=#1]{../../../Image/BookM1/#2.png}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
+    \end{figure}
+}
+
+\newcommand{\imgc}[2][12.5cm]{%
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=#1]{../../../Image/BookM1/#2.jpg}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
+    \end{figure}
+}
+
+\newcommand{\gif}[4][12.5cm]{%
+    \begin{figure}[H]
+        \centering
+        \animategraphics[autoplay,loop,width=#1]
+        {30}{../../../Image/BookM1/#2/#2.}{#3}{#4}                                      % Chỉ cần chèn tên tệp, lấy từ khung #3 tới #4
+    \end{figure}
+}
+
+\newcommand{\pictdum}{										            % Ảnh chèn vào thay thế ảnh gif để canh dòng
+        \includegraphics[width=8cm]{placeholder.png}
+}
+    
+\newcommand{\vid}[3][12.5cm]{%
+  \embedvideo{\includegraphics[width=#1]{../../../Image/BookM1/#2.png}}{#3.mp4}
+}
+
+\newcommand{\emp}[1]{%
+    \includegraphics[width=2cm]{../../../Character/#1.png}
+}
+
+\newcommand{\model}[4]{%
+    \begin{wrapfigure}[#1]{#2}{#3}
+    \includegraphics[height=15cm]{../../../Character/#4_model.png} % Lần lượt: [# khung][hướng căn][kích thước][tên]
+\end{wrapfigure}
+}
+
+\newcommand{\modelc}[4]{%
+    \begin{wrapfigure}[#1]{#2}{#3}
+    \includegraphics[height=15cm]{../../../Character/#4_model.jpg} % Lần lượt: [# khung][hướng căn][kích thước][tên]
+\end{wrapfigure}
+}
+
+% Viền chữ màu
+\newcommand{\outlinetext}[3][1]{%
+  \textpdfrender{%
+    TextRenderingMode=2, % 2 = Fill and Stroke Text
+    LineWidth=#1pt,
+    StrokeColor=#2,
+    FillColor=#3%
+  }%
+}
+
+% C. Viết cụm và định dạng
+\newcommand{\omk}{\begin{center}{\abv\Large Truyện phụ}\end{center}}
+\newcommand{\anni}{\color{bdaya}A\color{bdayb}N\color{bdaya}N\color{bdayb}I\color{bdaya}V\color{bdayb}E\color{bdaya}R\color{bdayb}S\color{bdaya}A\color{bdayb}I\color{bdaya}R\color{bdayb}E}
+\newcommand{\xmas}{\begin{center}{\color{green}N\color{gray}O\color{red}Ë\color{green}L}}
+\newcommand{\hlw}{\begin{center}{\color{purple}H\color{brown}A\color{purple}L\color{brown}L\color{purple}O\color{brown}W\color{purple}E\color{brown}E\color{purple}N}}
+\newcommand{\trva}{\begin{center}{\abv\Large Bạn có biết?}\end{center}}
+\newcommand{\hll}{\textit{hololive}}
+\newcommand{\hls}{\textit{holostars}}
+\newcommand{\stpt}[1]{\begin{center}{\sen\Large {#1}} \end{center}}     % Subsection
+\newcommand{\stcap}[1]{\begin{center}{\caviar {#1}} \end{center}}       % Phụ đề cho subsection
+\newcommand{\xdo}{\\[-24pt]}      
+\newcommand{\lang}[1]{\begin{center}{\textit{*Các nhân vật nói bằng tiếng #1.}}\end{center}}
+
+% D. Bảng xếp hàng (cho các tập Top 10)
+\newcommand{\topten}{【\ruby{大}{だい}\ruby{惨}{さん}\ruby{事}{じ}】}
+\newcommand{\bxh}[4]{
+    \begin{center}
+        {{\cafeteria\Large Number #1:} \\
+        {\textbf{#2}} \\
+        {(Từ {\humanist\textbf{FOLGE #3}}, quyển số #4.)}}
+    \end{center}
+}
+
+% E. Đặt bối cảnh ở vũ trụ
+\newcommand{\alt}[3]{
+    \begin{center}
+        {(Từ {\humanist\textbf{FOLGE #1}}, quyển số #2, tại vũ trụ mang số hiệu #3.)}
+    \end{center}
+}
+
+% F. Ngôn ngữ
+\newcommand{\vie}[1]{\color{red} #1\color{black}}        % Tiếng Việt (Etsunan ở Round 1 và 2)
+\newcommand{\eng}[1]{\color{blue} #1\color{black}}       % Tiếng Anh
+
+% G. Hộp chữ
+\newcommand{\txtbx}[2][0.5]{
+    \begin{tcolorbox}[
+        colframe=vol,  
+        colback=white,   
+        boxrule=#1pt,        % Độ dày viền
+        arc=0mm,         
+        left=5pt,        
+        right=5pt,       
+        top=5pt,       
+        bottom=5pt       
+    ]
+    #2
+    \end{tcolorbox}
+}
+
+% Thiết đặt môi trường cho đoạn hội thoại
+% A. Dùng để viết hoa chữ đầu tiên tên nhân vật
+\renewcommand*\DialogueLabel[1]{%
+  {#1}:%
+}
+
+% B. Thiết lập với độ dài tên dài nhất. Mặc định chọn Hanamaru từ Love Live!.
+\newlength{\widestname}
+\setlength{\widestname}{2.5cm}
+
+% C. Tái định nghĩa lại hàm dialogue
+\makeatletter
+\renewenvironment{dialogue} {%
+    \begin{list}{} {%
+        \setlength\itemsep{\z@ \@plus .5ex}%
+        \setlength{\parsep}{\parskip}%
+        \setlength{\rightmargin}{0pt}% Không căn lề phải
+        \setlength{\labelwidth}{\widestname}% Thiết đặt khoảng cách với tên dài nhất
+        \setlength{\labelsep}{0.5em}% Thiết đặt khoảng cách giữa tên nhân vật và đoạn hội thoại
+        \setlength{\leftmargin}{\labelwidth}% Căn lề trái
+        \addtolength{\leftmargin}{\labelsep}% 
+        \defcommand\speak [1] {\item[{##1}]}% Thiết lập lệnh speak trong dialogue
+        \let\makelabel\DialogueLabel
+      }%
+      \PreDialogue\relax
+    }{%
+  \end{list}%
+  }
+\makeatother
+
+% D. Hướng mũi tên
+\newcommand{\arrow}[1][-45]
+      {\begin{tikzpicture}[baseline = -0.5ex]
+          \node[inner sep=0pt,outer sep=0pt,rotate = #1] (a) at (0,0)  {\rightarrow};
+       \end{tikzpicture}}
+
+% E. Chiêu mộ toàn bộ ký tự
+\makeatletter
+\font\SOUL@tt="Times New Roman"
+\setbox\z@\hbox{\SOUL@tt-}
+\SOUL@ttwidth\wd\z@ %reset default width of -
+\makeatother
+
+\makeatletter
+\font\SOUL@tt="Nom Na Tong"
+\setbox\z@\hbox{\SOUL@tt-}
+\SOUL@ttwidth\wd\z@ %reset default width of -
+\makeatother
+
+% F. Tabbing
+\newcommand\tabs[1][1cm]{\hspace*{#1}}
+
+% G. Tạo môi trường đề căn lề trái-phải
+\newcommand{\tl}[1]{\noindent\begin{flushleft} #1 \end{flushleft}}
+\newcommand{\tc}[1]{\noindent\begin{center} #1 \end{center}}
+\newcommand{\tr}[1]{\noindent\begin{flushright} #1 \end{flushright}}
+
+%================ĐẦU TRANG VÀ CHÂN TRANG====================
+\pagestyle{fancy}
+\fancyhead{} 
+% Tên cuốn truyện
+\fancyhead[LO]
+{\device\fontsize{18pt}{18pt}\selectfont
+\color{vol}{Welcome to the Dumbside!}
+\\[-18pt]}                      
+\fancyhead[RE]
+{\device\fontsize{18pt}{18pt}\selectfont
+\color{vol}{Willkommen in der Dummköpfe!}
+\\[-18pt]}                     
+% Số chương
+\fancyhead[RO]
+{\sen\fontsize{18pt}{18pt}\selectfont
+\color{vol}{one}
+\ab\fontsize{18pt}{18pt}\selectfont
+\color{vol}{\textbf{(I)}}
+\\[-18pt]
+}
+\fancyhead[LE]
+{\sen\fontsize{18pt}{18pt}\selectfont
+\color{vol}{\textbf{Eins}}
+\ab\fontsize{18pt}{18pt}\selectfont
+\color{vol}{\textbf{(1)}}
+\\[-18pt]}
+% Chân trang
+\fancyfoot{} 
+\fancyfoot[CO, CE]{\thepage}
+\fancyfoot[LO]
+{\ab\fontsize{10pt}{10pt}\selectfont \color{vol} [DIGITAL FORMAT ONLY ⇒ DO NOT PRINT]}
+\fancyfoot[RE]
+{\ab\fontsize{10pt}{10pt}\selectfont \color{vol} [NUR DIGITALES FORMAT ⇒ NICHT AUSDRUCKEN]}
+%==========================================PHẦN THÂN==========================================
+\begin{document}
+%===========================================MỤC LỤC===========================================
+% Trang bìa
+\newpage
+\thispagestyle{empty}
+\
+
+% Trang đầu tiên
+\newpage
+\thispagestyle{empty}
+\
+
+\vspace*{\fill}
+\noindent
+\begin{minipage}[c][0.25\textheight][b]{\textwidth}
+    \centering
+    \includegraphics[width=15cm]{../../../Logo/roundboys.png}
+    \vspace{30pt} % Khoảng cách từ logo xuống tâm trang
+\end{minipage}\par
+\nointerlineskip
+\noindent
+\begin{minipage}[c][0.25\textheight][t]{\textwidth}
+    \vspace{30pt} % Khoảng cách từ tâm trang xuống phần chữ
+    \centering
+    {\huge \outlinetext[1]{vol}{white}{\frank volume \hbrk ONE}} \vspace{15pt}
+
+    {\fontsize{50pt}{50pt}\selectfont \color{vol}{\vnmdisp (TÂN BINH HOẢNG LOẠN)}}\vspace{15pt}
+
+    % {\Large \outlinetext[1]{vol}{white}{\vnmsans (Mùa đông năm 2021-2022)}}
+\end{minipage}
+\vspace*{\fill}
+
+\thispagestyle{empty}
+\renewcommand{\contentsname}
+{\centering\vnmsans\Large\textcolor{vol}{Mục lục}}
+{
+    \hypersetup{linkcolor=black}
+    \tableofcontents
+}
+%========================================LỜI NÓI ĐẦU==========================================
+\newpage
+\section*{\phantomsection\label{preface}} 
+\addcontentsline{toc}{section}{Giới thiệu} 
+% {\centering\vnmsans\Large\textcolor{vol}{Giới thiệu}\par}
+{\centering\vnmsans\Large\textcolor{vol}{Giới thiệu}\par}
+\subfile{intro}
+
+%=======================================DANH SÁCH TẬP========================================
+% \newpage
+% \section*{\phantomsection\label{epM0}} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 0 \cafeteria | M0}} - Cuộc khởi đầu mới} 
+% \vspace{-30pt}
+% \subfile{Episode/M0}
+
+% \newpage
+% \section*{\phantomsection\label{epM1.1}} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 1 \cafeteria | M1-1}} - Nổi tiếng} 
+% \vspace{-30pt}  
+% \subfile{Episode/M1-01}
+
+% \newpage
+% \section*{\phantomsection\label{epM1.2}} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 2 \cafeteria | M1-2}} - Nấu ăn} 
+% \vspace{-30pt}
+% \subfile{Episode/M1-02}
+
+% \newpage
+% \section*{\phantomsection\label{epM1.3}} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 3 \cafeteria | M1-3}} - Bắt nạt} 
+% \vspace{-30pt}
+% \subfile{Episode/M1-03}
+
+% \newpage
+% \section*{\phantomsection\label{epM1.4}} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 4 \cafeteria | M1-4}} - Lòng can đảm} 
+% \vspace{-30pt}
+% \subfile{Episode/M1-04}
+
+\newpage
+\section*{\phantomsection\label{epM1.5}} 
+\addcontentsline{toc}{section}{{\humanist{FOLGE 5 \cafeteria | M1-5}} - Ảnh tự sướng} 
+\vspace{-30pt}
+\subfile{Episode/M1-05}
+
+% \newpage
+% \section*{\phantomsection\label{epM1.6}} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 6 \cafeteria | M1-6}} - ??} 
+% \vspace{-30pt}
+% \subfile{Episode/M1-06}
+
+% \newpage
+% \section*{\phantomsection\label{epM1.7}} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 7 \cafeteria | M1-7}} - ??} 
+% \vspace{-30pt}
+% \subfile{Episode/M1-07}
+
+% \newpage
+% \section*{\phantomsection\label{epM1.8}} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 8 \cafeteria | M1-8}} - ??} 
+% \vspace{-30pt}
+% \subfile{Episode/M1-08}
+
+% \newpage
+% \section*{\phantomsection\label{epM1.9}} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 9 \cafeteria | M1-9}} - ??} 
+% \vspace{-30pt}
+% \subfile{Episode/M1-09}
+
+% \newpage
+% \section*{\phantomsection\label{epM1.10}} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 10 \cafeteria | M1-10}} - ??} 
+% \vspace{-30pt}
+% \subfile{Episode/M1-10}
+%===========================================LỜI KẾT===========================================
+\newpage
+\section*{\phantomsection\label{end}} 
+\addcontentsline{toc}{section}{Lời kết}
+{\centering\vnmsans\Large\textcolor{vol}{Lời kết}\par}
+\subfile{end}
+
+% \vfill % Đẩy phần dưới về đáy trang
+% \begin{center}
+% 	\textcolor{vol}
+%     {\quincy\Huge\textbf{TOME \ruby{8}{\ab HUIT}\ TERMINE !} \\[1ex]
+%     \vnmdisp\Huge\textbf{(QUYỂN SỐ \ruby{TÁM}{八/はち}\ HOÀN THÀNH!)}}
+% \end{center}
+
+\end{document}
