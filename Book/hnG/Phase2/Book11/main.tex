@@ -378,16 +378,15 @@
 
 \thispagestyle{empty}
 \renewcommand{\contentsname}
-{\centering\vnmsans\Large\textcolor{vol}{Mục lục}}
+{\centering\vnmsans\Large{\outlinetext[1]{vol}{white}{Mục lục}}\par}
 {
     \hypersetup{linkcolor=black}
     \tableofcontents
 }
 %========================================LỜI NÓI ĐẦU==========================================
 \newpage
-\section*{\phantomsection\label{preface}} 
-\addcontentsline{toc}{section}{Giới thiệu} 
-% {\centering\vnmsans\Large\textcolor{vol}{Giới thiệu}\par}
+\section*{\phantomsection\label{preface}}
+\addcontentsline{toc}{section}{Giới thiệu}
 {\centering\vnmsans\Large{\outlinetext[1]{vol}{white}{Giới thiệu}}\par}
 \subfile{intro}
 
@@ -452,11 +451,11 @@
 % \vspace{-30pt}
 % \subfile{Episode/11-09}
 
-\newpage
-\section*{\phantomsection\label{epS.26}} 
-\addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 143/SPÉCIAL XXVI \cafeteria | S-26}} - ??} 
-\vspace{-30pt}
-\subfile{Episode/S-26}
+% \newpage
+% \section*{\phantomsection\label{epS.26}} 
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 143/SPÉCIAL XXVI \cafeteria | S-26}} - ??} 
+% \vspace{-30pt}
+% \subfile{Episode/S-26}
 
 % \newpage
 % \section*{\phantomsection\label{ep11.10}} 
@@ -482,14 +481,14 @@
 % \vspace{-30pt}
 % \subfile{Episode/C-08}
 
-% \newpage
-% \section*{\phantomsection\label{ep11.12}} 
-% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 146 \cafeteria | 11-12}} - ??} 
-% \vspace{-30pt}
-% \subfile{Episode/11-12}
+\newpage
+\section*{\phantomsection\label{ep11.12}}
+\addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 146 \cafeteria | 11-12}} - Lamy giận dỗi}
+\vspace{-30pt}
+\subfile{Episode/11-12}
 %===========================================LỜI KẾT===========================================
 \newpage
-\section*{\phantomsection\label{end}} 
+\section*{\phantomsection\label{end}}
 \addcontentsline{toc}{section}{Lời kết}
 {\centering\vnmsans\Large{\outlinetext[1]{vol}{white}{Lời kết}}\par}
 \subfile{end}
