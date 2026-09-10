@@ -60,7 +60,7 @@ def run_app():
             
             # [TẠO - THỦ CÔNG]
             if sub_choice == '1':
-                input_pathA = input("Nhập mã quyển của thư mục thư mục sách: ").strip()
+                input_pathA = input("Nhập mã quyển của thư mục sách: ").strip()
                 if input_pathA.lower() == 'exit': continue
 
                 input_pathB = input("Nhập mã quyển của thư mục tệp/thư mục con: ").strip()
@@ -115,7 +115,7 @@ def run_app():
             
             # [XÓA - THỦ CÔNG]
             if sub_choice == '1':
-                input_pathA = input("Nhập mã quyển của thư mục thư mục sách: ").strip()
+                input_pathA = input("Nhập mã quyển của thư mục sách: ").strip()
                 if input_pathA.lower() == 'exit': continue
 
                 input_pathB = input("Nhập mã quyển của thư mục tệp/thư mục con: ").strip()
@@ -130,6 +130,12 @@ def run_app():
                     print("Lỗi: Thư mục không tồn tại!")
                     continue
                     
+                mp4_path = os.path.join(target_dir, f"{directory}.mp4")
+                if not os.path.exists(mp4_path):
+                    print(f"\nCảnh báo: Không tìm thấy video nguồn ({directory}.mp4) tại {target_dir}")
+                    print("-> Đã hủy thao tác xóa để bảo toàn ảnh PNG.")
+                    continue
+                    
                 print(f"\nCẢNH BÁO: Bạn sắp xóa toàn bộ file PNG trong thư mục {target_dir}")
                 if input("Xác nhận xóa? (y/n): ").strip().lower() == 'y':
                     deleted = delete_png_files(target_dir)
@@ -137,7 +143,7 @@ def run_app():
 
             # [XÓA - TỰ ĐỘNG]
             elif sub_choice == '2':
-                input_pathA = input("Nhập mã quyển của thư mục thư mục sách cần quét dọn: ").strip()
+                input_pathA = input("Nhập mã quyển của thư mục sách cần quét dọn: ").strip()
                 if input_pathA.lower() == 'exit': continue
                 
                 book = os.path.splitext(os.path.basename(input_pathA))[0]
@@ -147,8 +153,24 @@ def run_app():
                     print(f"Lỗi: Không tìm thấy {base_dir}")
                     continue
                 
-                # Tìm các thư mục con có khả năng chứa PNG
-                folders_to_clean = [os.path.join(base_dir, f) for f in os.listdir(base_dir) if os.path.isdir(os.path.join(base_dir, f))]
+                # Tìm các thư mục con có chứa file video MP4 để dọn dẹp
+                folders_to_clean = []
+                skipped_folders = []
+                
+                for f in os.listdir(base_dir):
+                    folder_path = os.path.join(base_dir, f)
+                    if os.path.isdir(folder_path):
+                        if os.path.exists(os.path.join(folder_path, f"{f}.mp4")):
+                            folders_to_clean.append(folder_path)
+                        else:
+                            skipped_folders.append(f)
+                            
+                if skipped_folders:
+                    print(f"\nĐã tự động bỏ qua {len(skipped_folders)} thư mục vì không có video nguồn: {', '.join(skipped_folders)}")
+                
+                if not folders_to_clean:
+                    print("\nKhông có thư mục nào hợp lệ để dọn dẹp (tất cả đều thiếu video nguồn).")
+                    continue
                 
                 print(f"\nSẽ tiến hành quét và dọn dẹp PNG trong {len(folders_to_clean)} thư mục con thuộc Book{book}.")
                 if input("Bạn có chắc chắn muốn DỌN DẸP HÀNG LOẠT không? (y/n): ").strip().lower() == 'y':

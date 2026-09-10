@@ -7,10 +7,10 @@
 \usepackage{gradient-text}
 \usepackage{pdfrender}
 
-\definecolor{vol}{HTML}{808081}
-\definecolor{eptype}{HTML}{434343}      
-\definecolor{epnum}{HTML}{111111}       
-\definecolor{epattr}{HTML}{D9D9D9}
+\definecolor{vol}{HTML}{F85320}
+\definecolor{eptype}{HTML}{CF1A07}      
+\definecolor{epnum}{HTML}{BA3106}       
+\definecolor{epattr}{HTML}{FB8F6D}
 
 \definecolor{song}{HTML}{7030a0}
 \definecolor{ai}{RGB}{91,155,213}
@@ -150,14 +150,14 @@
 \newcommand{\img}[2][12.5cm]{%
     \begin{figure}[H]
         \centering
-        \includegraphics[width=#1]{../../../Image/Book11/#2.png}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
+        \includegraphics[width=#1]{../../../Image/BookM2/#2.png}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
     \end{figure}
 }
 
 \newcommand{\imgc}[2][12.5cm]{%
     \begin{figure}[H]
         \centering
-        \includegraphics[width=#1]{../../../Image/Book11/#2.jpg}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
+        \includegraphics[width=#1]{../../../Image/BookM2/#2.jpg}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
     \end{figure}
 }
 
@@ -165,7 +165,7 @@
     \begin{figure}[H]
         \centering
         \animategraphics[autoplay,loop,width=#1]
-        {30}{../../../Image/Book11/#2/#2.}{#3}{#4}                                      % Chỉ cần chèn tên tệp, lấy từ khung #3 tới #4
+        {30}{../../../Image/BookM2/#2/#2.}{#3}{#4}                                      % Chỉ cần chèn tên tệp, lấy từ khung #3 tới #4
     \end{figure}
 }
 
@@ -174,7 +174,7 @@
 }
     
 \newcommand{\vid}[3][12.5cm]{%
-  \embedvideo{\includegraphics[width=#1]{../../../Image/Book11/#2.png}}{#3.mp4}
+  \embedvideo{\includegraphics[width=#1]{../../../Image/BookM2/#2.png}}{#3.mp4}
 }
 
 \newcommand{\emp}[1]{%
@@ -316,24 +316,24 @@
 % Tên cuốn truyện
 \fancyhead[LO]
 {\device\fontsize{18pt}{18pt}\selectfont
-\color{vol}{Welcome to the Dumbside!}
+\color{vol}{Beginner's Misfortune}
 \\[-18pt]}                      
 \fancyhead[RE]
 {\device\fontsize{18pt}{18pt}\selectfont
-\color{vol}{Der Anfängerkurs}
+\color{vol}{Unglück des Anfängers}
 \\[-18pt]}                     
 % Số chương
 \fancyhead[RO]
 {\sen\fontsize{18pt}{18pt}\selectfont
-\color{vol}one} 
+\color{vol}two} 
 {\ab\fontsize{18pt}{18pt}\selectfont 
-\color{vol}{\textbf{(I)}}
+\color{vol}{\textbf{(II)}}
 \\[-18pt]}
 \fancyhead[LE]
 {\sen\fontsize{18pt}{18pt}\selectfont
-\color{vol}{\textbf{Eins}}} 
+\color{vol}{\textbf{Zwei}}} 
 {\ab\fontsize{18pt}{18pt}\selectfont 
-\color{vol}{\textbf{(1)}}
+\color{vol}{\textbf{(2)}}
 \\[-18pt]}
 % Chân trang
 \fancyfoot{} 
@@ -367,9 +367,9 @@
 \begin{minipage}[c][0.25\textheight][t]{\textwidth}
     \vspace{30pt} % Khoảng cách từ tâm trang xuống phần chữ
     \centering
-    {\huge \outlinetext[1]{vol}{white}{\frank volume \hbrk ONE}} \vspace{15pt}
+    {\huge \outlinetext[1]{vol}{white}{\frank volume \hbrk TWO}} \vspace{15pt}
 
-    {\fontsize{50pt}{50pt}\selectfont \color{vol}{\vnmdisp (TÂN BINH HOẢNG LOẠN)}}\vspace{15pt}
+    {\fontsize{50pt}{50pt}\selectfont \color{vol}{\vnmdisp (NHỮNG BƯỚC TẬP TỄNH TAI HỌA)}}\vspace{15pt}
 
     % {\Large \outlinetext[1]{vol}{white}{\vnmsans (Mùa đông năm 2021-2022)}}
 \end{minipage}
@@ -392,70 +392,64 @@
 
 %=======================================DANH SÁCH TẬP========================================
 % \newpage
-% \section*{\phantomsection\label{epM0}} 
-% \addcontentsline{toc}{section}{{\humanist{FOLGE 0 \cafeteria | M0}} - ??} 
-% \vspace{-30pt}
-% \subfile{Episode/M0}
-
-% \newpage
 % \section*{\phantomsection\label{epM1.1}} 
-% \addcontentsline{toc}{section}{{\humanist{FOLGE 1 \cafeteria | M1-1}} - ??} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 11 \cafeteria | M2-1}} - ??} 
 % \vspace{-30pt}
-% \subfile{Episode/M1-01}
+% \subfile{Episode/M2-01}
 
 % \newpage
 % \section*{\phantomsection\label{epM1.2}} 
-% \addcontentsline{toc}{section}{{\humanist{FOLGE 2 \cafeteria | M1-2}} - ??} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 12 \cafeteria | M2-2}} - ??} 
 % \vspace{-30pt}
-% \subfile{Episode/M1-02}
+% \subfile{Episode/M2-02}
 
 % \newpage
 % \section*{\phantomsection\label{epM1.3}} 
-% \addcontentsline{toc}{section}{{\humanist{FOLGE 2 \cafeteria | M1-3}} - ??} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 13 \cafeteria | M2-3}} - ??} 
 % \vspace{-30pt}
-% \subfile{Episode/M1-03}
+% \subfile{Episode/M2-03}
 
 % \newpage
 % \section*{\phantomsection\label{epM1.4}} 
-% \addcontentsline{toc}{section}{{\humanist{FOLGE 2 \cafeteria | M1-4}} - ??} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 14 \cafeteria | M2-4}} - ??} 
 % \vspace{-30pt}
-% \subfile{Episode/M1-04}
+% \subfile{Episode/M2-04}
 
 % \newpage
 % \section*{\phantomsection\label{epM1.5}} 
-% \addcontentsline{toc}{section}{{\humanist{FOLGE 2 \cafeteria | M1-5}} - ??} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 15 \cafeteria | M2-5}} - ??} 
 % \vspace{-30pt}
-% \subfile{Episode/M1-05}
+% \subfile{Episode/M2-05}
 
 % \newpage
 % \section*{\phantomsection\label{epM1.6}} 
-% \addcontentsline{toc}{section}{{\humanist{FOLGE 2 \cafeteria | M1-6}} - ??} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 16 \cafeteria | M2-6}} - ??} 
 % \vspace{-30pt}
-% \subfile{Episode/M1-06}
+% \subfile{Episode/M2-06}
 
 % \newpage
 % \section*{\phantomsection\label{epM1.7}} 
-% \addcontentsline{toc}{section}{{\humanist{FOLGE 2 \cafeteria | M1-7}} - ??} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 17 \cafeteria | M2-7}} - ??} 
 % \vspace{-30pt}
-% \subfile{Episode/M1-07}
+% \subfile{Episode/M2-07}
 
 % \newpage
 % \section*{\phantomsection\label{epM1.8}} 
-% \addcontentsline{toc}{section}{{\humanist{FOLGE 2 \cafeteria | M1-8}} - ??} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 18 \cafeteria | M2-8}} - ??} 
 % \vspace{-30pt}
-% \subfile{Episode/M1-08}
+% \subfile{Episode/M2-08}
 
 % \newpage
 % \section*{\phantomsection\label{epM1.9}} 
-% \addcontentsline{toc}{section}{{\humanist{FOLGE 2 \cafeteria | M1-9}} - ??} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 19 \cafeteria | M2-9}} - ??} 
 % \vspace{-30pt}
-% \subfile{Episode/M1-09}
+% \subfile{Episode/M2-09}
 
 % \newpage
 % \section*{\phantomsection\label{epM1.10}} 
-% \addcontentsline{toc}{section}{{\humanist{FOLGE 2 \cafeteria | M1-10}} - ??} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 20 \cafeteria | M2-10}} - ??} 
 % \vspace{-30pt}
-% \subfile{Episode/M1-10}
+% \subfile{Episode/M2-10}
 
 % \newpage
 % \section*{\phantomsection\label{ep11.1}} 
