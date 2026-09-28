@@ -37,7 +37,7 @@
             % Dòng thứ tư: Nhân vật xuất hiện
              & {\caviar{\fontsize{14pt}{14pt}\selectfont Nhân vật: Theo từng câu chuyện}} \\[8pt]
             % Dòng cuối cùng: Thời gian diễn ra của tập (thường sẽ là ngày phát hành)
-             & {\continuum\fontsize{16pt}{16pt}\selectfont Ngày phát hành: 25/03/2022}
+             & {\sen\fontsize{16pt}{16pt}\selectfont Mốc thời gian: 25/03/2022}
         \end{tabular}
     \end{adjustwidth}
 \end{table}
@@ -373,7 +373,7 @@ Cậu vội đưa tay đưa lên sờ tóc mình, cảm nhận sự bồng bền
 
 Izuru chớp mắt: ``Từ cái vụ chương trình nấu ăn đó sao?''
 
-Kaigou tặc lưỡi: ``Cái ngày mà Shien-kun không nấu nổi món acqua pazza\footnote{Xem lại {\humanist FOLGE 2} ở quyển này.}, tới mức phải để chị với Suzu vào giải cứu sao?''
+Kaigou tặc lưỡi: ``Cái ngày mà Shien-kun không nấu nổi món acqua pazza\footnote{{\humanist FOLGE 2} ở quyển này.}, tới mức phải để chị với Suzu vào giải cứu sao?''
 
 ``Chính nó đấy, Kaigou-user,'' Game xác nhận.
 
@@ -712,5 +712,43 @@ Cô thở hắt ra một hơi dài, khóe miệng tự động cong lên thành 
 ``Hỗn loạn thì hỗn loạn thật đấy, nhưng phải công nhận là bức ảnh này\dots\ không tệ. Lấy làm poster chính thức luôn đi,'' Game cất giọng chốt lại, tông giọng cố tỏ ra thờ ơ nhưng không giấu nổi chút hài lòng.
 
 Tiếng cười đùa, tiếng cãi lộn và tiếng vỗ tay lại tiếp tục bùng lên vang vọng khắp phòng tập COVER, khép lại một ngày đầy ắp kỷ niệm của đại gia đình nhà \hls.
+
+\begin{center}
+    {\abv\Large Bạn có biết?}
+\end{center}
+
+Minoxidil có công thức cấu tạo như sau:
+
+\begin{center}
+    \sixheterovi[a_e]{1==N;3==N;5==\raisebox{-0.5ex}{O\rlap{$^{-}$}}}{%
+        4==NH$_{2}$;%
+        6==NH$_{2}$;%
+        2==\sixheterov{1==N}{1==(yl)}%
+    }
+\end{center}
+
+Trong LaTeX, để xây dựng một công thức hóa học như trên, ta dùng gói \texttt{xymtexpdf} với các lệnh sau:
+
+\begin{verbatim}
+\usepackage{xymtexpdf}
+...
+\sixheterovi[a_e]{1==N;3==N;5==\raisebox{-0.5ex}{O\rlap{$^{-}$}}}{%\\
+4==NH$_{2}$;%\\
+6==NH$_{2}$;%\\
+2==\sixheterov{1==N}{1==(yl)}%\\
+}
+\end{verbatim}
+
+Trong đó:
+\begin{itemize}
+    \item \texttt{\textbackslash sixheterovi}: Vẽ một vòng 6 cạnh dị vòng (ở đây là nhân pyrimidine) theo chiều dọc.
+    \item \texttt{[a\_e]}: Chỉ định vị trí của hai liên kết đôi nằm tại cạnh \textit{a} và cạnh \textit{e} bên trong vòng.
+    \item \texttt{1==N;3==N}: Đặt các nguyên tử nitơ vào đỉnh số 1 và số 3 của vòng để tạo thành khung pyrimidine.
+    \item \texttt{5==\textbackslash raisebox\{-0.5ex\}\{O\textbackslash rlap\{\textbackslash $^{-}$\}\}}: Đặt nguyên tử oxi mang điện tích âm vào vị trí số 5 (tạo liên kết N-oxide).
+    \item \texttt{4==NH\_\{2\}}: Đặt nhóm amino ($-NH_2$) vào vị trí số 4.
+    \item \texttt{6==NH\_\{2\}}: Đặt nhóm amino ($-NH_2$) vào vị trí số 6.
+    \item \texttt{2==\textbackslash sixheterov\{1==N\}\{1==(yl)\}}: Gắn một vòng no 6 cạnh (piperidine) vào vị trí số 2 của vòng chính thông qua nguyên tử nitơ của nó.
+\end{itemize}
+
 
 \end{document}

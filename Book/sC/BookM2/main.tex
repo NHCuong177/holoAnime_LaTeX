@@ -7,10 +7,10 @@
 \usepackage{gradient-text}
 \usepackage{pdfrender}
 
-\definecolor{vol}{HTML}{F85320}
-\definecolor{eptype}{HTML}{CF1A07}      
-\definecolor{epnum}{HTML}{BA3106}       
-\definecolor{epattr}{HTML}{FB8F6D}
+\definecolor{vol}{HTML}{F85D2C}
+\definecolor{eptype}{HTML}{EA3E08}      
+\definecolor{epnum}{HTML}{9D2905}       
+\definecolor{epattr}{HTML}{FA7F58}
 
 \definecolor{song}{HTML}{7030a0}
 \definecolor{ai}{RGB}{91,155,213}
@@ -78,19 +78,19 @@
 
 % Phông cho tên-số các tập
 \newfontface\flaregothic[Path=../../../Fontface/]{flaregothicbold.ttf}
-\newfontface\humanist[Path=../../../Fontface]{Humanist521BT.ttf}
-\newfontface\cafeteria[Path=../../../Fontface/]{Cafeteria Bold.otf}
+\newfontface\humanist[Path=../../../Fontface/]{Humanist521BT.ttf}
+\newfontface\cafeteria[Path=../../../Fontface/]{NHC-Cafeteria-Bold.ttf}
 \newfontface\fotskip[Path=../../../Fontface/]{FOT-Skip Std B.otf}
 \newfontface\vnmsans[Path=../../../Fontface/]{VNM Sans Std.otf}
 \newfontface\vnmdisp[Path=../../../Fontface/]{VNM Sans Display Bold.otf}
-\newfontface\sen[Path=../../../Fontface/]{Sen-Bold.ttf}
+\newfontface\sen[Path=../../../Fontface/]{NHC-SenBold.ttf}
 \newfontface\continuum[Path=../../../Fontface/]{contb.ttf}
 \newfontface\japfont[Path=../../../Fontface/]{msgothic.ttc}
 \newfontface\jiga[Path=../../../Fontface/]{Jigmo.ttf}
 \newfontface\jigb[Path=../../../Fontface/]{Jigmo2.ttf}
 \newfontface\jigc[Path=../../../Fontface/]{Jigmo3.ttf}
-\newfontface\burbank[Path=../../../Fontface/]{burbankbigcondensed_bold.otf}
-\newfontface\houseterror[Path=../../../Fontface/]{HOUSE_OF_TERROR.ttf}
+\newfontface\burbank[Path=../../../Fontface/]{NHC-Burbank-Bold.ttf}
+\newfontface\houseterror[Path=../../../Fontface/]{NHC-HouseofTerror.ttf}
 \newfontface\dawnland[Path=../../../Fontface/]{Dawnland.Lost.otf}
 
 % Phông cho tiêu đề cuốn truyện và đầu-chân trang
@@ -220,7 +220,7 @@
 \newcommand{\topten}{【\ruby{大}{だい}\ruby{惨}{さん}\ruby{事}{じ}】}
 \newcommand{\bxh}[4]{
     \begin{center}
-        {{\cafeteria\Large Number #1:} \\
+        {{\cafeteria\Large Vị trí số #1:} \\
         {\textbf{#2}} \\
         {(Từ {\humanist\textbf{FOLGE #3}}, quyển số #4.)}}
     \end{center}
@@ -325,14 +325,14 @@
 % Số chương
 \fancyhead[RO]
 {\sen\fontsize{18pt}{18pt}\selectfont
-\color{vol}two} 
-{\ab\fontsize{18pt}{18pt}\selectfont 
+\color{vol}{two}
+\ab\fontsize{18pt}{18pt}\selectfont 
 \color{vol}{\textbf{(II)}}
 \\[-18pt]}
 \fancyhead[LE]
 {\sen\fontsize{18pt}{18pt}\selectfont
-\color{vol}{\textbf{Zwei}}} 
-{\ab\fontsize{18pt}{18pt}\selectfont 
+\color{vol}{\textbf{Zwei}}
+\ab\fontsize{18pt}{18pt}\selectfont 
 \color{vol}{\textbf{(2)}}
 \\[-18pt]}
 % Chân trang
@@ -384,69 +384,69 @@
 }
 %========================================LỜI NÓI ĐẦU==========================================
 \newpage
-\section*{\phantomsection\label{preface}} 
-\addcontentsline{toc}{section}{Giới thiệu} 
+\section*{\phantomsection\label{preface}}
+\addcontentsline{toc}{section}{Giới thiệu}
 % {\centering\vnmsans\Large\textcolor{vol}{Giới thiệu}\par}
 {\centering\vnmsans\Large\textcolor{vol}{Giới thiệu}\par}
 \subfile{intro}
 
 %=======================================DANH SÁCH TẬP========================================
 % \newpage
-% \section*{\phantomsection\label{epM1.1}} 
-% \addcontentsline{toc}{section}{{\humanist{FOLGE 11 \cafeteria | M2-1}} - ??} 
+% \section*{\phantomsection\label{epM2.1}} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 11 \cafeteria | M2-1}} - Mất điện} 
 % \vspace{-30pt}
 % \subfile{Episode/M2-01}
 
 % \newpage
-% \section*{\phantomsection\label{epM1.2}} 
-% \addcontentsline{toc}{section}{{\humanist{FOLGE 12 \cafeteria | M2-2}} - ??} 
+% \section*{\phantomsection\label{epM2.2}}
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 12 \cafeteria | M2-2}} - Cái đầu người máy}
 % \vspace{-30pt}
 % \subfile{Episode/M2-02}
 
 % \newpage
-% \section*{\phantomsection\label{epM1.3}} 
-% \addcontentsline{toc}{section}{{\humanist{FOLGE 13 \cafeteria | M2-3}} - ??} 
+% \section*{\phantomsection\label{epM2.3}} 
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 13 \cafeteria | M2-3}} - Viêm mũi dị ứng} 
 % \vspace{-30pt}
 % \subfile{Episode/M2-03}
 
 % \newpage
-% \section*{\phantomsection\label{epM1.4}} 
-% \addcontentsline{toc}{section}{{\humanist{FOLGE 14 \cafeteria | M2-4}} - ??} 
+% \section*{\phantomsection\label{epM2.4}}
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 14 \cafeteria | M2-4}} - Cảm lạnh}
 % \vspace{-30pt}
 % \subfile{Episode/M2-04}
 
-% \newpage
-% \section*{\phantomsection\label{epM1.5}} 
-% \addcontentsline{toc}{section}{{\humanist{FOLGE 15 \cafeteria | M2-5}} - ??} 
-% \vspace{-30pt}
-% \subfile{Episode/M2-05}
+\newpage
+\section*{\phantomsection\label{epM2.5}}
+\addcontentsline{toc}{section}{{\humanist{FOLGE 15 \cafeteria | M2-5}} - Nỗi lòng chiều cao}
+\vspace{-30pt}
+\subfile{Episode/M2-05}
 
 % \newpage
-% \section*{\phantomsection\label{epM1.6}} 
+% \section*{\phantomsection\label{epM2.6}} 
 % \addcontentsline{toc}{section}{{\humanist{FOLGE 16 \cafeteria | M2-6}} - ??} 
 % \vspace{-30pt}
 % \subfile{Episode/M2-06}
 
 % \newpage
-% \section*{\phantomsection\label{epM1.7}} 
+% \section*{\phantomsection\label{epM2.7}} 
 % \addcontentsline{toc}{section}{{\humanist{FOLGE 17 \cafeteria | M2-7}} - ??} 
 % \vspace{-30pt}
 % \subfile{Episode/M2-07}
 
 % \newpage
-% \section*{\phantomsection\label{epM1.8}} 
+% \section*{\phantomsection\label{epM2.8}} 
 % \addcontentsline{toc}{section}{{\humanist{FOLGE 18 \cafeteria | M2-8}} - ??} 
 % \vspace{-30pt}
 % \subfile{Episode/M2-08}
 
 % \newpage
-% \section*{\phantomsection\label{epM1.9}} 
+% \section*{\phantomsection\label{epM2.9}} 
 % \addcontentsline{toc}{section}{{\humanist{FOLGE 19 \cafeteria | M2-9}} - ??} 
 % \vspace{-30pt}
 % \subfile{Episode/M2-09}
 
 % \newpage
-% \section*{\phantomsection\label{epM1.10}} 
+% \section*{\phantomsection\label{epM2.10}} 
 % \addcontentsline{toc}{section}{{\humanist{FOLGE 20 \cafeteria | M2-10}} - ??} 
 % \vspace{-30pt}
 % \subfile{Episode/M2-10}
@@ -458,7 +458,7 @@
 % \subfile{Episode/motif2}
 %===========================================LỜI KẾT===========================================
 \newpage
-\section*{\phantomsection\label{end}} 
+\section*{\phantomsection\label{end}}
 \addcontentsline{toc}{section}{Lời kết}
 {\centering\vnmsans\Large\textcolor{vol}{Lời kết}\par}
 \subfile{end}

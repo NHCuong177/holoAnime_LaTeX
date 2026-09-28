@@ -13,10 +13,14 @@
 \definecolor{epattr}{HTML}{9cc2e5}
 
 \definecolor{song}{HTML}{7030a0}
-\definecolor{ai}{RGB}{91,155,213}
+\definecolor{horror}{HTML}{c00000}
 \definecolor{manzai}{HTML}{005900}
 \definecolor{bdaya}{HTML}{E31BAF}
 \definecolor{bdayb}{HTML}{FFC000}
+
+\definecolor{bronze}{HTML}{CC8044} % Mã màu HEX
+\definecolor{silver}{HTML}{C0C0C0} % Mã màu HEX
+\definecolor{gold}{HTML}{FFD700} % Mã màu HEX
 
 \definecolor{holofes}{HTML}{ffc000}
 \definecolor{holop}{HTML}{9E0000}
@@ -80,18 +84,18 @@
 
 % Phông cho tên-số các tập
 \newfontface\flaregothic[Path=../../../../Fontface/]{flaregothicbold.ttf}
-\newfontface\cafeteria[Path=../../../../Fontface/]{Cafeteria Bold.otf}
+\newfontface\cafeteria[Path=../../../../Fontface/]{NHC-Cafeteria-Bold.ttf}
 \newfontface\fotskip[Path=../../../../Fontface/]{FOT-Skip Std B.otf}
 \newfontface\vnmsans[Path=../../../../Fontface/]{VNM Sans Std.otf}
 \newfontface\vnmdisp[Path=../../../../Fontface/]{VNM Sans Display Bold.otf}
-\newfontface\sen[Path=../../../../Fontface/]{Sen-Bold.ttf}
+\newfontface\sen[Path=../../../../Fontface/]{NHC-SenBold.ttf}
 \newfontface\continuum[Path=../../../../Fontface/]{contb.ttf}
 \newfontface\japfont[Path=../../../../Fontface/]{msgothic.ttc}
 \newfontface\jiga[Path=../../../../Fontface/]{Jigmo.ttf}
 \newfontface\jigb[Path=../../../../Fontface/]{Jigmo2.ttf}
 \newfontface\jigc[Path=../../../../Fontface/]{Jigmo3.ttf}
-\newfontface\burbank[Path=../../../../Fontface/]{burbankbigcondensed_bold.otf}
-\newfontface\houseterror[Path=../../../../Fontface/]{HOUSE_OF_TERROR.ttf}
+\newfontface\burbank[Path=../../../../Fontface/]{NHC-Burbank-Bold.ttf}
+\newfontface\houseterror[Path=../../../../Fontface/]{NHC-HouseofTerror.ttf}
 \newfontface\dawnland[Path=../../../../Fontface/]{Dawnland.Lost.otf}
 
 % Phông cho tiêu đề cuốn truyện và đầu-chân trang
@@ -218,10 +222,10 @@
 \newcommand{\lang}[1]{\begin{center}{\textit{*Các nhân vật nói bằng tiếng #1.}}\end{center}}
 
 % D. Bảng xếp hàng (cho các tập Top 10)
-\newcommand{\topten}{【\ruby{大}{だい}\ruby{惨}{さん}\ruby{事}{じ}】}
+\newcommand{\topten}{【\ruby{総}{そう}\ruby{集}{しゅう}\ruby{編}{へん}】}
 \newcommand{\bxh}[4]{
     \begin{center}
-        {{\cafeteria\Large Number #1:} \\
+        {{\cafeteria\Large Vị trí số #1:} \\
         {\textbf{#2}} \\
         {(Từ {\flaregothic\textbf{ÉPISODE #3}}, quyển số #4.)}}
     \end{center}
@@ -398,7 +402,6 @@
 % \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 147 \cafeteria | 12-1}} - Nữ hoàng Sư tử}
 % \vspace{-30pt}
 % \subfile{Episode/12-01}
-% \subfile{Episode/12-01_original}
 
 % \newpage
 % \section*{\phantomsection\label{ep12.2}}
@@ -412,65 +415,65 @@
 % \vspace{-30pt}
 % \subfile{Episode/12-03}
 
-\newpage
-\section*{\phantomsection\label{epS.27}} 
-\addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 150/SPÉCIAL XXVII \cafeteria | S-27}} - ??}
-\vspace{-30pt}
-\subfile{Episode/S-27}
+% \newpage
+% \section*{\phantomsection\label{epS.27}} 
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 150/SPÉCIAL XXVII \cafeteria | S-27}} - ??}
+% \vspace{-30pt}
+% \subfile{Episode/S-27}
 
 % \newpage
-% \section*{\phantomsection\label{epC.9}} 
-% \addcontentsline{toc}{section}{{\flaregothic{PERSONNALISÉ \vnmdisp{CHÍN}} \cafeteria | C-9} - ??}
+% \section*{\phantomsection\label{epC.9}}
+% \addcontentsline{toc}{section}{{\flaregothic{PERSONNALISÉ \vnmdisp{CHÍN}} \cafeteria | C-9} - Những món ăn độc nhất vô nhị xứ Etsunan}
 % \vspace{-30pt}
 % \subfile{Episode/C-09}
 
 % \newpage
-% \section*{\phantomsection\label{epS.28}} 
-% \addcontentsline{toc}{section}{{\flaregothic{SPÉCIAL XXVIII \cafeteria | S-28}} - ??}
+% \section*{\phantomsection\label{epS.28}}
+% \addcontentsline{toc}{section}{{\flaregothic{SPÉCIAL XXVIII \cafeteria | S-28}} - Nhân viê    n học việc}
 % \vspace{-30pt}
 % \subfile{Episode/S-28}
 
 % \newpage
 % \section*{\phantomsection\label{ep12.4}} 
-% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 151 \cafeteria | 12-4}} - ??}
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 151 \cafeteria | 12-4}} - Siêu nhân Akiganger}
 % \vspace{-30pt}
 % \subfile{Episode/12-04}
 
 % \newpage
-% \section*{\phantomsection\label{ep12.5}} 
-% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 152 \cafeteria | 12-5}} - ??}
+% \section*{\phantomsection\label{ep12.5}}
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 152 \cafeteria | 12-5}} - Đấu bọ}
 % \vspace{-30pt}
 % \subfile{Episode/12-05}
 
 % \newpage
-% \section*{\phantomsection\label{epS.29}} 
-% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 153/SPÉCIAL XXIX \cafeteria | S-29}} - ??}
+% \section*{\phantomsection\label{epS.29}}
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 153/SPÉCIAL XXIX \cafeteria | S-29}} - Sushi ăn mảnh từ tiền người khác ư? Không tốt!}
 % \vspace{-30pt}
 % \subfile{Episode/S-29}
 
 % \newpage
-% \section*{\phantomsection\label{epC.9}} 
-% \addcontentsline{toc}{section}{{\flaregothic{PERSONNALISÉ \vnmdisp{MƯỜI}} \cafeteria | C-10} - ??}
+% \section*{\phantomsection\label{epC.10}}
+% \addcontentsline{toc}{section}{{\flaregothic{PERSONNALISÉ \vnmdisp{MƯỜI}} \cafeteria | C-10} - Nghệ thuật ăn sushi bằng tiền người khác}
 % \vspace{-30pt}
 % \subfile{Episode/C-10}
 
 % \newpage
-% \section*{\phantomsection\label{ep12.6}} 
-% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 154 \cafeteria | 12-6}} - ??}
+% \section*{\phantomsection\label{ep12.6}}
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 154 \cafeteria | 12-6}} - Sushi hình người}
 % \vspace{-30pt}
 % \subfile{Episode/12-06}
 
 % \newpage
-% \section*{\phantomsection\label{ep12.7}} 
-% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 155 \cafeteria | 12-7}} - ??}
+% \section*{\phantomsection\label{ep12.7}}
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 155 \cafeteria | 12-7}} - Cú bay ngoạn mục}
 % \vspace{-30pt}
 % \subfile{Episode/12-07}
 
-% \newpage
-% \section*{\phantomsection\label{epS.30}}
-% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 156/SPÉCIAL XXX \cafeteria | S-30}} - ??}
-% \vspace{-30pt}
-% \subfile{Episode/S-30}
+\newpage
+\section*{\phantomsection\label{epS.30}}
+\addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 156/SPÉCIAL XXX \cafeteria | S-30}} - Top 10 các cảnh đáng chú ý nhất}
+\vspace{-30pt}
+\subfile{Episode/S-30}
 
 % \newpage
 % \section*{\phantomsection\label{ep12.8}} 

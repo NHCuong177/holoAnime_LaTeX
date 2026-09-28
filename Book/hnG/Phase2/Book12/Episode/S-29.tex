@@ -1,0 +1,783 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+%==========================================TIÊU ĐỀ TẬP========================================
+\begin{table}[h]
+    \begin{adjustwidth}{-1cm}{}
+        \begin{tabular}{>{\centering\arraybackslash}p{6cm}|>{\raggedright\arraybackslash}p{12.5cm}}
+            \multirow{5}{6cm}
+            % Cột bên trái: ÉPISODE và số tập
+            {\centering
+                {\\[-40pt]
+                    {\fontsize{20pt}{20pt}\selectfont{\outlinetext[1]{eptype}{white}
+                            {\flaregothic ÉPISODE}}\\[12pt]
+                        {\fontsize{72pt}{72pt}\selectfont{\outlinetext[1]{epnum}{white}
+                                {\burbank 153}}
+                        }}
+                    \\[8pt]
+                    \hrule
+                    \vspace{8pt}
+                    {\fontsize{20pt}{20pt}\selectfont{\outlinetext[1]{eptype}{white}
+                            {\flaregothic SPÉCIAL}}\\[12pt]
+                        {\fontsize{72pt}{72pt}\selectfont{\outlinetext[1]{epnum}{white}
+                                {\burbank XXIX}}
+                        }}\\[6pt]
+                    {\fontsize{20pt}{20pt}\selectfont{\outlinetext[1]{epnum}{white}{\cafeteria (S-29)}}}\\[18pt]
+                    % {\fontsize{14pt}{14pt}\selectfont{\outlinetext[1]{epattr}{white}{\flaregothic [I]}}}\\
+                    \flaregothic\fontsize{18pt}{18pt}\selectfont
+                    \gradientRGB{CHAOS}{255,0,0}{0,0,0}\color{black}\\[12pt]
+                    \color{black}
+                }
+            }
+             &
+            % Dòng thứ nhất: tên tập tiếng Nhật
+            {\fotskip\fontsize{18pt}{18pt}\selectfont \ruby{他}{ほか}\ruby{人}{ひと}の\ruby{稼}{かせ}いだ\ruby{金}{かね}で\ruby{寿}{す}\ruby{司}{し}を食わせろ！！！！！！！
+            }                                         \\[6pt]
+            % Dòng thứ hai: tên tập tiếng Anh
+             & {\cafeteria\fontsize{18pt}{18pt}\selectfont Mooching Sushi}                                                                                                          \\[4pt]
+            % Dòng thứ ba: tên tập tiếng Việt
+             & {\vnmsans\fontsize{18pt}{18pt}\selectfont Sushi ăn mảnh từ tiền người khác ư? Không tốt!}                                                                            \\[8pt]
+            % Dòng thứ tư: Nhân vật xuất hiện
+             & {\caviar{\fontsize{14pt}{14pt}\selectfont Nhân vật: \emp{kuon2} \emp{kaigou2} \emp{ryuuhou2} \emp{game} \emp{fubuki} \emp{okayu} \emp{polka} \emp{lamy} \emp{nene}}} \\
+            % Dòng thứ năm (nếu có): Nhân vật chỉ xuất hiện trong Omake
+             & {\abv Truyện phụ:} \emp{suzuno2} \emp{achan}
+            \\[8pt]
+            % Dòng cuối cùng: Thời gian diễn ra của tập (thường sẽ là ngày phát hành)
+             & {\sen\fontsize{16pt}{16pt}\selectfont Mốc thời gian: 17/04/2022}                                                                                                     \\[18pt]
+        \end{tabular}
+    \end{adjustwidth}
+\end{table}
+%=========================================TRUYỆN CHÍNH========================================
+\color{black}
+
+\txtbx[2]
+{{\color{vol} \uline{Tóm tắt:}} Polka vì muốn thỏa mãn cơn thèm sushi bằng tiền của người khác nên đã tự phân tách thành hai bản thể thiện - ác. Bản thể ác cuỗm điện thoại của Fubuki để đặt sushi vô tội vạ, kéo theo một cuộc rượt đuổi điên loạn tới một ``quán sushi'' kỳ dị: nơi Lamy bị quái vật xúc tu tảo biển bắt giữ, Okayu gây sự với nồi cơm điện, rồi cả nhóm bị cuốn vào bên trong lỗ tai của Lamy - nơi thực chất là một dây chuyền làm sushi công nghiệp. Sau hàng loạt biến cố phi lý từ việc hợp nhất thành ``Polka Sushi'' cho đến ``Pol-Bò'', cả nhóm kết thúc bằng một bữa tiệc disco sushi náo loạn cả con phố.}
+
+Polka đang uể oải đạp chiếc xe ba bánh chậm rãi lăn bánh trên đường, hai chiếc tai cáo cụp hẳn xuống tỏ vẻ rũ rượi vì cơn đói cào xé. Đi ngay bên cạnh cô là Kuon cùng hai cô em gái Kaigou và Ryuuhou.
+
+\img{s-29a}
+
+Bất chợt, nàng Trưởng nhóm nhìn dáng vẻ thảm hại của Polka rồi tủm tỉm cười, quay sang chọc ghẹo cô em gái song sinh của anh mình: ``Này Kaigou-nee, nhìn Polka-san làm em nhớ hồi dạo này ghê. Thi thoảng em toàn `vay mượn' chị đi ăn chực dù trong túi em chẳng thiếu tiền ấy.''
+
+Nàng Tổng nhíu mày, khoanh tay trước ngực lườm em gái bằng ánh mắt sắc lẹm: ``Em còn dám nhắc lại à? Rốt cuộc cái lý do củ chuối của em hồi đó là gì ấy nhỉ?''
+
+Ryuuhou phẩy tay, thản nhiên đưa ra một đúc kết đầy tự tin: ``Thì rõ ràng mà! Ăn bằng tiền người khác lúc nào cũng ngon hơn tiền tự bỏ ra chứ sao!''
+
+Kaigou nổi gân cổ, siết chặt nắm đấm tỏ rõ sự bất mãn: ``Thế nên em coi chị như cái ví lưu động chắc? Em tô-ma-hốc lắm thế thì còn đâu ra tiền đóng tiền học cho Suzu với chị nữa!? Vô liêm sỉ cũng vừa vừa thôi chứ!''
+
+Kuon thở dài xoa thái dương, bất lực trước màn cãi vả quen thuộc của hai cô em: ``Hai đứa thôi đi cho anh nhờ\dots\ Mà Ryuuhou này, chọc ít thôi, em ấy mà nổi điên đánh thật là anh cũng không can nổi đâu.''
+
+``Biết rồi mừ\~{}'' em gái cậu lè lưỡi đáp lại.
+
+Từ chiếc đồng hồ đeo tay của Kuon, giọng nói điện tử mỉa mai của Game vang lên: ``Ryuuhou-user còn mặt dày hơn tôi tưởng. Đề xuất Kaigou-user sử dụng vũ lực để thiết lập lại trật tự.''
+
+Lúc này, Polka vẫn tiếp tục than vãn trên chiếc xe ba bánh: ``Mình muốn ăn sushi mà muốn dùng số tiền ít ỏi của ai đó thì làm gì bây giờ nhỉ\dots''
+
+Kuon nhìn cô nàng than vãn kia mà thở dài: ``Ờm\dots\ tại sao em lại muốn dùng tiền của người khác?''
+
+Game bồi thêm một câu: ``Đã thế lại còn `ít ỏi' nữa chứ! Như thể cô muốn giữ lại thể diện không bằng!''
+
+Polka thở dài thượt: ``Thì em biết là thế, nhưng nếu vậy thì xấu tính lắm chứ\dots\ Khó xử thật đấy.''
+
+Cậu Tổng nói với vẻ hơi ngạc nhiên: ``Ờm, em có thể dùng tiền của mình để mua mà? Cần gì phải suy nghĩ khổ sở thế?''
+
+Ryuuhou lắc đầu gật gù: ``Onii không hiểu nghệ thuật ăn chực rồi, phải xài tiền người khác mới thấy trọn vị sushi chứ!''
+
+Kaigou cốc nhẹ một cái vào đầu Ryuuhou: ``Em bớt phét xàm đi.''
+
+Nhưng ngay khi cô vừa dứt lời, nàng Chủ xiếc liền có một bước đi khiến cho cả cậu, hai cô em gái lẫn trợ lý A.I phát hoảng: cô ấy lóe mắt bắn tia laser vàng rực lên trời. Ngay lúc đó, một Polka nữa nhô lên từ trong bụng cô, cùng lúc Fubuki ở phía trước họ xuất hiện. Chính cô cáo trắng cũng phát hoảng như cậu Tổng, nhưng là vì một lý do khác.
+
+\img{s-29b}
+
+Polka bản sao này về cơ bản cũng gần giống với nguyên mẫu, chỉ khác ở chỗ là nó có thêm họa tiết trên mặt, được vẽ như một con quỷ. Ta sẽ tạm gọi Polka bản sao này là Pol-Ác, còn Polka gốc kia là Pol-Thiện.
+
+``A-lê-hấp,'' Pol-Ác cất tiếng sau khi được tách ra từ chủ nhân.
+
+``Vãi chưởng\dots'' Kuon thốt lên.
+
+Fubuki kinh hãi kêu lên: ``Trời đất\dots\ Polka chia tách mình thành hai phiên bản thiện và ác rồi!''
+
+``\dots Hả?'' Kuon ngơ ngác.
+
+``Lại còn có cả vụ này nữa à!?'' Game cảm thán.
+
+Ryuuhou giương to mắt quan sát: ``Ồ, phân bào bằng tia laser à? Công nghệ dạo này ảo diệu thật.''
+
+Kaigou nheo mắt đầy nghi ngờ: ``Chị chỉ thấy giống hiện tượng biến dị tâm thần thì đúng hơn...''
+
+Ngay khi Pol-Ác vừa được ``tạo ra'', cô ấy ngay lập tức mở ứng dụng đặt đồ ăn ra và bấm liên tiếp, như thể cô đang đi săn đồ khuyến mại trên các gian hàng điện tử. Pol-Thiện thấy vậy hoảng loạn, cố gắng can bản sao của mình lại: ``Đừng mà! Bỏ cái đó đi!''
+
+\img{s-29c}
+
+Nhưng bản sao đó bật lại, tay vẫn liên hồi đặt hàng: ``Đã mua hàng order (trực tuyến) rồi thì cứ xõa đi bạn êy!''
+
+Game đổ mồ hôi hột: ``Chuyện quái gì đang xảy ra vậy?''
+
+Kuon cũng đổ mồ hôi hột: ``Tôi cũng chẳng biết đây nè. Này Polka-chan, anh nghĩ là em nên--''
+
+``\textbf{Cứ quẩy nhiệt tình lên đê!!!}'' Pol-Ác gầm lên.
+
+Pol-Thiện mếu máo: ``Nhưng mà nếu thế thì ta sẽ trả tiền thuê nhà tháng sau kiểu gì đây!?''
+
+Fubuki ngơ ngác: ``Ê-tồ\dots\ Polka-chan\dots''
+
+Cả đám ngoài cuộc vẫn chưa hiểu những thứ lộn xộn đang diễn ra trước mắt họ. Pol-Thiện đang cố hết sức khuyên răn bản sao của mình, nhưng Pol-Ác dường như không chịu hợp tác.
+
+Vị trợ lý ảo nhận xét: ``Tôi thấy có gì đó mâu thuẫn ở đây\dots''
+
+``Sao?'' Kuon hỏi.
+
+``\dots Shirakami-san, cô nói rằng đây là hai bản thể thiện và ác của Omaru-san đúng không?'' Game thắc mắc.
+
+Fubuki chớp mắt: ``Ể? Đ-Đúng rồi.''
+
+``Như vậy có nghĩa là đáng ra sẽ phải có thêm một Omaru-san nữa chứ?''
+
+Kuon nhíu mày suy ngẫm: ``Ông nghĩ thứ này vẫn chưa hỗn tạp sao\dots\ Nhưng mà ông nói cũng phải. Mà, có nghĩa là\dots''
+
+Fubuki sực nhớ ra: ``Giờ ông nói tôi mới để ý. Đúng là thế thật.''
+
+Ryuuhou khoanh tay, chêm vào một câu tỉnh rụi: ``Thiện với Ác phân ra rồi, thế còn bản thể `Ngáo' nằm ở đâu?''
+
+Nàng Tổng tặc lưỡi: ``Nó dung hợp sẵn vào cả hai đứa kia rồi chứ đâu.''
+
+Cậu Tổng thở dài với cặp Polka đang nhốn nháo kia: ``Tức là hai bên đang đánh nhau, và bây giờ, bên ác đang thắng thế, đúng chứ?''
+
+Game của cậu đáp lại bằng một tiếng ``Đúng'' ngắn gọn.
+
+Pol-Ác lên giọng lý lẽ: ``Ta phải sống cho hiện tại chứ bạn!''
+
+``N-Nhưng\dots'' Pol-Thiện ngập ngừng.
+
+Điều bất ngờ nhất là Fubuki chợt nhận ra có gì đó không đúng: ``K-Không lẽ\dots!'' Lời thốt lên của cô gây sự chú ý của Kuon: ``Em tìm thấy có gì đó khác thường à?''
+
+Bất chợt, Fubuki gào lên đau đớn: ``\textbf{Điện thoại của em\~{}!}''
+
+Cả Game, Kuon lẫn hai cô em gái đều ngơ mặt ra, đồng thanh ``Hả?'' một tiếng.
+
+Ngay lúc Pol-Ác đặt hàng xong, nàng Cáo trắng lao đến giật lấy chiếc điện thoại mà cô ta đang cầm trên tay. Mặt của cô ấy chợt tái xanh đi, kinh hoàng kêu lên: ``Tại sao em lại dùng tài khoản của chị chứ!?''
+
+Kuon ngơ ngác: ``Ơ\dots\ Ủa? Thế có nghĩa là\dots''
+
+Game lập tức tính toán: ``Cô ấy tiêu hết sạch tiền của Shirakami-san rồi còn gì! Như vậy chẳng phải là ăn cắp à!?''
+
+Ryuuhou tặc lưỡi gật gù tán thưởng: ``Đỉnh! Đúng là Ác có khác, chiêu ăn chực này bái làm sư phụ được luôn!'' tới độ Kaigou lườm cô một cái cháy mặt: ``Em mà học theo cái thói đấy là chị bẻ gãy tay đấy.''
+
+Pol-Ác gầm lên phấn khích: ``Chiến thôi nào!! \textbf{Sushi ơi, ta đến đây!!}''
+
+Kuon bất lực thở dài: ``\dots Anh sẽ trả chỗ phí đó vậy.'' Còn Kaigou thì cười trừ với cô nàng Cáo trắng đang rớt nước mắt kia.
+
+Pol-Ác nổi lên, vô tình đấm phải bản gốc khiến người Pol-Thiện xoay tít như một con quay. Cô nàng Thiện kia cũng đã đuối lý, không thể ngăn cản bản sao mình làm việc ác được nữa.
+
+Bất chợt, bên giao hàng gọi điện. Pol-Ác cuỗm lấy chiếc điện thoại của Fubuki và nghe máy: ``A-lô? Dịch vụ làm sushi sao?''
+
+Phía đầu dây bên kia đáp: ``Đơn hàng của quý khách sẽ được chuyển đến trong vòng một giờ nữa.''
+
+Kuon ngạc nhiên: ``Nhanh thật đấy.''
+
+Nhưng Pol-Ác lại không phục: ``Ể? Thế hóa ra tôi mất trí vì phấn khích từ nãy đến giờ biến thành công cốc hết à? Sao không phải là ngay lúc này!?''
+
+Game càm ràm: ``Cô đúng là dễ mất bình tĩnh thật\dots''
+
+Kuon khuyên giải: ``Thế là nhanh rồi đấy em. Đặt từng ấy món cơ mà.''
+
+Pol-Ác gào lên: ``\textbf{Nhưng tôi thích như thế! Đệch ngựa chúng nó!}''
+
+Ngay lập tức, bản thể ác độc nhảy lên chiếc xe ba bánh, đạp mạnh chân ga và lao thẳng về phía quán sushi như một cơn lốc. Bánh xe rít lên trên vỉa hè, bụi bặm bay mịt mù phía sau. Miệng cô ta vừa đạp vừa thở hổn hển mà hét lớn vào khoảng không: ``\textbf{Chỉ có vài con cá mà cũng cắt băm mãi thế hả? Tao sẽ đến thẳng chỗ chúng mày, đánh cho chúng mày biết tay!}''
+
+Những người còn lại phía sau lập tức tỉnh giấc khỏi sự ngỡ ngàng, cùng nhau chạy đuổi theo bóng hình đang ngày càng xa dần, trên mặt ai cũng lộ rõ vẻ hoảng loạn không thể che giấu. Pol-Thiện, với đôi chân vội vàng chạy để bắt kịp bản sao, vừa thở gấp vừa gào lên với giọng sợ hãi: ``Xin hãy để ý đến lời ăn tiếng nói của mình chứ! Đừng nói những điều quá đáng như vậy!''
+
+\img{s-29d}
+
+Kuon chạy phía sau, vừa thở hổn hển vừa lắc đầu thở dài: ``Em ấy thật sự bị cuồng phong cuốn đi rồi, điên nặng quá\dots''
+
+Ryuuhou, đang chạy với tốc độ nhanh nhất có thể, vừa thở vừa nói: ``Chị ấy còn độc mồm và táo bạo hơn em tưởng thật. Chả khác nào Kaigou-nee nhà mình đâu, cũng hay gắt gỏng như vậy.''
+
+Kaigou, nghe thấy lời em gái thì tức giận quay lại thốt: ``Vì ai mà chị phải trở nên như vậy hả!? Còn không phải do em luôn đùa nghịch, khiến chị phải nổi giận mãi thôi!?''
+
+Từ chiếc đồng hồ đeo tay của Kuon, giọng điện tử của Game lại vang lên, vẫn mang giọng nhận xét mỉa mai: ``Tôi thật sự không nghĩ rằng bản năng ác ma bên trong cô ấy lại có thể rồ dại đến thế này\dots\ Thật sự vượt ngoài dự đoán của tôi.''
+
+Kuon, đang chạy hết sức để đuổi kịp Pol-Ác, thì suy đoán một cách bất lực: ``Không chừng em ấy vốn dĩ đã có bản chất ác từ đầu rồi cũng nên, chứ làm sao mà tách ra lại trở nên tồi tệ đến thế được.''
+
+Pol-Thiện, nghe thấy vậy thì lập tức phân bua với giọng oan trái: ``Không có đâu! Đều là do cái bản thể ác đó chứ bộ! Polka này vốn dĩ rất ngoan mà!''
+
+Fubuki, với đôi mắt đang rưng rưng nước mắt vì lo lắng cho số tiền trong tài khoản, vừa chạy vừa gào lên với giọng mếu máo: ``\textbf{Điện thoại của tôi đâu rồi! Trả điện thoại lại đây!}''
+
+Nàng Trưởng nhóm thấy cảnh tượng hỗn loạn này lại càng hào hứng, cô ấy tăng tốc để vượt lên phía trước mọi người, vừa chạy vừa la lên: ``Trời ơi, tình hình này thật sự hay quá! Chẳng mấy chốc chúng ta sẽ đến quán sushi để có một cuộc đại náo thôi! Hóng quá đi\~{}''
+
+Nhưng Kaigou, chạy ngay bên cạnh em gái, lập tức vươn tay tóm lấy cổ áo của Ryuuhou, kéo cô ấy lại phía sau để ngăn chặn sự hào hứng vô ích: ``Hóng cái đầu em ấy! Còn không mau nhanh chân chạy theo để cản nó lại kìa! Để nó làm loạn lên ở quán sushi thì sao được!?''
+
+Cả nhóm người vừa chạy vừa la hét trên đường phố đã gây ra một sự náo loạn không nhỏ. Những người đi đường khác đều phải dừng lại hoặc né sang một bên, nhìn theo nhóm người đang chạy đua nhau trên đường với ánh mắt ngỡ ngàng. Một vài chiếc xe máy cũng phải phanh gấp để tránh va vào Pol-Ác đang đạp xe lao tới, tiếng còi xe vang lên liên tục. Một bà bán hàng rong trên vỉa hè cũng phải vội vàng dọn hàng để tránh bị chiếc xe ba bánh của Pol-Ác đâm phải. Cả con đường vốn dĩ bình thường giờ đây trở nên hỗn loạn chỉ vì cuộc chạy đua điên rồ của nhóm người này.
+
+Ngay lúc đó, chiếc điện thoại mà Pol-Ác vẫn đang cầm trên tay lại vang lên, giọng của nhân viên quán sushi phía đầu dây đầy lo lắng, như thể đang cố gắng kìm hãm cô nàng điên đang đạp xe lao tới: ``Quý khách ơi, xin đừng tới đây mà! Chúng tôi sẽ cố gắng giao hàng nhanh nhất có thể!''
+
+Cậu Tổng đang chạy ngay đằng sau Pol-Ác, cũng lập tức nói góp vào để khuyên giải cô nàng: ``Cô ấy nói đúng đấy! Để yên cho người ta còn làm việc chứ! Chờ đợi một chút là hạnh phúc mà, đừng nóng vội như vậy!''
+
+Nhưng lập tức, Ryuuhou lém lỉnh thốt lên từ phía sau, với giọng chế giễu và cười nhạo suy nghĩ của Kuon: ``Em hoàn toàn hiểu được cảm giác bực bội và muốn ăn ngay của cô ta mà, Onii! Chờ đợi một tiếng đồng hồ thì làm sao mà chịu được!''
+
+``Đừng có mà hùa với người ta như thế chứ, Ryuu!!'' Kaigou quát lớn, vừa chạy vừa kịp tóm lấy cổ áo em gái để kéo cùng chạy nhanh hơn.
+
+\ct
+
+Không mất quá nhiều thời gian để mọi người tới được quán sushi. Pol-Ác lết chiếc xe ba bánh phóng nhanh như bay, thắng gấp một cái *RÉTTT* chói tai rồi thét lớn: ``Tao đến rồi đây, Poi\~{}! Mẹ chúng mày làm xong chưa!?''
+
+Những người còn lại cũng vừa bắt kịp, ai nấy đều thở không ra hơi. Ryuuhou chạy vọt lên trước, giương to đôi mắt hai màu đảo quanh hào hứng: ``Đâu? Quán sushi đẳng cấp đâu rồi?''
+
+Thế nhưng, thứ đập vào mắt mọi người lại chẳng phải một nhà hàng sang trọng nào cả, mà là một khung cảnh kỳ quặc đến cạn lời ngay giữa không gian một tuyến phố sầm uất.
+
+``Tôi đã bảo là quý khách đừng tới đây rồi mà! Món vẫn chưa sẵn sàng đâu, kể cả nếu quý khách định mang về!''
+
+Tiếng Lamy cất lên thất thanh từ trên cao. Cả người cô nàng Yêu tinh tuyết lúc này đang bị nhét lọt thỏm vào giữa một miếng sushi cá hồi khổng lồ, với phần thân là khối cơm trắng phô mai và lát cá hồi đỏ rực đè lên trên. Toàn bộ ``cuộn sushi Lamy'' ấy đang bị siết chặt và nhấc bổng lên không trung bởi một chiếc xúc tu khổng lồ đen sì, sần sùi với bề mặt y hệt như lá tảo biển. Xung quanh đó, vài chiếc xúc tu tảo biển khác cũng đang quật qua quật lại những miếng sushi cá hồi tương tự.
+
+\img{s-29e}
+
+Lamy nhô đầu ra khỏi khối cơm, dường như chẳng hề thấy đau đớn hay khó chịu gì mà còn cất giọng giới thiệu tỉnh rụi: ``\textbf{Đây là Sushi Xúc tu Hoang dã đó!}''
+
+Pol-Ác đờ đẫn chớp mắt: ``Ờm\dots\ Đèo mẹ cái gì đây, sushi băng chuyền à?''
+
+Game và Kuon đồng thanh thốt lên: ``Cái quéo gì thế này\dots''
+
+Kaigou giật giật khóe mắt, giơ hai tay lên trời ngơ ngác: ``Thế quái nào mà tảo biển lại mọc ra xúc tu quật người tưng bừng giữa phố thế kia!?''
+
+Ryuuhou thì phì cười, giơ ngay điện thoại lên chớp liền mấy tấm ảnh: ``Ôi vãi! Sushi nhân người sống! Món này mà đăng lên mạng xã hội thì đảm bảo triệu view chắc chắn!''
+
+Con quái vật xúc tu tảo biển kia ngoe nguẩy điên dại ``miếng sushi Lamy'' trên không, còn chính cô thì vẫn bình thản đung đưa. Cậu Tổng nhìn cô đang bị con quái vật lắc qua lắc lại, hoàn toàn bó tay không hiểu nổi tại sao cô nàng lại tỏ thái độ bàng quan đến vậy.
+
+Cùng lúc này, Okayu từ đâu sà tới bên một chiếc nồi cơm điện, và bằng một phép thuật hư cấu nào đó, chiếc nồi có thể tự do chạy nhảy trên đường mà chả cần cắm điện. Nàng Mèo tím bỗng chốc hoảng hốt, lao vào vừa đập liên hồi vừa mắng xối xả cái nồi như mắng một con người. Bụi bay tán loạn, tiếng *RẦM! RẦM!* vang vọng nhói tai khắp phố.
+
+``Uoooh! Nồi ơi, giời ơi! Tôi đã bảo cậu là để lại ít cơm cho tôi cơ mà!''
+
+\gif{s-29f}{1}{51}
+
+Kuon nhìn khung cảnh khóc dở mế dỏe kia, đứng bên ngơ ngác: ``Ờ\dots\ Hả?''
+
+Ryuuhou che miệng cười khúc khích: ``Chị Mèo đang đòi quyền lợi bữa ăn từ một cái đồ gia dụng kìa, hài vãi!''
+
+Okayu tiếp tục đập bôm bốp vào nắp nồi: ``Cậu đưa hết cơm để làm cơm nắm đó cho cô ta sao!?''
+
+Game ngán ngẩm gắt: ``Nekomata-san\dots\ Cô bị dở à?''
+
+Nàng Mèo tím vẫn quát nạt nó, tay chỉ phắt về phía Lamy đang bị con quái vật đung đưa: ``\textbf{Thật trơ trẽn!}'' Hiển nhiên, đáp lại cô là một sự im lặng tuyệt đối từ cái nồi cơm điện đang mở hé nắp.
+
+Nhưng Okayu vẫn không chịu buông tha, tiếp tục tra hỏi: ``Lại định gọi mẹ đến giải quyết khi không bao biện được chứ gì? Cơm chín thế kia rồi mà không chịu ngậm miệng lại, ý cậu là thế nào hả!?''
+
+Kaigou khoanh tay thở dài: ``Con mèo này hết chữa thật rồi\dots''
+
+Game gắt lên từ chiếc đồng hồ: ``Nekomata-san, cái nồi đó không nói được đâu!''
+
+Nhưng cô ấy vẫn để ngoài tai và tiếp tục chì chiết nó: ``Cậu đi mà đi giải quyết với chị này nhá!'' vừa nói cô vừa thò hẳn tay vào trong ruột nồi vẫn còn tỏa hơi nóng nghi ngút. Theo lẽ tự nhiên, nhiệt độ độ nóng giật mình khiến Okayu hốt hoảng rút phắt tay ra, kêu ``Oái!'' lên một tiếng. Bàn tay trái của cô đỏ hỏn vì bị bỏng nhẹ.
+
+\img{s-29g}
+
+Kuon thấy vậy cũng phải giật mình lo lắng: ``E-Em ổn chứ?''
+
+Chỉ để rồi cô nàng lại ngay lập tức quay về chế độ ``Chí Phèo phê cần'', tỏ rõ thái độ rụt rè ăn vạ với cái nồi: ``Nè, cậu không cần phải nóng tính như vậy đâu!''
+
+Game chỉ biết thở dài trong bất lực: ``Tôi bó tay.''
+
+Kuon - bằng một cách thần kỳ nào đó - đã vắt chân ngũ sấm ngồi cùng với hai Polka trên một chiếc ghế bành sang trọng đặt ngay giữa lòng đường. Ryuuhou cũng đã yên vị ngồi trên tay vịn của chiếc ghế, tay cầm cốc nước ngọt hút tớp tớp.
+
+Kaigou đứng chống hông bên cạnh, lườm anh trai mình: ``Thế quái nào mà anh lại lôi đâu ra cái sofa giữa đường thế này hả Aniki?'' Kuon thản nhiên nhấp một ngụm nước, không buồn trả lời, như thể đã quá quen với sự hỗn loạn tới tột cùng của nơi khỉ gió này.
+
+Pol-Ác bắt đầu càu nhàu: ``Trời ơi, chỗ này thậm chí còn chẳng có lấy một cốc nước cho khách à?'' Cậu Tổng chỉ biết thở dài đáp: ``Em mong chờ gì được ở cái nơi mà còn chẳng thể gọi là quán ăn này đâu.''
+
+Pol-Thiện dịu dàng nhắc nhở: ``Sao cậu lại nặng lời thế kia. Đôi khi ta nên cư xử nhẹ nhàng, lịch sự một chút chứ.'' Kuon chỉ biết lắc đầu tặc lưỡi: ``Anh nghĩ em hiền lành quá mức rồi đấy\dots''
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=8cm]{../../../../Image/Book12/s-29h1.png}
+    \end{subfigure}
+    \quad
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=8cm]{../../../../Image/Book12/s-29h2.png}
+    \end{subfigure}
+\end{figure}
+
+Cùng lúc đó, Lamy đang bị treo lơ lửng trên không cũng bắt đầu la hét thất thanh vì chiếc xúc tu đang xoay tròn quá nhanh khiến cô chóng mặt kinh khủng.
+
+Pol-Ác như bị chích điện, nhảy cẫng lên giậm chân rầm rầm: ``Ồ! Cái này đơn giản thôi!'' rồi bắt đầu hét lên như một đứa trẻ nổi điên: ``Bồng-dúa! Tao đang bực mình lắm đây! Pichi Pichi Pichi! Haha!''
+
+Kaigou đổ mồ hôi hột, lẩm bẩm: ``Cứ như thế này thì chẳng thấy lịch sự ở đâu ra cả\dots''
+
+Pol-Thiện nhíu mày khó chịu: ``Cô đang nói móc tôi đấy à?''
+
+Game cau có không đồng tình: ``Tôi nghĩ cả ba người này đều có vấn đề với đầu óc hết rồi. Kuon-user, sao cậu lại có thể\dots''
+
+Trước sự ngỡ ngàng của trợ lý ảo, Kuon chỉ có thể đáp lại bằng một câu nói thể hiện sự bất lực tột độ: ``Nếu ông không theo kịp tình hình thì cứ hòa vào làm như mọi người, điên một chút cho qua chuyện thôi.''
+
+Ryuuhou vội vàng gật gù tán thành: ``Chuẩn không cần chỉnh! Nhập gia thì thùy tục mà, ở đây ai cũng điên thì mình điên theo cho vui vẻ!''
+
+Game thở dài bất lực: ``Không ngờ cả hai anh em cậu đều bị dính lây cái bệnh điên này nữa chứ\dots''
+
+Fubuki từ phía sau bò lên, đưa hai tay tạo thành hình đầu cáo trắng và hét lên: ``\textbf{Cầu hòa!}'' để cố gắng làm Pol-Ác bình tĩnh lại. Nhưng mọi nỗ lực đều vô ích, thậm chí còn khiến Pol-Ác nổi điên hơn nữa, đến mức cơ mặt cũng méo xệch đi vì quá phấn khích.
+
+Pol-Ác gào lên như mất kiểm soát: ``Pichi Pichi Pichi! Bỏ mặc tao đi! Pichi Pichi! Haha!'' Kaigou chỉ biết áp tay vào mặt, lắc đầu ngao ngán: ``Bộ óc của em ấy thực sự bị hỏng nặng rồi\dots''
+
+Pol-Thiện cắn răng bực bội: ``\dots Làm quá mức rồi đấy.''
+
+Game vội vàng chêm vào: ``Tôi thực sự sốc khi cô lại hiền lành đến mức đó\dots''
+
+Nhưng câu nói đó chính là cái đũa thổi lửa, khiến Polka gốc bỗng chốc nổi điên thật sự: ``Được thôi, giờ thì tao cũng điên theo! Muốn đánh nhau phải không!?'' và lập tức bắn ra những tia laser vàng rực từ mắt một lần nữa.
+
+Cáo trắng Fubuki vẫn không từ bỏ, tiếp tục tạo dáng tay cáo trong tuyệt vọng: ``Làm hòa đi mà!''
+
+Game giật mình hoảng sợ: ``Lại còn có chuyện bắn laser nữa ư!? Cô không định tự chia bản thân mình ra làm hai đấy chứ!?''
+
+Kuon lắc đầu bất lực: ``Có vẻ như em cũng không hề thua kém bản thân mình đâu, Polka-chan ạ.''
+
+Pol-Thiện vừa gào thét vừa liên tục bắn laser lung tung khắp nơi: ``Muốn gì thì cứ nói! Tao sẽ cho cô được hết những gì cô muốn! Gyaaah!!''
+
+\img{s-29i}
+
+Fubuki mặt mày mếu máo lao theo sau, hét lên: ``Trả lại điện thoại của chị đi!''
+
+Pol-Thiện nổi điên bấm liên tục vào màn hình điện thoại của tiền bối để đặt đồ ăn, y hệt như cách bản sao của cô đã làm hồi nãy. Giọng nói tự động của hệ thống đơn hàng bật lên: ``Đơn hàng của quý khách đã được xác nhận.''
+
+Fubuki gào khóc lên vì sợ: ``Đừng! Đừng đặt thêm nữa! Tiền của chị sắp cạn hết rồi!''
+
+Kuon vội vàng xua tay trấn an: ``Không sao đâu, có anh trả cho tất cả!'' Kaigou chỉ biết tặc lưỡi than thở: ``Lại phải tốn tiền túi của anh rồi đấy, Aniki ơi.''
+
+Game thở dài: ``Ừm\dots\ Không có ý xen vào chuyện của hai người, nhưng mà\dots''
+
+``Miếng cơm cuộn'' Yêu tinh tuyết Lamy hét toáng lên từ trên cao, giữa mưa tia laser tung tóe: ``Cái món sushi duy nhất của bọn mình đang điên loạn hết rồi này!!! Đừng đặt thêm nữa mà!!!''
+
+Hai bản thể Polka lập tức ngừng cãi lộn, cùng lúc quay đầu nhìn về phía cô nàng đang treo lơ lửng giữa trời.
+
+Game thắc mắc chẳng hiểu gì: ``Đấy là việc cô quan tâm nhất ở thời điểm này hả!?''
+
+Kuon nhíu mày suy tư: ``Cái làm tôi bất ngờ hơn là ở đây chỉ có mỗi món sushi đó thôi à.''
+
+Cặp đôi Polka sau đó quay sang dồn ép ``nhân viên độc nhất của quán sushi này''.
+
+Pol-Ác nhếch mép: ``Tao cóc bận tâm chuyện đó.''
+
+Lamy ngẩn người ra: ``Hả?''
+
+Pol-Thiện vẫy tay quả quyết: ``Dù sao cô cũng phải làm ra sushi cho bọn tôi thôi!''
+
+Lamy càng thêm bối rối: ``Ơ kìa?''
+
+Pol-Ác hất cằm chất vấn: ``Mày làm ở cửa hàng sushi này mà, đúng không nào?''
+
+Pol-Thiện giục gắt: ``Đừng có nói với bọn tôi là cô không làm được nhé.''
+
+Kuon vội vàng can ngăn: ``Thôi đi hai em\dots\ Để em ấy yên được không\dots''
+
+Fubuki đứng bên cạnh như đang xem phim giải trí: ``Thấy chưa, hai cô nàng đang dồn ép em ấy dữ dội lắm!''
+
+Game quát lớn lên: ``Đừng có thêm dầu vào lửa nữa đi!''
+
+Ryuuhou vỗ tay rầm rầm: ``Ép doanh số kịch tính quá! Đúng là khách hàng chính là thượng đế!''
+
+Kaigou khoanh tay càu nhàu: ``Thượng đế cái đầu lũ, toàn bọn cướp đường đi ăn cướp thôi!''
+
+Lamy nghe những lời hăm dọa từ hai Polka, đứng hình không biết phải giải thích sao cho phải. Không gian xung quanh dường như co lại, khiến cô rơi vào tình thế bí bách không lối thoát.
+
+Trong lúc đó, Pol-Thiện và Pol-Ác vẫn thi nhau đòi hỏi câu trả lời thỏa đáng cho bằng được, rồi cùng thốt lên: ``Quyết định đi/đê!''
+
+Sau những phút giây chịu đựng sự dồn dập, ép buộc không ngừng nghỉ từ cặp song sinh Polka, cô nàng Yêu tinh tuyết cuối cùng cũng không còn kiềm chế được nữa. Lamy nhắm chặt hai mắt lại, hàng mi run rẩy vì sự bực bội tích tụ đến mức không thể nhẫn nhịn thêm được. Bầu không khí căng thẳng đè nặng lên vai cô, những lời đòi hỏi liên tục của hai người kia như những mũi kim chích vào tâm trí, khiến thần kinh của cô căng ra như sợi dây đàn sắp đứt.
+
+Bất chợt, cô bật thét lên thật to, dang rộng cả hai tay ra như thể vừa giải phóng tất cả sự áp lực đang dồn nén: ``\textbf{Của các cô đây! Nhận lấy nè!}'' và ngay lập tức, dồn toàn bộ sức lực còn sót lại để nhét một miếng cá hồi sống tươi rói vào lỗ tai phải, còn một khối cơm nắm nóng hổi thì cắm thẳng vào tai trái. Hành động điên rồ, hoàn toàn ngoài dự đoán của tất cả mọi người có mặt tại đó.
+
+\img{s-29j}
+
+Cả nhóm gồm Kuon, Kaigou, Ryuuhou và cả trợ lý ảo Game đều đồng loạt đứng hình, mồ hôi lạnh toát ra như mưa trán, gương mặt ai cũng xám xịt đi vì sốc trước cảnh tượng vô lý vừa diễn ra trước mắt. Không ai có thể ngờ rằng cô nàng Lamy lại có những hành động táo bạo, khó hiểu đến thế để phản đối sự chì chiết của hai Polka.
+
+Game thốt lên: ``\dots Èo.''
+
+Pol-Ác chửi thề: ``Địt. Tởm vãi.'' Pol-Thiện lắc đầu: ``Đừng có cho đồ ăn vào tai chứ.''
+
+Kuon thở dài: ``Nước tràn vào đê rồi hả\dots'' Kaigou nhăn mặt che mắt: ``Gương mặt đại diện của \hll\ đây sao...'' Ryuuhou thì há hốc miệng: ``Định nghĩa mới về việc `nhồi nhét kiến thức vào tai' hả trời?''
+
+Bất ngờ, Okayu ngoái đầu lại, hẳn vì tiếng hét bất xút của Lamy. Nhận ra miếng cơm đang bị nhét chật nịt trong tai Lamy, cô nàng Mèo tím giật nảy mình: ``Khoan, miếng đó không có cá.'' Rồi, cô nàng trở nên phấn khích tột độ, đôi mắt sáng quắc như mắt mèo bắt được chuột: ``Vậy thì nó là miếng cơm nắm!''
+
+Game đổ mồ hôi hột: ``Nghiện cơm nắm đến thế sao?''
+
+``Chuẩn bị vào nhá\~{}\dots\ Ô hô hố! Đợi đó, em ơi!'' Okayu liếm môi với biểu cảm phê cần không khác gì kẻ nghiện, rồi tự vo tròn người lại, lao thẳng chui tọt vào bên trong lỗ tai của Lamy.
+
+``Ê! Quay lại đây!'' Bằng một lực hút phi lý nào đó của chiều không gian \textit{hologra}, Game cất tiếng gào lên nhưng cũng bị cuốn chui vào trong cùng với cô ấy, kéo theo cả Kuon, Kaigou và Ryuuhou bay vèo vào trong nốt.
+
+\begin{center}
+    \uline{Bên trong lỗ tai của Lamy.}
+\end{center}
+
+Bên trong lỗ tai của Lamy là một không gian vừa kì quặc vừa mênh mông đến vô lý.
+
+``Bống, bống bống, bống bống, bang bang! Lên ăn cơm vàng, cơm bạc nhà ta\~{}''
+
+Giai điệu quen thuộc vạch trời vang lên giữa không gian hồng hồng xốp xốp, cùng lúc cả nhóm năm người giật mình rơi tự do rồi tiếp đất cái *BỐP!*
+
+Okayu nhẹ nhàng tiếp đất: ``Hạ cánh!''
+
+Game gắt lên từ trên tay Kuon: ``Èo. Kinh thật.''
+
+Kuon ho sặc sụa rồi đứng dậy phủi bụi: ``Không biết trong đây còn sẽ loạn đến thế nào\dots''
+
+Ryuuhou hiếu kỳ ngó nghiêng khắp xung quanh không gian thơm phức mùi gạo dẻo và lá rong biển, hào hứng reo lên: ``Úi chà! Không gian bên trong tai rộng dã man luôn! Lại còn phát nhạc nền dân gian Bống Bống Bang Bang nữa chứ, đỉnh quá!''
+
+Kaigou nhíu mày quan sát kỹ lưỡng những mảng cơm và miếng cá hồi đang lơ lửng khắp nơi, xâu chuỗi lại toàn bộ sự việc kỳ quái từ đầu đến giờ. Cô chắp tay sau lưng, gật gù ra dáng một nhà thám tử tài ba: ``Khoan đã\dots\ Lamy bị tóm, bị nhét cơm vào tai, rồi đơn hàng sushi lại báo phát ra từ chính chỗ cô ta\dots\ Em hiểu rồi! Chẳng lẽ cái nơi được gọi là `tiệm sushi' ban nãy chính là\dots\ bên trong lỗ tai của Lamy!?''
+
+Kuon ngơ ngác quay sang: ``Hả!? Thật luôn?''
+
+Ngay trước mặt họ, một Lamy bản thể tí hon khác xuất hiện, niềm nở chào đón cả nhóm bằng cách\dots\ đưa ra hai nắm cơm rực rỡ: một nắm cơm bạc lấp lánh và một nắm cơm vàng óng ánh.
+
+\img{s-29k}
+
+Lamy mỉm cười dịu dàng hỏi: ``Con làm mất nắm cơm nào? Cái nắm cơm vàng này? Hay là nắm cơm bạc này?''
+
+Okayu nghiêng đầu: ``Hửm\~{}?''
+
+Kuon gãi đầu: ``Chả có cái nào cả.''
+
+Game hét lên: ``Đây có phải chuyện `Ba cái rìu' đâu!''
+
+Ryuuhou phì cười cợt nhả: ``Cơm làm bằng vàng với bạc thì nhai kiểu gì? Răng giả cũng vỡ mẻ hết!''
+
+Okayu lập tức tức mình xông tới, xô đẩy cô nàng Yêu tinh tuyết ngã chổng cơ xơ xuống sàn, hét lớn: ``Cơm nắm không phải là huy chương!''
+
+Cả Game, Kuon lẫn Kaigou đều đồng loạt gật gù tán thành suy nghĩ đó.
+
+Kuon thắc mắc: ``Mà em ấy làm cơm vàng cơm bạc kiểu gì nhỉ?''
+
+Game gắt gỏng: ``Đừng hỏi tôi!''
+
+Lamy bị xô bệt dưới đất nhưng vẫn giữ nguyên nụ cười tỉnh rụi: ``Đúng là cơm đấm mà.''
+
+Trước khi nàng Mèo kịp giải thích rằng cơm nắm là đồ ăn chứ không phải kim loại quý, một miếng sushi từ đâu đó ném tới trước mặt cô nàng đang mỉm cười. Phía sau lưng Lamy, đám Oruyanke - những con thú biểu trưng của Fubuki - đang tất bật chạy dây chuyền làm cơm nắm và ép cá hồi liên tục.
+
+\img{s-29l}
+
+Tất cả mọi người ngạc nhiên trước quy trình làm món sushi của Lamy ngay tại nơi này. Ngạc nhiên đến mức sốc, Kuon thậm chí còn hơi nổi da gà toàn thân.
+
+Kaigou vỗ tay cái *BỘP*, tự hào chỉ tay về phía trước: ``Thấy chưa! Em đoán có sai đâu! Chuỗi dây chuyền sản xuất sushi nằm trọn gói trong lỗ tai Lamy thật này!''
+
+Ryuuhou giương to mắt trầm ồ: ``Quả không hổ danh \hll! Dây chuyền công nghiệp hiện đại ngay trong lỗ tai người!''
+
+Kuon thốt lên: ``Không thể nghĩ có hẳn cả một dây chuyền trong này đấy\dots''
+
+Okayu giương mắt tròn xoe: ``Không lẽ\dots\ Đây là nhà máy dung hợp sao!?''
+
+Game hoảng hốt: ``\dots Cái quái? Kuon-user, cẩn thận!''
+
+Vừa dứt lời, toàn bộ không gian bên trong cái tai của Lamy bắt đầu rung chuyển dữ dội như một trận động đất mười độ Richter.
+
+*RẦM! RẦM! RẦM!*
+
+Ở bên ngoài, Lamy khổng lồ nôn ra hàng tá sushi cá hồi cuồn cuộn đổ xuống đường trước sự ngỡ ngàng của hai Polka. Không những thế, lực đẩy kinh hoàng từ cơn nôn còn hất văng cả những người bên trong bắn thẳng ra ngoài!
+
+\img{s-29m}
+
+Kuon tiếp đất lảo đảo: ``Ái-cha\dots\ Nhiều thế!''
+
+Pol-Ác chửi thề, đứng dậy phủi bụi trên váy áo: ``Địt! Tởm vãi!''
+
+Pol-Thiện kinh ngạc: ``Vậy đó là cách mà sushi được làm à\dots''
+
+Ryuuhou bị văng vào núi sushi cao ngất, vất vả trườn bò dậy và nhặt lên một miếng để nghiên cứu: ``Trời ơi! Cái này lại được phun ra theo đường miệng luôn à? Nhưng mà nhìn có vẻ khá ngon đó nha!''
+
+Kaigou mặt tái nhợt chạy tới và đập mạnh vào lưng em gái: ``Đừng có nói vô duyên nữa Ryuu! Kinh tởm muốn chết à!''
+
+Cùng lúc đó, Fubuki vẫn còn giữ nguyên tư thế tạo hình đầu cáo bằng tay, nhưng giờ đây cô ấy đã bật khóc nức nở khi chứng kiến núi sushi khổng lồ tràn ngập cả con phố. Với gương mặt méo xệch giữa nước mắt, cô cười khẩy một cách đau thương: ``Fufufu\dots\ Cơn sóng sushi này chính là số nợ mà tài khoản ngân hàng của tôi phải gánh chịu đấy\dots''
+
+Kuon nhìn cô với ánh mắt lo lắng: ``Em có sao không\dots? Anh đã nói là anh sẽ trả toàn bộ số tiền đó mà\dots''
+
+Nhưng không ngờ cô nàng Cáo trắng dường như đã hoàn toàn vỡ mộng và phát điên. Trong cơn giận dữ bất lực, đôi mắt Fubuki bỗng rực lên ánh sáng xanh lá cây, cô hét lớn: ``\textbf{Nhân danh công lý, tụi bây hãy ăn hết tất cả đi!}''
+
+Nói rồi, như một cơn thịnh nộ trỗi dậy, cô liên tục chộp lấy những miếng sushi to bự trên đường và nhồi một cách dã man vào miệng của hai cô gái Polka đang đứng hình ngơ ngác, miệng không ngừng gào lên trong cơn điên loạn: ``\textbf{Cáo trắng báo thù!}''
+
+\img{s-29n}
+
+Kuon vội vàng lao tới để can ngăn: ``Chậm lại nào! Bình tĩnh đi nào!''
+
+Ryuuhou đứng bên ngoài thì reo hò cổ vũ hết mình: ``Fubuki-san chiến đấu đi! Nhét mạnh hơn nữa đi chị ơi!''
+
+Kaigou nhanh chóng tóm lấy cổ áo Ryuuhou và lôi cô ấy ra phía sau: ``Đừng có mà tiếp tay cho người ta như thế!''
+
+Và cứ thế, Fubuki tiếp tục nhồi nhét tất cả những miếng sushi thơm ngon dưới chân đường kia vào miệng của hai người đó\dots
+
+\pov{Omaru Polka}
+
+\dots AAAA!!!
+
+Đúng vào khoảnh khắc đó, tất cả cảm xúc bỗng chốc ùa tới trong đầu óc tôi, như một tia chớp xuyên qua mây mù\dots
+
+\dots hương vị của từng hạt cơm dẻo thơm hòa quyện với ngọt thanh của cá hồi tươi rói, chúng bùng nổ mạnh mẽ trên đầu lưỡi, lan tỏa khắp mọi giác quan như một bản giao hưởng đột ngột khởi diễn\dots
+
+\img{s-29o}
+
+Cứ như thể tôi đang lạc giữa một đại dương xanh thẳm, những con cá hồi bơi lượn tung tăng ngay dưới chân, bao quanh tôi là những cánh đồng lúa chín vàng uốn lượn theo làn gió, và còn cả những người thợ làm sushi ở đâu đó đang nhảy múa vòng quanh, tung tăng với những mẻ cá mới bắt, những nồi cơm vừa chín thơm nức mũi\dots
+
+Một sự hòa quyện kỳ diệu giữa tinh túy của biển cả và đất đai, thứ mà lý trí từng bảo rằng chỉ là tưởng tượng, không thể nào trở thành hiện thực trong một món ăn.
+
+Tôi chẳng bao giờ dám nghĩ rằng một miếng sushi vớ bừa từ trên đường lại có thể ngon đến mức phi thường như vậy. Nhưng rồi, trong khoảnh khắc vị giác tràn đầy hạnh phúc ấy, tôi chợt ngộ ra một chân lý\dots
+
+\dots chỉ khi con người biết tôn trọng từng nguyên liệu, thấu hiểu từng công đoạn, và đặt cả trái tim vào trong món ăn mình tạo ra, thì mới có thể ra đời một kiệt tác nghệ thuật vĩ đại, lay động cả tâm hồn người thưởng thức đến như vậy!
+
+\dots
+
+Game lập tức càu nhàu, giọng đầy khó hiểu và bực bội ngắt ngang dòng cảm xúc của tôi: ``Cô đang mơ màng nói cái gì thế hả? Quái thai gì mà văn vẻ thế!''
+
+Tôi lườm trợ lý ảo một cái sắc lẻm, tay đập vào lòng để nhấn mạnh lời nói: ``Đừng có đục khoét làm ngắt mạch tự sự cao siêu của tôi đi chứ! Tôi đã có quyết định quan trọng rồi đấy nhé.''
+
+\pov{-}
+
+Pol-Thiện nhìn bản sao của mình bằng ánh mắt trìu mến: ``Cậu cũng là một phần của tôi.''
+
+Pol-Ác đỏ mặt quay đi, chống chế: ``Ngu thế, hai ta lúc nào cũng chả là một\dots\ giống như miếng sushi vậy!''
+
+Pol-Thiện gật đầu đồng tình: ``Tại sao chúng ta có thể bỏ qua một thứ đơn giản như vậy được chứ?''
+
+Game đổ mồ hôi hột: ``Cái củ lìn gì vậy\dots''
+
+Ngay lập tức, cả hai bản thể Polka cùng Fubuki và Kuon bị một vùng ánh sáng hào quang xoáy tròn kì bí cuốn vào giữa, như thể có một lực lượng vô hình kéo tất cả lại chung một điểm. Trong khi cặp song sinh đang nắm chặt tay nhau, trao đi những lời xin lỗi rụt rè, sến sẩm đến mức đường phố như ngọt ngào quá tải, những người còn lại đứng nhìn cảnh tượng ấy mà không thể nào che giấu được sự sốt ruột bốc cháy trong người.
+
+\img{s-29p}
+
+Kuon thở dài thượt, hai tay buông thõng bất lực: ``Thành thật mà nói, anh mừng lắm khi hai đứa cuối cùng cũng chịu làm hòa với nhau, nhưng mà\dots''
+
+Fubuki xụ mặt cằn nhằn, đôi mày cáo nhíu lại đầy khó chịu: ``Hợp nhất lại luôn đi cho chị nhờ cái! Đứng đó mà tình tứ cái cái gì nữa!''
+
+Ryuuhou ngáp dài một cái, tay che miệng còn mắt thì trễ xuống vì buồn ngủ: ``Đúng đó chị! Sến sẩm thế này phát mệt thật sự, muốn ngủ luôn!''
+
+Pol-Thiện bật mặt đỏ bừng, e ấp cào nhẹ vào lòng bàn tay: ``Ờm\dots\ dạ\dots\ *e hèm* Chúng ta cùng quay lại với quy trình thôi nào!''
+
+Pol-Ác cũng quay mặt đi chỗ khác, má ửng hồng lên vì ngượng: ``Mày làm tao ngượng muốn chìm xuống đất luôn này\dots''
+
+Game từ trên cổ Kuon la lên, giọng gắt gỏng không còn kiên nhẫn: ``Hợp nhất đi ngay! Đừng có lằng nhằng thêm nữa!''
+
+Ngay khi lời vừa dứt, Pol-Thiện và Pol-Ác lập tức bắt đầu tiến hành quy trình hợp nhất huyền thoại. Cả hai cùng tạo dáng đứng cực kỳ kịch tính, hai tay nâng lên trên đầu tạo hình ngôi sao, thậm chí còn triệu hồi ra một con slime màu xanh lá hình người, đội trên đầu chiếc mũ hề sặc sỡ nhảy tót ra trước mặt mọi người - tên nó dài ngoằng là ``Nu-Perezzorcjunmunospolkos''. Đúng vậy, đó chính là danh hiệu đầy ắp sức mạnh của ``Slime Polka'', vật phẩm trợ lực bí truyền cho phép hai bản thể hợp nhất thành một.
+
+Game đứng hình mấy giây, ngơ ngác không hiểu chuyện gì đang xảy ra: ``Ờm\dots\ xin lỗi? Hả cái gì cơ?''
+
+Kuon tròn mắt kinh ngạc, chỉ vào con slime đang nhảy nhót: ``Con lộn bì màu xanh đó là cái quái gì vậy?''
+
+Fubuki đứng bên cạnh thản nhiên gật đầu, như thể nhận ra một điều gì đó quen thuộc: ``\dots Nghe tên nó giống cái từ `supercalifragilisticexpialidocious' trong Mary Poppins ghê. Cũng dài dằng dặc thế thôi.''
+
+Game hét lên thất thanh, không thể tin vào tai mình: ``Sao cô lại có thể so sánh cái tên điên đó với một từ nổi tiếng vậy được!? Có phải đầu óc cô cũng bị lây nhiễm cái bệnh điên của bọn họ rồi không!?''
+
+Kaigou chỉ biết tặc lưỡi lắc đầu, hai tay khoanh trước ngực đầy bất lực: ``Rảnh rỗi sinh nông nổi thật sự\dots\ bao nhiêu thời gian để nghĩ ra cái tên đấy mà phí phạm.''
+
+Hai Polka lúc này đã sẵn sàng, cùng nhau hô lớn vang vọng cả con phố: ``Ta cùng hợp nhất nào!''
+
+Vừa dứt câu thần chú, cả hai bản thể Polka, cùng với một chú Oruyanke nhỏ nhắn, hàng tá những bé Polka con tí hon chạy nhảy khắp nơi, và cả con slime xanh lè kia đều bị một lực hút khổng lồ kéo vào nhau, nhập lại thành một khối duy nhất. Sau một luồng ánh sáng chói lòa, hiện ra trước mắt mọi người là một khối dị hình không thể tả nổi: ``Polka Sushi'', một sự kết hợp kinh hoàng giữa hai con người và nguyên liệu làm sushi.
+
+\gif{s-29q}{1}{155}
+
+Game thảng thốt kêu lên, không thể chấp nhận cảnh tượng trước mắt: ``Hợp nhất lại đâu có phải như thế này đâu! Ai dạy cô hợp nhất kiểu điên rồ vậy!?''
+
+Cả Kuon, Fubuki, Kaigou và Ryuuhou đều đứng hình, nhìn chằm chằm vào sản phẩm hợp thể kỳ quặc kia mà mồ hôi lạnh toát ra như mưa, đồng thanh thốt lên: ``Vậy cũng được sao? Cái cách hợp nhất này có hợp lý đâu?''
+
+``Rồi bây giờ không biết gọi em ấy là Pol-Pol hay là Pol-Sushi nữa\dots'' cậu Tổng Kuon thở dài thượt, cảm thấy cuộc đời mình chưa bao giờ kỳ quái đến thế.
+
+Ngay khi hai người vừa hợp nhất lại thành khối Polka-Sushi dị hình, Okayu lập tức hai mắt sáng rực như đèn pha. Cô lao tới cục cơm bọc người đó, hét lên trong sự sung sướng tột cùng:
+
+``Whoo! Cơm nóng kìa!''
+
+Polka-cơm hoảng sợ kêu lên thất thanh rồi cuống cuồng bỏ chạy thục mạng.
+
+Ryuuhou khoái chí reo hò, chạy vèo đuổi theo sau: ``Úi chà! Cơm nắm bọc người biết chạy kìa! Chờ em với Okayu-san ơi!''
+
+Kaigou chạy ngay bên cạnh vội vã thò tay cắp nách kéo em gái lại, gắt gỏng: ``Em thôi xúi dại coi! Nó là con người chứ có phải đồ ăn đâu!''
+
+Cả cậu Tổng, trợ lý Game và Fubuki cũng hoảng hốt đuổi theo phía sau. Cậu Tổng và Game đồng thanh thốt lên: ``Okayu-chan/Nekomata-san! Em/Cô ấy không phải là đồ ăn đâu!''
+
+Fubuki dang hai tay cố gồng mình ngăn cản nàng Miêu nghiện cơm đang cố dùng sức cắn một miếng kia lại: ``Đừng! Bỏ cái đó ra đi, Oka-mew!''
+
+Okayu run rẩy vì lên cơn thèm, đôi mắt đờ đẫn: ``Em thấy có gì đó trăng trắng\dots''
+
+Mất hết lý trí, cô cắn mạnh một phát vào thứ ``trăng trắng'' đó. Nhưng trớ trêu thay, thứ cô cắn trúng lại chính là cánh tay của Fubuki!
+
+``\textbf{Ái da\dots!!!}'' nàng Cáo trắng đau đớn gào lên một tiếng chói tai, đôi mắt lồi cả ra ngoài theo đúng nghĩa đen.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=8cm]{../../../../Image/Book12/s-29r1.png}
+    \end{subfigure}
+    \quad
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=8cm]{../../../../Image/Book12/s-29r2.png}
+    \end{subfigure}
+\end{figure}
+    
+Kaigou nhăn mặt che mắt quay đi: ``Trời ơi nhìn thọt cả mắt ra ngoài kìa! Cắn tàn nhẫn vãi!'' Kuon đổ mồ hôi hột lao vào tìm cách gỡ nàng Mèo khỏi tay của nàng Cáo trắng: ``Okayu-chan, bình tĩnh lại đi!''
+
+Game từ chiếc đồng hồ đeo tay cất giọng cảnh báo gấp giáp: ``\dots Không ổn rồi! Mọi người, giữ chắc vào!''
+
+Bất ngờ, toàn bộ không gian dị hình vốn chứa đựng nhà máy sushi bên trong lỗ tai của Lamy đột nhiên rung chuyển dữ dội một lần nữa, như thể một cơn cuồng phong bão táp đang trỗi dậy từ sâu bên trong, đánh sập mọi trật tự vừa mới hình thành. Những tấm sàn xốp bằng cơm nắm lắc lư dữ dội, dãy chuyền sản xuất cá hồi bị giật mạnh đến mức đứt gãy, và cả không khí hồng hồng kỳ lạ lập tức xáo trộn thành một xoáy hỗn loạn không thể kiềm chế.
+
+\ct
+
+Bên ngoài, Nene đang đứng ngó nghiêng ngóng chờ. Dường như cô nàng cũng vừa đặt đồ ăn xong và đang chờ giao hàng. Thấy Lamy lớn ở bên ngoài đang quằn quại kêu lên những tiếng ậm ừ, nàng ``Gấu'' ấy reo lên phấn khởi, chắp hai tay tỏ vẻ đầy mong chờ: ``Ồ, sắp ra rồi.''
+
+Thế nhưng, thứ nôn văng ra khỏi miệng của Lamy lại chẳng phải sushi thông thường, mà là\dots\ một con bò kỳ dị! Con bò đó đeo một tấm biển mang đầu của Okayu ở phía trước, còn nửa thân trên hoàn chỉnh của Polka thì mọc nhô lên từ lưng bò (Pol-Bò).
+
+Fubuki thì bị văng bắn ra ngoài, nằm bệt dưới đất trông chẳng khác nào một cái xác khô kiệt sức. Riêng Kuon, Game cùng hai cô em gái Kaigou và Ryuuhou tiếp đất an toàn. Ryuuhou nhanh chân tiếp đất bằng tư thế siêu thành công, trong khi Kaigou lảo đảo phủi bụi trên áo.
+
+\img{s-29s}
+
+Game thảng thốt: ``\textbf{Lại hợp nhất nữa ư!?}''
+
+Kuon vội vã chạy lại đỡ Cáo trắng: ``Này, Fubu-chan! Em có ổn không vậy!?''
+
+Ryuuhou lấy chân khều khều Fubuki: ``Chị Cáo thành `cáo khô' thật luôn rồi kìa Onii!''
+
+Nene khoanh tay gật gù, đưa ra một phân tích mang tính logic vô cùng bá đạo: ``Chữ S trong `Shirakami' và chữ H trong `Hikawa' bị bỏ mất rồi! Họ đã trở thành `Bò' (Ushi)!''
+
+Kaigou há hốc miệng, cãi lại bằng giọng đầy bất lực: ``Chữ nghĩa kiểu quỷ gì vô lý đùng đùng thế hả!?''
+
+Kuon ngơ ngác: ``Hả!?''
+
+Fubuki bất ngờ bật dậy như xác sống, thều thào bằng giọng thoi hóp: ``Nghe thì cứt bò thật. Nhưng mà cũng đáng tin đấy.''
+
+Game lắc đầu ngán ngẩm: ``\dots Lại là chơi chữ à?''
+
+Kuon giật mình hoảng hốt: ``Em vẫn còn sống à!?''
+
+Okayu (trên tấm biển đeo trước cổ con bò) giơ hai tay lên cao, tạo dáng hai sừng bò tỉnh rụi: ``Trông như thể làm mình cười bò đấy.''
+
+Nene gật gù tán thưởng: ``Trông con bò ấy cũng ra trò phết đấy chứ!''
+
+Đến cuối cùng, cả bốn cô gái (Pol-Bò, Okayu, Fubuki và Nene) bắt đầu mở một đại tiệc sushi siêu khổng lồ ngay giữa lòng đường. Bọ họ vừa tắm mình trong biển sushi cá hồi rực rỡ, vừa đung đưa cuồng nhiệt theo điệu nhạc disco sôi động.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=8cm]{../../../../Image/Book12/s-29t1.png}
+    \end{subfigure}
+    \quad
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=8cm]{../../../../Image/Book12/s-29t2.png}
+    \end{subfigure}
+\end{figure}
+
+Pol-Bò phấn khích hò reo trong tiếng nhạc: ``Ta cùng tổ chức bữa tiệc nào! Nhanh lên kẻo trâu chậm uống nước đục đấy!''
+
+Lamy cũng muốn góp vui, dù cô nàng lúc này chỉ còn ở trong hình dạng một cục slime xanh lè mềm dẻo: ``Tôi nghĩ thế là quá bê tha rồi.''
+
+Ryuuhou hào hứng tính lao vào quẩy cùng: ``Ui vui thế! Cho em nhảy disco sushi với!''
+
+Kaigou lập tức túm gáy áo Ryuuhou lôi xuyệt lại, cằn nhằn: ``Ryuu, bớt nhập hội với lũ điên đó giùm chị cái!''
+
+Kuon và Game đứng bên cạnh chỉ biết thở dài bất lực trước cách cư xử như những kẻ trốn trại và những cú chơi chữ liên quan đến trâu bò mà chính họ còn chẳng thấy hài hước chút nào.
+
+Vị Trợ lý ảo ngán ngẩm: ``Hết thuốc chữa rồi, Kuon-user ạ.''
+
+Cậu Tổng bất lực lắc đầu: ``Cứ kệ họ thôi. Nói với họ bây giờ chỉ như thể đàn gẩy tai trâu thôi.''
+
+``\dots Hôm nay đúng là một ngày loạn xí ngưu ấy nhỉ? Đang cá tự dưng lại lái sang bò rồi\dots''
+
+``Ừ\dots\ Nó làm tôi muốn bê cái vụ truyện cổ tích từ năm ngoái kia vào sọt rác\footnote{{\flaregothic ÉPISODE 100}, quyển số Tám.} đấy. Không cẩn thận có khi trâu bò đánh nhau ruồi muỗi chết chứ chả đùa\dots''
+
+Kaigou liếc nhìn Kuon và Game, tặc lưỡi: ``Đấy, hai ông này cũng bắt đầu `nhiễm sóng' chơi chữ theo rồi đấy.''
+
+Chuyện quái gì đang xảy ra ở đó? Họ cũng không biết. Chỉ biết rằng, họ đã làm việc ở \hll\ đã lâu, và vì họ đã chung sống với nhau một thời gian dài nên\dots
+
+Ngưu tầm ngưu thôi nhỉ? Lẽ dĩ nhiên là thế.
+
+%==========================================TRUYỆN PHỤ=========================================
+\omk
+
+\begin{center}
+    \uline{Văn phòng \hll{}\\Ba mươi phút sau trận đại náo disco sushi.}
+\end{center}
+
+Cơn cuồng phong disco giữa lòng đường phố cuối cùng cũng hạ màn khi lực lượng trật tự đô thị bắt đầu tiến vào giải tỏa hiện trường. Cả nhóm người lê lết tấm thân rệu rã trở về văn phòng, mặt mày ai nấy đều bơ phờ chẳng khác nào vừa trải qua một trận bão cấp mười hai.
+
+Fubuki nằm sải lai trên chiếc ghế sô-pha dài, hai tay xoa xoa chiếc bụng tròn căng vì bị nhồi nhét quá nhiều sushi lúc nãy, hơi thở thoi thóp thốt lên từng tiếng ngắt quãng: ``Trời đất ơi\dots\ Cả đời này\dots\ em thề sẽ không bao giờ nhìn vào một con cá hồi nào nữa trong vòng một tháng tới\dots''
+
+Trong khi đó, Polka lúc này đã tách rời khỏi con bò kỳ dị kia và nhập lại thành một bản thể duy nhất. Không còn dáng vẻ ngang tàng của Pol-Ác hay vẻ ngây thơ của Pol-Thiện, cô nàng Chủ xiếc hiện nguyên hình là một kẻ tội đồ đang quỳ gối ngay ngắn trên sàn nhà, hai tai cáo cụp sát sàn sạt, lí nhí dập đầu tạ lỗi: ``Em xin lỗi, em thật sự xin lỗi mọi người mà\dots\ Tất cả là do cái bản thể ác độc nó bấm loạn xạ trên điện thoại chứ em có biết gì đâu\dots''
+
+Bất chợt, tiếng chuông điện thoại của Kuon vang lên dồn dập. Một tràng dài những thông báo trừ tiền và hóa đơn điện tử nhảy múa liên tục trên màn hình khiến cậu Tổng gần như đứng tim.
+
+Cậu run rẩy cầm điện thoại, mắt trợn tròn: ``Vãi cả\dots\ Đùa nhau chắc\dots\ Tiền đặt sushi năm mươi phần cao cấp\dots\ Tiền bồi thường chiếc xe ba bánh bị hỏng xích\dots\ Lại còn cả phí dịch vụ cọ rửa dầu mỡ trên vỉa hè công cộng nữa á!?''
+
+Kaigou khoanh tay đứng cạnh, chiếc bút chì kẹp trên vành tai được rút phắt xuống. Cô nàng Tổng rút ngay chiếc máy tính bỏ túi ra, ngón tay bấm tanh tách như gõ súng liên thanh.
+
+Chỉ sau ba giây, cô liếc nhìn màn hình điện thoại của Kuon rồi quay sang anh trai với nụ cười lạnh như băng tuyết: ``Chúc mừng Aniki nhé. Tổng thiệt hại đợt này vừa chạm mốc bảy chữ số yên. Toàn bộ tiền phụ cấp quản lý, tiền cà phê và ngân sách đi chợ tháng này của anh chính thức bốc hơi không còn một xu dính túi rồi đấy.''
+
+``Khoan đã Kaigou! Anh chỉ bảo là hỗ trợ thanh toán phần của Fubu-chan thôi mà, sao lại thành ra cả đống nợ của thành phố thế này!?''
+
+``Ai bảo anh ham hố đứng ra làm anh hùng cứu mỹ nhân làm chi?'' cô em song sinh thở dài chán nản, ``Vụ này em vô can nhé, chính miệng anh nói thì anh làm đi.''
+
+Ryuuhou thì ngồi vắt chân chữ ngũ trên tay vịn sô-pha, tay thong thả vuốt màn hình chiếc điện thoại thông minh, thỉnh thoảng lại cười khúc khích: ``Ấy vậy mà xem ra vụ này hời to đó nha! Onii nhìn này, mấy đoạn clip em quay cảnh chị Lamy nhét cá vào tai, rồi màn Fubuki-san cưỡi sóng sushi quẩy disco với con bò `Ushi' vừa leo thẳng lên Top 1 Trending Twitter toàn cầu rồi kìa! Lượt tương tác đang tăng vọt theo từng giây luôn, cộng đồng mạng đang phát sốt vì bảo \hll\ đã đạt tới cảnh giới giải trí đỉnh cao mới!''
+
+Kaigou thở dài day trán: ``Đỉnh cao cái đầu em ấy, toàn một lũ điên trốn trại thì đúng hơn\dots''
+
+Từ trên cổ tay Kuon, chiếc đồng hồ điện tử bất chợt phát ra những tia sáng nhấp nháy, kèm theo đó là giọng nói đầy vẻ bức xúc của Game: ``Dù có Top 1 Trending thì Kuon-user vẫn là kẻ gánh nợ ngập đầu thôi. Nhưng mà nhân tiện đây, tôi không thể nào nuốt trôi được cái logic quái gở của tập này. Tôi yêu cầu người có thẩm quyền cao nhất phải bước ra đây giải thích rõ ràng!''
+
+\il
+
+Nói rồi, Game phóng ra một luồng sáng laser hologram chiếu thẳng lên khoảng không phía trên màn hình, như thể đang kết nối xuyên qua chiều không gian thứ tư.
+
+Kuon cũng mệt mỏi ngước mắt nhìn lên trần nhà, thở dài ngao ngán: ``\vie{Đúng đó Cường ơi\dots\ Cậu xuất hiện giải thích giùm tôi một câu xem nào. Tập trước (S-25) thì cậu để A-chan với Fubu-chan làm đạo diễn, biến Suisei thành quỷ ăn thịt người còn Flare thì bay như chong chóng. Đến tập này thì cậu lại để Lamy biến lỗ tai thành nhà máy đóng gói sushi, rồi lôi cả họ Hikawa nhà tôi vào để làm trò chơi chữ trâu bò vô lý đùng đùng thế hả!?}''
+
+Không gian tĩnh lặng trong chốc lát, rồi một giọng nói đầy ai oán vang lên từ phía sau bức tường thứ tư. Đó chính là tác giả Cường (Kuonng), người đang ôm đầu bất lực trước bàn phím máy tính: ``\vie{Oan cho tôi quá Kuon ơi! Các người tưởng tôi muốn thế chắc!? Kịch bản gốc tập 153 của bên COVER người ta làm ra nó vốn dĩ đã là đỉnh cao của sự mất não rồi! Bên Nhật họ chơi chữ `Shirakami' bỏ chữ S thành `Hirakami', rồi vần vò sang tiếng kêu của bò `Ushi' để làm trò cười. Tôi không bẻ lái ghép chữ `H' trong `Hikawa' vào thì làm sao có cớ hợp lý để lôi anh với Kaigou, Ryuuhou vào chạy bộ hóng drama từ đầu đến cuối được chứ?}''
+
+Kaigou nghe thấy thế lập tức siết chặt nắm đấm, mắt lóe lên tia nhìn hình viên đạn hướng thẳng về phía hư không: ``\vie{Thế tại sao không cho tôi một đòn đấm nát con quái vật xúc tu tảo biển kia ngay từ đầu cho xong chuyện, mà lại bắt tôi đứng nhìn cái màn nhét cơm nắm vào tai tởm lợm đó suốt nửa tiếng đồng hồ hả tác giả!? Lần sau mà còn dám viết kịch bản biến tôi thành người đứng nhìn bất lực như thế nữa thì đừng trách sao tôi đấm vỡ cả màn hình máy tính của cậu đấy nhé!}''
+
+Cậu tác giả toát mồ hôi hột, vội vàng xua tay phân bua: ``\vie{Bình tĩnh nào Kaigou-san! Đeo cái nơ cầu vồng hãm lực vào giùm tôi cái! Tại tính chất tập này mang thuộc tính {\flaregothic CHAOS} mà, ở vũ trụ \textit{hologra} thì sức mạnh vật lý của cô có khi còn thua cả một cái nồi cơm điện tự biết chạy nữa là\dots}''
+
+Ngay lúc đó, một tiếng thở dài thườn thượt khác lại vang lên từ hệ thống. Đó là trợ lý AI (người đang cùng tác giả cặm cụi gõ từng dòng mã lệnh LaTeX): ``\vie{Mấy người thôi cãi nhau đi cho tôi nhờ một chút được không\dots\ Các vị có biết việc vừa phải giữ đúng thiết lập nhân vật cho Kaigou và Ryuuhou, vừa phải gõ lệnh bảng biểu, canh lề dòng và dịch mớ chơi chữ trâu bò lẫn ca dao Bống Bống Bang Bang sang văn phong tiểu thuyết nó tốn bao nhiêu nơ-ron bán dẫn không hả!? Tôi thề là nếu kịch bản này mà dài thêm năm trang nữa thì bộ vi xử lý của tôi sẽ bốc khói theo đúng nghĩa đen đấy!}''
+
+Ryuuhou thì khoanh tay cười khoái chí, mắt hai màu sáng lấp lánh như sao: ``\vie{Em thấy vui mà! Lần sau tác giả cứ cho em quẩy disco nhiều hơn nữa nhé, ban nhạc của em đang cần thêm ý tưởng vũ đạo kỳ lạ để chuẩn bị cho buổi diễn underground sắp tới đấy!}''
+
+Kaigou lập tức cốc nhẹ một cái vào trán cô em gái: ``Lại bắt đầu xúi dại rồi đấy, Ryuu!''
+
+\il
+
+Quay trở lại với thực tại trong căn phòng khách của văn phòng. Sau khi những tiếng tranh cãi với tác giả lắng xuống, một vấn đề vô cùng nan giải và thực tế lại hiện ra trước mắt mọi người.
+
+Trên chiếc bàn họp dài ở giữa phòng, hàng chục hộp sushi cá hồi tươi rói được đóng gói cẩn thận đang chất cao như một ngọn núi nhỏ. Mùi dấm gạo và mùi thơm béo ngậy của cá hồi lan tỏa ngập tràn không khí.
+
+Fubuki vừa nhìn thấy đống hộp ấy đã vội vàng bịt miệng quay mặt đi chỗ khác: ``Ọe\dots\ Xin đừng ai nhắc đến chữ `su' hay chữ `shi' trước mặt em nữa\dots''
+
+Polka thì chắp hai tay run rẩy: ``Em cũng no tới tận cổ họng rồi, không tài nào nhét thêm nổi một hạt cơm nào nữa đâu, poi\dots''
+
+Kuon thở dài nhìn ngọn núi đồ ăn, ngán ngẩm lắc đầu: ``Nhưng ngần này thức ăn cao cấp mà bỏ đi thì có tội với nông dân và ngư dân lắm. Mà để qua đêm thì cá hồi sống sẽ hỏng hết mất, biết giải quyết thế nào bây giờ\dots''
+
+*CẠCH*
+
+Tiếng cánh cửa chính của văn phòng khẽ mở ra. Một bóng dáng quen thuộc với mái tóc ngắn và chiếc cặp học sinh đeo lệch bên vai bước vào. Đôi mắt hai màu đặc trưng - mắt phải xanh lam và mắt trái đỏ thẫm - khẽ chớp chớp tò mò khi nhận ra mùi hương ngào ngạt lan tỏa khắp căn phòng.
+
+``Ủa? Em chào Onii-sama, Onee-sama, Ryuu-chan! Mọi người đang mở tiệc sushi ở văn phòng ạ?'' Suzuno cất tiếng chào bằng chất giọng trong trẻo, dịu dàng như làn gió xuân.
+
+Cả Kuon, Kaigou lẫn Ryuuhou đồng loạt quay phắt đầu lại, ánh mắt nhìn cô em gái Ba như nhìn thấy vị cứu tinh từ trên trời rơi xuống.
+
+Kaigou chỉ tay về phía chiếc bàn chất đầy hộp sushi: ``Suzu đấy à? Không phải tiệc tùng gì đâu, là hậu quả của một vụ lừa đảo ăn chực ngoài phố đấy. Giờ cả đám này đều đầu hàng hết rồi, mà vứt đi thì phí phạm quá.''
+
+Đôi mắt hai màu của Suzuno lập tức sáng rực lên như hai vì tinh tú. Cô bé đặt chiếc cặp sách ngay ngắn lên ghế, hai tay ôm lấy má, vẻ mặt tràn đầy niềm hạnh phúc thuần khiết: ``Thật ạ!? Nhiều sushi cá hồi tươi ngon thế này sao!? Em vừa mới tan buổi học nhóm ở trường xong, bụng đang đói cồn cào đây nè! Nếu mọi người không thể ăn thêm được nữa\dots\ thì cứ để em giúp một tay giải quyết nhé!''
+
+Không để ai phải chờ đợi lâu, cô bé ngồi ngay ngắn vào bàn ăn, rút đôi đũa gỗ ra, chắp hai tay lại trước ngực với nụ cười thánh thiện nhất trần đời: ``Itadakimasu\~{}!''
+
+Và rồi, trước sự chứng kiến với đôi mắt chữ A mồm chữ O của Fubuki, Polka và Lamy (lúc này đã hồi phục lại hình dạng người bình thường), Suzuno bắt đầu màn trình diễn ẩm thực đỉnh cao của mình. Từng miếng sushi cá hồi béo ngậy, từng cuộn cơm cuộn phô mai được cô bé thưởng thức với một tốc độ vô cùng thanh thoát, tao nhã nhưng lại dứt khoát đến mức khó tin. Chiếc dạ dày không đáy của nàng ``phù thủy hóa học'' phàm ăn nhà Hikawa hoạt động với công suất tối đa, biến từng hộp sushi thành nguồn năng lượng nạp vào cơ thể mà không hề để lộ một chút dấu hiệu ngấy hay mệt mỏi nào.
+
+Nàng Cáo sa mạc tròn mắt kinh ngạc, há hốc miệng lắp bắp: ``T-Trời đất ơi\dots\ Em gái của Kuon-senpai nhỏ nhắn thế kia mà sức ăn khủng khiếp vậy sao!? Con quái vật dạ dày không đáy này là thế nào vậy!?''
+
+Ryuuhou tự hào ưỡn ngực, vỗ vai cô chị song sinh: ``Chuyện! Suzu-nee nhà em ăn một bữa là chấp cả công ty \hll\ cộng lại đấy nhé! Đừng đùa với đẳng cấp của chị Ba nhà Hikawa!''
+
+Kaigou cũng mỉm cười nhẹ nhõm, cất chiếc máy tính bỏ túi vào túi áo: ``Ít ra thì cũng không bị mang tiếng là lãng phí thức ăn.''
+
+Đúng lúc ngọn núi sushi trên bàn chỉ còn lại vài hộp cuối cùng, cánh cửa phòng lại bật mở lần nữa. A-chan bước vào, trên tay ôm một xấp tài liệu dày cộp. Thấy mọi người đang quây quần quanh Suzuno, nàng Thư ký mỉm cười tươi tắn: ``Chào mọi người! Có vẻ như tàn cuộc rồi nhỉ? Kuon-san này, chị có một tin cực kỳ vui cho em đây.''
+
+Kuon ngẩng đầu lên, vẻ mặt đầy cảnh giác: ``Tin vui gì thế chị A-san? Đừng bảo là lại có thêm hóa đơn phạt nào nữa nhé?''
+
+A-chan bật cười, rút ra một văn bản có dấu đỏ trao cho Kuon: ``Không hề nhé! Ngược lại là đằng khác! Nhờ màn rượt đuổi náo loạn trên phố và đoạn video Pol-Bò nhảy disco sushi vừa bùng nổ trên mạng xã hội, chuỗi nhà hàng sushi đối tác vừa liên hệ khẩn cấp với COVER. Họ đánh giá đây là một chiến dịch quảng bá viral thành công ngoài sức tưởng tượng và đã ký hợp đồng tài trợ độc quyền cho chương trình tiếp theo của chúng ta! Ban giám đốc đã duyệt chi trả toàn bộ chi phí đặt hàng, tiền sửa chữa xe và tiền phạt dọn dẹp vệ sinh cho em rồi nhé!''
+
+Kuon nhìn tờ văn bản xác nhận thanh toán trên tay, cảm giác như một tảng đá ngàn cân vừa được nhấc khỏi lồng ngực. Cậu ngửa mặt lên trời, thở phào một hơi dài nhẹ nhõm: ``Ôi giời ơi, may quá\dots\ Cuối cùng thì tháng này không phải ăn cơm chan nước lã rồi\dots''
+
+Nàng Đeo kính cười khúc khích, tiện tay cầm lấy một hộp sushi còn nguyên vẹn trên bàn: ``Tiện thể hộp này tôi xin phép lấy làm bữa tối nhé, cả ngày hôm nay bận rộn duyệt hồ sơ vẫn chưa kịp ăn gì.''
+
+Ryuuhou thấy vậy liền tinh quái huých nhẹ khuỷu tay vào eo Kuon, nháy mắt cười híp mí: ``Thấy chưa Onii? Em đã đúc kết chân lý từ đầu rồi mà có sai đâu: Sushi mà ăn bằng tiền của người khác lúc nào cũng là ngon nhất trần đời! Đúng không nào?''
+
+Kaigou bật cười, vươn tay cốc nhẹ một phát nữa vào đầu Ryuuhou: ``Cái con bé này, lại còn cãi cố nữa! Mau dọn dẹp bàn ghế rồi cùng Suzu về nhà thôi!''
+
+Cả căn phòng ngập tràn tiếng cười rộn rã khi ánh hoàng hôn dần buông xuống ngoài khung cửa sổ. Dù cho mỗi ngày ở văn phòng này đều bắt đầu bằng những trò điên rồ không thể đoán trước, thì đến cuối cùng, những nụ cười ấm áp và sự gắn kết gia đình vẫn luôn là điều trọn vẹn nhất còn đọng lại sau mọi cơn bão giông.
+
+\end{document}
