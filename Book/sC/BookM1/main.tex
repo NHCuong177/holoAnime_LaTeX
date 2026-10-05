@@ -74,11 +74,16 @@
 \usepackage{fontspec}
 \usepackage{luatexja}
 \usepackage{luatexja-fontspec}
+\usepackage{luatexja-ruby} \ltjsetruby{size=0.4}
+
+% Spacing parameters are set automatically according to layout rules, 
+% but you can globally tweak them using native parameters if needed:
+% \ltjsetruby{size=0.5, interspace=0.25ex}
 
 % Viết furigana
-\usepackage{ruby}
-\renewcommand{\rubysize}{0.4}
-\renewcommand{\rubysep}{1pt}
+% \usepackage{ruby}
+% \renewcommand{\rubysize}{0.4}
+% \renewcommand{\rubysep}{1pt}
 
 % Phông cho tên-số các tập
 \newfontface\flaregothic[Path=../../../Fontface/]{flaregothicbold.ttf}

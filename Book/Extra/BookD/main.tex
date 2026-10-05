@@ -71,11 +71,16 @@
 \usepackage{fontspec}
 \usepackage{luatexja}
 \usepackage{luatexja-fontspec}
+\usepackage{luatexja-ruby} \ltjsetruby{size=0.4}
+
+% Spacing parameters are set automatically according to layout rules, 
+% but you can globally tweak them using native parameters if needed:
+% \ltjsetruby{size=0.5, interspace=0.25ex}
 
 % Viết furigana
-\usepackage{ruby}
-\renewcommand{\rubysize}{0.4}
-\renewcommand{\rubysep}{1pt}
+% \usepackage{ruby}
+% \renewcommand{\rubysize}{0.4}
+% \renewcommand{\rubysep}{1pt}
 
 % Phông cho tên-số các tập
 \newfontface\flaregothic[Path=../../../Fontface/]{flaregothicbold.ttf}
@@ -338,7 +343,7 @@
 \noindent
 \begin{minipage}[c][0.25\textheight][b]{\textwidth}
     \centering
-    \includegraphics[width=15cm]{../../../Logo/round1.png}
+    \includegraphics[width=15cm]{../../../Logo/roundexb.png}
     \vspace{30pt} % Khoảng cách từ logo xuống tâm trang
 \end{minipage}\par
 \nointerlineskip
@@ -447,17 +452,95 @@
 % \vspace{-30pt}
 % \subfile{Episode/D-13}
 
-\newpage
-\section*{\phantomsection\label{epd.14}}
-\addcontentsline{toc}{section}{{\flaregothic{HISTOIRE 14 \cafeteria | D-14}} - Chuyến định cư sóng gió của cặp chị em nhà Mèo}
-\vspace{-30pt}
-\subfile{Episode/D-14}
+% \newpage
+% \section*{\phantomsection\label{epd.14}}
+% \addcontentsline{toc}{section}{{\flaregothic{HISTOIRE 14 \cafeteria | D-14}} - Chuyến định cư sóng gió của cặp chị em nhà Mèo}
+% \vspace{-30pt}
+% \subfile{Episode/D-14}
+
+% \newpage
+% \section*{\phantomsection\label{epd.15}}
+% \addcontentsline{toc}{section}{{\flaregothic{HISTOIRE 15 \cafeteria | D-15}} -  Những ngày đầu của cặp chị em nhà Mèo}
+% \vspace{-30pt}
+% \subfile{Episode/D-15}
+
+% \newpage
+% \section*{\phantomsection\label{epd.16}}
+% \addcontentsline{toc}{section}{{\flaregothic{HISTOIRE 16 \cafeteria | D-16}} - Bữa sáng vừa kịp lúc}
+% \vspace{-30pt}
+% \subfile{Episode/D-16}
+
+% \newpage
+% \section*{\phantomsection\label{epd.17}}
+% \addcontentsline{toc}{section}{{\flaregothic{HISTOIRE 17 \cafeteria | D-17}} - Ca trực không cần tiếng gầm}
+% \vspace{-30pt}
+% \subfile{Episode/D-17}
+
+% \newpage
+% \section*{\phantomsection\label{epd.18}}
+% \addcontentsline{toc}{section}{{\flaregothic{HISTOIRE 18 \cafeteria | D-18}} - Ngày nghỉ cuối tuần ở Kawachi}
+% \vspace{-30pt}
+% \subfile{Episode/D-18}
+
+% \newpage
+% \section*{\phantomsection\label{epd.19}}
+% \addcontentsline{toc}{section}{{\flaregothic{HISTOIRE 19 \cafeteria | D-19}} - Giọng hát sau màn hình chuyển động}
+% \vspace{-30pt}
+% \subfile{Episode/D-19}
+
+% \newpage
+% \section*{\phantomsection\label{epd.20}}
+% \addcontentsline{toc}{section}{{\flaregothic{HISTOIRE 20 \cafeteria | D-20}} - Trận đấu khẩu lịch sử}
+% \vspace{-30pt}
+% \subfile{Episode/D-20}
+
+% \newpage
+% \section*{\phantomsection\label{epd.21}}
+% \addcontentsline{toc}{section}{{\flaregothic{HISTOIRE 21 \cafeteria | D-21}} - Cơn sốt bất ngờ của Kuon}
+% \vspace{-30pt}
+% \subfile{Episode/D-21}
+
+% \newpage
+% \section*{\phantomsection\label{epd.22}}
+% \addcontentsline{toc}{section}{{\flaregothic{HISTOIRE 22 \cafeteria | D-22}} - Đêm hội chiếu phim ký túc xá}
+% \vspace{-30pt}
+% \subfile{Episode/D-22}
 
 \newpage
-\section*{\phantomsection\label{epd.15}}
-\addcontentsline{toc}{section}{{\flaregothic{HISTOIRE 15 \cafeteria | D-15}} -  Những ngày đầu của cặp chị em nhà Mèo}
+\section*{\phantomsection\label{epd.23}}
+\addcontentsline{toc}{section}{{\flaregothic{HISTOIRE 23 \cafeteria | D-23}} - Cuộc gọi về chiến dịch Réunion}
 \vspace{-30pt}
-\subfile{Episode/D-15}
+\subfile{Episode/D-23}
+
+\newpage
+\section*{\phantomsection\label{epd.24}}
+\addcontentsline{toc}{section}{{\flaregothic{HISTOIRE 24 \cafeteria | D-24}} - Tình bạn vĩnh cửu I: holoFive}
+\vspace{-30pt}
+\subfile{Episode/D-24}
+
+\newpage
+\section*{\phantomsection\label{epd.25}}
+\addcontentsline{toc}{section}{{\flaregothic{HISTOIRE 25 \cafeteria | D-25}} - Năm sắc màu holoFive}
+\vspace{-30pt}
+\subfile{Episode/D-25}
+
+\newpage
+\section*{\phantomsection\label{epd.26}}
+\addcontentsline{toc}{section}{{\flaregothic{HISTOIRE 26 \cafeteria | D-26}} - Tình bạn vĩnh cửu II: Gen 4}
+\vspace{-30pt}
+\subfile{Episode/D-26}
+
+\newpage
+\section*{\phantomsection\label{epd.27}}
+\addcontentsline{toc}{section}{{\flaregothic{HISTOIRE 27 \cafeteria | D-27}} - Bốn sắc màu holoForce}
+\vspace{-30pt}
+\subfile{Episode/D-27}
+
+\newpage
+\section*{\phantomsection\label{epd.28}}
+\addcontentsline{toc}{section}{{\flaregothic{HISTOIRE 28 \cafeteria | D-28}} - Khoảng lặng trước cơn bão}
+\vspace{-30pt}
+\subfile{Episode/D-28}
 
 %===========================================LỜI KẾT===========================================
 % \newpage

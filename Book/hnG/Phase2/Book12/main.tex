@@ -76,11 +76,16 @@
 \usepackage{fontspec}
 \usepackage{luatexja}
 \usepackage{luatexja-fontspec}
+\usepackage{luatexja-ruby} \ltjsetruby{size=0.4}
+
+% Spacing parameters are set automatically according to layout rules, 
+% but you can globally tweak them using native parameters if needed:
+% \ltjsetruby{size=0.5, interspace=0.25ex}
 
 % Viết furigana
-\usepackage{ruby}
-\renewcommand{\rubysize}{0.4}
-\renewcommand{\rubysep}{1pt}
+% \usepackage{ruby}
+% \renewcommand{\rubysize}{0.4}
+% \renewcommand{\rubysep}{1pt}
 
 % Phông cho tên-số các tập
 \newfontface\flaregothic[Path=../../../../Fontface/]{flaregothicbold.ttf}
@@ -469,17 +474,17 @@
 % \vspace{-30pt}
 % \subfile{Episode/12-07}
 
-\newpage
-\section*{\phantomsection\label{epS.30}}
-\addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 156/SPÉCIAL XXX \cafeteria | S-30}} - Top 10 các cảnh đáng chú ý nhất}
-\vspace{-30pt}
-\subfile{Episode/S-30}
-
 % \newpage
-% \section*{\phantomsection\label{ep12.8}} 
-% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 157 \cafeteria | 12-8}} - ??}
+% \section*{\phantomsection\label{epS.30}}
+% \addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 156/SPÉCIAL XXX \cafeteria | S-30}} - Top 10 các cảnh đáng chú ý nhất}
 % \vspace{-30pt}
-% \subfile{Episode/12-08}
+% \subfile{Episode/S-30}
+
+\newpage
+\section*{\phantomsection\label{ep12.8}} 
+\addcontentsline{toc}{section}{{\flaregothic{ÉPISODE 157 \cafeteria | 12-8}} - Chiếc nơ nịnh nọt}
+\vspace{-30pt}
+\subfile{Episode/12-08}
 
 % \newpage
 % \section*{\phantomsection\label{ep12.9}} 

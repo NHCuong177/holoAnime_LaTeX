@@ -70,11 +70,13 @@
 \usepackage{fontspec}
 \usepackage{luatexja}
 \usepackage{luatexja-fontspec}
+\usepackage{luatexja-ruby}
+\ltjsetruby{size=0.4}
 
 % Viết furigana
-\usepackage{ruby}
-\renewcommand{\rubysize}{0.4}
-\renewcommand{\rubysep}{1pt}
+% \usepackage{ruby}
+% \renewcommand{\rubysize}{0.4}
+% \renewcommand{\rubysep}{1pt}
 
 % Phông cho tên-số các tập
 \newfontface\flaregothic[Path=../../../Fontface/]{flaregothicbold.ttf}
@@ -108,6 +110,7 @@
 % Đặt font chính và font tiếng Nhật
 \setmainfont{Times New Roman}
 \setmainjfont{FOT-Skip Std B}
+
 \setmathfont
 [    Extension = .otf,
      BoldFont = XITSMath-Bold,
@@ -415,17 +418,17 @@
 % \vspace{-30pt}
 % \subfile{Episode/M2-04}
 
-\newpage
-\section*{\phantomsection\label{epM2.5}}
-\addcontentsline{toc}{section}{{\humanist{FOLGE 15 \cafeteria | M2-5}} - Nỗi lòng chiều cao}
-\vspace{-30pt}
-\subfile{Episode/M2-05}
-
 % \newpage
-% \section*{\phantomsection\label{epM2.6}} 
-% \addcontentsline{toc}{section}{{\humanist{FOLGE 16 \cafeteria | M2-6}} - ??} 
+% \section*{\phantomsection\label{epM2.5}}
+% \addcontentsline{toc}{section}{{\humanist{FOLGE 15 \cafeteria | M2-5}} - Nỗi lòng chiều cao}
 % \vspace{-30pt}
-% \subfile{Episode/M2-06}
+% \subfile{Episode/M2-05}
+
+\newpage
+\section*{\phantomsection\label{epM2.6}}
+\addcontentsline{toc}{section}{{\humanist{FOLGE 16 \cafeteria | M2-6}} - Trận chiến guitar}
+\vspace{-30pt}
+\subfile{Episode/M2-06}
 
 % \newpage
 % \section*{\phantomsection\label{epM2.7}} 
