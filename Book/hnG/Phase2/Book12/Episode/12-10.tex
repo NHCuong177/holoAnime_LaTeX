@@ -2,46 +2,486 @@
 \begin{document}
 %==========================================TIÊU ĐỀ TẬP========================================
 \begin{table}[h]
-  \begin{adjustwidth}{-1cm}{}
-    \begin{tabular}{>{\centering\arraybackslash}p{6cm}|>{\raggedright\arraybackslash}p{12cm}}
-      \multirow{5}{6cm}
-      % Cột bên trái: ÉPISODE và số tập
-      {\\[-40pt]
-        \centering
-        {\fontsize{20pt}{20pt}\selectfont{\outlinetext[1]{eptype}{white}{\flaregothic ÉPISODE}}\\[12pt]
-          {\fontsize{72pt}{72pt}\selectfont{\outlinetext[1]{epnum}{white}{\burbank 159}}}\\[6pt]       % use for normal/special episodes
-          % {\fontsize{36pt}{36pt}\selectfont{\outlinetext[1]{epnum}{white}{\burbank SÁU}}}\\[6pt]     % use for custom episodes
-          {\fontsize{20pt}{20pt}\selectfont{\outlinetext[1]{epnum}{white}{\cafeteria (12-10)}}}\color{black}}
-        \\[18pt]
-        % {\fontsize{14pt}{14pt}\selectfont{\outlinetext[1]{epattr}{white}{\flaregothic [I]}}}\\
-        {\fontsize{18pt}{18pt}\selectfont{\outlinetext[1]{epattr}{white}{\flaregothic FIN DE TOME !}}}\\
-        \color{black}
-      }
-       &
-      % Dòng thứ nhất: tên tập tiếng Nhật
-      {\fotskip\fontsize{18pt}{18pt}\selectfont japanese}                  \\[6pt]
-      % Dòng thứ hai: tên tập tiếng Anh
-       & {\cafeteria\fontsize{18pt}{18pt}\selectfont english}              \\[4pt]
-      % Dòng thứ ba: tên tập tiếng Việt
-       & {\vnmsans\fontsize{18pt}{18pt}\selectfont vietnamese}             \\[8pt]
-      % Dòng thứ tư: Nhân vật xuất hiện
-       & {\caviar{\fontsize{14pt}{14pt}\selectfont Nhân vật: \emp{kuon2}}} \\
-      % Dòng thứ năm (nếu có): Nhân vật chỉ xuất hiện trong Omake
-       & {\abv Truyện phụ:} \emp{okayu}
-      \\[8pt]
-      % Dòng cuối cùng: Thời gian diễn ra của tập (thường sẽ là ngày phát hành)
-       & {\sen\fontsize{16pt}{16pt}\selectfont Mốc thời gian: DD/MM/YYYY}  \\[18pt]
-    \end{tabular}\\[8pt]
-  \end{adjustwidth}
+    \begin{adjustwidth}{-1cm}{}
+        \begin{tabular}{>{\centering\arraybackslash}p{6cm}|>{\raggedright\arraybackslash}p{12cm}}
+            \multirow{5}{6cm}
+            % Cột bên trái: ÉPISODE và số tập
+            {\\[-40pt]
+                \centering
+                {\fontsize{20pt}{20pt}\selectfont{\outlinetext[1]{eptype}{white}{\flaregothic ÉPISODE}}\\[12pt]
+                    {\fontsize{72pt}{72pt}\selectfont{\outlinetext[1]{epnum}{white}{\burbank 159}}}\\[6pt]       % use for normal/special episodes
+                    % {\fontsize{36pt}{36pt}\selectfont{\outlinetext[1]{epnum}{white}{\burbank SÁU}}}\\[6pt]     % use for custom episodes
+                    {\fontsize{20pt}{20pt}\selectfont{\outlinetext[1]{epnum}{white}{\cafeteria (12-10)}}}\color{black}}
+                \\[18pt]
+                % {\fontsize{14pt}{14pt}\selectfont{\outlinetext[1]{epattr}{white}{\flaregothic [I]}}}\\
+                {\fontsize{18pt}{18pt}\selectfont{\outlinetext[1]{epattr}{white}{\flaregothic FIN DE TOME !}}}\\
+                \color{black}
+            }
+             &
+            % Dòng thứ nhất: tên tập tiếng Nhật
+            {\fotskip\fontsize{18pt}{18pt}\selectfont たまにこういうのが\ruby{釣}{つ}れるんです}                                                                                       \\[6pt]
+            % Dòng thứ hai: tên tập tiếng Anh
+             & {\cafeteria\fontsize{18pt}{18pt}\selectfont A Fishy Catch}                                                                                              \\[4pt]
+            % Dòng thứ ba: tên tập tiếng Việt
+             & {\vnmsans\fontsize{18pt}{18pt}\selectfont Sơ hạ điếu (Câu cá đầu hè)}                                                                                   \\[8pt]
+            % Dòng thứ tư: Nhân vật xuất hiện
+             & {\caviar{\fontsize{14pt}{14pt}\selectfont Nhân vật: \emp{kuon2} \emp{ryuuhou2} \emp{naomi2} \emp{miko2} \emp{fubuki} \emp{aqua} \emp{mio} \emp{okayu}}}
+            %   \\
+            % % Dòng thứ năm (nếu có): Nhân vật chỉ xuất hiện trong Omake
+            %  & {\abv Truyện phụ:} \emp{okayu}
+            \\[8pt]
+            % Dòng cuối cùng: Thời gian diễn ra của tập (thường sẽ là ngày phát hành)
+             & {\sen\fontsize{16pt}{16pt}\selectfont Mốc thời gian: 29/05/2022}                                                                                        \\[18pt]
+        \end{tabular}\\[8pt]
+    \end{adjustwidth}
 \end{table}
 %=========================================TRUYỆN CHÍNH========================================
 \color{black}
 
 \txtbx[2]{
-  {\color{vol} \uline{Tóm tắt:}} ???
+    {\color{vol} \uline{Tóm tắt:}} Nhân dịp sinh nhật lần thứ 9 của Naomi, cả nhà Hikawa cùng Miko, Mio, Fubuki ra hồ công viên câu cá. Ryuuhou mang theo bộ cần câu sắm từ đợt đi siêu thị Kawachi hai tháng trước để quyết tâm tự trổ tài, trong khi Miko gây sốc với gu thời trang ``flattop idol'' cùng cây cần câu hình súng liên thanh tự chế. Sau màn tấu hài Miko tự quăng mình xuống hồ và biến thành cá tráp, Mio dùng Miko làm mồi nhử câu lên một bọc cá ngừ khổng lồ làm gãy nát cần câu. Giữa khung cảnh hỗn loạn, Ryuuhou đã dùng thực lực tự tay câu được một chú cá nước ngọt tuyệt đẹp làm quà tặng sinh nhật cho Naomi.
 }
+
+Một ngày cuối tháng Năm nọ, ánh nắng đầu hạ rọi chiếu qua từng khung cửa sổ của văn phòng \hll. Hôm nay cũng chính là một dịp vô cùng đặc biệt: ngày sinh nhật tròn chín tuổi của cô em út nhà Hikawa, Naomi.
+
+Đối với đại gia đình Hikawa, cột mốc này mang ý nghĩa thiêng liêng hơn bất kỳ điều gì. Bởi lẽ, sau hơn mười ba thế kỷ bị mắc kẹt như một linh hồn cô độc giữa màn sương mù và những vòng lặp bi thương tại đền thờ thị trấn Aogami, đây mới là lần đầu tiên cô bé được đón một tuổi mới thực sự bằng xương bằng thịt trong thế giới thực, bên cạnh những người thân yêu luôn chở che cho mình. Bước sang tuổi lên chín, Naomi dường như đã chững chạc và hiểu chuyện hơn rất nhiều: cô bé không còn rụt rè, bỡ ngỡ trước nhịp sống hiện đại, mà đã biết chủ động giúp anh cả sắp xếp hồ sơ, phụ các chị dọn dẹp và luôn dành cho mọi người ánh nhìn ấm áp, tĩnh lặng như mặt hồ biếc.
+
+Để ăn mừng cột mốc đáng nhớ này, Naomi và Ryuuhou đã được anh cả Kuon dẫn đến văn phòng chơi từ sáng sớm, háo hức chờ đợi buổi chiều cùng cả nhà đi ăn bánh kem và tổ chức tiệc sinh nhật.
+
+Trong phòng làm việc, Mio rải chân sáo, đung đưa cánh tay vui vẻ bước vào văn phòng với nụ cười rạng rỡ trên môi.
+
+\img{12-10a}
+
+Cậu Tổng, tay vẫn đang bê một chồng giấy tờ cao ngất ngưởng đặt lên bàn làm việc để chuẩn bị cho ngày mới, liền mỉm cười cất giọng trêu chọc: ``Mio-chan hôm nay có vẻ phấn khởi ra phết nhỉ. Hiếm thấy ghê nha.''
+
+Ngồi ngay bên cạnh chiếc bàn làm việc của anh trai Kuon, bé Naomi đang vô cùng tỉ mỉ nâng niu một vật nhỏ xinh trong đôi bàn tay nhỏ nhắn của mình: đó là một chiếc huy hiệu tự tạo hình chiếc bánh sinh nhật ngọt ngào có gắn cây nến số chín, với từng nét vẽ, từng mảng màu rực rỡ đều do chính tay cô bé và Suzuno nắn nót tô điểm suốt tối qua. Thấy Mio bước vào, Naomi liền ngẩng đầu lên, lễ phép cúi chào với nụ cười rạng rỡ: ``Em chào buổi sáng ạ, Mio-oneechan!''
+
+Nàng Sói đen mỉm cười định cất tiếng chào chúc mừng sinh nhật cô bé út và chào Miko, nhưng ngay khoảnh khắc trông thấy bộ dạng hiện tại của nàng Vu nữ, cả Kuon lẫn Mio đều phải khựng lại chết trân.
+
+Sốc, thực sự là rất sốc.
+
+Vẫn là bộ trang phục Vu nữ cổ điển quen thuộc ấy, nhưng giờ đây Miko lại được trang bị thêm một\dots\ khẩu súng trường to bản. Tiếng loạch xoạch lên đạn khô khốc phát ra từ nòng súng chứng minh rằng đây không phải là đạo cụ biểu diễn bình thường. Đó là một khẩu liên thanh được sơn màu hồng rực rỡ, phần báng và thân súng trang trí thêm mấy đường sọc vàng bắt mắt, điểm xuyết những hình hoa đào đồng bộ với họa tiết trên váy áo cô.
+
+Nhưng đó vẫn chưa phải là chi tiết gây sốc nhất. Miko còn mạnh dạn ``tậu'' thêm một kiểu tóc giả theo phong cách Geisha cổ điển nhưng được vuốt phẳng lì ở đỉnh đầu: mái tóc đen được búi cao bè bè ra phía sau thành một hình vuông vức kì dị, kết hợp với một chiếc kính râm đen ngầu lòi che kín nửa khuôn mặt.
+
+\img{12-10b}
+
+Đứng ngay sát bên cạnh Miko chính là Ryuuhou. Cô em Tư nhà Hikawa hôm nay cũng tậu một bộ dạng hầm hố không kém: tóc buộc cao đuôi ngựa cá tính, đeo kính râm đen cực ngầu, trên tay xách nguyên bộ cần câu gấp gọn quen thuộc - chính là bộ dụng cụ câu cá mà cô nàng đã kỳ kèo năn nỉ Kuon và Kaiho duyệt mua ở quầy dụng cụ ngoài trời siêu thị Kawachi hai tháng trước trong chuyến đi mua sắm cuối tuần. Thay vì súng ống, Ryuuhou vác cần câu trên vai, tạo dáng đứng chéo chân khoác lác trông cực kỳ chuyên nghiệp.
+
+Nàng Vu nữ chỉ lạnh lùng đáp lại lời chào của mọi người bằng hai từ ngắn ngủn: ``Mio. Kuon.''
+
+Ryuuhou bên cạnh cũng hếch cằm phụ họa theo bằng giọng điệu trùm xã hội đen: ``Thêm cả tôi với bé Nao-tan nữa chứ!''
+
+Naomi chớp chớp đôi mắt xanh lục bảo trong veo từ góc bàn, chững chạc nói: ``Em chúc Miko-oneechan và Ryuuhou-oneechan hôm nay sẽ bắt được thật nhiều cá mang về nha!''
+
+Nàng Sói đen tá hỏa tam tinh trước bộ dạng kỳ lạ của hai người họ, còn cậu Tổng thì đứng ngơ ngác không nói nên lời. Mio hét lên: ``\textbf{Chị đang làm cái quái gì với cái đầu thế kia hả Miko?! Còn Ryuuhou nữa, em vác cả bộ cần câu ra văn phòng làm gì?!}''
+
+Kuon nhíu mày nhìn đồng nghiệp rồi liếc sang cô em gái Tư: ``Gu ăn mặc của hai người hôm nay sao mà trông dị dạng thế\dots\ Mà Ryuuhou này, anh nhớ hồi đi siêu thị Kawachi hai tháng trước, có đứa nào hứa chắc nịch với Kaiho là mua bộ cần câu gấp gọn này về sẽ tự giác nghiên cứu học hỏi, không bắt ai phải dọn dây câu hay gỡ mồi hộ cơ mà? Đã câu được con cá nào ra hồn chưa hay là vứt xó hai tháng nay rồi hả?''
+
+Ryuuhou phồng má cãi ngay: ``Onii đừng có khinh thường em nhá! Em đã cày nát mấy chục video dạy câu cá trên mạng suốt hai tháng qua rồi đấy! Hôm nay sinh nhật chín tuổi của bé Nao-tan, em nhất định sẽ trổ tài câu một con cá bự chảng về làm quà cho em út!''
+
+Miko lúc này đáp lại bằng một cú lăn người nhào lộn cực kỳ linh hoạt, sau đó quỳ một chân xuống đất tạo tư thế ngắm bắn của một xạ thủ thiện xạ chuyên nghiệp, dõng dạc tuyên bố: ``Chị nghe đồn cái hồ nước quanh văn phòng này dạo gần đây có xuất hiện một con quái thú huyền thoại, thế nên chị sẽ dùng thứ này để\dots''
+
+Ryuuhou ngay lập tức tiếp lời phần vế sau với phong thái của một cao thủ lão luyện: ``\dots tiêu diệt nó gọn gàng trong một nốt nhạc, để cả nhà chúng ta có một nồi lẩu cá siêu to khổng lồ mừng sinh nhật bé út!''
+
+Mio phản ứng lại cực kỳ quyết liệt: ``Nếu muốn bắt cá thì cứ ra hồ mà câu cá bình thường đi, ai lại mang súng liên thanh ra bắn cá hả trời!''
+
+Kuon khoanh tay nhìn bộ dạng mới mẻ đó với vẻ mặt đầy hoài nghi: ``Trông hai người cứ như mấy ông trùm giang hồ bước ra từ phim hành động thập niên 90 ấy nhỉ\dots''
+
+Miko nháy mắt đưa tình với cậu sau lời khen: ``Cảm ơn ne\~{}''
+
+Ryuuhou cũng cười hì hì đắc ý: ``Concept vác đồ này nhìn chiến đét đúng không Onii?''
+
+Nàng Sói đen ngỡ ngàng đến mức cằm suýt rớt xuống đất. Không kiềm chế được sự ngứa mắt, cô lao thẳng tới chỗ nàng Vu nữ, cố gắng giật phăng cái bộ tóc giả quái đản trên đầu Miko xuống vì trông nó quá ư là ``ngố tàu'', và cũng vì một lý do vô cùng chính đáng của một thần tượng: ``Với lại, một idol chân chính thì không bao giờ được phép để cái kiểu đầu thảm họa thế này lên sóng truyền hình hết cả!''
+
+\img{12-10c}
+
+Tiền bối của cô cũng phản kháng dữ dội bằng cách đẩy Mio ra, đồng thời dõng dạc hô vang lý tưởng sống: ``Em thì biết cái gì! Chúng ta hãy cùng nhau trở thành những `flattop' idol và chính thức đứng lên chinh phục thế giới đi nào!''
+
+``Flattop idol á?!'' cả Kuon, Mio lẫn Ryuuhou đều khựng lại hoàn toàn trước câu tuyên bố bộc bạch đầy táo bạo ấy.
+
+Họ bắt đầu bình tĩnh lại, khoanh tay đứng hình mất vài giây để cố gắng nhằn cho thấu đáo những gì cô nàng vừa phun ra\dots\ bằng cách tự tưởng tượng ra cảnh chính Miko đang đứng trên sân khấu hoành tráng biểu diễn ca khúc hit với kiểu đầu phẳng lì như một chiếc bàn là ủi.
+
+\img{12-10d}
+
+Cậu Tổng nhăn mặt e ngại: ``\dots Anh lạy em, anh nghĩ là nó không bao giờ hợp với hình tượng idol đâu, thật đấy.''
+
+Mio kiên quyết gạt phăng: ``Dẹp ngay cái ý tưởng điên rồ đó đi!'' Thậm chí trong trí tưởng tượng phong phú của mình, nàng Sói còn dùng một cước đá văng nàng Vu nữ từ trên sân khấu giả tưởng xuống dưới vực sâu. Theo đúng nghĩa đen.
+
+Đến lượt Ryuuhou, cô nàng vốn là người chuộng phong cách bụi bặm, ngầu lòi của giới underground, nhưng khi nghe đến hai chữ ``flattop idol'' và nhìn kỹ cái chỏm tóc bẹp dí như chiếc thớt của Miko thì không thể nhịn nổi nữa. Cô nàng ôm bụng cười ngặt nghẽo, hai vai rung lên bần bật: ``Á há há há! Trời đất ơi Miko-chan! Em tưởng chị định làm quả concept chiến binh đường phố hay rocker ngầu lòi thế nào, ai dè là quả đầu phẳng lì như cái thớt thái thịt thế kia hả trời?! Gu thời trang này thì em xin phép quay xe gấp mười tám vòng, nhìn cứ như cái bàn ủi quần áo ấy, idol kiểu này thì khán giả cười xỉu mất thôi!''
+
+Miko phồng má phân bua: ``Mấy người không hiểu nghệ thuật gì hết trơn ne! Đỉnh đầu phẳng phiu mới là xu hướng vị lai đấy! Ryuuhou, em thuộc phe nào vậy!?''
+
+Kuon liếc sang nàng Vu nữ, nheo mắt hỏi: ``Mà em học cái kiểu ba lăng nhăng vô tri này ở đâu vậy\dots?''
+
+Miko cười toe toét giơ tay: ``Trên Internet chứ đâu ne!''
+
+Mio ôm đầu gào thét: ``Đừng có mà học hỏi và tiếp thu mấy cái trò giời ơi đất hỡi trên mạng xã hội chứ! Trời ơi là trời!''
+
+Đột ngột, nàng Sói đen quay ngoắt đầu sang một bên, biểu cảm chuyển sang trạng thái lo âu tột độ: ``Nhưng mà\dots\ sao tự dưng mình lại có cái tính xấu là hay phản biện và cằn nhằn người khác thế này nhỉ\dots?''
+
+Cặp đôi anh em nhà Hikawa đứng bên cạnh nhìn cô nàng đang tự dằn vặt nội tâm mà không khỏi đổ mồ hôi hột trên trán. Naomi bước lại gần, khẽ chạm nhẹ vào mu bàn tay Mio, giọng nói dịu dàng như làn suối mát: ``Mio-oneechan đừng buồn mà. Chị lo lắng cho hình tượng của Miko-oneechan nên mới nhắc nhở thôi, đó là vì chị rất tốt bụng đấy ạ.''
+
+Mio nhìn cô bé chín tuổi hiểu chuyện, trong lòng bất giác thấy ấm áp lạ kỳ: ``Cảm ơn em nhé, Naomi-chan\dots'' Cô nàng đưa tay quẹt mồ hôi rồi đảo mắt nhìn ngó xung quanh: ``Hmm\dots? Miko-chan đâu mất tiêu rồi?''
+
+Kuon thở dài chỉ tay ra cửa: ``Chạy tót ra ngoài hồ từ đời nào rồi chứ còn ở đây đâu.''
+
+Ryuuhou sốt sắng xốc lại quai đeo cần câu trên vai: ``Mau lên thôi! Kẻo chị ấy nhảy ùm xuống hồ quậy tung bành mất!''
+
+\ct
+
+Cả bốn người kéo nhau ra bờ hồ công viên gần đó để tìm bóng dáng nàng Vu nữ. Ryuuhou tung tăng đi trước, tay cầm chắc chiếc cần câu gấp gọn, vừa đi vừa chỉ tay về phía chiếc cầu gỗ nhoè nắng đâm ra giữa hồ, reo lên phấn khích: ``Em thấy chị ấy kìa! Miko-san đang đứng ở kia kìa!''
+
+Naomi nắm nhẹ vạt áo Kuon, đôi mắt xanh lục bảo tĩnh lặng quan sát từng gợn sóng lăn tăn trên mặt nước. Trên cầu ván, Miko chạy tót lên đầu cầu, tay lăm lăm khẩu súng liên thanh hồng rực rỡ đã nạp sẵn ``đạn'' để săn quái thú. Cô nàng hắng giọng hô to, lên nòng xoạch một cái nghe cực kêu, nhưng đến khi phần nòng súng nhè ra thì\dots\ chỉ có một chiếc móc câu treo lủng lẳng thả xuống phía dưới.
+
+``Hóa ra nó là cần câu cá à\dots'' Kuon ngã nhào xuống đất vì chiếc cần câu kỳ dị hết chỗ nói của cô nàng.
+
+Ryuuhou thì khoái chí cười khì khì: ``Á chà! Khẩu súng bắn móc câu này chế tác tinh xảo phết! Đúng là Miko-san luôn có mấy món đồ chơi dị bản không đụng hàng!''
+
+Cậu Tổng lững thững bò dậy, tặc lưỡi đáp lời em gái: ``Độc lạ gì không biết\dots\ Nhưng ít ra em ấy cũng chịu tháo cái bộ tóc giả phẳng lì dị hợm kia ra rồi. Chứ để cái đầu thớt đó đi ngoài đường người ta tưởng trốn viện thì dở.''
+
+Naomi nhìn quanh bờ hồ, ngửi thấy mùi cỏ cây ngai ngái đầu hè, khẽ mỉm cười: ``Không khí ở đây trong lành và mát mẻ thật đấy ạ. Thảo nào Miko-oneechan lại thích chạy ra đây.''
+
+Trong lúc đó, trên cầu gỗ, nàng Vu nữ lấy đà quăng mạnh chiếc lưỡi câu ra đằng sau rồi lấy sức vẩy mạnh ra xa, nhiệt huyết gào lớn: ``\textbf{Con quái vật dưới hồ kia, ta tới đây ne!}''
+
+Trớ trêu thay, cái móc câu quỷ quái lại mắc trúng ngay vào chiếc đai váy phía sau lưng cô. Và bằng một cơ chế vật lý vô lý đến mức phi logic, chính cô nàng Vu nữ mới là người bị lực kéo lôi xổng, ngã lộn cổ xuống hồ nước kêu *TÙM* một tiếng rõ to.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=8cm]{../../../../Image/Book12/12-10e1.png}
+        \caption{Miko quăng mạnh chiếc lưỡi câu\dots}
+    \end{subfigure}
+    \quad
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=8cm]{../../../../Image/Book12/12-10e2.png}
+        \caption{\dots nhưng bị chiếc lưỡi phản chủ móc vào đai váy\dots}
+    \end{subfigure}
+    \quad
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=8cm]{../../../../Image/Book12/12-10e3.png}
+        \caption{\dots khiến cho cô nàng bị hất xuống sông chơi với cá.}
+    \end{subfigure}
+\end{figure}
+
+Khẩu súng cần câu theo đà quán tính vẩy ngược trở lại, đáp gãy gọn xuống mặt ván cầu ngay ngắn như cũ.
+
+Kuon há hốc mồm: ``Oắt-đờ-heo\dots\ Quả đúng thương hiệu PON không lệch đi đâu được.''
+
+Ryuuhou chắp hai tay sau lưng, lắc đầu ngao ngán chốt hạ một câu: ``Nhìn cú ngã cầu quay 180 độ này thì ông Newton mà có thấy được chắc cũng phải đội mồ sống dậy mất thôi!''
+
+Naomi nghiêng đầu nhìn mặt nước sủi bọt, bằng trực giác thấu cảm đặc biệt của mình, cô bé bình thản trấn an: ``Onii-chan đừng lo, em cảm nhận được làn nước bên dưới đang dao động rất vui vẻ, Miko-oneechan bơi giỏi lắm, không bị chìm đâu ạ.''
+
+Cả nhóm bước lại gần ván cầu nơi khẩu súng cần câu của Miko bị bỏ lại, Mio là người bước tới sau cùng. Nàng Sói đen ngó xuống mặt nước rồi hốt hoảng tò mò: ``Ủa, có chuyện gì vừa xảy ra thế? Miko-san đâu rồi?''
+
+Ryuuhou liền nhặt khẩu súng cần câu lên, ngắm nghía các chi tiết chạm khắc tỉ mỉ trên thân súng: ``Rơi tõm xuống dưới rồi chị ơi! Nhưng công nhận cái cần câu giả dạng súng này làm nét thật đấy.''
+
+Mio cũng tò mò ghé mắt nhìn vào: ``Công nhận\dots\ Trông độc lạ thật sự.''
+
+Kuon khoanh tay nghi ngờ: ``Nàng PON này rốt cuộc kiếm đâu ra cái món đồ chơi quái đản này không biết?''
+
+Ryuuhou nhún vai: ``Ai mà biết được! Nhưng mà\dots\ chị ấy chìm nghỉm dưới đó lâu thế nhỉ?''
+
+Cậu Tổng thở dài úp mở cho phép: ``Em cứ việc thử đi, Mio-chan. Anh không nghĩ là em ấy sẽ chịu ngoi lên sớm đâu.''
+
+``Thật ư?!'' Mio dựng đứng đôi tai sói lên, mắt sáng rỡ tỏ vẻ cực kỳ thích thú. Cậu Tổng chỉ đáp lại bằng việc giơ ngón tay ra dấu ``OK''. Nàng Sói đen hồ hởi khoanh chân ngồi bệt xuống cầu gỗ, phấn khích thả lưỡi câu xuống nước: ``Vậy là chắc chúng ta ngồi đây thả câu và chờ chị ấy ngoi lên nhỉ!''
+
+Ryuuhou lập tức chống nạnh trêu chọc: ``Em không ngờ một `thanh niên nghiêm túc' lúc nào cũng cằn nhằn như Mio-san lại khoái mấy cái trò quậy phá này đấy nhé\~{}''
+
+Mio đỏ bừng mặt đáp lại: ``K-Không có đâu nhé! Tại chị thấy tò mò chút thôi!''
+
+Thế rồi, Kuon, Ryuuhou và Naomi cùng nhau ngồi xuống tựa vào thành cầu xem cô nàng GAMERS trổ tài câu cá. Ryuuhou cũng nhanh tay mở chốt bộ cần câu gấp gọn của mình, cẩn thận kiểm tra ổ cước và phao câu, chuẩn bị tinh thần thử vận may để tìm quà sinh nhật cho bé út.
+
+\img{12-10f}
+
+\ct
+
+Vừa thả lưỡi câu xuống không lâu, Mio bỗng chốc giật thót khi chiếc cần câu trong tay bị kéo trĩu xuống, suýt chút nữa lôi cô chúi nhủi về phía trước. Hành động đó lập tức thu hút sự chú ý của ba anh em nhà Hikawa.
+
+Cô reo lên: ``Hmm?! Nó nặng quá! Có phải là con trùm quái thú dưới hồ không?!''
+
+Kuon nhếch môi: ``Anh nghĩ là không đâu. Cái hồ công viên này nước nông, làm gì có quái vật nào sống nổi.'' Ryuuhou giật giật tay áo anh trai: ``Biết đâu có cá to thật thì sao Onii! Cố lên Mio-san!''
+
+Naomi cũng cổ vũ: ``Mio-oneechan cố lên ạ!''
+
+Nàng Sói đen gồng mình quay chiếc tay quay trên thân súng, dùng lực kéo lên được\dots\ một cánh tay rô-bốt của Roboco với phần ngón tay cái đang giơ lên tạo dáng ``Like'' đầy bá đạo từ dưới nước.
+
+\img{12-10g}
+
+Mio ngơ ngác: ``Roboco-senpai\dots?'' trong khi Kuon gãi đầu: ``Lại thêm một thành phần PON nữa lặn ngụp dưới đáy hồ\dots''
+
+Ryuuhou chớp mắt hỏi: ``Tại sao tay của chị ấy lại trôi dạt xuống tận cái đáy hồ này được cơ chứ?''
+
+Nàng Sói đen cầm cánh tay kim loại đó lên, tò mò dò xét kỹ càng. Bất chợt, Mio lại tỏ vẻ thích thú kỳ lạ với món phụ kiện rô-bốt này.
+
+Kuon đổ mồ hôi hột trên thái dương: ``Này Mio-chan, đừng nói với anh là em định\dots''
+
+Đúng như nỗi lo của cậu Tổng, Mio hồn nhiên đeo hẳn cánh tay rô-bốt vào tay mình rồi bắt đầu gồng cơ tay ``phô trương'' sức mạnh siêu nhiên: ``Cánh tay này sẽ tiếp thêm cho ta một nguồn năng lượng vô tận!''
+
+\img{12-10h1}
+
+``Em ấy đeo vào thật luôn kìa\dots'' Kuon nhìn cô với vẻ lo ngại. ``Đúng là Mio-chan cứ dính vào mấy món đồ lạ là tính tò mò trỗi dậy không chịu nổi.''
+
+Ryuuhou thì phì cười đắc ý: ``Trông ngầu đấy Mio-san! Nhìn như chiến binh cyborg luôn!''
+
+Bất chợt, Naomi cất tiếng reo nhẹ: ``A, Fubuki-oneechan tới kìa!''
+
+Nàng Cáo trắng Fubuki vừa chạy tới đã vội vàng chỉ tay vào bạn thân mình, tỏ vẻ vô cùng hoảng hốt như muốn ngăn cản một thảm họa đa vũ trụ: ``Dừng lại đi! MechaMion (Mio người máy)! Đừng có chìm đắm vào cơn ảo tưởng sức mạnh đó nữa!''
+
+\img{12-10h2}
+
+Kuon ngán ngẩm: ``Anh nghĩ em mới là người nên bình tĩnh lại đi đấy, Fubu-chan ạ.''
+
+Fubuki hoảng hốt cãi lại: ``Nhưng mà cậu ấy vừa biến thành người máy chiến đấu kìa!''
+
+Kuon vỗ vai cô, trỏ ngón cái về phía cô bạn: ``Em ấy sẽ không hóa rồ đâu. Nhìn kỹ lại xem.''
+
+Nàng Cáo trắng nhìn sang thì thấy cô bạn đã tháo cánh tay rô-bốt ra từ đời nào và cẩn thận đặt sang một bên. Fubuki thở phào nhẹ nhõm: ``Tưởng gì chứ\dots\ Làm em hết cả hồn.''
+
+Ryuuhou lúc này giơ chiếc cần câu gấp gọn của mình lên, hào hứng rủ rê: ``Fubuki-san ra đúng lúc lắm! Em đang chuẩn bị thi câu cá với Mio-san đây! Hôm nay sinh nhật chín tuổi của bé Nao-tan, em đã hạ quyết tâm phải tự tay câu được một con cá thật ngon về làm quà cho em ấy mới chịu!''
+
+Naomi mắt sáng rực vỗ tay tán thưởng: ``Dạ! Em luôn tin tưởng Ryuuhou-oneechan!''
+
+\ct
+
+Tua nhanh khoảng mười phút sau, khung cảnh bên bờ hồ lúc này càng trở nên náo nhiệt hơn. Ryuuhou đã lắp ráp hoàn chỉnh chiếc cần câu gấp gọn mua từ đợt ở Kawachi, ngồi xổm ở mép cầu kiên nhẫn gắn mồi, trong khi cô em út Naomi đứng ngay bên cạnh chăm chú theo dõi từng động tác của chị Tư.
+
+Kuon khoanh tay thở dài, nhìn mặt hồ phẳng lặng rồi cất giọng: ``Anh không nghĩ là ta có thể bắt được cái gì ra hồn ở cái hồ này đâu, Mio-chan, huống chi là tìm con quái vật huyền thoại nào ở đây.''
+
+Ryuuhou vừa chỉnh lại nút thắt dây cước vừa ngẩng lên bĩu môi bênh vực: ``Đừng có tạt gáo nước lạnh làm tụt hứng chứ, Onii! Hai tháng trước ở siêu thị anh chê em chưa biết câu, giờ em học hành đàng hoàng rồi thì phải để em trổ tài chứ bộ!''
+
+Naomi chớp chớp mắt, chất giọng chín tuổi chững chạc cất lên: ``Đúng rồi đấy ạ. Người kiên nhẫn thì hồ nước sẽ luôn ban tặng phần thưởng, Onii-chan cứ chờ xem nhé.''
+
+Kuon cạn lời: ``Anh nói thật mà. Miko-chan từ nãy đến giờ ngã xuống nước mà đến cái tăm hơi cũng chưa thấy ngoi lên kìa.''
+
+Trong lúc hai anh em đang tranh luận, Fubuki đang cầm một chiếc vợt lớn lội tõm xuống mép hồ để phụ giúp Mio bắt cá. Nàng Sói đen thì vẫn ngồi khoanh chân vững chãi trên ván cầu, vung chiếc lưỡi câu ra xa tít tắp, miệng hớn hở ngân nga: ``Mình cũng muốn chiến đấu với con quái vật hồ nước này lắm rồi đấy nhé\~{}\dots''
+
+\img{12-10i}
+
+Kuon nhìn cảnh tượng đó, lắc đầu bật cười lẩm bẩm: ``Làm anh nhớ lại hồi ông ngoại sinh thời hay dẫn đi câu cá\dots''
+
+Ryuuhou tò mò chớp mắt: ``Thế á? Hồi đó thế nào hả anh?''
+
+Kuon nhún vai: ``Hồi đó em còn chưa sinh ra nên làm sao mà biết được. Ông ấy mà hễ xách cần ra hồ là y như rằng câu được cả đống mang về cho nhà. Hết cá trắm, cá chép lại đến cua kẹm các kiểu.''
+
+Cô em gái của cậu mắt sáng rực lên: ``Ồ\~{} Nghe đã tai thế! Sao anh không học nghề của ông ngoại để hôm nay câu phụ em?''
+
+Cậu Tổng bĩu môi: ``Học cái nỗi gì, anh thì sợ đến chết khiếp đây này. Ông ấy câu nhiều quá, cả nhà ăn cá ngấy đến tận cổ suốt mấy tháng trời.''
+
+Cùng lúc đó, dây câu của Mio bỗng chốc rung rinh mạnh mẽ. Cô nàng giật mình vội vàng quay tay quay kéo lên. Trước sự ngỡ ngàng của tất cả mọi người, sinh vật bám chặt vào chiếc lưỡi câu rách tả tơi lại chính là một Aqua tí hon đang bám víu một cách tuyệt vọng.
+
+Kuon trố mắt: ``Ờm\dots\ Em ấy ở đâu chui tòi lên thế hả, Mio-chan?''
+
+Mio lúng túng gỡ Aqua ra đặt sang một bên: ``Chắc là ở dưới đáy hồ ban nãy chứ đâu. Em cũng có ngờ tới đâu cơ chứ.''
+
+Cùng lúc đó, dây câu lại giật nhẹ, Mio vội kéo lên lần nữa và không khỏi ngạc nhiên: ``Ủa, hóa ra còn vớt thêm được cả Okayu dính chùm ở ngay đây nữa này!''
+
+\img{12-10j2}
+
+Ryuuhou nheo mắt cười khà khà: ``\dots Có khi đây không phải hồ công viên nữa rồi, mà là hồ câu \hll\ phiên bản thực tế ảo mới đúng nhỉ?''
+
+Kuon gật gù: ``Có vẻ là thế, nhưng mà\dots'' Cậu nhìn sang chiếc xô nhựa trống rỗng mà Mio vừa câu được từ dưới hồ lên, thở dài lo lắng: ``Rốt cuộc từ nãy đến giờ em vẫn chưa câu được con cá nào ra hồn cả.''
+
+Nàng Sói đen gãi đầu bứt tai, tỏ ra lo lắng vì chưa có mồi nhử tử tế để câu cá lớn. Thấy vậy, Ryuuhou liền cười ranh mãnh, thò tay vào ba lô lôi ra một con cá nhựa đồ chơi đầy màu sắc mà cô nhóc mang theo làm phụ kiện, giơ lên khoe: ``Này, nếu chị đang bí mồi quá thì em cho chị mượn tạm con cá nhựa siêu cấp này nè! Đảm bảo hàng độc quyền dùng bền miễn bàn!''
+
+Mio mắt sáng rực như bắt được vàng, chộp lấy con cá nhựa từ tay cô nàng với vẻ biết ơn tột cùng: ``Ồ! Tuyệt vời quá Ryuuhou-chan! Chị đang cần gấp một con mồi thế này đấy! Người ta hay nói là thả con săn sắt, bắt con cá rô mà.''
+
+Kuon thở dài bất lực: ``\dots Thôi thì, mèo đen hay mèo trắng cũng được, miễn là bắt được chuột. Dùng cá giả ấy có lẽ cũng không tệ đâu.''
+
+Fubuki đứng dưới nước nghe bạn mình nói vậy liền thất thanh can ngăn: ``Ể, nhưng mà cá nhỏ nhìn ngon miệng hơn cá nhựa mà!''
+
+Ryuuhou liền hùa theo: ``Thế thì chị chẳng biết gì về nghệ thuật câu cá cả, Fubuki-san! Cá thì làm sao phân biệt được thật giả như mình chứ!''
+
+Naomi nghiêng đầu nhìn hai bạn nhỏ tí hon đang chới với trên móc câu, khẽ thì thầm: ``Hai chị ấy trông chóng mặt lắm rồi kìa\dots''
+
+\ct
+
+Đúng lúc đó, dây câu của nàng Sói đen lại giật nảy lên bần bật, lực kéo mạnh đến mức suýt lôi cô cắm mặt xuống nước. Lực cản quá khủng khiếp khiến tất cả mọi người - kể cả Fubuki và bộ đôi Okayu-Aqua - đều hoảng hốt.
+
+Mio hét lên: ``\textbf{Nó đấy! Chắc chắn đây là con quái vật hồ nước khủng khiếp nhất rồi!}''
+
+Kuon gân cổ cãi: ``Đã bảo dưới hồ này làm gì có quái vật\dots\ Nhưng mà mẻ này nặng ký thật đấy!''
+
+Ryuuhou hừng hực khí thế, tạm gác cần câu của mình sang một bên: ``Nhanh lên nào mọi người! Kéo nó lên xem mặt mũi ra sao!''
+
+Fubuki, Kuon, Ryuuhou, cùng với Naomi lập tức nhào vào hợp sức túm chặt lấy chiếc cần câu súng. Thậm chó, hai cô nàng tí hon cũng góp sức kéo phần tóc của Fubuki.
+
+``\textbf{Hò dô ta kéo nào!!}'' tất cả đồng thanh hô vang, dồn toàn lực kéo lưỡi câu lên. Trận chiến giữa hội đồng nhà Hikawa cùng đồng đội với ``con quái vật'' dưới hồ chẳng khác nào một trò chơi kéo co sinh tử, không bên nào chịu nhường bên nào.
+
+\img{12-10k}
+
+Mio hét toáng lên: ``\textbf{Gyaaah?! Nặng quá, không chịu nổi nữa rồi!}''
+
+Kuon và Fubuki hoảng hốt lao tới chộp chặt lấy phần hông của Mio để cứu nguy: ``Mio(-chan), giữ chặt vào!''
+
+Sau bao nhiêu nỗ lực vắt kiệt sức lực, cuối cùng họ cũng kéo được thứ bí ẩn bay vút lên không trung. Và đập vào mắt họ chính là\dots
+
+\dots một con cá tráp khổng lồ nhưng lại mọc nguyên cái đầu của Miko đang trợn tròn hai mắt sáng quắc!
+
+\img{12-10l}
+
+Kuon suýt ngất tại chỗ: ``Cái quái gì thế này\dots?''
+
+Con cá tráp vùng vẫy loạn xạ trên bến cầu sau khi mắc cạn, bắn tung tóe nước vào mọi người khiến cho nàng Cáo trắng chắn mặt lại, còn Ryuuhou và Naomi thì lùi nhẹ ra sau. Dùng chính giọng nói quen thuộc của mình, cô nàng ré lên: ``Hãy trở thành những con quái vật idol và thống trị thế giới đi nào, ne!''
+
+Ryuuhou cười nấc nẻ, vỗ đùi đen đét: ``Trời ạ, Miko-san đúng là biết cách tận dụng cơ hội tạo content ghê ha! Bộ cánh `cá tráp' này xịn sò phết chứ bộ!''
+
+Nhưng Mio và Kuon thì đồng thanh gào lên: ``\textbf{Dẹp ngay cái trò con bò này đi!}''
+
+\img{12-10m}
+
+Cậu Tổng thở dài sườn sượt, bất lực toàn tập: ``Thật sự luôn đấy\dots\ làm cách nào mà em nhét nổi cả cái thân người vào trong con cá tráp bự chảng này hay vậy hả Miko-PON?!''
+
+Miko chỉ tiếp tục giãy đành đạch như cá mắc cạn trên bờ, tuyệt đối không thèm trả lời một câu nào.
+
+Đâu ai có thể ngờ được rằng trong một buổi câu cá cuối xuân đầu hè tưởng chừng rất bình yên, họ lại có thể câu lên được một sinh vật kỳ dị đến thế này!
+
+\dots Vâng, chỉ có ở \hll\ mới liên tục xuất hiện những tình huống tấu hài vô lý đến mức thượng thừa như vậy mà thôi.
 
 %==========================================TRUYỆN PHỤ=========================================
 \omk
+
+Fubuki và Mio vẫn tiếp tục trân trân nhìn ``con cá'' Miko đang giãy đành đạch trên ván cầu, đứng trầm ngâm suy tính xem họ nên xử lý sinh vật kỳ dị này ra sao. Kuon khoanh tay thở dài: ``Xem ra là chẳng có con quái vật hồ nước nào ở cái chốn này thật rồi, Mio-chan ạ.''
+
+Ryuuhou đứng bên cạnh gật đầu phụ họa, nheo mắt cười khà khà: ``Chỉ có con quái vật mang tên Miko-chi đây là to xác và rắc rối nhất thôi!''
+
+Naomi chớp mắt, cất giọng trong trẻo: ``Miko-oneechan chui vào bộ đồ cá trông buồn cười thật, nhưng chắc là nóng lắm đấy ạ.''
+
+Đột nhiên, ánh mắt của cặp bạn thân Fubuki và Mio cùng lóe lên một tia sáng ranh mãnh, hệt như thể họ vừa vớ được một ``tuyệt kế gia truyền'' để giải quyết bài toán khó nhằn này.
+
+Cậu Tổng Kuon thấy thế liền đổ mồ hôi hột, linh tính mách bảo điều chẳng lành: ``Ôi trời đất quỷ thần ơi\dots\ Nhìn cái ánh mắt đó là biết lại sắp có chuyện chẳng lành rồi đây\dots''
+
+\ct
+
+``\textbf{Thả Miko ra ne! Mấy người tính làm gì tôi đấy, buông ra mau!}''
+
+Miko - giờ đây đã được lôi hẳn ra khỏi bộ đồ cá tráp vướng víu - bị trói chặt cứng cả hai tay ra sau lưng, và trớ trêu thay, cái dây trói lại móc trực diện vào ngay chiếc lưỡi câu của chính cô nàng. Người đang dung dẻ cầm chắc chiếc cần câu định mệnh ấy không ai khác chính là nàng Sói đen Mio.
+
+Đáp lại những tiếng kêu gào thảm thiết của nạn nhân, Mio và Fubuki chỉ nở nụ cười tươi rói vô hại, phớt lờ hoàn toàn mọi lời kêu cứu.
+
+Fubuki nhẹ nhàng cúi đầu: ``Xin lỗi chị yêu nha, Miko-chan\~{}''
+
+Mio cười hì hì: ``Có vẻ như bọn em lại phải phiền chị làm `cần câu sống' thêm một lần nữa rồi đấy ạ.''
+
+Miko hoảng hốt: ``Cái gì cơ-- Này, đừng có mà càn quấy, thả chị ra ngay lập tức!''
+
+Dứt lời, hai cô nàng không chần chừ thêm một giây, cùng nhau vung tay quăng phắt nàng Vu nữ bay thẳng xuống ao một cú rõ kêu *TÕM!* chỉ để lại một chuỗi bong bóng sủi tăm lục bục dưới mặt nước.
+
+Kuon há hốc mồm, mồ hôi tuôn như mưa: ``\dots Hai đứa định dùng cả người thật để làm mồi nhử câu cá thật luôn hả trời?!'' Đến cả một đứa nghịch ngợm như Ryuuhou cũng phải trợn tròn mắt ngỡ ngàng: ``Trời ạ\dots\ Mấy bà chị này khi máu săn bắt nổi lên thì độ điên rồ còn vượt xa cả em nữa!''
+
+Naomi giật giật vạt áo anh trai, lo lắng thốt lên: ``Onii-chan ơi, Miko-oneechan chìm nghỉm mất tiêu rồi kìa! Có nguy hiểm không ạ?''
+
+Ngay tích tắc sau đó, chiếc cần câu trong tay Mio lại bị giật mạnh đến mức uốn cong sát mặt nước, kéo gấp hai cô nàng chúi nhủi ngã vật xuống đất.
+
+``\textbf{Kuon-senpai, Ryuuhou-chan, cứu tụi em với! Nặng quá chịu không nổi rồi!}'' cả hai hoảng hốt kêu gào.
+
+``R-Rồi đây!''
+
+Cậu Tổng và Ryuuhou liền lao tới bám chặt lấy đuôi cần để kéo lên. Ngay cả bé Naomi cũng chạy lại, nhỏ nhắn bám vào vạt áo Ryuuhou để tiếp sức. Sức kéo khủng khiếp dưới nước mạnh đến mức khiến cả Aqua lẫn Okayu tí hon đang bám bờ cũng bị lôi tuột xuống nước.
+
+Tận dụng tối đa lực ma sát và cái gọi là ``vận tốc \hll\'', họ bám chặt lấy phần hông của nàng Sói đen, đồng loạt ngả người kéo giật ra phía sau. Hệt như những tráng sĩ kéo pháo vào chiến dịch xưa, mọi người cùng đồng thanh hô vang: ``\textbf{Hò dô ta kéo nào!! Cố lên nào mọi người ơi!!}''
+
+\textbf{*VÚT!* *ẦM!*}
+
+Một bọc cá ngừ đại dương khổng lồ nặng trịch bỗng bay vút lên không trung, trên đỉnh chóp của bọc cá ấy là ba nàng Hầu gái (Aqua), nàng Mèo (Okayu) và nàng Vu nữ (Miko) đang bám víu chật vật. Trớ trêu thay, trọng lượng khủng khiếp của bọc cá rơi trúng phóc vào người ba cô gái Fubuki, Mio và Okayu, chỉ có Kuon, Ryuuhou và Naomi là phản xạ nhanh chân nhảy né kịp thời.
+
+Nàng Cáo trắng và nàng Sói đen rên rỉ: ``Ái da\dots\ Đau điếng người luôn\dots''
+
+Okayu ngơ ngác: ``Nya\~{}\dots\ Chuyện gì vừa xảy ra thế này?''
+
+Aqua chóng mặt hoa mắt: ``Trời đất quỷ thần ơi, xỉu ngang luôn rồi\dots''
+
+Miko thì hoảng hốt hét lên: ``Ái da\dots\ \textbf{Cần câu huyền thoại của tôi ne\~{}!}''
+
+Sức nặng và lực giật quá lớn khiến sợi dây cước trên khẩu súng liên thanh đứt phựt ngay khoảnh khắc bọc cá rơi xuống, phần nòng nhựa cũng gãy gục thành hai đoạn. Miko lập tức chồm dậy, nhào đến ôm lấy khẩu súng cần câu hỏng nát và òa khóc nức nở: ``Cần câu yêu quý của tôi hỏng mất tiêu rồi ne\~{}\dots''
+
+Kuon bước tới, nhẹ nhàng kéo ba cô gái đứng dậy rồi phủi sạch bụi bẩn bám trên quần áo họ: ``Mấy đứa còn đứng vững nổi chứ?''
+
+Ngay lập tức, đôi mắt của hai ``thợ săn'' Fubuki và Mio bỗng sáng quắp lên đầy rẫy sự nguy hiểm của loài dã thú khi nhìn thấy đống cá ngừ đại dương nằm la liệt.
+
+Nàng Cáo trắng reo lên sung sướng: ``Chúng ta vừa câu được cả một kho báu dưới hồ rồi kìa!''; nàng Sói đen phấn khích không kém: ``Thế này thì từ nay tha hồ có cá ngon ăn thả ga không lo đói kém nữa rồi!''
+
+Kuon đổ mồ hôi hột, ngao ngán lùi lại một bước: ``\dots Anh cứ mặc định là hai đứa vẫn ổn đi vậy.''
+
+\ct
+
+Trong khi mọi người đang mải mê xúm lại quanh bọc cá ngừ kỳ dị và dỗ dành Miko, Ryuuhou lại lẳng lặng bước về phía góc cầu gỗ vắng vẻ.
+
+Nhìn đống cá ngừ đại dương vô lý xuất hiện giữa hồ nước ngọt nhờ màn tấu hài dùng người làm mồi, cô nàng khẽ tặc lưỡi: ``Toàn trò ma thuật giời ơi đất hỡi của mấy bà chị\dots\ Đã đi câu cá thì phải đàng hoàng bằng thực lực chứ!''
+
+Ryuuhou cúi xuống, cầm lấy chiếc cần câu gấp gọn của mình. Đây chính là món đồ mà cô đã kỳ kèo xin anh trai và Kaiho mua bằng được tại siêu thị Kawachi hai tháng trước. Suốt hai tháng qua, cô nàng đã không ít lần tự mình mày mò học cách buộc thẻo, căn phao và điều chỉnh lực quay cước. Hôm nay là ngày sinh nhật đặc biệt của Naomi - lần đầu tiên cô em út đón tuổi mới sau hơn một thiên niên kỷ bị lãng quên - Ryuuhou đã tự hứa sẽ mang về cho em một món quà do chính bàn tay mình làm ra.
+
+Cô nàng cẩn thận móc một mẩu mồi bột thơm phức vào lưỡi câu, ngắm nghía hướng gió rồi vung cần một đường vòng cung tuyệt đẹp. Lưỡi câu rẽ nước rơi êm ái xuống vùng nước sâu dưới bóng râm của rặng liễu ven hồ.
+
+Naomi từ đằng sau khẽ bước lại gần. Cô bé không hề làm phiền mà chỉ lặng lẽ ngồi xổm bên cạnh chị Tư, đôi mắt xanh lục bảo trong veo chăm chú nhìn chiếc phao câu nhỏ đang nhấp nhô trên mặt nước.
+
+``Nao-tan đợi chút nhé,'' Ryuuhou thì thầm, ánh mắt tập trung cao độ, đôi bàn tay giữ chặt thân cần đầy vững chãi. ``Chị Tư nhất định sẽ câu cho em một con cá thật sự, không phải đồ ma thuật của \hll\ đâu.''
+
+Naomi mỉm cười, giọng nói êm ái như làn gió thoảng: ``Dạ. Em cảm nhận được dưới đám rong rêu kia đang có một chú cá rất khỏe mạnh đang tiến lại gần mồi câu của chị đấy ạ.''
+
+Đúng như lời cô bé nói, chỉ vài giây sau, chiếc phao câu bỗng giật mạnh hai nhịp rồi chìm phỉm xuống làn nước xanh biếc! Dây cước căng đét rít lên ken két!
+
+Ryuuhou không hề luống cuống giật bừa như Miko hay kéo hùng hục như Mio. Vận dụng đúng những kỹ năng đã học, cô hạ thấp trọng tâm, dùng lực cổ tay giật dứt khoát một nhịp để đóng lưỡi, rồi thoăn thoắt nhấp nhả tay quay cước, vừa ghìm vừa nương theo lực quẫy của con mồi.
+
+*XOẠCH!* *ROẠT!*
+
+Một đường cung bạc lấp lánh xé toạc mặt hồ. Một chú cá chép suối nước ngọt to bản, thân mình béo tròn với lớp vảy bạc óng ánh dưới nắng chiều, quẫy đuôi vút lên không trung làm những giọt nước bắn tung tóe như những hạt pha lê rực rỡ.
+
+Ryuuhou nhanh tay đưa vợt đón gọn chú cá vào bờ, khéo léo gỡ lưỡi câu rồi thả nó vào chiếc xô nhựa chứa đầy nước sạch. Con cá khỏe khoắn quẫy đuôi bơi vòng quanh, vẩy nước mát lạnh lên má hai chị em.
+
+Cô gạt nhẹ lọn tóc mai dính mồ hôi trên trán, nở một nụ cười rạng rỡ và tự hào giơ chiếc xô về phía cô em út: ``Thấy chưa Nao-tan! Chị đã bảo là làm được mà! Con cá này là do chính tay chị câu lên bằng thực lực đấy nhé. Coi như đây là món quà sinh nhật đặc biệt nhất mà chị dành tặng cho em gái út tròn chín tuổi!''
+
+Naomi sững sờ nhìn chú cá bơi lội trong xô, rồi đôi mắt cô bé bừng sáng lên niềm vui sướng thuần khiết nhất. Cô bé chín tuổi ôm chầm lấy hông Ryuuhou, ríu rít reo lên: ``Oa\dots\ Tuyệt vời quá! Đẹp quá chị Ryuuhou ơi! Cảm ơn Ryuuhou-oneechan nhiều lắm ạ! Đây là con cá thật đầu tiên mà em được nhận vào ngày sinh nhật!''
+
+Kuon từ đằng sau bước tới, chứng kiến toàn bộ màn thể hiện xuất sắc của cô em gái Tư. Khóe môi cậu cong lên một nụ cười ấm áp, đưa tay xoa nhẹ đầu cả hai đứa: ``Khá lắm, Ryuuhou. Không uổng công hai tháng trước anh với Kaiho duyệt chi mua bộ cần câu này cho em ở Kawachi. Đúng là không phụ lòng tin của mọi người.''
+
+Ryuuhou hếch cằm đắc ý, khoanh tay cười tít mắt: ``Hừm, Onii thấy em đỉnh chưa! Em đã hứa là sẽ làm được mà lị!''
+
+Mio và Fubuki cũng chạy lại trầm trồ trước chú cá tươi roi rói của Ryuuhou, trong khi Miko dù mắt vẫn còn hoe đỏ vì tiếc cây súng cần câu hỏng nhưng cũng bước tới chúc mừng cô bé út. Tiếng cười nói rộn rã xua tan đi mọi mệt mỏi và những trò slapstick hỗn loạn ban nãy.
+
+Mặt trời bắt đầu chếch về phía tây, nhuộm một màu vàng cam ấm áp lên khắp không gian công viên. Mùa hạ cuối cùng cũng chính thức gõ cửa từng ngóc ngách của thành phố Điện tử.
+
+Dù buổi câu cá khép lại bằng màn gãy súng bi hài của Miko và đống cá ngừ kỳ lạ, nhưng đổi lại, nhà Hikawa và hội holomem đã có một ngày cuối tuần ngập tràn hạnh phúc. Ryuuhou cẩn thận lau sạch và thu gọn chiếc cần câu vào hộp, nét mặt rạng ngời sự thỏa mãn. Naomi một tay nắm chặt tay anh cả Kuon, tay kia xách chiếc xô nhỏ đựng chú cá quà tặng của chị Tư, ríu rít bước đi trên con đường rợp bóng cây để trở về ký túc xá, nơi chiếc bánh kem sinh nhật chín tuổi ngọt ngào đang chờ đón em.
+
+Một khởi đầu mới trọn vẹn, ấm áp của tình thân, xua tan vĩnh viễn mười ba thế kỷ lạnh lẽo của quá khứ.
+
+\il
+
+Tại một góc khuất tối tăm nằm sâu bên trong tầng hầm của một khu chung cư cũ kỹ, cách văn phòng \hll\ không xa\dots
+
+Một nhóm người bí ẩn đang âm thầm sinh hoạt và ẩn dật tại nơi này. Họ sống hoàn toàn trong bóng tối, giăng ra một hệ thống giám sát tinh vi để theo dõi từng đường đi nước bước, mọi hành tung cử động của tất cả các thành viên bên phía tòa nhà văn phòng.
+
+Trước dàn màn hình giám sát đa góc độ đang chớp nháy liên hồi, một cô nàng cá voi sát thủ tập sự đang dán chặt mắt vào ống kính quan sát từ xa chĩa thẳng về phía con đường dẫn ra công viên.
+
+Đột nhiên, đồng tử đỏ của cô nàng co rút lại. Trên màn hình hiển thị độ phân giải cao, bóng dáng một chàng trai trẻ mặc áo sơ-mi ca-rô đỏ-đen đơn giản, mái tóc đen hơi rối với tác phong xuề xòa quen thuộc đang mỉm cười xoa đầu hai cô bé đi bên cạnh.
+
+Cô nàng cá voi sát thủ khựng lại, dụi dụi hai mắt như không thể tin vào những gì mình vừa nhìn thấy. Cô khẽ lẩm bẩm trong cổ họng: ``Ủa khoan đã nào\dots\ Cái bóng lưng lười biếng với cái áo thun đỏ quen mắt đó\dots\ chẳng phải là Kuon-kun sao? Cái tên bạn thuở nhỏ từ hồi còn ở quê của mình đây mà\dots\ Không ngờ cậu ta thực sự đang làm Tổng quản lý bên văn phòng \hll\ thật đấy à?''
+
+Cô nàng khẽ nghiêng đầu, lia ống kính zoom cận cảnh vào hai bóng hình nhỏ nhắn đang ríu rít đi sát hai bên cậu: ``Ủa mà\dots\ hai đứa nhóc đi kè kè bên cạnh cậu ấy là ai thế nhỉ? Một nhỏ tomboy ngổ ngáo đeo kính râm xách cái hộp cần câu gấp gọn, với một bé con tóc ngắn mắt xanh lục bảo tròn xoe trông ngoan ngoãn ghê\dots\ Lạ thật đấy, hồi xưa chơi chung ở quê có bao giờ nghe Kuon-kun nhắc là cậu ấy có hai đứa em gái như thế này đâu ta? Nhìn chẳng giống nhau tí nào cả\dots''
+
+Đang mải mê chìm đắm trong sự ngỡ ngàng thì một giọng nói trẻ con nhưng đầy uy quyền vang lên đanh thép từ chiếc ghế xoay lớn giữa phòng, phá tan sự tập trung của cô: ``Này, Thực tập sinh! Cô lẩm bẩm cái gì một mình trước màn hình đấy hả?! Mọi thứ bên phía cô chuẩn bị đến đâu rồi?''
+
+Cô nàng cá voi sát thủ giật bắn mình, vội vàng bấm phím tắt giấu vội khung hình giám sát đi, quay phắt người lại giơ tay đáp bằng chất giọng lém lỉnh quen thuộc: ``Ái chà Sếp ơi! Em có lẩm bẩm gì đâu mà! Xong xuôi hết cả rồi thưa Sếp! Đảm bảo không trượt phát nào luôn!''
+
+Ngay lập tức, một thành viên khác với chiếc áo blouse trắng xộc xệch hào hứng chen vào, trên tay vung vẩy một ống nghiệm sủi bọt xanh đỏ kỳ lạ: ``Tôi cũng vừa mới pha chế xong mẻ thuốc bí truyền mới tinh ra lò đây này! Có ai muốn làm chuột bạch thử nghiệm cảm giác mạnh không nào?''
+
+Một giọng nói lạnh lùng khác lập tức hắt hủi: ``Thôi ngay đi nhé, gozaru. Tôi không có điên mà đem thân mình dính vào mấy cái thí nghiệm quái dị, phát nổ tung nhà từ cô đâu, gozaru!''
+
+``Ể\~{}?? Sao mọi người cứ phũ phàng với thành quả khoa học của tôi thế cơ chứ?''
+
+``Thôi nào, bớt cãi vã vô bổ lại đi hai người.''
+
+Một giọng nữ điềm tĩnh, sắc sảo khác cất lên, bước đến trước mặt người đứng đầu tổ chức và cúi đầu: ``Phó nhóm xin báo cáo tình hình. Sếp, đây là bản tóm tắt tình báo chi tiết về mọi hoạt động, lịch trình và cả các mối quan hệ gần đây của mục tiêu mà chúng ta đang nhắm tới.''
+
+Nhân vật được gọi là ``Sếp'' đón lấy tập tài liệu dày cộp từ tay Phó nhóm, lướt qua từng trang báo cáo tỉ mỉ rồi nhếch mép cười khẩy đầy đắc ý: ``Tốt lắm! Mọi dữ liệu cần thiết cho kế hoạch đều đã nằm gọn trong tay chúng ta rồi!''
+
+Kẻ đó đột ngột quăng mạnh xấp giấy tờ xuống chiếc bàn kim loại lạnh lẽo, đoạn ngước mặt lên với ánh mắt sắc lạnh, dõng dạc cất lời tuyên bố trước toàn bộ đồng bọn như thể đang trực tiếp thách thức mục tiêu ở ngay trước mặt:
+
+\begin{center}
+    \uline{``Bọn ta sẽ đến tìm ngươi sớm thôi, Hikawa Kuon à.''}
+\end{center}
 
 \end{document}

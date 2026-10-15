@@ -11,6 +11,7 @@ Reserved
 */*/ds
 toc.md 
 *.ltjruby
+*.pdf
 
 */*/*/Image
 */*/*.pdf

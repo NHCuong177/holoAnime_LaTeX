@@ -2,46 +2,402 @@
 \begin{document}
 %==========================================TIÊU ĐỀ TẬP========================================
 \begin{table}[h]
-  \begin{adjustwidth}{-1cm}{}
-    \begin{tabular}{>{\centering\arraybackslash}p{6cm}|>{\raggedright\arraybackslash}p{12cm}}
-      \multirow{5}{6cm}
-      % Cột bên trái: ÉPISODE và số tập
-      {\\[-40pt]
-        \centering
-        {\fontsize{20pt}{20pt}\selectfont{\outlinetext[1]{eptype}{white}{\flaregothic ÉPISODE}}\\[12pt]
-          {\fontsize{72pt}{72pt}\selectfont{\outlinetext[1]{epnum}{white}{\burbank 157}}}\\[6pt]       % use for normal/special episodes
-          % {\fontsize{36pt}{36pt}\selectfont{\outlinetext[1]{epnum}{white}{\burbank SÁU}}}\\[6pt]     % use for custom episodes
-          {\fontsize{20pt}{20pt}\selectfont{\outlinetext[1]{epnum}{white}{\cafeteria (12-8)}}}\color{black}}
-        \\[18pt]
-        % {\fontsize{14pt}{14pt}\selectfont{\outlinetext[1]{epattr}{white}{\flaregothic [I]}}}\\
-        {\fontsize{18pt}{18pt}\selectfont{\outlinetext[1]{epattr}{white}{\flaregothic ÉPISODE PERDU}}}\\
-        \color{black}
-      }
-       &
-      % Dòng thứ nhất: tên tập tiếng Nhật
-      {\fotskip\fontsize{18pt}{18pt}\selectfont \ruby{全}{ぜん}\ruby{部}{ぶ}お\ruby{前}{まえ}のせいだろ！}                  \\[6pt]
-      % Dòng thứ hai: tên tập tiếng Anh
-       & {\cafeteria\fontsize{18pt}{18pt}\selectfont All Your Fault!}              \\[4pt]
-      % Dòng thứ ba: tên tập tiếng Việt
-       & {\vnmsans\fontsize{18pt}{18pt}\selectfont Chiếc nơ nịnh nọt}             \\[8pt]
-      % Dòng thứ tư: Nhân vật xuất hiện
-       & {\caviar{\fontsize{14pt}{14pt}\selectfont Nhân vật: \emp{kuon2}}} \\
-      % Dòng thứ năm (nếu có): Nhân vật chỉ xuất hiện trong Omake
-       & {\abv Truyện phụ:} \emp{okayu}
-      \\[8pt]
-      % Dòng cuối cùng: Thời gian diễn ra của tập (thường sẽ là ngày phát hành)
-       & {\sen\fontsize{16pt}{16pt}\selectfont Mốc thời gian: 15/05/2022}  \\[18pt]
-    \end{tabular}\\[8pt]
-  \end{adjustwidth}
+    \begin{adjustwidth}{-1cm}{}
+        \begin{tabular}{>{\centering\arraybackslash}p{6cm}|>{\raggedright\arraybackslash}p{12cm}}
+            \multirow{5}{6cm}
+            % Cột bên trái: ÉPISODE và số tập
+            {\\[-40pt]
+                \centering
+                {\fontsize{20pt}{20pt}\selectfont{\outlinetext[1]{eptype}{white}{\flaregothic ÉPISODE}}\\[12pt]
+                    {\fontsize{72pt}{72pt}\selectfont{\outlinetext[1]{epnum}{white}{\burbank 157}}}\\[6pt]       % use for normal/special episodes
+                    % {\fontsize{36pt}{36pt}\selectfont{\outlinetext[1]{epnum}{white}{\burbank SÁU}}}\\[6pt]     % use for custom episodes
+                    {\fontsize{20pt}{20pt}\selectfont{\outlinetext[1]{epnum}{white}{\cafeteria (12-8)}}}\color{black}}
+                \\[18pt]
+                % {\fontsize{14pt}{14pt}\selectfont{\outlinetext[1]{epattr}{white}{\flaregothic [I]}}}\\
+                {\fontsize{18pt}{18pt}\selectfont{\outlinetext[1]{epattr}{white}{\flaregothic ÉPISODE PERDU}}}\\
+                \color{black}
+            }
+             &
+            % Dòng thứ nhất: tên tập tiếng Nhật
+            {\fotskip\fontsize{18pt}{18pt}\selectfont \ruby{全}{ぜん}\ruby{部}{ぶ}お\ruby{前}{まえ}のせいだろ！}                                                            \\[6pt]
+            % Dòng thứ hai: tên tập tiếng Anh
+             & {\cafeteria\fontsize{18pt}{18pt}\selectfont All Your Fault!}                                                                                  \\[4pt]
+            % Dòng thứ ba: tên tập tiếng Việt
+             & {\vnmsans\fontsize{18pt}{18pt}\selectfont Chiếc nơ nịnh nọt}                                                                                  \\[8pt]
+            % Dòng thứ tư: Nhân vật xuất hiện
+             & {\caviar{\fontsize{14pt}{14pt}\selectfont Nhân vật: \emp{kuon2} \emp{suzuno2} \emp{game} \emp{miko2} \emp{matsuri} \emp{flare2} \emp{polka}}} \\
+            % Dòng thứ năm (nếu có): Nhân vật chỉ xuất hiện trong Omake
+            %  & {\abv Truyện phụ:} \emp{okayu}
+            \\[8pt]
+            % Dòng cuối cùng: Thời gian diễn ra của tập (thường sẽ là ngày phát hành)
+             & {\sen\fontsize{16pt}{16pt}\selectfont Mốc thời gian: 15/05/2022}                                                                              \\[18pt]
+        \end{tabular}\\[8pt]
+    \end{adjustwidth}
 \end{table}
 %=========================================TRUYỆN CHÍNH========================================
 \color{black}
 
 \txtbx[2]{
-  {\color{vol} \uline{Tóm tắt:}} ???
+    {\color{vol} \uline{Tóm tắt:}} Matsuri và Polka tranh luận về độ ``bền'' của Flare. Polka liều lĩnh tông thẳng vào Flare để kiểm chứng, khiến cô nàng Yêu tinh nổi giận rút súng cao su bắn trả. Matsuri trốn trong chiếc đèn thần đồ chơi, còn Miko thì bị Polka ấn đầu vào vòi ấm. Chiếc nơ của Flare bất ngờ phình to vì ma thuật của Shion, phá hủy toàn bộ văn phòng \hll. Kuon nhanh trí dùng chip đảo ngược ma thuật để thu nhỏ chiếc nơ, rồi kích hoạt hệ thống tái tạo vật chất phục hồi tòa nhà trong tích tắc. Matsuri và Miko khai ra rằng cả hai chỉ muốn trốn stream và quậy phá. Mọi chuyện kết thúc êm đẹp, không ai phải đền bù tổn thất.
 }
+
+Matsuri ngồi trên chiếc ghế bành, đôi mắt đăm chiêu dán chặt vào màn hình chiếc laptop mà cô vừa mượn của cậu Tổng. Đứng ngay bên cạnh bàn làm việc, Suzuno lặng lẽ rót một tách trà ấm nóng vừa pha, hương thơm thanh nhẹ tỏa ra nghi ngút. Cô nhẹ nhàng đặt tách trà xuống trước mặt anh trai mình, rồi tò mò liếc nhìn biểu cảm nghiêm trọng đến lạ kỳ của tiền bối tóc vàng.
+
+\img{12-8a}
+
+Matsuri khoanh tay, chép miệng cất giọng trầm ngâm: ``Hmm\dots\ Flare đúng là khỏe thật đấy.''
+
+Từ chiếc đồng hồ đeo tay của Kuon, giọng nói điện tử sắc sảo của Game cất lên cắt ngang: ``Thế là còn bình thường chán đấy, Natsuiro-san. Nếu xét về thời lượng stream liên tục thì ở cái văn phòng này chẳng ai có thể đọ lại Inugami-san đâu.''
+
+Kuon vung tay gạt nhẹ lọn tóc mái xoăn cứng đầu, nhấp một ngụm trà nóng rồi lắc đầu: ``\dots Anh lại không nghĩ thế.''
+
+Suzuno nghiêng đầu mỉm cười dịu dàng, đôi mắt dị sắc lấp lánh sự tò mò: ``Em nghe các chị bên nhánh JP kể Korone-san đúng là `quái vật thể lực', nhưng sức bền trong các buổi phát sóng của Flare-san cũng ấn tượng lắm mà, Onii-sama?''
+
+Đằng sau lưng họ, Polka đã mò đến từ lúc nào không hay. Nàng Cáo sa mạc ghé sát mặt vào màn hình laptop, nhưng cả ba người đứng trước dường như hoàn toàn chẳng để ý đến sự hiện diện đầy mờ ám của cô.
+
+Matsuri vẫn quả quyết bảo vệ quan điểm của mình: ``Hai người cứ nhìn kênh của em ấy mà xem! Buổi phát sóng nào cũng kéo dài đến hàng tiếng đồng hồ chứ có ít đâu!''
+
+Để chứng minh cho lời mình nói, cô nhấn vào một video lưu trữ trên màn hình. Đúng như Matsuri nói, đó là một buổi trực tiếp kéo dài kỷ lục lên đến tận chín tiếng, bốn mươi phút và tám giây.
+
+\img{12-8b}
+
+Polka đứng sau trố mắt kinh ngạc trước con số khổng lồ ấy, trong khi Cậu Tổng và vị trợ lý A.I của cậu lại chẳng tỏ vẻ gì là ngạc nhiên. Kuon thản nhiên đáp: ``Thế vẫn là bình thường mà. Koro-chan stram lên tới tận nguyên một ngày giời có nghỉ đâu.''
+
+``Em lại thấy chị ấy `bền' theo kiểu khác cơ,'' giọng cô nàng Cáo Sa mạc thốt lên bất thình lình ngay sát rạt bên tai họ. ``Kiểu, chị ấy có thể chịu đựng được những cú va chạm mạnh mà không hề hấn gì ấy.''
+
+Sự xuất hiện đột ngột của cô nàng Chủ xiếc khiến cả ba người khẽ giật mình. Suzuno xoay người, khẽ chớp mắt ngơ ngác: ``Polka-san? Chị vào đây từ bao giờ thế ạ?''
+
+``Cái này thì\dots'' Kuon, Matsuri cùng giọng Game đồng loạt cau mày, hoàn toàn mù tịt trước lối suy nghĩ kỳ quặc của cô nàng cáo Sa mạc: ``\dots bọn chị/anh/tôi không chắc nha.''
+
+Vừa lúc đó, cánh cửa văn phòng bật mở. Flare bước vào với phong thái lịch sự thường ngày, tươi cười cất lời chào: ``Chào buổi sáng mọi người.''
+
+Cậu Tổng đưa tay lên chào lại một cách xuề xòa: ``Ừ. Sup.''
+
+``Em chào chị buổi sáng ạ, Flare-san!'' Suzuno vui vẻ cất giọng.
+
+Trong khi đó, Matsuri và Polka lại giương đôi mắt tròn xoe nhìn cô nàng Nửa yêu tinh đang tiến vào, ánh mắt chan chứa sự tò mò đến biến thái. Polka chống tay lên hông, thì xầm vẻ suy tư: ``Em muốn biết xem liệu giữa bê tông cốt thép với Flare-san\dots\ bên nào bền hơn.''
+
+\img{12-8c}
+
+Kuon rớt một giọt mồ hôi hột trên thái dương, méo mặt hỏi: ``Ờm\dots\ Để làm cái quái gì? Hai cái đó thì liên quan gì chứ?''
+
+Suzuno chớp chớp mắt, nghiêng đầu giải thích theo đúng tư duy khoa học của mình: ``Polka-san ơi, bê tông là cấu trúc vật liệu xây dựng chịu lực, làm sao có thể mang ra so sánh độ bền với cơ thể sinh học của Flare-san được ạ?''
+
+Game từ chiếc đồng hồ thở dài phán một câu xanh rờn: ``Tôi không nghĩ hai người hiểu từ `bền' theo cùng một định nghĩa đâu\dots''
+
+Thế nhưng Matsuri lại gật gù, xua tay đầy hào hứng: ``Được rồi, cứ làm đi!''
+
+``\dots Rõ ràng là không chịu nghe chúng tôi nói mà,'' vị Trợ lý ảo hoàn toàn bất lực.
+
+Chẳng cần chờ đến lần nhắc thứ hai, nàng Chủ xiếc lấy đà rồi lao thẳng tới như một đầu đạn, tông mạnh vào người cô nàng Nửa yêu tinh. Cú va chạm bất ngờ khiến Flare ngã nhào ra sàn nhà, suýt chút nữa là bị ``đo ván'' tại chỗ.
+
+\img{12-8d}
+
+Polka quỳ sấp xuống bên cạnh, giương đôi mắt kinh ngạc nhìn nạn nhân vừa bị mình đâm trúng, tay hiếu kỳ chạm nhẹ vào người cô: ``Mềm quá! Lại còn có thể cảm nhận được hơi ấm nữa nè!''
+
+Game gắt lên từ trên cổ tay Kuon: ``Đương nhiên là thế rồi! Cô ấy có phải là cái trụ bê tông cốt thép đâu!''
+
+Suzuno vội bước đến bên Flare, cúi xuống lay cô dậy: ``Flare-san, chị có sao không ạ?''
+
+Thế nhưng điều làm tất cả mọi người bất ngờ hơn cả là cô nàng vừa mới nằm sàn ấy liền bật dậy như một chiếc lò xo, khả năng hồi sức siêu tốc đến mức phi lý. Flare lập tức rút ngay một khẩu súng từ trong không trung ra, chĩa thẳng vào đầu cô hậu bối liều lĩnh: ``Em thì thấy ấm, còn chị thì thấy đau lắm đấy nhé!''
+
+Dù đó chỉ là một khẩu súng đồ chơi bắn ra mũi tên cao su có đầu hút dính, nhưng sát khí tỏa ra từ cô nàng Yêu tinh vàng lại hoàn toàn là thật. Cậu Tổng gãi đàu, ngán ngẩm cất lời: ``Ờ\dots\ em kiếm đâu ra cái món đồ chơi kia vậy, Flare-chan?''
+
+\img{12-8e}
+
+Thấy nàng Bán yêu tinh vẫn ổn, Suzuno thở phào nhẹ nhõm rồi quay sang nhắc Polka: ``Polka-san, chị va chạm mạnh như thế nguy hiểm lắm đấy! Flare-san cũng có thể bị thương mà!''
+
+Thấy họng súng vẫn lăm lăm chĩa vào đầu mình, nàng Cáo sa mạc vội vàng giơ hai tay lên phân bua: ``Ơ-Ơ từ từ chị ơi! Đâu phải mỗi mình em có tội đâu! Cả chị ấy cũng là đồng phạm nữa mà!''
+
+Polka chỉ tay về phía chiếc ghế bành nơi Matsuri vừa ngồi. Nhưng lạ thay\dots\ chẳng có ai ở đó cả.
+
+``Natsuiro-san sủi mất tiêu rồi. Ở trong cây đèn thần ấy,'' Polka ngơ ngác chớp mắt.
+
+``À-rế?''
+
+Kuon nhướng mày: ``Đèn thần nào?''
+
+Flare cũng nghiêng đầu thắc mắc: ``Sao? Chị ấy đâu rồi?''
+
+Ngay lập tức, Polka với tay chộp lấy một chiếc đèn thần bằng đồng kỳ lạ vừa xuất hiện ngay giữa hư không. Kuon, Flare và cả Suzuno đều đồng loạt nhướn mày nhìn vật thể vô lý đó.
+
+Flare thốt lên: ``Cái gì đây?''
+
+Kuon lắc đầu ngao cáo: ``\dots Lại còn có cả đèn thần thật kìa.''
+
+Polka dĩ nhiên không chịu thua, cô nàng hãnh diện chỉ ngón tay vào dòng chữ nhỏ được khắc trên thân đèn: ``Mọi người không thấy nó ghi rõ lù lù ở đây là `Cây đèn thần triệu hồi một thành viên \hll' ạ?''
+
+\img{12-8f}
+
+Cả bốn người kia đều hiện rõ sự nghi ngờ tột độ trên mặt.
+
+Cậu Tổng tặc lưỡi: ``\dots Thế này dễ là bịp lắm.''
+
+Vị trợ lý ảo bồi thêm một đòn: ``Cô định dùng cái trò rẻ tiền này để lừa trẻ con đấy à?''
+
+Cô em gái của Kaiho ngơ ngác: ``Em không nghĩ là một người trưởng thành lại có thể chui vừa vào chiếc đèn thần tí hon như thế đâu ạ\dots''
+
+Nàng tóc vàng khoanh tay, nhếch môi thách thức: ``Biểu diễn cho chị xem thử nào.''
+
+Polka nhẫn nhịn hít một hơi sâu. Cô ôm lấy chiếc đèn trên tay, vừa ra sức xoa xoa thân bình vừa đọc một câu thần chú ngẫu hứng đầy kỳ dị: ``Bô-lô-ba-ra-cu-đa\~{}{}\dots\ Ya-ma-ha-a-na-ca-la\~{}{}\dots\ Mau ra đây ra đây nào\~{}{}\dots''
+
+\img{12-8g}
+
+Tràng thần chú không giống ai làm Kuon và Flare đổ mồ hôi hột. Cậu Tổng ngán ngẩm: ``Em đang đọc thần chú hay là gọi vong vậy?''
+
+Suzuno chớp chớp đôi mắt dị sắc, ngơ ngác thì xầm: ``Đó đâu phải câu chú thuật hay công thức hóa học nào đâu nhỉ\dots''
+
+Cứ tưởng rằng nàng Cáo sa mạc lại bày trò lừa gạt họ như mọi khi, thì đột nhiên, từ cái vòi nhỏ tẹo của cây đèn thần, một làn khói bùng lên và Miko thu nhỏ chui tọt ra ngoài. ``Có ai gọi chị sao, ne?''
+
+\img{12-8h}
+
+Mỗi người trong phòng lập tức có một phản ứng hoàn toàn trái ngược nhau. Flare mắt sáng rỡ hình trái tim, chắp hai tay trước ngực: ``Ái chà, dễ thương ghê!''
+
+Suzuno khẽ reo lên đầy kinh ngạc: ``Ôi, Miko-san bước ra từ vòi ấm thật kìa!''
+
+Kuon ngơ ngác nhìn cô nàng Vu nữ tí hon: ``Miko-chan\dots\ Em đang làm cái trò gì trong cái bình đó vậy?''
+
+Polka thì cuống cuồng hoảng hốt: ``Bọn em đâu có gọi chị đâu, Miko-chi!''
+
+Cô em gái của nàng Tổng vừa định đưa tay che cho Miko thì trong cơn rối trí, nàng Chủ xiếc đã dùng ngón tay ấn mạnh vào đầu cô, cố nhồi cô nàng chui ngược lại vào trong cái vòi đèn. Miko bị ấn đau liền kêu lên oai oái: ``\textbf{Nè! Đau đấy!}''
+
+Game từ cổ tay cậu Tổng chứng kiến cảnh tượng hỗn loạn liền cất giọng chế giễu: ``Tôi không nghĩ là cô nên đi bắt nạt một đứa bé sơ sinh như cô ấy đâu.''
+
+Nàng Vu nữ tóc hồng lập tức vọng lại đầy tức giận: ``\textbf{Ông bảo Miko là em bé hả?! Mà này! Đây là đường một chiều đó, ne!}''
+
+Kuon nhướng mày khó hiểu: ``Sao lại là đường một chiều?''
+
+Miko nhăn nhó giải thích: ``Trong này có van chắn mất rồi, ne! Em chui ra rồi thì không chui vào lại được đâu!''
+
+Kuon bất lực thở dài, bất giác đưa tay lên day thái dương: ``Vòi ấm chứ có phải cây nóng lạnh đâu mà lắp van một chiều\dots\ Mà Pol-pol này, dừng lại đi. Em làm đau em ấy thật đấy.''
+
+Suzuno nhẹ nhàng chắn trước chiếc vòi ấm, vừa để Miko khỏi bị ấn thêm vừa can ngăn Polka: ``Đúng rồi đấy Polka-san, cẩn thận kẻo làm thương Miko-san mất.''
+
+Thế nhưng nàng Nửa yêu tinh Flare lại có cách giải quyết ``gắt'' hơn nhiều. Cô lại rút khẩu súng cao su lúc nãy ra, chĩa thẳng vào đầu Polka rồi gầm lên: ``\textbf{Đừng có làm đau chị ấy nữa!}''
+
+*PÓC!*
+
+Thêm một mũi tên cao su nữa bắn thẳng và dính chặt ngay giữa trán cô nàng Cáo sa mạc, khiến nạn nhân hoảng hốt giật mình, mắt trợn tròn kinh ngạc. Polka vội vàng giơ tay lên xoa xoa trán, méo mặt thốt lên: ``Chị lại làm gì nữa đấy, Flare-senpai!?''
+
+Game ở trên cổ tay Kuon hoàn toàn đầu hàng trước độ nhảm nhí của mọi người, cất giọng mỉa mai và bất lực đến đỉnh điểm: ``Các cô cũng lớn đùng cả rồi đấy! Đừng có cư xử như mấy đứa trẻ ranh mẫu giáo nữa có được không?''
+
+Kuon tặc lưỡi ngán ngẩm, khoanh tay đứng nhìn cô nàng Cáo sa mạc: ``Thế rốt cuộc là Mat-chan đang trốn ở đâu vậy?''
+
+Nghe Cậu Tổng hỏi thế, Polka hối hả chộp lấy chiếc đèn thần trên tay, lấy hết sức xoa lia lịa lên thân bình, giọng điệu chuyển sang khẩn thiết cầu xin: ``Trời ơi, chị ơi, chui ra đi mà!''
+
+Tức thì, chiếc nắp ấm bật tung lên. Cô nàng Cổ động viên Matsuri phiên bản tí hon bất ngờ ngoi đầu ra ngay trên nắp, vui vẻ nhảy vẫy tay reo lên: ``Cúc-cu!''
+
+\img{12-8i}
+
+Polka trông như thể vừa bắt được vàng, mắt sáng rực reo lên: ``\textbf{Đây rồi!}'' rồi cô vội vã giơ tay chỉ thẳng vào người vừa xuất hiện để buộc tội: ``Chị ấy đây này! Chính chị ấy là đồng lõa của em đấy!''
+
+Thế nhưng, nhìn một Matsuri tí hon đáng yêu đang tung tăng chơi đùa - chưa kể đến một Miko tí hon cũng đang nhây nhố ngoi đầu ra ở mép vòi ấm - Flare hoàn toàn chẳng mảy may tin những gì cô nàng Chủ xiếc nói.
+
+Kuon đứng bên cạnh bình luận một câu vô cùng phũ phàng: ``Em nói thế làm người ta nghĩ em là hề đó.''
+
+``Thì em là hề thật mà!'' Polka phát bực gắt lên.
+
+``Ý của Onii-sama là người ta nghĩ chị sẽ nói dối đấy ạ,'' Suzuno nhẹ nhàng giải thích.
+
+``\dots Hả?'' Polka trợn tròn mắt, ngơ ngác nhìn cô em gái của Cậu Tổng.'
+
+Nhận ra tình hình, Matsuri tí hon lập tức giở chiêu ``tán tỉnh'' cô nàng Nửa yêu tinh để đánh lạc hướng: ``Fu-tan ơi\~{} Ruy-băng của em trông to và xinh quá đi thôi. ♥''
+
+Polka và Game đồng loạt nhăn mặt tỏ vẻ khó chịu gắt lên: ``Chị/Cô làm cái trò gì thế?!''
+
+Trái ngược hoàn toàn với sự gắt gỏng của hai người kia, Flare lại đỏ bừng mặt, bẽn lẽn đáp lại với giọng điệu mềm xèo: ``C-Chị đừng có khen bất ngờ thế chứ\dots''
+
+Câu nói như hớp hồn ấy lại càng củng cố vững chắc niềm tin trong lòng của nàng Bán yêu tinh. Cô quay sang mọi người, quả quyết tuyên bố: ``Làm gì có chuyện một cô gái đáng yêu như thế này lại liên quan đến mấy cái vụ rắc rối này được chứ!''
+
+\img{12-8j}
+
+Cả Kuon, Game và Polka đồng loạt đổ một dòng mồ hôi hột to đùng trên trán trước sự ``nhẹ dạ cả tin'' của cô nàng Nửa yêu tinh.
+
+Cậu Tổng thì thầm: ``Em ấy đúng là dễ tính ghê\dots''
+
+Giọng nói từ chiếc đồng hồ thở dài: ``Ngây thơ như nai vàng là có thật\dots''
+
+Nàng Cáo sa mạc thì há hốc miệng câm nín: ``Thật là vãi chưởng\dots''
+
+Từ phía vòi đèn, Miko tí hon chen ngang trêu ghẹo: ``Cái lời khen ruy-băng ấy ghim hẳn vào đầu em ấy rồi, ne!''
+
+Flare vội vàng xua tay bao biện: ``Kh-Không phải vậy đâu mà!'' nhưng khuôn mặt cô vẫn hơi đỏ hỏn, tỏ vẻ đầy ngượng ngùng, tưởng rằng đó chỉ là một lời khen bâng quơ.
+
+Thế nhưng ngay lúc đó, một giọng nói xa lạ bỗng nhiên vang lên ngay trên đỉnh đầu Flare: ``Khi cái tôi của bạn lớn lên, thì tôi cũng vậy!''
+
+Chiếc ruy-băng đỏ trên tóc của nàng tóc vàng đột ngột phát sáng rồi phình to ra theo đúng nghĩa đen trước sự bàng hoàng của tất cả mọi người. Kuon trợn tròn mắt cảm thán: ``Đúng nghĩa đen luôn kìa!''
+
+\img{12-8k}
+
+Chiếc ruy-băng hóa to với tốc độ phi mã, kích thước khổng lồ và sức nặng bất ngờ của nó lập tức đè bẹp dí cả chủ nhân Flare lẫn cô nàng Polka đang đứng cạnh. Cú va chạm mạnh đến mức làm văng luôn cả mũi tên cao su đang cắm trên trán Polka. Kuon bằng một phản xạ nhạy bén nào đó đã kịp lùi lại thoát nạn trong tíc tắc, trong khi Suzuno cũng nhanh chân né sang một bên.
+
+Flare bị dải vải khổng lồ đè ngang người, nhăn nhó cất tiếng: ``Em\dots\ em không nghĩ là cái ruy-băng của em sẽ thành ra như thế này\dots''
+
+Kuon đứng bên cạnh méo mặt nhìn vật thể quái dị đang trương phềnh: ``\dots Đến anh cũng không ngờ tới đấy. Em mua nó ở đâu vậy?''
+
+Cô nàng cố nhớ lại: ``Làm sao mà em nhớ nổi\dots\ Shion-chan cho em cái này mà\dots''
+
+Giọng Game lập tức gắt lên từ cổ tay Kuon: ``\dots Từ cái tên phù thủy oắt con đó sao?!''
+
+Cô nàng mắt hai màu nhìn dải vải khổng lồ đang tiếp tục phình ra, đôi mắt dị sắc mở lớn: ``Chẳng trách! Vải vóc bình thường không thể tự tăng kích thước như thế này được\dots\ Hẳn là đã có ma thuật can thiệp rồi ạ!''
+
+``Và cái ma thuật đó chắc chắn là do Shion-chan tạo ra là cái chắc,'' cậu Tổng nghiêm mặt phán đoán. ``Chốc nữa phải hỏi tội em ấy mới được.''
+
+Đột nhiên, chiếc ruy-băng khổng lồ cất giọng đe dọa đầy sặc mùi tống tiền: ``Trả khoản tiền dịch vụ hàng tháng đi, nếu không dải ruy-băng này sẽ còn băng ra hẳn biên giới đấy\~{}!''
+
+Flare ngước đôi mắt ngập tràn sự mỉa mai lên đáp trả: ``Nằm mơ đi!''
+
+Bên dưới dải vải nặng trịch, Polka cố sức ngọ nguậy, giơ tay quơ quào kêu cứu khẩn thiết: ``Kuon-senpai! Flare-senpai! Hai người làm gì đi chứ!''
+
+Cậu Tổng đành thở dài bước lại gần, dùng cả hai tay cố gắng nhấc chiếc ruy-băng lên nhưng hoàn toàn vô hiệu: ``Sao tự dưng cái này nặng quá vậy?! Tưởng bên trong toàn bông thôi chứ!''
+
+Trong khi đó, chính chủ nhân của nó lại lo lắng hướng mắt sang chỗ khác: ``Khoan đã, vậy hai người tí hon kia thì sao đây?''
+
+Mọi người ngước nhìn lên đỉnh của chiếc ruy-băng khổng lồ. Ở trên đó, Matsuri và Miko - giờ đã hóa thành kích thước ban đầu - đang thích thú nhảy chần chần, coi bề mặt chiếc ruy-băng êm ái như một chiếc bạt nhún nhún nhảy đầy vui vẻ chẳng khác nào hai đứa trẻ con.
+
+\img{12-8l}
+
+Kuon chớp mắt quan sát: ``Hai người đó có vẻ\dots\ an toàn. Trông họ chơi vui lắm.''
+
+Matsuri cười khoái chí: ``Mềm quá đi mất\~{}!''
+
+Miko reo hò: ``Nye he he! Vui quá, ne!''
+
+Game gắt gỏng: ``\textbf{Lũ ăn hại! Xuống đi!!}''
+
+Suzuno ngước lên, sốt ruột gọi với theo: ``Matsuri-san, Miko-san! Đừng nhảy nữa, mau xuống đi ạ!'' Nhưng hai cô nàng tí hon vẫn mải mê nô đùa, chẳng nghe thấy lời em.
+
+Flare mỉm cười nhẹ nhõm: ``Nếu mà hai người đó đang vui vẻ thế thì chắc họ sẽ ổn thôi.''
+
+Polka hốt hoảng tột độ gào lên: ``Không đâu má trẻ ơi! Nhìn lại hoàn cảnh hiện tại đi!''
+
+Vị Trợ lý ảo cằn nhằn: ``Cô mềm lòng quá đấy!''
+
+Kuon chỉnh lại tay áo, từ tốn cất lời: ``\dots Chắc tôi cũng phải leo lên trên đó thôi.''
+
+Giọng nói trong chiếc đồng hòo giật mình: ``Không phải cả cậu cũng định hùa theo trò điên rùng này đấy chứ?!''
+
+Kuon nghiêm mặt đáp: ``Không phải thế, mà là vì\dots''
+
+Cậu chưa kịp giải thích xong thì dải ruy-băng quỷ quái vì không chịu nhận tiền dịch vụ nên lại tiếp tục phồng to ra. Nó trương phềnh với tốc độ chóng mặt, va chạm rầm rầm vào trần nhà và các bức tường xung quanh.
+
+Polka hét lên thất thanh: ``\txtbx{Eeek! Dừng lại đi! Cái phòng vỡ mất!}''
+
+Game bàng hoàng nhận ra điều kinh khủng: ``Này, đừng nói với tôi là\dots?!''
+
+Kuon điềm tĩnh gật đầu gút lại một câu: ``\dots Đúng rồi. Nó đấy.''
+
+*RẮC! RẦM RẦM RẦM!*
+
+Chiếc ruy-băng giãn nở đến mức cực đại, đập tan nát và đánh sập toàn bộ kết cấu tòa nhà văn phòng của \hll. Đất đá, gạch vụn và trần nhà đổ sụp xuống trong tiếng nổ chói tai, khói bụi mờ mịt bốc lên nghi ngút bao phủ lấy toàn bộ khu vực\dots
 
 %==========================================TRUYỆN PHỤ=========================================
 \omk
+
+Dưới đống tro tàn của một nơi từng là tòa nhà văn phòng \hll\ nguy nga, không khí lắng xuống trong tiếng đổ vỡ rì rầm. Polka đang bị một mảng tường đè thẳng lên người, gương mặt tái mét đi vì kiệt sức.
+
+``\dots Này! Pol-pol! Này!'' Một giọng nói dồn dập cất lên, nghe chừng là của một người con trai.
+
+``Em ổn chứ, Polka?'' Một giọng nói khác vang lên ngay sau đó, lần này là của một người con gái. Cô gái ấy đang cố hết sức dùng tay nâng mảng bê tông để lôi Polka ra khỏi đống đất đá, nhưng mảng tường quá nặng nên chưa thành công.
+
+Suzuno cũng vừa thoát khỏi đống đổ nát, vội quỳ xuống cạnh Polka. Em không thể nhấc nổi mảng tường, đành cẩn thận quan sát cô và trấn an: ``Polka-san, cố lên ạ! Bọn em sẽ đưa chị ra ngay đây!''
+
+``Ai\dots\ đó\dots?''
+
+Nàng Cáo sa mạc lim dim đôi mắt vài lần. Qua làn khói bụi, tầm nhìn của cô dần rõ hơn một chút, và cô nhận ra những gương mặt vô cùng thân quen.
+
+``Flare\dots\ Kuon-senpai\dots\ Suzuno-chan\dots''
+
+Nhìn thấy cô vẫn còn cử động, Kuon và Flare đồng loạt thở dài nhẹ nhõm. Suzuno cũng khẽ thở phào, nhưng vẫn chăm chú quan sát xem Polka có bị thương ở đâu không.
+
+Cô em gái của Kaiho đỡ lấy vai cô: ``May quá rồi\dots\ Chị vẫn ổn\dots''
+
+Game từ chiếc đồng hồ đeo tay cất giọng cằn nhằn: ``Tôi ngạc nhiên là cô vẫn còn tỉnh táo sau cú sập vừa rồi đấy.''
+
+Flare tiếp tục gồng mình kéo: ``Nào, cố lên, để chị lôi em ra\dots\ Hây\dots\ Nặng quá\dots''
+
+Nàng Cáo sa mạc gượng cười khì, thốt lên một câu chân thành: ``Flare à\dots\ Chị thực sự đúng là cứng cáp thật đấy.''
+
+Lập tức, nàng Yêu tinh vàng đứng bất động tại chỗ. Cô ngẩn ngơ ra trước lời khen bất ngờ ấy, hai má đỏ hây hây tỏ vẻ vô cùng khoái chí.
+
+\img{12-8m}
+
+Game cất giọng cạn lời: ``Này, này, này\dots\ Cô thực sự cảm thấy tự hào về cái sự `cứng cáp' đó sao?''
+
+Kuon lắc đầu ngao cáo: ``Giờ không phải lúc để cưa cẩm em ấy đâu, Pol-pol ạ\dots''
+
+Nhìn ra đằng xa, dải ruy-băng đỏ quỷ quái vẫn đang không ngừng phồng to và vươn dài ra. Polka yếu ớt hỏi: ``Anh không định làm gì với cái ruy-băng của chị ấy sao\dots\ Kuon-senpai?''
+
+``À, cái này thì dễ thôi,'' cậu Tổng thản nhiên đáp, rồi giơ ngón tay lên búng một cái *TÁCH!*.
+
+Ngay lập tức, dải ruy-băng khổng lồ ở phía xa dừng khựng lại. Nó rên lên một tiếng tỏ vẻ cực kỳ đau đớn: ``C-Cậu vừa làm cái gì vậy?!''
+
+Kuon nhếch môi đáp lại: ``Biến lại thành như cũ chứ sao. Nào, ngoan ngoãn mà trở về kích cỡ ban đầu đi.''
+
+Vừa dứt lời, dải ruy-băng khổng lồ liền xẹp lép và hóa nhỏ trở lại với tốc độ phi mã, đi kèm với tiếng hét thất thanh đầy tuyệt vọng: ``\textbf{K-Không! Không thể như thế được--!}''
+
+Tiếng hét cứ thế nhỏ dần, nhỏ dần, rồi lịm hẳn. Chiếc ruy-băng quay trở về đúng kích cỡ ban đầu và rơi tõm xuống đất. Cậu Tổng thong thả bước lại gần nhặt nó lên rồi đưa lại cho Flare.
+
+``Của em đây.''
+
+Nàng Yêu tinh vàng đón lấy với đôi mắt sáng rỡ: ``Cảm ơn anh nhiều nha.''
+
+Game thở dài một hơi đầy ngán ngẩm: ``Đúng là phiền toái thật.''
+
+Polka trợn tròn mắt, kinh ngạc nhìn chiếc nơ nhỏ gọn trên tay Flare rồi ngước lên hỏi Kuon: ``A-Anh làm cách nào mà hay vậy?!''
+
+Kuon từ tốn giải thích: ``Dễ lắm. Lúc anh bảo `chắc tôi cũng phải leo lên trên đó' là để tranh thủ tiếp cận nó đấy. Nhận ra cái ruy-băng này phản ứng với lời khen và cái tôi của Flare-chan, anh với Game đã nhanh trí dùng lại đúng cái chiêu xu nịnh của Mat-chan ban nãy để đối phó với nó.''
+
+Game bồi thêm vào: ``Chính xác. Cô ấy khen ngợi cái ruy-băng làm nó bị phản tác dụng trong một khoảnh khắc ngắn. Thay vì phồng to ra tiếp, sự bối rối làm cấu trúc ma thuật của nó bị co cụm lại. Ngay giây phút nó mất cảnh giác, Kuon-user đã nhanh tay gắn một con chip đảo ngược ma thuật lên thân nơ.''
+
+Kuon gật đầu tiếp lời: ``Chưa dừng lại ở đó đâu. Để đề phòng nó lại giở trò lần nữa, anh đã áp thêm một con chip vô hiệu hóa năng lượng chuyên dụng. Giờ thì mọi chú thuật phù thủy của Shion-chan trên cái nơ này đã bị phong ấn hoàn toàn rồi, nó chẳng khác nào một món đồ chơi nhựa vô tri vô giác cả.''
+
+Nàng Chủ xiếc trố mắt ra ngộ ra mọi chuyện: ``Vậy là anh nói lên trên kia là vì thế à\dots''
+
+Cậu Tổng thấy cô nàng đã đoán ra toàn bộ kế hoạch nên chỉ mỉm cười, không cần phải giải thích gì thêm. Sau đó, họ không mất quá nhiều sức để nhấc mảng tường còn lại, đưa Polka thoát khỏi đống đổ nát một cách an toàn. Suzuno lập tức đỡ lấy nàng Cáo sa mạc, phủi bụi trên vai cô rồi lo lắng hỏi: ``Chị có bị đau chỗ nào không ạ?''
+
+Tất nhiên, trái ngược với sự nhẹ nhõm của ba người lớn là sự chán nản ra mặt của hai cô nàng còn lại.
+
+Matsuri ngồi bệt xuống một viên gạch vỡ, chống cằm thở dài: ``Chán òm à\dots''
+
+Miko ngồi cạnh bên bĩu môi đáp lời: ``Giờ ta còn không có cái bạt nhún nào để chơi nữa ne\dots''
+
+Kuon khoanh tay bước lại gần, cúi xuống nhìn hai cô nàng bằng ánh mắt đầy nghi vấn: ``Anh còn chưa hỏi vì sao hai đứa lại trốn trong cái đèn thần kia đấy nhé.''
+
+Dưới sự tra hỏi của Cậu Tổng, sự thật mới được hé lộ. Hóa ra cây đèn thần bằng đồng đó hoàn toàn là đồ giả mua ở cửa hàng đồ chơi. Nàng Vu nữ Miko vì muốn bày trò quậy phá nên đã dùng linh lực phép thuật của mình để tự hóa nhỏ bản thân. Còn Matsuri, vì muốn trốn tội ``sủi stream'' và bày trò phá đám ban nãy, đã nịnh nọt Miko dùng ma pháp hóa nhỏ luôn cả mình rồi chui tọt vào bên trong chiếc bình làm bộ dạng như thần đèn.
+
+Vừa thổi bay đi mấy cục bụi cuối cùng bám trên áo, Polka quay đầu nhìn quanh quẩn đống tro tàn, mảnh cửa sổ vỡ và những khúc gỗ đổ nát nằm ngổn ngang khắp mặt sàn. Gương mặt nàng Cáo sa mạc chợt méo xệch đi, giọng điệu lo lắng như sắp khóc đến nơi: ``Mà này\dots\ cái văn phòng của chúng ta bị đập bể tan nát thế này, tiền đâu mà đền bù cho công ty bây giờ?! Tiền thuê mặt bằng mỗi tháng đã đắt đỏ lắm rồi, lần này còn phải bồi thường thêm phí sửa chữa, em sợ là cả tháng này bọn mình phải ăn mì tôm sống qua ngày mất!''
+
+Suzuno cũng vừa dọn sạch bụi bặm trên mái tóc, nghe Polka nói vậy thì đôi mắt dị sắc cũng lấp lánh sự lo lắng không kém. Em bước lại gần đứng cạnh nàng Chủ xiếc, nhẹ nhàng vuốt ve vai cô để an ủi, giọng nói cũng có chút bồn chồn: ``Đúng đó ạ\dots\ Em nghe quản lý tòa nhà nói lần trước có một văn phòng bên trên bị làm hỏng mảng tường, còn phải đền cả man. Không biết lần này bọn mình phải tốn bao nhiêu tiền nữa\dots''
+
+Cả hai cô gái cứ thế đứng nhìn nhau, mặt mày đều tiu nghỉu như hai quả cà chua bị dập nát. Đúng lúc không khí đang trở nên ảm đạm, Kuon cậu Tổng mới từ từ lên tiếng, phá tan cái không khí nặng nề ấy: ``Vậy chắc mấy đứa quên mất cái khả năng đặc biệt của anh rồi nhỉ?''
+
+Mọi người đều đồng loạt ngước nhìn cậu. Cậu Tổng Kuon chỉ đứng đó, thản nhiên mỉm cười với ánh mắt đầy tự tin. Không nói thêm lời nào, cậu đưa một bàn tay ra trước khoảng không trung, rồi làm một động tác búng tay *TÁCH!* một lần nữa. Ngay lập tức, một luồng ánh sáng màu xanh lam dịu nhẹ bùng phát từ lòng bàn tay cậu, lan nhanh ra như một làn sóng và bao phủ lấy toàn bộ khu vực đổ nát.
+
+Điều kỳ diệu xảy ra ngay sau đó. Từng mảnh đất đá, từng tấm bê tông vỡ, những thanh sắt thép cong queo tự động bay ngược lên trên, ghép nối với nhau một cách hoàn chỉnh từng mảnh một, y hệt như một thước phim đang được quay ngược lại. Những bức tường đổ sập đứng dậy từ từ, cửa sổ vỡ tự động lành lặn trở lại, trần nhà bị sụp cũng từ từ khép kín, mọi thứ dần dần trở về đúng vị trí ban đầu.
+
+Chỉ trong nháy mắt, tòa nhà văn phòng \hll\ đã trở lại nguyên vẹn, sạch sẽ như thể chưa từng có cuộc sụp đổ nào xảy ra. Không một vết nứt, không một mảnh vụn nào còn sót lại, giúp tất cả bọn họ hoàn toàn không phải tốn dù chỉ một đồng xu để đền bù tổn thất.
+
+Cảnh tượng ma thuật đó khiến cả ba người đứng nhìn đều há hốc miệng kinh ngạc. Flare là người đầu tiên lấy lại được giọng nói, cô nàng Yêu tinh vàng vỗ tay reo lên vui sướng, đôi mắt sáng rực như có vì sao lấp lánh trong đó: ``Waa! Quá tuyệt vời luôn Kuon-senpai! Anh làm thế nào mà có thể sửa chữa toàn bộ tòa nhà chỉ trong một cái búng tay vậy?'' Em còn chạy lại vòng tay ôm chặt lấy cánh tay cậu Tổng, lắc lư sung sướng như một đứa trẻ được nhận quà.
+
+Polka thì còn đang đứng chết trân, tay chỉ vào tòa nhà vừa mới lành lặn, miệng lắp bắp không nói nên lời: ``Cái\dots\ cái gì vừa xảy ra vậy? Không lẽ đó là năng lực siêu nhiên của anh thật sao? Trước đây em nghe nói anh có khả năng đặc biệt nhưng không ngờ nó lại mạnh đến mức này!'' Nàng Cáo sa mạc chạy lại vòng quanh tòa nhà, chạm tay vào bức tường mới vừa được ghép lại, cảm nhận sự chắc chắn của nó mà vẫn không thể tin vào mắt mình.
+
+Suzuno cũng khẽ đặt tay lên bức tường phẳng lì, đôi mắt mở lớn ngạc nhiên rồi dần dần nở ra nụ cười nhẹ nhõm. Em thở phào một hơi dài, giọng nói đầy vui mừng: ``May quá rồi\dots\ Vậy là chúng ta không phải lo lắng về tiền đền bù nữa. Em đúng là không ngờ Onii-sama lại có thể làm được điều phi thường đến vậy. Sức mạnh của anh thật đáng kinh ngạc ạ!''
+
+Game từ chiếc đồng hồ trên cổ tay Kuon cũng thốt lên một tiếng cảm thán, dù vẫn cố giữ vẻ mặt lạnh lùng: ``Hmph, đương nhiên rồi. Kuon-user đã chuẩn bị trước mọi tình huống xấu nhất có thể xảy ra từ lâu rồi. Cái thuật ngữ ma thuật này đúng là hơi khó nghe, nhưng phải nói là hiệu quả thật sự.''
+
+Kuon chỉ cười lớn, vỗ vỗ vào vai Flare đang ôm chặt cánh tay mình: ``Được rồi được rồi, đừng có khen nữa. May là anh đã lắp đặt hệ thống tái tạo vật chất từ trước, nếu không thì lần này chúng ta đúng là phải bán của cải để đền bù thật.''
+
+Cậu ngước nhìn quanh văn phòng vừa mới được phục hồi, rồi nói với mọi người: ``Thôi được rồi, mọi sự cố cũng đã giải quyết hết. Bây giờ chúng ta quay lại với công việc thôi nào, còn nhiều stream đang chờ đợi mấy đứa đấy.''
+
+Matsuri và Miko từ nãy giờ đứng nhìn cũng reo lên vui vẻ, Matsuri chạy lại nhảy cẫng lên: ``Hay quá! Vậy là chúng ta không bị trừ lương phải không? Em còn lo lắng suốt nãy giờ!'' Miko cũng gật đầu lia lịa: ``Đúng đó ne! Lần sau chúng ta lại có thể tiếp tục chơi đùa trong văn phòng nữa!''
+
+Câu nói của hai cô nàng khiến Kuon và Game đồng loạt rơi một giọt mồ hôi hột, vội vàng ngăn chặn ngay ý định đó. ``Không có lần sau đâu! Lần này là anh giải quyết được, lần sau thì\dots\ chưa chắc.''
+
+Nàng Chủ xiếc quay sang nhìn Flare, nháy mắt tinh nghịch: ``Mà này Flare, sau này chị đừng để Shion-chan tặng gì nữa nghe không? Lần này là cái ruy-băng ma thuật, lần sau không biết là cái quái gì nữa đâu!''
+
+Flare nghe vậy thì má bỗng đỏ bừng, vội vàng xua tay phân bua: ``K-Không phải lỗi của chị mà! Ai mà biết được cái ruy-băng đó lại có ma thuật đâu\dots''
+
+Cả văn phòng lại tràn ngập tiếng cười nói vui vẻ, mọi lo lắng vừa rồi đều tan biến đi. Cuộc phiêu lưu hỗn loạn trong ngày hôm nay cuối cùng cũng kết thúc một cách êm đẹp, và những câu chuyện thú vị khác tại văn phòng \hll\ sẽ vẫn tiếp tục diễn ra vào những ngày tiếp theo.
 
 \end{document}
