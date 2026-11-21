@@ -7,10 +7,10 @@
 \usepackage{gradient-text}
 \usepackage{pdfrender}
 
-\definecolor{vol}{HTML}{efb104}
-\definecolor{eptype}{HTML}{a17803}      
-\definecolor{epnum}{HTML}{fcbd0c}       
-\definecolor{epattr}{HTML}{fee5a0}
+\definecolor{vol}{HTML}{19AB85}
+\definecolor{eptype}{HTML}{0E624C}      
+\definecolor{epnum}{HTML}{1ED0A1}       
+\definecolor{epattr}{HTML}{6CEAC9}
 
 \definecolor{song}{HTML}{7030a0}
 \definecolor{ai}{RGB}{91,155,213}
@@ -82,32 +82,34 @@
 % \renewcommand{\rubysep}{1pt}
 
 % Phông cho tên-số các tập
-\newfontface\flaregothic[Path=../../../../Fontface/]{flaregothicbold.ttf}
-\newfontface\cafeteria[Path=../../../../Fontface/]{NHC-Cafeteria-Bold.ttf}
-\newfontface\fotskip[Path=../../../../Fontface/]{FOT-Skip Std B.otf}
-\newfontface\vnmsans[Path=../../../../Fontface/]{VNM Sans Std.otf}
-\newfontface\vnmdisp[Path=../../../../Fontface/]{VNM Sans Display Bold.otf}
-\newfontface\sen[Path=../../../../Fontface/]{NHC-SenBold.ttf}
-\newfontface\continuum[Path=../../../../Fontface/]{contb.ttf}
-\newfontface\japfont[Path=../../../../Fontface/]{msgothic.ttc}
-\newfontface\jiga[Path=../../../../Fontface/]{Jigmo.ttf}
-\newfontface\jigb[Path=../../../../Fontface/]{Jigmo2.ttf}
-\newfontface\jigc[Path=../../../../Fontface/]{Jigmo3.ttf}
-\newfontface\burbank[Path=../../../../Fontface/]{NHC-Burbank-Bold.ttf}
-\newfontface\houseterror[Path=../../../../Fontface/]{NHC-HouseofTerror.ttf}
-\newfontface\dawnland[Path=../../../../Fontface/]{Dawnland.Lost.otf}
+\newfontface\flaregothic[Path=../../../Fontface/]{flaregothicbold.ttf}
+\newfontface\cafeteria[Path=../../../Fontface/]{NHC-Cafeteria-Bold.ttf}
+\newfontface\fotskip[Path=../../../Fontface/]{FOT-Skip Std B.otf}
+\newfontface\vnmsans[Path=../../../Fontface/]{VNM Sans Std.otf}
+\newfontface\vnmdisp[Path=../../../Fontface/]{VNM Sans Display Bold.otf}
+\newfontface\sen[Path=../../../Fontface/]{NHC-SenBold.ttf}
+\newfontface\continuum[Path=../../../Fontface/]{contb.ttf}
+\newfontface\japfont[Path=../../../Fontface/]{msgothic.ttc}
+\newfontface\jiga[Path=../../../Fontface/]{Jigmo.ttf}
+\newfontface\jigb[Path=../../../Fontface/]{Jigmo2.ttf}
+\newfontface\jigc[Path=../../../Fontface/]{Jigmo3.ttf}
+\newfontface\burbank[Path=../../../Fontface/]{NHC-Burbank-Bold.ttf}
+\newfontface\houseterror[Path=../../../Fontface/]{NHC-HouseofTerror.ttf}
+\newfontface\dawnland[Path=../../../Fontface/]{Dawnland.Lost.otf}
+\newfontface\freshbot[Path=../../../Fontface/]{FRESHBOT.TTF}
+\newfontface{\ravie}[Path=../../../Fontface/]{RAVIE.TTF}
 
 % Phông cho tiêu đề cuốn truyện và đầu-chân trang
-\newfontface\frank[Path=../../../../Fontface/]{Franklin Gothic Heavy Regular.ttf}
-\newfontface\caviar[Path=../../../../Fontface/]{VNF-Cariar Dreams Regular.ttf}
-\newfontface\hbrk[Path=../../../../Fontface/]{HouseBrokenRough.ttf}
-\newfontface\ab[Path=../../../../Fontface/]{angrybirds-regular.ttf}
-\newfontface\abv[Path=../../../../Fontface/]{0259-LNTH-angrybirds-regular.ttf}
-\newfontface\device[Path=../../../../Fontface/]{Device Regular.ttf}
-\newfontface\harosbaelz[Path=../../../../Fontface/]{BAEFONT_NORMAL-REGULAR_V1.TTF}
-\newfontface\brian[Path=../../../../Fontface/]{Brianne_s_hand.ttf}
-\newfontface\nexa[Path=../../../../Fontface/]{Nexa-Heavy.ttf}
-\newfontface\digi[Path=../../../../Fontface/]{DS-DIGI.TTF}
+\newfontface\frank[Path=../../../Fontface/]{Franklin Gothic Heavy Regular.ttf}
+\newfontface\caviar[Path=../../../Fontface/]{VNF-Cariar Dreams Regular.ttf}
+\newfontface\hbrk[Path=../../../Fontface/]{HouseBrokenRough.ttf}
+\newfontface\ab[Path=../../../Fontface/]{angrybirds-regular.ttf}
+\newfontface\abv[Path=../../../Fontface/]{0259-LNTH-angrybirds-regular.ttf}
+\newfontface\device[Path=../../../Fontface/]{Device Regular.ttf}
+\newfontface\harosbaelz[Path=../../../Fontface/]{BAEFONT_NORMAL-REGULAR_V1.TTF}
+\newfontface\brian[Path=../../../Fontface/]{Brianne_s_hand.ttf}
+\newfontface\nexa[Path=../../../Fontface/]{Nexa-Heavy.ttf}
+\newfontface\digi[Path=../../../Fontface/]{DS-DIGI.TTF}
 
 % Đặt font chính và font tiếng Nhật
 \setmainfont{Times New Roman}
@@ -154,14 +156,14 @@
 \newcommand{\img}[2][12.5cm]{%
     \begin{figure}[H]
         \centering
-        \includegraphics[width=#1]{../../../../Image/Book11/#2.png}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
+        \includegraphics[width=#1]{../../../Image/Misc/#2.png}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
     \end{figure}
 }
 
 \newcommand{\imgc}[2][12.5cm]{%
     \begin{figure}[H]
         \centering
-        \includegraphics[width=#1]{../../../../Image/Book11/#2.jpg}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
+        \includegraphics[width=#1]{../../../Image/Misc/#2.jpg}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
     \end{figure}
 }
 
@@ -169,7 +171,7 @@
     \begin{figure}[H]
         \centering
         \animategraphics[autoplay,loop,width=#1]
-        {30}{../../../../Image/Book11/#2/#2.}{#3}{#4}                                      % Chỉ cần chèn tên tệp, lấy từ khung #3 tới #4
+        {30}{../../../Image/Misc/#2/#2.}{#3}{#4}                                      % Chỉ cần chèn tên tệp, lấy từ khung #3 tới #4
     \end{figure}
 }
 
@@ -178,22 +180,22 @@
 }
     
 \newcommand{\vid}[3][12.5cm]{%
-  \embedvideo{\includegraphics[width=#1]{../../../../Image/Book11/#2.png}}{#3.mp4}
+  \embedvideo{\includegraphics[width=#1]{../../../Image/Misc/#2.png}}{#3.mp4}
 }
 
 \newcommand{\emp}[1]{%
-    \includegraphics[width=2cm]{../../../../Character/#1.png}
+    \includegraphics[width=2cm]{../../../Character/#1.png}
 }
 
 \newcommand{\model}[4]{%
     \begin{wrapfigure}[#1]{#2}{#3}
-    \includegraphics[height=15cm]{../../../../Character/#4_model.png} % Lần lượt: [# khung][hướng căn][kích thước][tên]
+    \includegraphics[height=15cm]{../../../Character/#4_model.png} % Lần lượt: [# khung][hướng căn][kích thước][tên]
 \end{wrapfigure}
 }
 
 \newcommand{\modelc}[4]{%
     \begin{wrapfigure}[#1]{#2}{#3}
-    \includegraphics[height=15cm]{../../../../Character/#4_model.jpg} % Lần lượt: [# khung][hướng căn][kích thước][tên]
+    \includegraphics[height=15cm]{../../../Character/#4_model.jpg} % Lần lượt: [# khung][hướng căn][kích thước][tên]
 \end{wrapfigure}
 }
 
@@ -320,25 +322,25 @@
 % Tên cuốn truyện
 \fancyhead[LO]
 {\device\fontsize{18pt}{18pt}\selectfont
-{\outlinetext[1]{vol}{white}{{The Hikawa's Nuclear Winter}}}
+{\outlinetext[1]{vol}{white}{{Coastal Calamity}}}
 \\[-18pt]}                      
 \fancyhead[RE]
 {\device\fontsize{18pt}{18pt}\selectfont
-{\outlinetext[1]{vol}{white}{{L'hiver nucléaire dés Hikawa}}}
+{\outlinetext[1]{vol}{white}{{Calamité côtière}}}
 \\[-18pt]}                     
 % Số chương
 \fancyhead[RO]
 {\sen\fontsize{18pt}{18pt}\selectfont
-{\outlinetext[1]{vol}{white}{eleven} 
+{\outlinetext[1]{vol}{white}{beach} 
 {\ab\fontsize{18pt}{18pt}\selectfont 
-{\outlinetext[1]{vol}{white}{{\textbf{(XI)}}}}}}
+{\outlinetext[1]{vol}{white}{{\textbf{(B)}}}}}}
 \\[-18pt]
 }
 \fancyhead[LE]
 {\sen\fontsize{18pt}{18pt}\selectfont
-{\outlinetext[1]{vol}{white}{{\textbf{onze}}} 
+{\outlinetext[1]{vol}{white}{{\textbf{plage}}} 
 {\ab\fontsize{18pt}{18pt}\selectfont 
-{\outlinetext[1]{vol}{white}{{\textbf{(11)}}}}}}
+{\outlinetext[1]{vol}{white}{{\textbf{(B)}}}}}}
 \\[-18pt]
 }
 % Chân trang
@@ -365,7 +367,7 @@
 \noindent
 \begin{minipage}[c][0.25\textheight][b]{\textwidth}
     \centering
-    \includegraphics[width=15cm]{../../../../Logo/round2.png}
+    \includegraphics[width=15cm]{../../../Logo/roundexb.png}
     \vspace{30pt} % Khoảng cách từ logo xuống tâm trang
 \end{minipage}\par
 \nointerlineskip
@@ -373,14 +375,13 @@
 \begin{minipage}[c][0.25\textheight][t]{\textwidth}
     \vspace{30pt} % Khoảng cách từ tâm trang xuống phần chữ
     \centering
-    {\huge \outlinetext[1]{vol}{white}{\frank volume \hbrk ELEVEN}} \vspace{15pt}
+    {\huge \color{vol}{{\frank volume \hbrk BEACH}}} \vspace{15pt}
 
-    {\fontsize{50pt}{50pt}\selectfont {\outlinetext[1]{vol}{white}{ \vnmdisp (MÙA ĐÔNG HẠT NHÂN\\ CÙNG NHÀ HIKAWA)}}}\vspace{15pt}
+    {\fontsize{50pt}{50pt}\selectfont \color{vol}{\vnmdisp (BÃI SÓNG CỒN SÔI ĐỘNG)}}\vspace{15pt}
 
-    {\Large \outlinetext[1]{vol}{white}{\vnmsans (Mùa đông năm 2021-2022)}}
+    % {\Large \color{vol}{\vnmsans (Mùa đông năm 2020 - 2021)}}
 \end{minipage}
 \vspace*{\fill}
-
 \thispagestyle{empty}
 \renewcommand{\contentsname}
 {\centering\vnmsans\Large\textcolor{vol}{Mục lục}}
@@ -390,10 +391,9 @@
 }
 %========================================LỜI NÓI ĐẦU==========================================
 \newpage
-\section*{\phantomsection\label{preface}} 
-\addcontentsline{toc}{section}{Giới thiệu} 
-% {\centering\vnmsans\Large\textcolor{vol}{Giới thiệu}\par}
-{\centering\vnmsans\Large{\outlinetext[1]{vol}{white}{Giới thiệu}}\par}
+\section*{\phantomsection\label{preface}}
+\addcontentsline{toc}{section}{Giới thiệu}
+{\centering\vnmsans\Large\textcolor{vol}{Giới thiệu}\par}
 \subfile{intro}
 
 %=======================================DANH SÁCH TẬP========================================
@@ -421,11 +421,11 @@
 % \vspace{-30pt}
 % \subfile{Episode/11-?}
 %===========================================LỜI KẾT===========================================
-\newpage
-\section*{\phantomsection\label{end}} 
-\addcontentsline{toc}{section}{Lời kết}
-{\centering\vnmsans\Large{\outlinetext[1]{vol}{white}{Lời kết}}\par}
-\subfile{end}
+% \newpage
+% \section*{\phantomsection\label{end}}
+% \addcontentsline{toc}{section}{Lời kết}
+% {\centering\vnmsans\Large{\outlinetext[1]{vol}{white}{Lời kết}}\par}
+% \subfile{end}
 
 % \vfill % Đẩy phần dưới về đáy trang
 % \begin{center}

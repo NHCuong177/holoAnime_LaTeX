@@ -107,6 +107,7 @@
 \newfontface\jigb[Path=../../../Fontface/]{Jigmo3.ttf}
 \newfontface\jigc[Path=../../../Fontface/]{Jigmo3.ttf}
 \newfontface\quincy[Path=../../../Fontface/]{Quincy Caps Regular.ttf}
+\newfontface\gangofthree[Path=../../../Fontface/]{SVN-Gang of Three.otf}
 
 % Phông cho tiêu đề cuốn truyện và đầu-chân trang
 \newfontface\frank[Path=../../../Fontface/]{Franklin Gothic Heavy Regular.ttf}
@@ -168,7 +169,7 @@
 \newcommand{\img}[2][12.5cm]{%
     \begin{figure}[H]
         \centering
-        \includegraphics[width=#1]{../../../Image/BookT/#2.png}                    % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
+        \includegraphics[width=#1]{../../../Image/Misc/#2.png}                    % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
     \end{figure}
 }
 
@@ -176,7 +177,7 @@
     \begin{figure}[H]
         \centering
         \animategraphics[autoplay,loop,width=#1]
-        {30}{../../../Image/BookT/#2/#2.}{#3}{#4}                                  % Chỉ cần chèn tên tệp, lấy từ khung #3 tới #4
+        {30}{../../../Image/Misc/#2/#2.}{#3}{#4}                                  % Chỉ cần chèn tên tệp, lấy từ khung #3 tới #4
     \end{figure}
 }
 
@@ -185,7 +186,7 @@
 }
     
 \newcommand{\vid}[3][12.5cm]{%
-  \embedvideo{\includegraphics[width=#1]{../../../Image/BookT/#2.png}}{#3.mp4}
+  \embedvideo{\includegraphics[width=#1]{../../../Image/Misc/#2.png}}{#3.mp4}
 }
 
 \newcommand{\emp}[1]{%
@@ -386,55 +387,55 @@
 \subsection*{\phantomsection\label{ep-T.I}}
 \addcontentsline{toc}{section}{\flaregothic{HISTOIRE \gangofthree 1}}
 \vspace{-30pt}
-\subfile{Episode/T-1}
+\subfile{Episode/T-01}
 
 \newpage
 \subsection*{\phantomsection\label{ep-T.II}}
 \addcontentsline{toc}{section}{\flaregothic{HISTOIRE \gangofthree 2}}
 \vspace{-30pt}
-\subfile{Episode/T-2}
+\subfile{Episode/T-02}
 
 \newpage
 \subsection*{\phantomsection\label{ep-T.III}}
 \addcontentsline{toc}{section}{\flaregothic{HISTOIRE \gangofthree 3}}
 \vspace{-30pt}
-\subfile{Episode/T-3}
+\subfile{Episode/T-03}
 
 \newpage
 \subsection*{\phantomsection\label{ep-T.IV}}
 \addcontentsline{toc}{section}{\flaregothic{HISTOIRE \gangofthree 4}}
 \vspace{-30pt}
-\subfile{Episode/T-4}
+\subfile{Episode/T-04}
 
 \newpage
 \subsection*{\phantomsection\label{ep-T.V}}
 \addcontentsline{toc}{section}{\flaregothic{HISTOIRE \gangofthree 5}}
 \vspace{-30pt}
-\subfile{Episode/T-5}
+\subfile{Episode/T-05}
 
 \newpage
 \subsection*{\phantomsection\label{ep-T.VI}}
 \addcontentsline{toc}{section}{\flaregothic{HISTOIRE \gangofthree 6}}
 \vspace{-30pt}
-\subfile{Episode/T-6}
+\subfile{Episode/T-06}
 
 \newpage
 \subsection*{\phantomsection\label{ep-T.VII}}
 \addcontentsline{toc}{section}{\flaregothic{HISTOIRE \gangofthree 7}}
 \vspace{-30pt}
-\subfile{Episode/T-7}
+\subfile{Episode/T-07}
 
 \newpage
 \subsection*{\phantomsection\label{ep-T.VIII}}
 \addcontentsline{toc}{section}{\flaregothic{HISTOIRE \gangofthree 8}}
 \vspace{-30pt}
-\subfile{Episode/T-8}
+\subfile{Episode/T-08}
 
 \newpage
 \subsection*{\phantomsection\label{ep-T.IX}}
 \addcontentsline{toc}{section}{\flaregothic{HISTOIRE \gangofthree 9}}
 \vspace{-30pt}
-\subfile{Episode/T-9}
+\subfile{Episode/T-09}
 
 \newpage
 \subsection*{\phantomsection\label{ep-T.X}}
@@ -443,17 +444,17 @@
 \subfile{Episode/T-10}
 %===========================================LỜI KẾT===========================================
 \newpage
-\section*{\phantomsection\label{preface}}
+\section*{\phantomsection\label{end}}
 \addcontentsline{toc}{section}{Lời kết}
 {\centering\vnmsans\Large\textcolor{vol}{Lời kết}\par}
 \subfile{end}
 
-\vfill % Đẩy phần dưới về đáy trang
-\begin{center}
-  \textcolor{vol}
-  {\quincy\Huge\textbf{TOME \ruby{T}{\ab TET}\ TERMINE !}} \\[1ex]
-  \textcolor{vol}
-  {\vnmdisp\Huge\textbf{(QUYỂN \ruby{TẾT}{節/テト}\ HOÀN THÀNH!)}}
-\end{center}
+% \vfill % Đẩy phần dưới về đáy trang
+% \begin{center}
+%     \textcolor{vol}
+%     {\quincy\Huge\textbf{TOME \ruby{T}{\ab TET}\ TERMINE !}} \\[1ex]
+%     \textcolor{vol}
+%     {\vnmdisp\Huge\textbf{(QUYỂN \ruby{TẾT}{節/テト}\ HOÀN THÀNH!)}}
+% \end{center}
 
 \end{document}

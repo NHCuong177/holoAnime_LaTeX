@@ -94,30 +94,30 @@
 % \renewcommand{\rubysep}{1pt}
 
 % Phông cho tên-số các tập
-\newfontface\flaregothic[Path=../../Fontface/]{flaregothicbold.ttf}
-\newfontface\cafeteria[Path=../../Fontface/]{NHC-Cafeteria-Bold.ttf}
-\newfontface\fotskip[Path=../../Fontface/]{FOT-Skip Std B.otf}
-\newfontface\vnmsans[Path=../../Fontface/]{VNM Sans Std.otf}
-\newfontface\vnmdisp[Path=../../Fontface/]{VNM Sans Display Bold.otf}
-\newfontface\sen[Path=../../Fontface/]{NHC-SenBold.ttf}
-\newfontface\continuum[Path=../../Fontface/]{contb.ttf}
-\newfontface\japfont[Path=../../Fontface/]{msgothic.ttc}
-\newfontface\jiga[Path=../../Fontface/]{Jigmo.ttf}
-\newfontface\jigb[Path=../../Fontface/]{Jigmo2.ttf}
-\newfontface\jigc[Path=../../Fontface/]{Jigmo3.ttf}
-\newfontface\quincy[Path=../../Fontface/]{Quincy Caps Regular.ttf}
+\newfontface\flaregothic[Path=../../../Fontface/]{flaregothicbold.ttf}
+\newfontface\cafeteria[Path=../../../Fontface/]{NHC-Cafeteria-Bold.ttf}
+\newfontface\fotskip[Path=../../../Fontface/]{FOT-Skip Std B.otf}
+\newfontface\vnmsans[Path=../../../Fontface/]{VNM Sans Std.otf}
+\newfontface\vnmdisp[Path=../../../Fontface/]{VNM Sans Display Bold.otf}
+\newfontface\sen[Path=../../../Fontface/]{NHC-SenBold.ttf}
+\newfontface\continuum[Path=../../../Fontface/]{contb.ttf}
+\newfontface\japfont[Path=../../../Fontface/]{msgothic.ttc}
+\newfontface\jiga[Path=../../../Fontface/]{Jigmo.ttf}
+\newfontface\jigb[Path=../../../Fontface/]{Jigmo2.ttf}
+\newfontface\jigc[Path=../../../Fontface/]{Jigmo3.ttf}
+\newfontface\quincy[Path=../../../Fontface/]{Quincy Caps Regular.ttf}
 
 % Phông cho tiêu đề cuốn truyện và đầu-chân trang
-\newfontface\frank[Path=../../Fontface/]{Franklin Gothic Heavy Regular.ttf}
-\newfontface\caviar[Path=../../Fontface/]{VNF-Cariar Dreams Regular.ttf}
-\newfontface\hbrk[Path=../../Fontface/]{HouseBrokenRough.ttf}
-\newfontface\ab[Path=../../Fontface/]{angrybirds-regular.ttf}
-\newfontface\abv[Path=../../Fontface/]{0259-LNTH-angrybirds-regular.ttf}
-\newfontface\device[Path=../../Fontface/]{Device Regular.ttf}
-\newfontface\harosbaelz[Path=../../Fontface/]{BAEFONT_NORMAL-REGULAR_V1.TTF}
-\newfontface\brian[Path=../../Fontface/]{Brianne_s_hand.ttf}
-\newfontface\nexa[Path=../../Fontface/]{Nexa-Heavy.ttf}
-\newfontface\digi[Path=../../Fontface/]{DS-DIGI.TTF}
+\newfontface\frank[Path=../../../Fontface/]{Franklin Gothic Heavy Regular.ttf}
+\newfontface\caviar[Path=../../../Fontface/]{VNF-Cariar Dreams Regular.ttf}
+\newfontface\hbrk[Path=../../../Fontface/]{HouseBrokenRough.ttf}
+\newfontface\ab[Path=../../../Fontface/]{angrybirds-regular.ttf}
+\newfontface\abv[Path=../../../Fontface/]{0259-LNTH-angrybirds-regular.ttf}
+\newfontface\device[Path=../../../Fontface/]{Device Regular.ttf}
+\newfontface\harosbaelz[Path=../../../Fontface/]{BAEFONT_NORMAL-REGULAR_V1.TTF}
+\newfontface\brian[Path=../../../Fontface/]{Brianne_s_hand.ttf}
+\newfontface\nexa[Path=../../../Fontface/]{Nexa-Heavy.ttf}
+\newfontface\digi[Path=../../../Fontface/]{DS-DIGI.TTF}
 
 % Đặt font chính và font tiếng Nhật
 \setmainfont{Times New Roman}
@@ -164,14 +164,14 @@
 \newcommand{\img}[2][12.5cm]{%
     \begin{figure}[H]
         \centering
-        \includegraphics[width=#1]{../../../../Image/BookA/#2.png}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
+        \includegraphics[width=#1]{../../../Image/Misc/#2.png}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
     \end{figure}
 }
 
 \newcommand{\imgc}[2][12.5cm]{%
     \begin{figure}[H]
         \centering
-        \includegraphics[width=#1]{../../../../Image/BookA/#2.jpg}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
+        \includegraphics[width=#1]{../../../Image/Misc/#2.jpg}                        % Tự động thêm "Image/" vào trước tên tệp; chỉ cần chèn tên tệp
     \end{figure}
 }
 
@@ -179,7 +179,7 @@
     \begin{figure}[H]
         \centering
         \animategraphics[autoplay,loop,width=#1]
-        {30}{../../../../Image/BookA/#2/#2.}{#3}{#4}                                      % Chỉ cần chèn tên tệp, lấy từ khung #3 tới #4
+        {30}{../../../Image/Misc/#2/#2.}{#3}{#4}                                      % Chỉ cần chèn tên tệp, lấy từ khung #3 tới #4
     \end{figure}
 }
 
@@ -188,7 +188,11 @@
 }
     
 \newcommand{\vid}[3][12.5cm]{%
-  \embedvideo{\includegraphics[width=#1]{../../../../Image/BookA/#2.png}}{#3.mp4}
+  \embedvideo{\includegraphics[width=#1]{../../../Image/Misc/#2.png}}{#3.mp4}
+}
+
+\newcommand{\emp}[1]{%
+    \includegraphics[width=2cm]{../../../Character/#1.png}
 }
 
 % C. Viết cụm và định dạng
@@ -341,9 +345,9 @@
     \vspace{30pt} % Khoảng cách từ tâm trang xuống phần chữ
     \centering
     {\huge \color{vol}{{\frank volume \hbrk BIRTHDAY}}} \vspace{15pt}
-    
+
     {\fontsize{50pt}{50pt}\selectfont \color{vol}{\vnmdisp SINH NHẬT CỦA KUON}}\vspace{15pt}
-    
+
     {\Large \color{vol}{\vnmsans (Sinh nhật Hikawa Kuon - năm 2021)}}
 \end{minipage}
 \vspace*{\fill}
@@ -357,8 +361,8 @@
 }
 %========================================LỜI NÓI ĐẦU==========================================
 \newpage
-\section*{\phantomsection\label{preface}} 
-\addcontentsline{toc}{section}{Giới thiệu} 
+\section*{\phantomsection\label{preface}}
+\addcontentsline{toc}{section}{Giới thiệu}
 {\centering\vnmsans\Large\textcolor{vol}{Giới thiệu}\par}
 \subfile{intro}
 
@@ -367,51 +371,51 @@
 \subsection*{\phantomsection\label{ep-A.I}}
 \addcontentsline{toc}{section}{\flaregothic{HISTOIRE \brian 1}}
 \vspace{-30pt}
-\subfile{Episode/A-1}
+\subfile{Episode/A-01}
 
 \newpage
 \subsection*{\phantomsection\label{ep-A.II}}
 \addcontentsline{toc}{section}{\flaregothic{HISTOIRE \brian 2}}
 \vspace{-30pt}
-\subfile{Episode/A-2}
+\subfile{Episode/A-02}
 
 \newpage
 \subsection*{\phantomsection\label{ep-A.III}}
 \addcontentsline{toc}{section}{\flaregothic{HISTOIRE \brian 3}}
 \vspace{-30pt}
-\subfile{Episode/A-3}
+\subfile{Episode/A-03}
 
 \newpage
 \subsection*{\phantomsection\label{ep-A.IV}}
 \addcontentsline{toc}{section}{\flaregothic{HISTOIRE \brian 4}}
 \vspace{-30pt}
-\subfile{Episode/A-4}
+\subfile{Episode/A-04}
 
 \newpage
 \subsection*{\phantomsection\label{ep-A.V}}
 \addcontentsline{toc}{section}{\flaregothic{HISTOIRE \brian 5}}
 \vspace{-30pt}
-\subfile{Episode/A-5}
+\subfile{Episode/A-05}
 
 \newpage
 \subsection*{\phantomsection\label{ep-A.VI}}
 \addcontentsline{toc}{section}{\flaregothic{HISTOIRE \brian 6}}
 \vspace{-30pt}
-\subfile{Episode/A-6}
+\subfile{Episode/A-06}
 %===========================================LỜI KẾT===========================================
 \newpage
-\section*{\phantomsection\label{outro}} 
-\addcontentsline{toc}{section}{Lời kết} 
+\section*{\phantomsection\label{outro}}
+\addcontentsline{toc}{section}{Lời kết}
 {\centering\vnmsans\Large\textcolor{vol}{Lời kết}\par}
 \color{black}
 \subfile{end}
 
-\vfill % Đẩy phần dưới về đáy trang
-\begin{center}
-	\textcolor{vol}
-    {\quincy\Huge\textbf{TOME \ruby{A}{\ab ANNIVERSAIRE}\ TERMINE !}} \\[1ex]
-    \textcolor{vol}
-    {\vnmdisp\Huge\textbf{(QUYỂN \ruby{SINH NHẬT}{誕生日/バースデー}\ HOÀN THÀNH!)}}
-\end{center}
+% \vfill % Đẩy phần dưới về đáy trang
+% \begin{center}
+%     \textcolor{vol}
+%     {\quincy\Huge\textbf{TOME \ruby{A}{\ab ANNIVERSAIRE}\ TERMINE !}} \\[1ex]
+%     \textcolor{vol}
+%     {\vnmdisp\Huge\textbf{(QUYỂN \ruby{SINH NHẬT}{誕生日/バースデー}\ HOÀN THÀNH!)}}
+% \end{center}
 
 \end{document}
