@@ -19,25 +19,25 @@ Book/
 
 ### 1.1. holo no Graffiti (`Book/hnG/`)
 Tuyến truyện cốt lõi dựa trên series hoạt hình 3D ngắn *holo no Graffiti* của hololive, xoay quanh công việc và đời sống thường nhật đầy hỗn loạn của nhân vật chính **Hikawa Kuon** - một chàng trai gốc Việt làm Tổng quản lý cho cả ba chi nhánh hololive (JP, ID, EN):
-* **Phase 1 (Round 1 - từ Book P, 0 đến Book 10):** Giai đoạn khởi đầu (2018 - mùa thu 2021). Kuon bắt đầu nhận việc tại văn phòng công ty COVER, làm quen và xoay xở xử lý những trò quậy phá "bất chấp định luật vật lý" của các thế hệ thần tượng từ Gen 0 đến Gen 5 (NePoLaBo).
-* **Phase 2 (Round 2 - từ Book 11 trở đi, ft. Hikawa Kaiho):** Giai đoạn mở rộng với sự xuất hiện của người chị gái cá tính Kaiho, chào đón thế hệ bí mật holoX (Gen 6) cùng các chi nhánh quốc tế.
-* **Phase 3 (Round 3 - tương lai):** Hành trình tiếp nối của hai chị em nhà Hikawa trong vũ trụ mở rộng.
+* **Phase 1 (Round 1 - từ Book P, 0 đến Book 10):** Giai đoạn khởi đầu (2018 - mùa thu 2021). Kuon bắt đầu nhận việc tại văn phòng công ty COVER, làm quen và xoay xở xử lý những trò quậy phá "bất chấp định luật vật lý" của các thế hệ thần tượng từ Gen 0 đến Gen 5 (NePoLaBo), cùng với sự xuất hiện vãng lai của Ryuuhou.
+* **Phase 2 (Round 2 - từ Book 11 trở đi):** Giai đoạn mở rộng với sự xuất hiện của các thành viên còn lại của nhà Hikawa, chào đón thế hệ bí mật holoX (Gen 6) cùng các chi nhánh quốc tế.
+* **Phase 3 (Round 3 - tương lai):** Hành trình tiếp nối của anh chị em nhà Hikawa trong vũ trụ mở rộng.
 
 ### 1.2. stars\*collection (`Book/sC/`)
 Tuyến truyện ngắn chuyển thể từ series hài hước *stars\*collection* của nhóm nam thần tượng **HOLOSTARS** (Miyabi, Arurandeisu, Rikka, Temma, Roberu, Shien, Oga...):
 * Bao gồm các tập sách `BookM1`, `BookM2`, `BookM3`... (M viết tắt của *Male*).
-* Cốt truyện theo chân người chị **Hikawa Kaiho** trong những màn tương tác, "đấu trí" và xử lý rắc rối dở khóc dở cười tại căn mancave của các chàng trai.
+* Cốt truyện theo chân **Hikawa Kaiho** trong những màn tương tác, "đấu trí" và xử lý rắc rối dở khóc dở cười tại căn mancave của các chàng trai.
 
 ### 1.3. Extra (`Book/Extra/`)
 Tập hợp các tập truyện ngoại truyện, sự kiện theo mùa, thế giới giả lập và các dự án giao lưu (crossover):
 * **`BookT` (Tết Nguyên Đán):** Kỳ nghỉ Tết cổ truyền và trải nghiệm văn hóa đón Tết của các cô gái hololive.
-* **`BookA` (Kỷ niệm & Sinh nhật):** Những cột mốc sinh nhật, ngày kỷ niệm của Kuon và các idol.
+* **`BookA` (Sinh nhật):** Cột mốc sinh nhật của Kuon.
 * **`BookD` (Dormitory - Ký túc xá):** Đời sống sinh hoạt thường nhật tại khu ký túc xá gia đình Hikawa cùng các idol (đặc biệt là các câu chuyện giả thuyết dành cho các thành viên đã tốt nghiệp như Aloe, Coco...).
 * **`BookB` (Beach / holoSummer):** Các chuyến du lịch biển và lễ hội mùa hè.
 * **`BookV` (The Void & Non-Game):** Cuộc phiêu lưu bất đắc dĩ của ba anh chị em Kuon, Kaiho và Suzuno khi bị hút vào lỗ đen không gian *The Void* và rơi vào thế giới kỳ lạ của trò chơi *There Is No Game*.
-* **`BookNJ1` (Chocosanji):** Giao lưu cùng các thành viên chi nhánh tiếng Nhật của Nijisanji.
-* **`BookER` (hololive ERROR):** Chuyển thể tiểu thuyết từ vũ trụ game kinh dị *hololive ERROR* tại trường nữ sinh thị trấn Aogami.
-* **`BookKL` & `BookX`:** Các tập truyện ngắn, hồ sơ nhân vật và kịch bản thử nghiệm độc lập.
+* **`BookNJ` (Nijisanji):** Giao lưu cùng các thành viên của Nijisanji.
+* **`BookER` (hololive ERROR):** Chuyển thể tiểu thuyết từ vũ trụ game kinh dị *hololive ERROR* tại trường Trung học ở thị trấn Aogami.
+* **`BookKL`, `BookS`...:** Các tập truyện ngắn, hồ sơ nhân vật và kịch bản thử nghiệm độc lập.
 
 ---
 
@@ -132,8 +132,8 @@ Công cụ cung cấp giao diện menu điều hướng dạng số:
 
 1. **Dạng câu chuyện (Story Category):**
    * Định danh tính chất của câu chuyện trong hệ thống tác phẩm:
-     * **Tiếng Pháp (áp dụng cho `Book/hnG/` và phần lớn `Book/Extra/`):** sử dụng font `\flaregothic` (ví dụ: `ÉPISODE`, `SPÉCIAL`, `PERSONNALISÉ`...).
-     * **Tiếng Đức (áp dụng riêng cho `Book/sC/` và quyển `SM`):** sử dụng font `\humanist` (ví dụ: `FOLGE`, `BESONDERE`, `EIGENE`, `KURZER`...).
+     * **Tiếng Pháp (áp dụng cho `Book/hnG/` và phần lớn `Book/Extra/`):** sử dụng font `\flaregothic` (ví dụ: `ÉPISODE`, `SPÉCIAL`, `PERSONNALISÉ`).
+     * **Tiếng Đức (áp dụng riêng cho `Book/sC/` và quyển `SM`):** sử dụng font `\humanist` (ví dụ: `FOLGE`, `BESONDERE`, `EIGENE`).
 2. **Số tập (Episode Number):**
    * Số thứ tự của tập trong cuốn sách:
      * Nhánh `hnG` & `Extra`: sử dụng font `\burbank` (chữ số Ả Rập, La Mã hoặc chữ số viết hoa cách điệu như `1`, `2`, `I`, `KHÔNG`...).
@@ -227,11 +227,7 @@ Gồm các dạng câu chuyện tương ứng phục vụ tuyến truyện của
 
 3. **`EIGENE` (Tương đương `PERSONNALISÉ` - Tập tự làm):**
    * Các tập truyện do chính tác giả tự sáng tác hoặc biên dịch dành riêng cho nhánh HOLOSTARS, nhằm mở rộng các tình huống đời sống của Hikawa Kaiho cùng các idol nam hoặc hoàn thiện định mức chương sách.
-
-4. **`KURZER` (Tập ngắn / Shorts):**
-   * Dạng tập phim ngắn chuyển thể từ các video Shorts trên kênh chính thức của HOLOSTARS, không có phần Omake (Truyện phụ).
-   * Số tập được đánh bằng hệ đếm cơ số 16 (Hexadecimal: `1`, `2`, `3`... `9`, `A`, `B`, `C`, `D`, `E`, `F`, `10`, `11`...). Không phải xét 5 điều kiện của tập đặc biệt.
-
+   
 > [!NOTE]
 > Trong các phiên bản thảo Word trước đây, dự án từng có phân loại `PRIME` dành cho các tập đăng tải trên kênh cá nhân của các thành viên. Ở phiên bản LaTeX hiện tại, phân loại `PRIME` đã được loại bỏ hoàn toàn; các tập này được quy hoạch thống nhất vào hai nhóm `ÉPISODE` hoặc `SPÉCIAL` (hoặc `FOLGE`/`BESONDERE` đối với nhánh sC).
 
