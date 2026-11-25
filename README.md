@@ -37,6 +37,7 @@ Tập hợp các tập truyện ngoại truyện, sự kiện theo mùa, thế g
 * **`BookV` (The Void & Non-Game):** Cuộc phiêu lưu bất đắc dĩ của ba anh chị em Kuon, Kaiho và Suzuno khi bị hút vào lỗ đen không gian *The Void* và rơi vào thế giới kỳ lạ của trò chơi *There Is No Game*.
 * **`BookNJ` (Nijisanji):** Giao lưu cùng các thành viên của Nijisanji.
 * **`BookER` (hololive ERROR):** Chuyển thể tiểu thuyết từ vũ trụ game kinh dị *hololive ERROR* tại trường Trung học ở thị trấn Aogami.
+* **`BookX`:** Tuyển tập ngoại truyện dành cho độc giả trưởng thành (18+/NSFW), được tách riêng và phân phối qua liên kết ngoài nhằm tuân thủ chính sách nội dung của GitHub.
 * **`BookKL`, `BookS`...:** Các tập truyện ngắn, hồ sơ nhân vật và kịch bản thử nghiệm độc lập.
 
 ---
@@ -45,14 +46,16 @@ Tập hợp các tập truyện ngoại truyện, sự kiện theo mùa, thế g
 
 ### 2.1. Cài đặt tài nguyên dự án (Asset Setup)
 Khi tải hoặc sao chép repository này về máy, kho lưu trữ trên GitHub sẽ chỉ bao gồm mã nguồn và khung mẫu văn bản:
-* `Book/`: Mã nguồn LaTeX của toàn bộ các tập sách.
+* `Book/`: Mã nguồn LaTeX của toàn bộ các tập sách (không bao gồm các tập có nội dung giới hạn độ tuổi).
 * `Template/`: Các mẫu văn bản và bố cục chuẩn.
 * `Tools/`: Các công cụ và tập lệnh hỗ trợ biên soạn.
 
-Do giới hạn dung lượng lưu trữ của GitHub đối với các file media/binary nặng, các thư mục chứa tài nguyên hình ảnh và phông chữ hệ thống được lưu trữ riêng tại liên kết bên ngoài:
-* **Gói tài nguyên bổ sung (`Character`, `Cover`, `Fontface`, `Image`, `Logo`):**
+Do giới hạn dung lượng lưu trữ của GitHub đối với file media nặng, cũng như chính sách kiểm duyệt nội dung người lớn (Adult/NSFW Content Guidelines), các thư mục tài nguyên hình ảnh, phông chữ và tuyển tập `BookX` được lưu trữ riêng tại liên kết bên ngoài:
+* **Gói tài nguyên bổ sung (`Character`, `Cover`, `Fontface`, `Image`, `Logo` và `BookX`):**
   > **Link:** *sẽ cập nhật sau*
-* **Cách cài đặt:** Tải gói tài nguyên trên về, giải nén và đặt các thư mục này trực tiếp vào thư mục gốc của repo (ngang hàng với `Book/`, `Template/`, `Tools/`).
+* **Cách cài đặt:** Tải gói tài nguyên trên về, giải nén và bố trí vào dự án như sau:
+  * Đặt các thư mục `Character`, `Cover`, `Fontface`, `Image`, `Logo` trực tiếp vào thư mục gốc của repo (ngang hàng với `Book/`, `Template/`, `Tools/`).
+  * Đặt thư mục `BookX` vào đường dẫn `Book/Extra/BookX/` (nếu bạn có nhu cầu biên dịch và đọc tập ngoại truyện này).
 
 ---
 
@@ -137,7 +140,7 @@ Công cụ cung cấp giao diện menu điều hướng dạng số:
 2. **Số tập (Episode Number):**
    * Số thứ tự của tập trong cuốn sách:
      * Nhánh `hnG` & `Extra`: sử dụng font `\burbank` (chữ số Ả Rập, La Mã hoặc chữ số viết hoa cách điệu như `1`, `2`, `I`, `KHÔNG`...).
-     * Nhánh `sC` & quyển `SM`: sử dụng font `\houseterror` (hoặc `\houseofterror`).
+     * Nhánh `sC` & quyển `SM`: sử dụng font `\houseterror`.
 3. **Mã tập (Episode Code - font `\cafeteria`):**
    * Mã viết tắt đặt trong dấu ngoặc đơn, tương ứng trực tiếp 1-1 với tên file mã nguồn LaTeX trong thư mục `Episode/` (ví dụ: `(C-0)` $\rightarrow$ `C-00.tex`, `(1)` $\rightarrow$ `1-01.tex`, `(S-2)` $\rightarrow$ `S-02.tex`, `(M1-1)` $\rightarrow$ `M1-01.tex`...). Giúp tra cứu và đối chiếu mã nguồn cực kỳ nhanh chóng.
 4. **Thuộc tính tập (Episode Attributes):**
